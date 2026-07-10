@@ -1,5 +1,5 @@
 ---
-name: screenplay-generator
+name: script-generator
 description: Turn a rough story idea, genre brief, reference work, meme premise, episode concept, or user demand into an executable screenplay and storyboard script. Use when the user asks to expand simple story requirements into short-video scripts, episodic unit dramas, scene-by-scene screenplays, shot tables, dialogue with catchphrases, web-series bibles, or production-ready分镜剧本, especially when the task benefits from web research, open-source project research, trend/meme lookup, dialect/tone research, or adaptation of screenwriting workflows.
 ---
 

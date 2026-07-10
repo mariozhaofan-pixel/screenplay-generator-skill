@@ -1,9 +1,9 @@
-# Screenplay Generator Skill
+# 剧本生成器（Script Generator Skill）
 
 Codex skill for turning rough story ideas, genre briefs, short-video prompts, episodic concepts, or storyboard requests into executable screenplay and shot-list drafts.
 
 Display name: 剧本生成器  
-Skill folder: `screenplay-generator`
+Skill folder: `script-generator`
 
 ## What It Does
 
@@ -15,18 +15,18 @@ Skill folder: `screenplay-generator`
 
 ## Installation
 
-Copy the `screenplay-generator` folder into your Codex skills directory:
+Copy the `script-generator` folder into your Codex skills directory:
 
 ```powershell
-Copy-Item -Recurse .\screenplay-generator $env:USERPROFILE\.codex\skills\
+Copy-Item -Recurse .\script-generator $env:USERPROFILE\.codex\skills\
 ```
 
-Then start a new Codex session and ask to use `$screenplay-generator`.
+Then start a new Codex session and ask to use `$script-generator`.
 
 ## Usage Example
 
 ```text
-Use $screenplay-generator to turn this premise into a 90-second vertical short-video storyboard:
+Use $script-generator to turn this premise into a 90-second vertical short-video storyboard:
 A night-shift convenience-store clerk discovers every customer is buying the same item for different secret reasons.
 ```
 

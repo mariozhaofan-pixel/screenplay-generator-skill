@@ -1,4 +1,4 @@
 interface:
   display_name: "剧本生成器"
   short_description: "把简单故事需求扩展为可拍摄分镜剧本和短视频单元剧创作"
-  default_prompt: "Use $screenplay-generator to turn a rough story idea into an executable short-video storyboard script."
+  default_prompt: "Use $script-generator to turn a rough story idea into an executable short-video storyboard script."
