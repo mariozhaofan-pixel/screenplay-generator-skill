@@ -38,6 +38,27 @@ This skill was built from original workflow design plus research into the open-s
 
 The source project contributed high-level screenwriting workflow ideas such as format routing, visual writing discipline, self-checks, pacing, and continuity management. This repository does not copy the source project's long-form prompt text.
 
-## License
+## Copyright and Usage Restrictions
 
-MIT License. See `LICENSE`.
+Copyright (c) 2026 MARIOZHAOFAN. All rights reserved unless explicitly granted in writing.
+
+This repository is published for visibility, review, learning, and authorized personal/internal use. It is not a grant to repackage, redistribute, resell, sublicense, or use this project as the core component of a commercial product or paid service.
+
+You may:
+
+- Read and study the source files.
+- Use the skill for personal learning, private testing, or internal non-commercial workflows.
+- Link to this original GitHub repository with attribution.
+
+You may not, without prior written permission:
+
+- Republish, mirror, redistribute, or repackage this project or substantial parts of it.
+- Sell this project, bundle it into a paid product, or use it as the core component of a commercial service.
+- Remove copyright notices, attribution, or usage restrictions.
+- Claim authorship of this project or a lightly modified copy.
+
+For redistribution, commercial use, paid deployment, licensing, or partnership requests, contact:
+
+- WeChat: `MARIOZHAOFAN`
+
+See `LICENSE` for the full usage terms.
