@@ -1,6 +1,6 @@
 ---
 name: script-generator
-description: Turn a rough story idea, genre brief, reference work, meme premise, episode concept, or user demand into an executable screenplay and storyboard script. Use when the user asks to expand simple story requirements into short-video scripts, episodic unit dramas, scene-by-scene screenplays, shot tables, dialogue with catchphrases, web-series bibles, or production-ready分镜剧本, especially when the task benefits from web research, open-source project research, trend/meme lookup, dialect/tone research, or adaptation of screenwriting workflows.
+description: Turn a rough story idea, genre brief, reference work, meme premise, episode concept, or user demand into an executable screenplay and storyboard script. Use when the user asks to expand simple story requirements into short-video scripts, episodic unit dramas, scene-by-scene screenplays, shot tables, dialogue with catchphrases, character or antagonist design, power-system conflict, strategic confrontation, web-series bibles, or production-ready分镜剧本, especially when the task benefits from web research, open-source project research, trend/meme lookup, dialect/tone research, or adaptation of screenwriting workflows.
 ---
 
 # 剧本生成器
@@ -20,6 +20,7 @@ Read only the references needed for the current task:
 - `references/shanyin-methodology-notes.md`: load for every substantive screenplay/storyboard task.
 - `references/storyboard-output.md`: load whenever the user needs an executable script, shot list, storyboard, video prompt, or production table.
 - `references/short-video-series.md`: load for short video, web-series, episodic unit drama, meme comedy, recurring character relationships, catchphrases, dialect, or BGM-heavy requests.
+- `references/character-and-conflict-engine.md`: load when character identity, protagonist agency, a power/system/advantage, an opposing force, strategic conflict, suspense, reversal, or payoff is central. Activate only the relevant modules; do not invent a power or antagonist for briefs that do not need one.
 - `references/open-source-research.md`: load when current facts, internet memes, platform conventions, dialect examples, BGM references, named works, or open-source project logic need research.
 - `references/style-contamination.md`: load whenever a task references a prior example, named style, dialect, nickname rule, catchphrase density, or when output risks inheriting irrelevant test/example details.
 - `references/quality-checks.md`: load before final output or when the user asks for self-check, revision, or "剧本医生".
@@ -33,7 +34,7 @@ Read only the references needed for the current task:
    Search the web or inspect open-source projects when references may be current or specialized. Convert findings into decisions: tone, structure, language texture, BGM direction, meme bank, platform pacing, or production constraints. Cite sources in the final response when web sources are used.
 
 3. Build the story engine.
-   Reduce the episode to `protagonist want -> obstacle -> escalation -> irreversible choice/payoff`. For unit drama, lock the recurring relationship matrix before writing the episode.
+   Reduce the episode to `protagonist want -> obstacle -> escalating choices -> cost -> irreversible choice/payoff`. When character identity, an advantage, an opposing force, or strategic conflict is central, select only the needed modules from `references/character-and-conflict-engine.md`. Make every major actor choose from the information and resources available at that moment. For unit drama, lock the recurring relationship matrix before writing the episode.
 
 4. Create a compact show bible when the premise is episodic.
    Include series premise, fixed character roles, nicknames only when requested, running conflict, catchphrase rules only when requested, continuity ledger, and next-episode hook logic.

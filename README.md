@@ -10,6 +10,7 @@ Skill folder: `script-generator`
 - Expands loose story ideas into shootable screenplay/storyboard drafts.
 - Produces beat sheets, shot tables, dialogue scripts, BGM/sound plans, and continuity notes.
 - Supports short videos, episodic unit drama, web-series bibles, and production-ready分镜剧本.
+- Selectively strengthens character agency, power/advantage costs, opposing-force logic, fair strategic conflict, and payoff design when the brief needs them.
 - Uses web and open-source research when current facts, trend references, dialect, BGM, named works, or project logic matter.
 - Guards against style contamination: examples and test prompts do not become defaults.
 
@@ -37,6 +38,8 @@ This skill was built from original workflow design plus research into the open-s
 - `Shanyin-ai/shanyin-screenwriting-master`
 
 The source project contributed high-level screenwriting workflow ideas such as format routing, visual writing discipline, self-checks, pacing, and continuity management. This repository does not copy the source project's long-form prompt text.
+
+The character-and-conflict engine was also refined through an authorized local study of 26 public craft videos by [田老师写作力](https://www.douyin.com/user/MS4wLjABAAAAAZwNpcWrxcCm1JcNKqjlHywZj7RtbkuKGN1hicElUxGilV9xZ__oKK_vhBFRTt2l), covering the public collections [金手指哲学](https://www.douyin.com/collection/7658852716386453567/1), [主角哲学](https://www.douyin.com/collection/7655611524052060186/1), [反派哲学](https://www.douyin.com/collection/7655609940928825371/1), and [智斗三部曲](https://www.douyin.com/collection/7613582181931157513/1). Only original, generalized craft rules are included here. Downloaded media, audio, transcripts, OCR evidence, source examples, and source slogans are not redistributed in this repository.
 
 ## Copyright and Usage Restrictions
 
