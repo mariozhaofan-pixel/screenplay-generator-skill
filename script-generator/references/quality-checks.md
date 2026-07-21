@@ -5,7 +5,7 @@ Run this internally before final output. Show diagnostic reasoning only when the
 ## Contents
 
 - Story, character, opponent, pressure, and payoff
-- Visual writing and screenplay-storyboard synchronization
+- Visual writing, global style prompts, and screenplay-storyboard synchronization
 - Camera, space, blocking, and AI-video executability
 - Dialogue, short-form behavior, contamination, continuity, and research
 - Production feasibility and silent-runtime validation
@@ -55,6 +55,17 @@ Run this internally before final output. Show diagnostic reasoning only when the
 - Each scene has one stated dramatic task, meaningful change, audience alignment, and information hierarchy before camera coverage is chosen.
 - Key images receive more visual weight than routine entrances, exits, or connective movement.
 - The sequence separately verifies what happened, what was selected for the viewer, and what a first-time viewer is likely to notice and retain.
+
+## Global Visual Grammar
+
+- Every delivered screenplay is immediately followed by exactly one `整体影像风格` prompt and one `统一运镜风格` prompt, including screenplay-only requests.
+- Both prompts are specific to the current script's era, genre, locations, characters, emotional design, key images, platform, and production limits.
+- The image prompt resolves medium/texture, palette/exposure, lighting, atmosphere/materials, face/skin treatment, and only necessary recurring visual locks into one compatible system.
+- The camera prompt resolves viewpoint, camera-character relationship, movement families, stillness/movement balance, composition, height/angle and lens tendencies, focus, blocking coordination, visual-focus handoff, and project-specific avoidances.
+- The prompts contain visible decisions rather than generic praise words, mutually incompatible aesthetics, or every camera technique at once.
+- No era, filmmaker, named work, palette, lighting motif, atmosphere, character, prop, or camera ban has leaked from an unrelated example or prior task.
+- Per-CUT camera facts follow the global grammar; any deviation is motivated, and the global paragraphs are not repeated inside each CUT.
+- The style block contains no runtime, duration, timecode, or timing budget.
 
 ## Screenplay-Storyboard Sync
 

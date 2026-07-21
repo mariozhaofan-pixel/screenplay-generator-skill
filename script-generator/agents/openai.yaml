@@ -1,4 +1,4 @@
 interface:
   display_name: "剧本生成器"
-  short_description: "把简单故事扩展为完整剧本和逐CUT导演级分镜"
-  default_prompt: "Use $script-generator to write the complete screenplay first, then derive a synchronized per-CUT storyboard with focal lengths, blocking, emotion, dialogue, sound, edit logic, and director intent. Keep runtime judgment internal and output no durations or timecodes."
+  short_description: "完整剧本、影像运镜提示词和逐CUT导演级分镜"
+  default_prompt: "Use $script-generator to write the complete screenplay, derive one script-specific image-style prompt and one camera-movement prompt, then produce the synchronized per-CUT storyboard. If the user explicitly asks for screenplay only, omit CUTs but keep both prompts. Keep runtime judgment internal and output no durations or timecodes."

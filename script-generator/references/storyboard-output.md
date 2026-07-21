@@ -5,6 +5,7 @@ Use this when producing a shootable script, storyboard table, scene list, video 
 ## Contents
 
 - Standard deliverable and IDs
+- Global image-style and camera-movement prompt block
 - Screenplay scene and director-map formats
 - Detailed CUT block
 - Silent runtime policy
@@ -33,6 +34,10 @@ Use this when producing a shootable script, storyboard table, scene list, video 
 【完整对白剧本】
 先按场景和节拍写完整可拍内容。固定场景 ID 与节拍 ID，后续 CUT 必须引用这些 ID，台词保持逐字一致。
 
+【影像风格与运镜风格提示词】
+**整体影像风格：** 根据当前剧本生成一段完整、统一、可直接复制的影像风格提示词。
+**统一运镜风格：** 根据当前剧本生成一段完整、统一、可直接复制的运镜风格提示词。
+
 【场景导演图/场面调度锁】
 逐场写场景任务、关键画面、信息层级、观众视角、空间地标、人物/道具起点、轴线/视线/屏幕方向、焦段组、光线和连续性。
 
@@ -60,7 +65,7 @@ Use this when producing a shootable script, storyboard table, scene list, video 
 
 ## Screenplay Scene Format
 
-```
+```text
 【S01 / 场景1：地点 / 内外 / 时段】
 S01-B01
 画面只写摄影机能看见或麦克风能听见的内容，并写清可见动作与道具状态变化。
@@ -71,6 +76,18 @@ SFX：声音。
 字幕：屏幕字。
 转场：切/甩镜/音桥/匹配剪辑。
 ```
+
+## Global Style Prompt Block
+
+Place this block immediately after any delivered screenplay, even when the user does not request a storyboard:
+
+```text
+【影像风格与运镜风格提示词】
+**整体影像风格：** 写成一个已经决策完成的提示词段落，包含当前剧本所需的时代/地域/类型、媒介质感、色彩与曝光、光线动机、空气与材质、人物面部和必要的角色/场景视觉锁。
+**统一运镜风格：** 写成一个已经决策完成的提示词段落，包含叙事视点、相机与人物距离、主要运镜族、动静平衡、构图、机位高度/角度、焦段倾向、焦点与视觉焦点交接、调度配合和当前项目应避免的镜头习惯。
+```
+
+Both paragraphs must be derived from the current screenplay and remain mutually compatible. Do not import concrete style details from examples or prior tasks. Do not repeat the global paragraphs inside individual CUTs; make each CUT execute them through its own resolved camera facts.
 
 ## Scene Director Map
 
@@ -137,3 +154,5 @@ Every CUT should answer:
 - Can an AI video model generate the dominant action without inventing missing spatial facts?
 
 If a row only repeats known information, delete or merge it.
+
+Whenever the requested artifact contains screenplay scenes, include the global style prompt block. Outline-only, research-only, and diagnosis-only deliverables do not require it unless the user asks.

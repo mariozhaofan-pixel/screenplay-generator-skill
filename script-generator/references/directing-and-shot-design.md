@@ -5,6 +5,7 @@ Use this reference for the reasoning behind CUTs, camera decisions, actor blocki
 ## Contents
 
 - Story before coverage and the scene director map
+- Global image-style and camera-movement prompts
 - Primary shots, viewpoint, and reverse coverage
 - Focal length, composition, depth, shot size, and camera height
 - Spatial grammar, blocking, visual focus, and motion flow
@@ -29,6 +30,32 @@ Do not begin with a standard wide/two-shot/reverse/insert recipe. For each scene
 7. `Perception check`: whether a distracted first-time viewer will actually notice, understand, remember, and emotionally register the intended information.
 
 A technically smooth sequence can still be weak if it only records events. Camera design earns its place by changing what the viewer notices, knows, anticipates, or feels.
+
+## Global Image and Camera Style Prompts
+
+Every delivered screenplay, including a screenplay without detailed CUTs, must be followed by this copy-ready block:
+
+```text
+【影像风格与运镜风格提示词】
+**整体影像风格：** [one finalized prompt derived from this screenplay]
+**统一运镜风格：** [one finalized prompt derived from this screenplay]
+```
+
+Build `整体影像风格` from the current script's era, region, genre, dramatic temperature, locations, weather, production design, characters, key images, and production limits. Resolve these into one coherent visual system: capture/rendering medium, texture, palette, contrast and exposure, highlight/shadow behavior, lighting motivation, atmosphere, material detail, skin/face treatment, and recurring character or location light locks when the story needs them.
+
+Build `统一运镜风格` from the story's viewpoint, power relationships, action scale, performance needs, spatial design, and emotional progression. State the camera's default relationship to characters, preferred movement families, stillness/movement balance, composition, height/angle tendencies, lens tendencies, focus behavior, blocking coordination, visual-focus handoff, and story-specific practices to avoid. Use one coherent camera action per CUT; do not stack every available movement into each shot.
+
+Rules:
+
+- Derive both prompts only after screenplay facts are stable. They are a visual translation of the current story, not a reusable mood preset.
+- Treat examples as specificity/format references only. Do not inherit their era, country, genre, directors, films, color palette, lighting, atmosphere, characters, props, or camera prohibitions.
+- Convert named works or filmmakers into high-level visual traits and combine them with original story facts; do not copy signature scenes or protected characters.
+- Do not force constant motion, handheld shake, Dutch angles, backlight, fog, grain, shallow focus, or any other technique unless the current screenplay benefits from it. Static or eye-level framing can be the correct style choice.
+- Keep the two prompts physically and aesthetically compatible. Avoid mutually exclusive capture media, contradictory light directions, impossible camera paths, and adjective piles with no visible consequence.
+- Let the global prompts define the shared grammar. Per-CUT photography must instantiate that grammar and state only scene-specific execution or a motivated deviation; never paste the full global block into every CUT.
+- Include character- or location-specific visual locks only when they follow from the current screenplay and need continuity across scenes.
+- Do not include runtime, scene/CUT durations, timecodes, or timing budgets.
+- Output one resolved version of each prompt, not alternatives or a menu.
 
 ## Scene Director Map
 

@@ -4,7 +4,7 @@ Use this reference whenever a task could inherit irrelevant details from a prior
 
 ## Core Rule
 
-The current user request controls the story's genre, character relationships, naming conventions, dialect, BGM, catchphrase density, and output depth. Examples calibrate format only; they do not become defaults.
+The current user request controls the story's genre, character relationships, naming conventions, dialect, BGM, catchphrase density, image style, camera-movement style, and output depth. Examples calibrate format and specificity only; they do not become defaults.
 
 ## Do Not Inherit
 
@@ -17,15 +17,17 @@ Do not carry forward:
 - catchphrase density unless explicitly requested
 - named songs or BGM references unless explicitly requested
 - black-comedy tone unless the current brief asks for it
+- visual eras, film movements, filmmakers, named works, palettes, lighting motifs, atmospheres, lens habits, camera moves, or camera prohibitions from a style example
 
 ## Scope Reset
 
-Before drafting, rebuild the current task profile from the current user request: format, genre, relationships, naming, dialect, catchphrase density, music, reference works, and output depth. Mark every unspecified item as neutral rather than copying it from conversation history or examples.
+Before drafting, rebuild the current task profile from the current user request: format, genre, relationships, naming, dialect, catchphrase density, music, reference works, image style, camera-movement style, and output depth. Mark every unspecified item as neutral rather than copying it from conversation history or examples.
 
 Apply the detailed domain rules from their single owners:
 
 - named-work abstraction and research: `open-source-research.md`
 - short-form catchphrases and requested dialect application: `short-video-series.md`
+- screenplay-derived image/camera grammar: `directing-and-shot-design.md`
 - names, relationships, genre, and all other creative facts: the current user brief
 
 ## Final Check
@@ -38,5 +40,6 @@ Before final output, ask:
 - Did the user request this catchphrase density?
 - Did the user request this named song?
 - Did the user request a series hook or recurring continuity device?
+- Were the image and camera prompts derived from this screenplay rather than copied from a style example?
 
 If not, remove it or make it generic.

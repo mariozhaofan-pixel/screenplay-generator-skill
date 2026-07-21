@@ -8,6 +8,7 @@ Skill folder: `script-generator`
 ## What It Does
 
 - Expands loose story ideas into complete shootable screenplays followed by synchronized director-grade storyboards.
+- Adds one screenplay-specific overall image-style prompt and one unified camera-movement prompt to every screenplay delivery.
 - Produces scene/beat IDs and a detailed block for every CUT, including focal length, camera position, composition, focus, visual-focus/motion handoff, actor blocking, visible emotion, exact dialogue, sound, edit motivation, director intent, AI-readable visual facts, and continuity, without per-CUT durations or timecodes.
 - Supports short videos, episodic unit drama, web-series bibles, and production-ready分镜剧本.
 - Selectively strengthens character agency, power/advantage costs, opposing-force logic, fair strategic conflict, and payoff design when the brief needs them.
