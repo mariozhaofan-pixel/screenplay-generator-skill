@@ -5,26 +5,26 @@ Source studied: `https://github.com/Shanyin-ai/shanyin-screenwriting-master`, co
 ## What the Source Contributes
 
 - Format routing: choose ultrashort concept film, short film, feature, or series before writing.
-- Output-before-self-check: run an internal review against writing rules, structure, pacing, duration, and visuality before showing work.
+- Self-check before output: run an internal review against writing rules, structure, qualitative pacing, and visuality before showing work.
 - Visual writing discipline: write only what can be seen or heard; use action and subtext instead of psychological explanation.
 - Eight-step flow: core dramatic action, synopsis, character depth, backstory/world, structure, scene breakdown, scene writing, script doctor.
 - Cross-section principle: stories begin at a high-pressure slice of a world that already exists; characters arrive with backstory and prior relationships.
 - Dramatic action: a story beat needs a concrete goal and a direct obstacle.
-- Opening hook: the first image/seconds must carry a watchable disturbance, not just exposition.
+- Opening hook: the first image or action must carry a watchable disturbance, not just exposition.
 - Dual-track pacing: track external event intensity separately from emotional intensity; use contrast and breathing room.
-- Duration budgeting: estimate each scene/shot, then diagnose scenes that are too long, too short, or rhythmically flat.
+- Silent scale calibration: internally estimate only a broad overall density when useful; never expose runtime, scene/CUT durations, timecodes, or duration budgets.
 - Series continuity: plan season/episode structure before full scripts; maintain character states, hidden lines, seeds/callbacks, and known-information ledgers.
 - Memory checkpoints: for long works, compress the state after major units so later writing does not contradict earlier decisions.
 
 ## Adaptation for This Skill
 
-This skill keeps the source's routing, visual-writing, pacing, and doctor-pass logic, but changes the default operating mode:
+`../SKILL.md` is the only canonical execution order. The source's eight-stage model is historical methodology input, not a second workflow to run in parallel. Retain only these unique contributions when applying the canonical workflow:
 
-- Default to production mode: when the user asks for a sample or final artifact, run the eight steps internally and output a complete draft.
-- Prioritize short-video execution: favor cold-open hooks, dense beats, subtitles, BGM loops, shot IDs, and feasible production notes.
-- Allow research-heavy work: use web lookup and open-source project inspection when the user asks for trend-aware, reference-aware, or technically grounded scripts.
-- Add meme/catchphrase handling: build a gold-line bank, place lines on beats, and check that jokes serve action instead of sitting as slogans.
-- Add continuity ledger for recurring short dramas: keep fixed relationships, nicknames, running conflicts, callbacks, and next-episode hooks.
+- Route the requested format before writing rather than treating every premise as a short video.
+- Begin from a pressured cross-section of an already existing world and relationships.
+- Track external event intensity separately from emotional intensity.
+- Use memory checkpoints and continuity ledgers for long or recurring work.
+- Apply cold-open, subtitle, BGM, catchphrase, and next-episode devices only when the current format and user brief call for them.
 
 ## Screenwriting Red Lines
 
@@ -32,4 +32,4 @@ This skill keeps the source's routing, visual-writing, pacing, and doctor-pass l
 - Do not make characters explain theme, setting, or relationships in unnatural dialogue.
 - Do not add scenes that only repeat information.
 - Do not let a style reference become imitation of protected characters, plots, or signature scenes.
-- Do not skip duration estimates for executable storyboard scripts.
+- Do not turn a silent scale estimate into screenplay or storyboard timing output.

@@ -18,25 +18,15 @@ Do not carry forward:
 - named songs or BGM references unless explicitly requested
 - black-comedy tone unless the current brief asks for it
 
-## Named Works
+## Scope Reset
 
-When the user says "similar to X", extract only high-level traits such as rhythm, social pressure, ensemble density, realism, suspense structure, humor type, or visual grammar. Create original characters, scenes, dialogue, plot turns, and endings.
+Before drafting, rebuild the current task profile from the current user request: format, genre, relationships, naming, dialect, catchphrase density, music, reference works, and output depth. Mark every unspecified item as neutral rather than copying it from conversation history or examples.
 
-## Nicknames
+Apply the detailed domain rules from their single owners:
 
-Default to natural names, job titles, relationship terms, or user-provided names. Use one-character nicknames only when the user asks for one-character names, abbreviations, codenames, or a similar naming rule.
-
-## Dialect
-
-Add dialect only when requested. Keep it light, readable, and character-specific. Do not make dialect itself the punchline.
-
-## Catchphrases
-
-Use a catchphrase or gold-line bank only when the user requests quote density, meme density, social captions, punchy dialogue, comedy, or short-video virality. For serious drama, documentary style, suspense, or realist pieces, use key dialogue instead.
-
-## BGM
-
-Use named tracks only when the user provides or requests them. Otherwise provide generic music direction. For named tracks, include licensing/non-commercial/original-alternative handling.
+- named-work abstraction and research: `open-source-research.md`
+- short-form catchphrases and requested dialect application: `short-video-series.md`
+- names, relationships, genre, and all other creative facts: the current user brief
 
 ## Final Check
 
@@ -47,5 +37,6 @@ Before final output, ask:
 - Did the user request this family or role structure?
 - Did the user request this catchphrase density?
 - Did the user request this named song?
+- Did the user request a series hook or recurring continuity device?
 
 If not, remove it or make it generic.

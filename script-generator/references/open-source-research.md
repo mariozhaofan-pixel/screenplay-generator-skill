@@ -33,7 +33,7 @@ When asked to learn from an open-source project:
 - For non-commercial use, state that the track is only a mood, pacing, cut-rhythm, or internal draft reference unless the user secures rights.
 - For production-safe alternatives, provide music direction such as tempo, instrumentation, loop structure, and searchable keywords.
 - Lyrics may be quoted only as a very short excerpt when directly relevant; keep each song excerpt within 10 Chinese characters or English words. Prefer paraphrasing lyric themes. Do not provide full lyrics, long excerpts, or substitute lyrics that replace the song.
-- For short-video scripts, specify where music ducks under dialogue, where a sting hits, and where the loop resets.
+- When BGM is part of the brief, bind duck, sting, stop, and loop-reset points to dialogue, actions, reveals, or edits rather than timestamps.
 
 ## Dialect and Slang Research
 

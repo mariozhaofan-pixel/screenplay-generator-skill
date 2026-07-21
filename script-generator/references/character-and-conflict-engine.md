@@ -2,6 +2,14 @@
 
 Use this reference selectively. It is a set of modules, not a mandatory formula. A quiet relationship scene may need only the character module; a disaster story may need an opposing-force module without a human antagonist; a procedural may need the strategy ledger without a power system.
 
+## Contents
+
+- Route before building
+- Character kernel and advantage contract
+- Opposing-force selector and fair strategy ledger
+- Dialogue as action
+- Pressure, payoff, and research boundary
+
 ## Route Before Building
 
 Answer these questions internally:

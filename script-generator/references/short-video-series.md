@@ -1,18 +1,17 @@
 # Short-Video Series Guide
 
-Use this for 30-180 second short-video dramas, recurring comedy units, meme-heavy scripts, and platform-native episodic stories.
+Use this for short-form video drama, recurring comedy units, meme-heavy scripts, and platform-native episodic stories. Do not route a task here solely because a previous example was short-form.
 
-## Defaults
+## Conditional Short-Form Heuristics
 
-- Duration: 60-120 seconds unless the user specifies otherwise.
-- Structure: cold open, setup, escalation, reversal, payoff, tag/hook.
-- CUTs: derive the count from beats, emphasis, and production limits. For 60-120 seconds, 10-24 CUTs is a common range; use fewer for sustained performance and more for action/comedy only when each edit has a function.
-- Cast: 3-5 recurring roles are enough for dense comedy.
-- Visual style: one primary location plus one insert location is usually more shootable than many locations.
+- Structure: cold open, setup, escalation, reversal, payoff, and a resolved ending state. Add a tag or next-episode hook only for a series/episodic brief or when requested.
+- Runtime: assess scale and density silently; never print a runtime, scene/CUT duration, timecode, or per-beat time budget.
+- CUTs: derive the count from beats, emphasis, viewpoint, continuity, and production limits. Do not use a duration formula or fixed range.
+- Cast and locations: keep them as compact as the user's production limits require; do not impose a fixed ensemble size or location count on an unconstrained brief.
 
 ## Cold Open
 
-The first 3-5 seconds must contain a visible problem, absurd contrast, or line that creates immediate curiosity. Avoid starting with explanation.
+The first visible beat should contain a problem, absurd contrast, or line that creates immediate curiosity. Avoid starting with explanation.
 
 Good cold-open ingredients:
 
@@ -34,7 +33,7 @@ For every episode:
 
 - Keep the A plot independently satisfying.
 - Spend one small beat on continuity or relationship change.
-- End with a new pressure, callback, or question for the next episode.
+- When ongoing serialization is part of the brief, end with a new pressure, callback, or question that follows from the episode rather than replacing its payoff.
 
 ## Catchphrase and Meme Density
 
@@ -48,16 +47,16 @@ When the user asks for "金句", "梗密度", or "台词狠":
 
 If the user does not ask for quote density, keep dialogue natural and use only key lines that fit the current genre.
 
-Gold-line functions:
+Possible gold-line functions:
 
 - Hook line: makes the viewer stop scrolling.
-- Diagnosis line: names a social pain in a funny way.
+- Diagnosis line: names the underlying tension in the current genre's voice.
 - Reversal line: flips who has power in the scene.
 - Tag line: makes the ending shareable.
 
-## Dialect Flavor
+## Dialect Application
 
-Only add a dialect or regional flavor when the user explicitly requests it. For Taiwan-flavored Mandarin or similar requests:
+Only add a dialect or regional flavor when the user explicitly requests it. For any requested regional language flavor:
 
 - Research a small set of current, context-appropriate vocabulary, particles, cadence, and code-switching patterns for this task; do not reuse markers remembered from an old example.
 - Keep syntax readable for a broad Chinese-speaking audience.
@@ -65,19 +64,9 @@ Only add a dialect or regional flavor when the user explicitly requests it. For 
 - Do not overfill every line with particles; the joke should still work in plain Mandarin.
 - Do not inherit dialect markers from old examples or tests.
 
-## BGM and Sound
+## BGM and Sound Application
 
-When the user asks for a named song or reference track, provide three paths:
-
-- Licensed original-track option: song title/artist/version, intended placement, rights to verify, and licensing/purchase path to research.
-- Non-commercial reference option: use only as mood, pacing, cut rhythm, or internal draft reference; do not imply commercial clearance.
-- Original alternative option: tempo, mood, instrumentation, loop structure, and searchable library keywords.
-
-Lyrics may be quoted only as a very short excerpt when directly relevant; keep each song excerpt within 10 Chinese characters or English words. Prefer paraphrasing lyric themes. Do not provide full lyrics, long excerpts, or substitute lyrics that replace the song.
-
-When the user names a reference track, research or analyze that specific track for tempo range, groove, instrumentation, arrangement, vocal density, loop point, and scene function. Keep those findings local to the current task; do not turn the song or its traits into future defaults.
-
-Add SFX for short-video rhythm: phone buzz, cash register beep, door slam, subtitle pop, record scratch, tiny cymbal sting.
+Use `open-source-research.md` as the single source for music research, licensing, non-commercial reference, original alternatives, and lyric limits. In this file, only map approved music and sound choices to story events: dialogue duck, reveal sting, action accent, transition, release, and loop reset. Never use timestamps, and do not add stock comic effects unless the current tone and visible action justify them.
 
 ## Production Feasibility
 

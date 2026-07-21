@@ -1,6 +1,6 @@
 # Director and Shot Design
 
-Use this reference for any deliverable containing CUTs, camera decisions, actor blocking, focal lengths, visual continuity, director intent, or AI-video shot prompts.
+Use this reference for the reasoning behind CUTs, camera decisions, actor blocking, focal lengths, visual continuity, director intent, and AI-video shot prompts. Do not redefine the output schema here; use `storyboard-output.md` for fields and order.
 
 ## Contents
 
@@ -25,7 +25,7 @@ Do not begin with a standard wide/two-shot/reverse/insert recipe. For each scene
 3. `Key images`: the few images that make the scene's change understandable without explanation.
 4. `Audience experience`: whose knowledge or feeling organizes the scene, what the viewer sees now, and what is delayed.
 5. `Emphasis plan`: which information is essential, merely useful, or distracting.
-6. `Camera plan`: framing, lens, position, movement, focus, duration, and edit order that express the decisions above.
+6. `Camera plan`: framing, lens, position, movement, focus, and edit order that express the decisions above.
 7. `Perception check`: whether a distracted first-time viewer will actually notice, understand, remember, and emotionally register the intended information.
 
 A technically smooth sequence can still be weak if it only records events. Camera design earns its place by changing what the viewer notices, knows, anticipates, or feels.
@@ -56,7 +56,7 @@ Use the map as a continuity lock, not as an excuse to omit per-CUT facts.
 
 - Build the scene around key images that carry the dramatic change.
 - Introduce important props before their payoff, then preserve location and state.
-- Give important actions more visual weight through duration, closer framing, reaction, contrast, repetition with changed meaning, or a deliberate framing jump.
+- Give important actions more visual weight through sustained attention, closer framing, reaction, contrast, repetition with changed meaning, or a deliberate framing jump.
 - Let merely useful movement pass smoothly and quickly. Do not make every entrance, line, or gesture equally prominent.
 - Use reaction shots when the reaction changes audience interpretation, not as automatic dialogue coverage.
 - Delay a reveal when suspense or emotional alignment benefits from it. Offscreen sound, eyeline, and reaction can hold information before the confirming image.
@@ -138,7 +138,7 @@ Keep a restrained lens grammar inside a scene. Change the palette when the story
 - Change shot size enough to be legible. Avoid accidental near-duplicate framings; use an intentional jump only when the emphasis or disruption is the point.
 - For moving shots, keep the composition valid at the start, during the move, and at the end. State the movement trigger and stopping condition.
 
-Visual focus can be driven by motion, faces/eyes, salient objects, contrast, focus, leading lines, eyelines, occlusion, or sound. Track its approximate screen position at the start and end of every CUT. The viewer's gaze can drift during a long shot, so hold long enough for the intended information to register but not so long that an unintended element takes over.
+Visual focus can be driven by motion, faces/eyes, salient objects, contrast, focus, leading lines, eyelines, occlusion, or sound. Track its approximate screen position at the start and end of every CUT. Keep the intended information visually available until it is legible, then leave on a motivated story, action, perception, or sound change; describe that logic without duration values.
 
 Fast movement creates visual inertia. If the viewer's gaze exits toward one edge, place or introduce the next focal subject where that gaze is likely to arrive. A deliberate focus jump can mark a new section, shock, collision, confusion, or climax, but state that purpose.
 
@@ -148,7 +148,7 @@ Fast movement creates visual inertia. If the viewer's gaze exits toward one edge
 - Avoid accidental same-size, same-position cuts between different subjects that make one body appear to transform into another. Change angle, background, scale, focal position, or add a motivated bridge.
 - Gradual tightening can increase pressure and gradual loosening can release or close a beat. Reserve the tightest and loosest images for the primary story moments, then connect them as needed.
 - Do not treat alternating loose/tight framing as automatically wrong. Character-aligned viewpoint, inserts, reactions, paragraph breaks, and deliberate emphasis can justify it.
-- Shot size is one rhythm variable alongside duration, movement, angle, sound, and performance; do not optimize it in isolation.
+- Shot size is one rhythm variable alongside movement, angle, sound, performance, and edit order; do not optimize it in isolation.
 
 ## Motion Flow
 
@@ -186,7 +186,7 @@ One `CUT` is one uninterrupted camera segment between edits. A continuous pan, d
 
 Every cut needs a reason. Common motivations include action match, eyeline answer, reaction, reveal, concealment, rhythm change, dialogue power shift, sound cue, graphic match, or deliberate contrast.
 
-Cut on story and perception changes rather than punctuation. Expand a key beat into multiple CUTs only when the added duration, detail, or reaction increases meaning. Merge or delete coverage that merely repeats known information.
+Cut on story and perception changes rather than punctuation. Expand a key beat into multiple CUTs only when added detail, viewpoint, action, or reaction increases meaning. Merge or delete coverage that merely repeats known information.
 
 ## Information Control
 
@@ -219,14 +219,14 @@ Director intent must explain the viewer effect, not repeat the action. A useful 
 - What must the viewer notice?
 - What does the viewer learn or temporarily not learn?
 - Whose experience organizes the frame?
-- Why this lens, position, duration, movement, or cut now?
+- Why this lens, position, movement, or cut now?
 - What story or emotional change does the CUT hand to the next CUT?
 
 After assembling the sequence, test three separate layers:
 
 1. `Actual event`: all required actions, lines, reactions, props, and outcomes exist.
 2. `Selected experience`: the edit shows or withholds the intended subset in the intended order and viewpoint.
-3. `Perceived result`: visual focus, duration, contrast, reaction, repetition, sound, and context make a first-time viewer actually register the priority rather than merely allowing it to appear somewhere in frame.
+3. `Perceived result`: visual focus, contrast, reaction, repetition, sound, edit order, and context make a first-time viewer actually register the priority rather than merely allowing it to appear somewhere in frame.
 
 Weak: `展示她签字。`
 

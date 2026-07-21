@@ -29,7 +29,7 @@ Read only the references needed for the current task:
 ## Workflow
 
 1. Parse the brief.
-   Identify target format, duration, platform, audience, genre, style anchors, must-use elements, taboo elements, character relationship constraints, production limits, and output depth. If unspecified, default to a 60-120 second vertical short video with a cold open and a resolved ending state. Add a next-episode hook only for a series/episodic brief or when the user requests one. Derive CUT count from story beats and emphasis rather than forcing a fixed count; 10-24 CUTs is a common working range for 60-120 seconds, not a quota.
+   Identify target format, platform, audience, genre, style anchors, must-use elements, taboo elements, character relationship constraints, production limits, and output depth. Treat any user-provided runtime as a silent, approximate density signal only. Internally form a broad runtime suggestion when useful, but never output runtime, scene/CUT durations, timecodes, or per-beat time budgets in a screenplay or storyboard. If scope is unspecified, infer it from the story and platform rather than defaulting to a fixed number of seconds. Add a next-episode hook only for a series/episodic brief or when the user requests one. Derive CUT count from story beats, visual emphasis, and production needs rather than a duration formula or fixed range.
 
 2. Research when useful.
    Search the web or inspect open-source projects when references may be current or specialized. Convert findings into decisions: tone, structure, language texture, BGM direction, meme bank, platform pacing, or production constraints. Cite sources in the final response when web sources are used.
@@ -41,34 +41,20 @@ Read only the references needed for the current task:
    Include series premise, fixed character roles, nicknames only when requested, running conflict, catchphrase rules only when requested, continuity ledger, and next-episode hook logic.
 
 5. Plan the piece.
-   For short video, use a cold open in the first 3-5 seconds unless the user's genre or pacing explicitly calls for a different opening. Place at least three strong lines when the user asks for "金句" density: one near the hook, one around a midpoint turn, and one near the climax/tag. Keep every scene tied to a visible action. Define each scene's dramatic task, meaningful change, audience alignment, key images, information hierarchy, and emotional turn before choosing camera coverage.
+   For short video, open on a visible disturbance, conflict, strong question, or active decision before exposition unless the chosen form deliberately calls for a slower reveal. Place at least three strong lines when the user asks for "金句" density: one near the hook, one around a midpoint turn, and one near the climax/tag. Keep every scene tied to a visible action. Define each scene's dramatic task, meaningful change, audience alignment, key images, information hierarchy, and emotional turn before choosing camera coverage.
 
 6. Write the screenplay.
    Write the complete scene action and exact dialogue before designing shots. Use stable scene and beat IDs. Specify only visible or audible events, including prop state changes and performance actions that drive the scene.
 
 7. Derive the director map and detailed CUTs.
-   For each scene, lock geography, axis/screen direction, lighting and continuity, lens palette, key images, information reveal, visual-focus path, and dominant motion flow. Then output every uninterrupted camera segment as one `CUT`. Each CUT must state time, scene, story change, characters and starting positions, blocking, visible emotion/performance, exact dialogue, 35mm-equivalent focal length, shot size, camera position/height/angle/distance, composition, movement, focus/depth plan, visual-focus and motion-vector handoff, sound, edit motivation, director intent, AI-readable visual facts, and continuity state. Split a CUT when the camera setup, time/space, dominant action, or information task changes.
+   For each scene, lock geography, axis/screen direction, lighting and continuity, lens palette, key images, information reveal, visual-focus path, and dominant motion flow. Then output every uninterrupted camera segment as one `CUT`. Each CUT must state scene and time of day when relevant, story change, characters and starting positions, blocking, visible emotion/performance, exact dialogue, 35mm-equivalent focal length, shot size, camera position/height/angle/distance, composition, movement, focus/depth plan, visual-focus and motion-vector handoff, sound, edit motivation, director intent, AI-readable visual facts, and continuity state. Do not add a duration or timecode. Split a CUT when the camera setup, story time/space, dominant action, or information task changes.
 
 8. Reconcile screenplay and storyboard.
-   Map every screenplay beat to one or more CUTs and every CUT back to one beat. Keep dialogue verbatim across both surfaces, make scene and CUT durations add up, and remove camera rows that add no story, emotion, information, rhythm, or continuity value.
+   Map every screenplay beat to one or more CUTs and every CUT back to one beat. Keep dialogue, visible actions, story results, and continuity states consistent across both surfaces. Bind sound and edit cues to observable events rather than timestamps, and remove camera blocks that add no story, emotion, information, rhythm, or continuity value.
 
 9. Run the doctor pass internally.
-   Check visuality, rhythm, duration, lens and spatial logic, blocking, edit motivation, dialogue/CUT synchronization, AI-video executability, joke/catchphrase density when requested, dialect consistency when requested, production feasibility, research grounding, continuity, and contamination from irrelevant examples. Repair before finalizing.
+   Check visuality, qualitative rhythm, lens and spatial logic, blocking, edit motivation, dialogue/CUT synchronization, AI-video executability, joke/catchphrase density when requested, dialect consistency when requested, production feasibility, research grounding, continuity, and contamination from irrelevant examples. Silently correct obvious scope-density mismatches, then confirm the deliverable contains no runtime, duration, timecode, or per-beat timing output.
 
-## Default Output Order
+## Output Routing
 
-For a complete short-video/storyboard request, output:
-
-1. `创作假设`
-2. `人物/关系与生产约束（系列任务再加系列设定）`
-3. `本集Logline`
-4. `关键台词/金句银行（按用户需求输出；未要求金句时可省略或改为关键对白）`
-5. `完整对白剧本`
-6. `场景导演图/场面调度锁`
-7. `逐CUT完整分镜`
-8. `剧本-分镜同步表`
-9. `BGM/声音方案`
-10. `连续性与结束状态（系列任务按需加入下一集钩子）`
-11. `自检修复摘要`
-
-If the user requests only an outline, bible, scene list, dialogue polish, research summary, or doctor pass, output only that artifact.
+For a complete screenplay-and-storyboard request, follow the single canonical deliverable schema in `references/storyboard-output.md`. If the user requests only an outline, bible, scene list, dialogue polish, research summary, or doctor pass, output only that artifact. Do not expose internal workflow notes, runtime judgment, or quality-check reasoning unless the user explicitly requests a diagnostic report.

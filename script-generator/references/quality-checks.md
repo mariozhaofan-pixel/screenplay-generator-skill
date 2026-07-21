@@ -1,6 +1,14 @@
 # Quality Checks
 
-Run this internally before final output. Show it only when the user asks for self-check or when a brief summary helps.
+Run this internally before final output. Show diagnostic reasoning only when the user explicitly asks for a self-check or doctor report.
+
+## Contents
+
+- Story, character, opponent, pressure, and payoff
+- Visual writing and screenplay-storyboard synchronization
+- Camera, space, blocking, and AI-video executability
+- Dialogue, short-form behavior, contamination, continuity, and research
+- Production feasibility and silent-runtime validation
 
 ## Story Engine
 
@@ -54,7 +62,7 @@ Run this internally before final output. Show it only when the user asks for sel
 - Every screenplay scene and beat maps to one or more CUTs; every CUT cites one scene/beat ID.
 - Dialogue and visible outcomes are identical across screenplay and CUT versions.
 - If a line spans CUTs, the ordered audible fragments concatenate to the screenplay line without duplication, omission, or paraphrase; speaker, on/off-screen status, and lip-sync subject are explicit.
-- CUT durations sum to scene durations, and scene durations sum to the declared total.
+- No screenplay scene, beat, CUT, synchronization row, or self-check exposes a duration, timestamp, timecode, or duration sum.
 - No required action, line, reveal, prop setup/payoff, or emotional turn disappears during shot conversion.
 - No CUT invents a new plot fact that is absent from the screenplay or approved scene plan.
 
@@ -72,7 +80,7 @@ Run this internally before final output. Show it only when the user asks for sel
 - Horizon/eye-height, vanishing direction, relative scale, and character height remain spatially coherent across connected images unless a motivated viewpoint change explains the shift.
 - Each CUT has one primary visual focus, and the viewer's focus is preserved or deliberately redirected across the edit.
 - Each CUT records visual-focus start/end positions and dominant subject/camera motion vectors; fast-motion handoffs account for gaze inertia.
-- Shot duration is long enough for priority information to register but not so long that attention drifts to an unintended element.
+- Priority information remains visually legible, and any hold, acceleration, interruption, or release is described qualitatively rather than with duration values.
 - Shot-size progression supports content and rhythm; same-size identity pops and unmotivated loose/tight oscillation are repaired without banning motivated POV, inserts, or emphasis.
 - Composition builds depth from story-relevant planes, surfaces, overlap, scale, focus, and parallax rather than unrelated decorative clutter.
 
@@ -93,11 +101,11 @@ Run this internally before final output. Show it only when the user asks for sel
 
 ## Short-Video Performance
 
-- Hook lands in the first 3-5 seconds.
+- The opening image or action establishes an immediate watchable disturbance before exposition.
 - No dead air before the first conflict.
 - At least three gold lines if the user requested high quote density.
 - Subtitles are short enough to read.
-- BGM and SFX have clear timing, not just a song name.
+- BGM and SFX have event-relative triggers tied to actions, lines, reveals, or edits, not timestamps.
 
 ## Style Contamination
 
@@ -110,8 +118,8 @@ Run this internally before final output. Show it only when the user asks for sel
 
 - Character names, nicknames, relationships, and status are consistent.
 - Recurring jokes do not contradict established behavior.
-- Seeds/callbacks are registered.
-- Next-episode hook follows naturally from this episode.
+- Seeds/callbacks are registered when the current brief establishes them.
+- A next-episode hook appears only for a series/episodic brief or explicit request and follows naturally from this episode.
 
 ## Research Integrity
 
@@ -125,5 +133,5 @@ Run this internally before final output. Show it only when the user asks for sel
 ## Production Feasibility
 
 - Locations, props, cast size, and effects are achievable for the implied production level.
-- Every CUT has duration, focal length, blocking, camera execution, edit motivation, and director intent.
-- The total duration matches the target exactly for a complete CUT deliverable unless the user explicitly permits a declared tolerance; all CUT and scene totals reconcile.
+- Every CUT has focal length, blocking, camera execution, edit motivation, and director intent, with no duration or timecode field.
+- Any runtime suggestion remains a hidden internal density check and is never exposed as an exact prediction or arithmetic contract.
