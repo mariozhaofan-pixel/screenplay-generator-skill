@@ -1,13 +1,13 @@
 ---
 name: script-generator
-description: Turn a rough story idea, genre brief, reference work, meme premise, episode concept, or user demand into an executable screenplay and storyboard script. Use when the user asks to expand simple story requirements into short-video scripts, episodic unit dramas, scene-by-scene screenplays, shot tables, dialogue with catchphrases, character or antagonist design, power-system conflict, strategic confrontation, web-series bibles, or production-ready分镜剧本, especially when the task benefits from web research, open-source project research, trend/meme lookup, dialect/tone research, or adaptation of screenwriting workflows.
+description: Turn a rough story idea, genre brief, reference work, meme premise, episode concept, or user demand into a complete executable screenplay followed by a synchronized director-grade per-CUT storyboard. Use when the user asks for short-video scripts, episodic unit dramas, scene-by-scene screenplays, shot lists, AI-video storyboards, dialogue with catchphrases, character or antagonist design, power-system conflict, strategic confrontation, web-series bibles, or production-ready分镜剧本 with focal length, staging, emotion, dialogue, camera, sound, editing logic, and director intent, especially when the task benefits from web research, open-source project research, trend/meme lookup, dialect/tone research, or adaptation of screenwriting workflows.
 ---
 
 # 剧本生成器
 
 ## Core Behavior
 
-Transform loose input into a shootable script, not just an outline. Default to a complete working draft when the user asks for a test, sample, full script, or "直接生成"; use interactive checkpoints only when the user explicitly wants step-by-step development.
+Transform loose input into a shootable script, not just an outline. For a complete script request, write the screenplay first and then derive a synchronized storyboard in which every edit is an explicit `CUT`. Default to a complete working draft when the user asks for a test, sample, full script, or "直接生成"; use interactive checkpoints only when the user explicitly wants step-by-step development.
 
 Use named reference works as high-level tonal or structural anchors only. Extract abstract traits such as pace, family chaos, social satire, handheld realism, or black-comedy density; do not copy specific plots, scenes, characters, or signature expression.
 
@@ -19,6 +19,7 @@ Read only the references needed for the current task:
 
 - `references/shanyin-methodology-notes.md`: load for every substantive screenplay/storyboard task.
 - `references/storyboard-output.md`: load whenever the user needs an executable script, shot list, storyboard, video prompt, or production table.
+- `references/directing-and-shot-design.md`: load whenever the deliverable includes shots, CUTs, camera direction, AI-video prompts, actor blocking, focal lengths, visual continuity, or director intent.
 - `references/short-video-series.md`: load for short video, web-series, episodic unit drama, meme comedy, recurring character relationships, catchphrases, dialect, or BGM-heavy requests.
 - `references/character-and-conflict-engine.md`: load when character identity, protagonist agency, a power/system/advantage, an opposing force, strategic conflict, suspense, reversal, or payoff is central. Activate only the relevant modules; do not invent a power or antagonist for briefs that do not need one.
 - `references/open-source-research.md`: load when current facts, internet memes, platform conventions, dialect examples, BGM references, named works, or open-source project logic need research.
@@ -28,7 +29,7 @@ Read only the references needed for the current task:
 ## Workflow
 
 1. Parse the brief.
-   Identify target format, duration, platform, audience, genre, style anchors, must-use elements, taboo elements, character relationship constraints, and output depth. If unspecified, default to a 60-120 second short-video episode with a cold open, 5-9 shots, and at least one episode hook.
+   Identify target format, duration, platform, audience, genre, style anchors, must-use elements, taboo elements, character relationship constraints, production limits, and output depth. If unspecified, default to a 60-120 second vertical short video with a cold open and a resolved ending state. Add a next-episode hook only for a series/episodic brief or when the user requests one. Derive CUT count from story beats and emphasis rather than forcing a fixed count; 10-24 CUTs is a common working range for 60-120 seconds, not a quota.
 
 2. Research when useful.
    Search the web or inspect open-source projects when references may be current or specialized. Convert findings into decisions: tone, structure, language texture, BGM direction, meme bank, platform pacing, or production constraints. Cite sources in the final response when web sources are used.
@@ -39,27 +40,35 @@ Read only the references needed for the current task:
 4. Create a compact show bible when the premise is episodic.
    Include series premise, fixed character roles, nicknames only when requested, running conflict, catchphrase rules only when requested, continuity ledger, and next-episode hook logic.
 
-5. Plan the episode.
-   Use a cold open in the first 3-5 seconds. Place at least three strong lines when the user asks for "金句" density: one in the hook, one at the midpoint reversal, one in the climax/tag. Keep every scene tied to a visible action.
+5. Plan the piece.
+   For short video, use a cold open in the first 3-5 seconds unless the user's genre or pacing explicitly calls for a different opening. Place at least three strong lines when the user asks for "金句" density: one near the hook, one around a midpoint turn, and one near the climax/tag. Keep every scene tied to a visible action. Define each scene's dramatic task, meaningful change, audience alignment, key images, information hierarchy, and emotional turn before choosing camera coverage.
 
-6. Produce the executable draft.
-   Output a beat sheet, then a shot table with time, camera/framing, action, dialogue/subtitles, sound/BGM/SFX, transition, props, and continuity notes. Add a formatted script if the user needs dialogue in screenplay form.
+6. Write the screenplay.
+   Write the complete scene action and exact dialogue before designing shots. Use stable scene and beat IDs. Specify only visible or audible events, including prop state changes and performance actions that drive the scene.
 
-7. Run the doctor pass internally.
-   Check visuality, rhythm, duration, joke/catchphrase density when requested, dialect consistency when requested, production feasibility, research grounding, continuity, and contamination from irrelevant examples. Repair before finalizing.
+7. Derive the director map and detailed CUTs.
+   For each scene, lock geography, axis/screen direction, lighting and continuity, lens palette, key images, information reveal, visual-focus path, and dominant motion flow. Then output every uninterrupted camera segment as one `CUT`. Each CUT must state time, scene, story change, characters and starting positions, blocking, visible emotion/performance, exact dialogue, 35mm-equivalent focal length, shot size, camera position/height/angle/distance, composition, movement, focus/depth plan, visual-focus and motion-vector handoff, sound, edit motivation, director intent, AI-readable visual facts, and continuity state. Split a CUT when the camera setup, time/space, dominant action, or information task changes.
+
+8. Reconcile screenplay and storyboard.
+   Map every screenplay beat to one or more CUTs and every CUT back to one beat. Keep dialogue verbatim across both surfaces, make scene and CUT durations add up, and remove camera rows that add no story, emotion, information, rhythm, or continuity value.
+
+9. Run the doctor pass internally.
+   Check visuality, rhythm, duration, lens and spatial logic, blocking, edit motivation, dialogue/CUT synchronization, AI-video executability, joke/catchphrase density when requested, dialect consistency when requested, production feasibility, research grounding, continuity, and contamination from irrelevant examples. Repair before finalizing.
 
 ## Default Output Order
 
 For a complete short-video/storyboard request, output:
 
 1. `创作假设`
-2. `系列设定/人物关系`
+2. `人物/关系与生产约束（系列任务再加系列设定）`
 3. `本集Logline`
 4. `关键台词/金句银行（按用户需求输出；未要求金句时可省略或改为关键对白）`
-5. `分镜表`
-6. `对白剧本`
-7. `BGM/声音方案`
-8. `连续性与下一集钩子`
-9. `自检修复摘要`
+5. `完整对白剧本`
+6. `场景导演图/场面调度锁`
+7. `逐CUT完整分镜`
+8. `剧本-分镜同步表`
+9. `BGM/声音方案`
+10. `连续性与结束状态（系列任务按需加入下一集钩子）`
+11. `自检修复摘要`
 
 If the user requests only an outline, bible, scene list, dialogue polish, research summary, or doctor pass, output only that artifact.

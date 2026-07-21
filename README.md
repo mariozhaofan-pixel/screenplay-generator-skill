@@ -1,14 +1,14 @@
 # 剧本生成器（Script Generator Skill）
 
-Codex skill for turning rough story ideas, genre briefs, short-video prompts, episodic concepts, or storyboard requests into executable screenplay and shot-list drafts.
+Codex skill for turning rough story ideas, genre briefs, short-video prompts, episodic concepts, or storyboard requests into complete executable screenplays and synchronized per-CUT director storyboards.
 
 Display name: 剧本生成器  
 Skill folder: `script-generator`
 
 ## What It Does
 
-- Expands loose story ideas into shootable screenplay/storyboard drafts.
-- Produces beat sheets, shot tables, dialogue scripts, BGM/sound plans, and continuity notes.
+- Expands loose story ideas into complete shootable screenplays followed by synchronized director-grade storyboards.
+- Produces scene/beat IDs and a detailed block for every CUT, including focal length, camera position, composition, focus, visual-focus/motion handoff, actor blocking, visible emotion, exact dialogue, sound, edit motivation, director intent, AI-readable visual facts, and continuity.
 - Supports short videos, episodic unit drama, web-series bibles, and production-ready分镜剧本.
 - Selectively strengthens character agency, power/advantage costs, opposing-force logic, fair strategic conflict, and payoff design when the brief needs them.
 - Uses web and open-source research when current facts, trend references, dialect, BGM, named works, or project logic matter.
@@ -40,6 +40,10 @@ This skill was built from original workflow design plus research into the open-s
 The source project contributed high-level screenwriting workflow ideas such as format routing, visual writing discipline, self-checks, pacing, and continuity management. This repository does not copy the source project's long-form prompt text.
 
 The character-and-conflict engine was also refined through an authorized local study of 26 public craft videos by [田老师写作力](https://www.douyin.com/user/MS4wLjABAAAAAZwNpcWrxcCm1JcNKqjlHywZj7RtbkuKGN1hicElUxGilV9xZ__oKK_vhBFRTt2l), covering the public collections [金手指哲学](https://www.douyin.com/collection/7658852716386453567/1), [主角哲学](https://www.douyin.com/collection/7655611524052060186/1), [反派哲学](https://www.douyin.com/collection/7655609940928825371/1), and [智斗三部曲](https://www.douyin.com/collection/7613582181931157513/1). Only original, generalized craft rules are included here. Downloaded media, audio, transcripts, OCR evidence, source examples, and source slogans are not redistributed in this repository.
+
+The director and per-CUT storyboard workflow was further refined through a local study, requested by the user, of three publicly shared videos by `老白的分镜`: [AI 视频为什么要学分镜](https://v.douyin.com/_ky9SDY7Z7k/), [分镜课合集（上）](https://v.douyin.com/GIO1uzY2WL8/), and [分镜课合集（下）](https://v.douyin.com/J062jOxJXRg/). The study covered reverse coverage, action axes, perspective, primary shots (`主镜`), deriving camera positions from target images, shot size, camera height, composition, visual focus, spatial clarity, movement, intentional axis crossing, viewpoint, and information control. Only generalized original rules are published; source videos, audio, transcripts, captions, keyframes, and examples remain local and are not redistributed.
+
+Lens-format and angle-of-view conventions were cross-checked against official [ARRI](https://www.arri.com/en/learn-help/learn-help-camera-system/frequently-asked-questions/alexa-lf-faq), [Sony](https://www.sony.com/electronics/support/articles/00268239), and [Canon](https://files.canon-europe.com/files/webcontent/rf-lens-world/knowledge/perspective/index.html) documentation.
 
 ## Copyright and Usage Restrictions
 

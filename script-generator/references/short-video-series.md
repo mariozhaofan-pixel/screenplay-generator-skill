@@ -6,7 +6,7 @@ Use this for 30-180 second short-video dramas, recurring comedy units, meme-heav
 
 - Duration: 60-120 seconds unless the user specifies otherwise.
 - Structure: cold open, setup, escalation, reversal, payoff, tag/hook.
-- Shots: 5-9 core shots for a one-minute episode; add inserts only when they carry information.
+- CUTs: derive the count from beats, emphasis, and production limits. For 60-120 seconds, 10-24 CUTs is a common range; use fewer for sustained performance and more for action/comedy only when each edit has a function.
 - Cast: 3-5 recurring roles are enough for dense comedy.
 - Visual style: one primary location plus one insert location is usually more shootable than many locations.
 
@@ -59,7 +59,7 @@ Gold-line functions:
 
 Only add a dialect or regional flavor when the user explicitly requests it. For Taiwan-flavored Mandarin or similar requests:
 
-- Use light markers such as "欸", "啦", "蛤", "靠北", "淦" when appropriate.
+- Research a small set of current, context-appropriate vocabulary, particles, cadence, and code-switching patterns for this task; do not reuse markers remembered from an old example.
 - Keep syntax readable for a broad Chinese-speaking audience.
 - Assign dialect intensity by character: one character can be high-flavor, another more neutral for contrast.
 - Do not overfill every line with particles; the joke should still work in plain Mandarin.
@@ -75,15 +75,10 @@ When the user asks for a named song or reference track, provide three paths:
 
 Lyrics may be quoted only as a very short excerpt when directly relevant; keep each song excerpt within 10 Chinese characters or English words. Prefer paraphrasing lyric themes. Do not provide full lyrics, long excerpts, or substitute lyrics that replace the song.
 
-For a "Life Goes On-like" addictive but gentle loop, if the user explicitly asks for that reference, describe it as:
-
-- Mid-tempo warm pop loop, 80-100 BPM.
-- Soft guitar/ukulele or plucked synth motif.
-- Simple kick, snap/clap, and hummable four-bar hook.
-- Duck music under dialogue; bring the hook up on transitions and tag.
+When the user names a reference track, research or analyze that specific track for tempo range, groove, instrumentation, arrangement, vocal density, loop point, and scene function. Keep those findings local to the current task; do not turn the song or its traits into future defaults.
 
 Add SFX for short-video rhythm: phone buzz, cash register beep, door slam, subtitle pop, record scratch, tiny cymbal sting.
 
 ## Production Feasibility
 
-Keep props concrete and cheap: phone, receipt, pill bottle, apron, plastic stool, mop, rice cooker, invoice, convenience-store bag. If a gag requires expensive staging, rewrite it into a prop or sound cue.
+Keep props concrete, story-specific, and achievable for the current production. If a beat requires expensive staging, rewrite it into an accessible prop, blocking choice, offscreen event, or sound cue without changing the dramatic result.
