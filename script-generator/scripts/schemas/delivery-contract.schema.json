@@ -1,0 +1,352 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/script-generator/delivery-contract.schema.json",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "revision": {
+            "properties": {
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "enabled"
+            ]
+          }
+        },
+        "required": [
+          "revision"
+        ]
+      },
+      "then": {
+        "properties": {
+          "revision": {
+            "required": [
+              "impact_report_path",
+              "source_canon_path",
+              "source_sha256"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "assets": {
+      "additionalProperties": false,
+      "properties": {
+        "allow_multi_master_scenes": {
+          "items": {
+            "pattern": "^S[0-9]+$",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "scene_master_required": {
+          "type": "boolean"
+        },
+        "verify_local_paths": {
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
+    "brief": {
+      "additionalProperties": false,
+      "properties": {
+        "forbidden_exact": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "required_exact": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "required_regex": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "semantic_review_required": {
+          "type": "boolean"
+        },
+        "semantic_reviewed": {
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
+    "dialogue": {
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "enum": [
+            "draft-sync",
+            "production-lock"
+          ]
+        },
+        "semantic_review_required": {
+          "type": "boolean"
+        },
+        "semantic_reviewed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "mode"
+      ],
+      "type": "object"
+    },
+    "directing": {
+      "additionalProperties": false,
+      "properties": {
+        "require_literal_labels": {
+          "type": "boolean"
+        },
+        "scene_maps_required": {
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
+    "events": {
+      "additionalProperties": false,
+      "properties": {
+        "callbacks_required": {
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
+    "gen": {
+      "additionalProperties": false,
+      "properties": {
+        "require_full_cut_coverage": {
+          "type": "boolean"
+        },
+        "required": {
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
+    "revision": {
+      "additionalProperties": false,
+      "properties": {
+        "deprecated_paths": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "forbidden_exact": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "forbidden_regex": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "impact_report_path": {
+          "type": "string"
+        },
+        "semantic_residue_reviewed": {
+          "type": "boolean"
+        },
+        "source_canon_path": {
+          "type": "string"
+        },
+        "source_sha256": {
+          "pattern": "^[a-fA-F0-9]{64}$",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "rights": {
+      "additionalProperties": false,
+      "properties": {
+        "notice_must_be_last": {
+          "type": "boolean"
+        },
+        "require_literal_label": {
+          "type": "boolean"
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "required_status": {
+          "enum": [
+            "rights-unverified",
+            "rights-asserted",
+            "rights-verified"
+          ]
+        },
+        "required_tokens": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "semantic_review_required": {
+          "type": "boolean"
+        },
+        "semantic_reviewed": {
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "allow_legacy_12": {
+          "type": "boolean"
+        },
+        "legacy_input": {
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "style": {
+      "additionalProperties": false,
+      "properties": {
+        "forbidden_exact": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "timing": {
+      "additionalProperties": false,
+      "properties": {
+        "duration_tolerance": {
+          "pattern": "^[0-9]+(?:\\.[0-9]+)?$",
+          "type": "string"
+        },
+        "gen_limit": {
+          "pattern": "^[0-9]+(?:\\.[0-9]+)?$",
+          "type": "string"
+        },
+        "maximum": {
+          "pattern": "^[0-9]+(?:\\.[0-9]+)?$",
+          "type": "string"
+        },
+        "media_sources": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "duration": {
+                "pattern": "^[0-9]+(?:\\.[0-9]+)?$",
+                "type": "string"
+              },
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[a-fA-F0-9]{64}$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "path"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "minimum": {
+          "pattern": "^[0-9]+(?:\\.[0-9]+)?$",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "silent-default",
+            "contract-budget",
+            "media-frame-lock"
+          ]
+        },
+        "total": {
+          "pattern": "^[0-9]+(?:\\.[0-9]+)?$",
+          "type": "string"
+        },
+        "total_kind": {
+          "enum": [
+            "exact",
+            "maximum",
+            "range"
+          ]
+        }
+      },
+      "required": [
+        "mode"
+      ],
+      "type": "object"
+    },
+    "viewpoint": {
+      "additionalProperties": false,
+      "properties": {
+        "responsibility_requirements": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "after": {
+                "type": "string"
+              },
+              "cut": {
+                "pattern": "^CUT-[0-9]{3}$",
+                "type": "string"
+              },
+              "mode": {
+                "enum": [
+                  "客观",
+                  "角色对齐",
+                  "字面POV",
+                  "临时全知"
+                ]
+              }
+            },
+            "required": [
+              "cut"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "timing",
+    "dialogue"
+  ],
+  "title": "Script Generator Delivery Contract",
+  "type": "object"
+}
