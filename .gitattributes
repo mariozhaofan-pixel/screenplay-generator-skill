@@ -1,0 +1,2 @@
+viral-screenwriter/** -text whitespace=cr-at-eol
+viral-screenwriter/assets/books/** -whitespace

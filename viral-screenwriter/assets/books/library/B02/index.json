@@ -1,0 +1,451 @@
+{
+  "title": "剧本：影视写作的艺术、技巧和商业运作",
+  "author": "理查德·沃尔特",
+  "toc": [
+    {
+      "title": "版权信息",
+      "href": "section-003.md",
+      "epub_href": "Text/Copyright.xhtml"
+    },
+    {
+      "title": "Preface 1 中文版序",
+      "href": "section-004.md",
+      "epub_href": "Text/Preface1.xhtml"
+    },
+    {
+      "title": "Preface 2 译者序",
+      "href": "section-005.md",
+      "epub_href": "Text/Preface2.xhtml"
+    },
+    {
+      "title": "Introduction 前言",
+      "href": "section-006.md",
+      "epub_href": "Text/Introduction.xhtml"
+    },
+    {
+      "title": "Part One Art 艺术",
+      "href": "section-007.md",
+      "epub_href": "Text/Part1.xhtml"
+    },
+    {
+      "title": "Chapter 1 七个被误解的词",
+      "href": "section-008.md",
+      "epub_href": "Text/Chapter_0001.xhtml"
+    },
+    {
+      "title": "Chapter 2 观众：观察者的位置",
+      "href": "section-009.md",
+      "epub_href": "Text/Chapter_0002.xhtml"
+    },
+    {
+      "title": "Chapter 3 个人剧本",
+      "href": "section-010.md",
+      "epub_href": "Text/Chapter_0003.xhtml"
+    },
+    {
+      "title": "Chapter 4 创意选择：点子、故事、主题和身份",
+      "href": "section-011.md",
+      "epub_href": "Text/Chapter_0004.xhtml"
+    },
+    {
+      "title": "Chapter 5 冲突：暴力与性",
+      "href": "section-012.md",
+      "epub_href": "Text/Chapter_0005.xhtml"
+    },
+    {
+      "title": "Chapter 6 幻觉：真实与电影",
+      "href": "section-013.md",
+      "epub_href": "Text/Chapter_0006.xhtml"
+    },
+    {
+      "title": "Chapter 7 故事：情节装配",
+      "href": "section-014.md",
+      "epub_href": "Text/Chapter_0007.xhtml"
+    },
+    {
+      "title": "Chapter 8 角色",
+      "href": "section-015.md",
+      "epub_href": "Text/Chapter_0008.xhtml"
+    },
+    {
+      "title": "Chapter 9 对白",
+      "href": "section-016.md",
+      "epub_href": "Text/Chapter_0009.xhtml"
+    },
+    {
+      "title": "Chapter 10 动作与场景设置",
+      "href": "section-017.md",
+      "epub_href": "Text/Chapter_0010.xhtml"
+    },
+    {
+      "title": "Chapter 11 格式",
+      "href": "section-018.md",
+      "epub_href": "Text/Chapter_0011.xhtml"
+    },
+    {
+      "title": "Chapter 12 反馈：初稿意见的标注符号",
+      "href": "section-023.md",
+      "epub_href": "Text/Chapter_0012.xhtml"
+    },
+    {
+      "title": "Part Two Craft 技巧",
+      "href": "section-025.md",
+      "epub_href": "Text/Part2.xhtml"
+    },
+    {
+      "title": "Chapter 13 写作习惯",
+      "href": "section-026.md",
+      "epub_href": "Text/Chapter_0013.xhtml"
+    },
+    {
+      "title": "Chapter 14 情感",
+      "href": "section-027.md",
+      "epub_href": "Text/Chapter_0014.xhtml"
+    },
+    {
+      "title": "Chapter 15 疯狂的艺术",
+      "href": "section-028.md",
+      "epub_href": "Text/Chapter_0015.xhtml"
+    },
+    {
+      "title": "Part Three Business 商业运作",
+      "href": "section-029.md",
+      "epub_href": "Text/Part3.xhtml"
+    },
+    {
+      "title": "Chapter 16 合作与协作",
+      "href": "section-030.md",
+      "epub_href": "Text/Chapter_0016.xhtml"
+    },
+    {
+      "title": "Chapter 17 剧本销售策略",
+      "href": "section-031.md",
+      "epub_href": "Text/Chapter_0017.xhtml"
+    },
+    {
+      "title": "Part Four The whole picture 电影全景",
+      "href": "section-032.md",
+      "epub_href": "Text/Part4.xhtml"
+    },
+    {
+      "title": "一个案例研究： “那个和我们一起上电影学院的家伙”",
+      "href": "section-033.md",
+      "epub_href": "Text/Chapter_0018.xhtml"
+    },
+    {
+      "title": "一个编写故事的技巧练习 《物质享受》：主题和身份",
+      "href": "section-034.md",
+      "epub_href": "Text/Chapter_0019.xhtml"
+    },
+    {
+      "title": "Appendix 附录",
+      "href": "section-037.md",
+      "epub_href": "Text/Appendix.xhtml"
+    }
+  ],
+  "sections": [
+    {
+      "number": 1,
+      "href": "section-001.md",
+      "file": "section-001.md",
+      "chars": 0,
+      "preview": "",
+      "epub_href": "OEBPS/Text/coverpage.xhtml"
+    },
+    {
+      "number": 2,
+      "href": "section-002.md",
+      "file": "section-002.md",
+      "chars": 49,
+      "preview": "剧本\n\n影视写作的艺术、技巧和商业运作\n\n[美]理查德·沃尔特 著\n\n杨劲桦 译\n\n天津人民出版社",
+      "epub_href": "OEBPS/Text/titlepage.xhtml"
+    },
+    {
+      "number": 3,
+      "href": "section-003.md",
+      "file": "section-003.md",
+      "chars": 152,
+      "preview": "### 版权信息\n\nCOPYRIGHT\n\n书名：剧本 : 影视写作的艺术、技巧和商业运作\n 作者：【美】理查德·沃尔特\n 出版社：天津人民出版社·果麦\n 出版时间：2017年4月\n ISBN：9787",
+      "epub_href": "OEBPS/Text/Copyright.xhtml"
+    },
+    {
+      "number": 4,
+      "href": "section-004.md",
+      "file": "section-004.md",
+      "chars": 477,
+      "preview": "### Preface 1中文版序\n\n银幕上的故事无需真实公正、冷静客观，不可避免地会带有极强烈的个人情感。从某种程度上来说，任何一件艺术作品，也都是创作者的自身写照。\n\n这是一本关于如何编写故事的书",
+      "epub_href": "OEBPS/Text/Preface1.xhtml"
+    },
+    {
+      "number": 5,
+      "href": "section-005.md",
+      "file": "section-005.md",
+      "chars": 488,
+      "preview": "### Preface 2译者序\n\n加州大学洛杉矶分校（UCLA）电影学院的影视写作专业在全美国的大学中排名第一，而本书的作者，理查德·沃尔特正是这个专业的主席。他讲授的影视写作课被《纽约时报》《华尔",
+      "epub_href": "OEBPS/Text/Preface2.xhtml"
+    },
+    {
+      "number": 6,
+      "href": "section-006.md",
+      "file": "section-006.md",
+      "chars": 3996,
+      "preview": "### Introduction前言\n\n/ 上帝的游戏 /\n\n20世纪70年代初，美国编剧工会举行了大罢工。那时我还是电影系学生，已经从事了几年职业写作。\n\n现在可以承认我喜欢那次罢工了吗？\n\n当时我",
+      "epub_href": "OEBPS/Text/Introduction.xhtml"
+    },
+    {
+      "number": 7,
+      "href": "section-007.md",
+      "file": "section-007.md",
+      "chars": 17,
+      "preview": "### Part One艺术Art",
+      "epub_href": "OEBPS/Text/Part1.xhtml"
+    },
+    {
+      "number": 8,
+      "href": "section-008.md",
+      "file": "section-008.md",
+      "chars": 3064,
+      "preview": "#### Chapter 1七个被误解的词\n\n作为加利福尼亚大学洛杉矶分校（UCLA）影视写作专业的主席，我具有要求一批批学生购买影视编剧写作书籍的权威。各出版社会把每一本相关的书都寄给我，有些书的内",
+      "epub_href": "OEBPS/Text/Chapter_0001.xhtml"
+    },
+    {
+      "number": 9,
+      "href": "section-009.md",
+      "file": "section-009.md",
+      "chars": 2864,
+      "preview": "#### Chapter 2观众：观察者的位置\n\n电影是为观众拍的。\n\n但电影界的精英阶层往往对观众不屑一顾。\n\n一幅画哪怕只要找到一位顾客就可能世代保存下去。一首诗哪怕被一家最名不见经传的出版社发行",
+      "epub_href": "OEBPS/Text/Chapter_0002.xhtml"
+    },
+    {
+      "number": 10,
+      "href": "section-010.md",
+      "file": "section-010.md",
+      "chars": 15136,
+      "preview": "#### Chapter 3个人剧本\n\n/ 自我表露 /\n\n影视写作教育近年来已不仅仅是风生水起，而简直就是爆炸了。这种现象甚至不局限于正规电影学院内，一支自封的编剧“指导”大军在全国乃至世界各地巡回",
+      "epub_href": "OEBPS/Text/Chapter_0003.xhtml"
+    },
+    {
+      "number": 11,
+      "href": "section-011.md",
+      "file": "section-011.md",
+      "chars": 9588,
+      "preview": "#### Chapter 4创意选择：点子、故事、主题和身份\n\n艺术是选择。\n\n画家可以选择使用油彩、水彩、蛋彩或丙烯酸颜料作画。他可以选择用单一色调或者几千种颜色；他可以把颜料涂在画布、纸板、皮革、",
+      "epub_href": "OEBPS/Text/Chapter_0004.xhtml"
+    },
+    {
+      "number": 12,
+      "href": "section-012.md",
+      "file": "section-012.md",
+      "chars": 4087,
+      "preview": "#### Chapter 5冲突：暴力与性\n\n电影中必须要有性吗？必须充斥暴力吗？\n\n不一定。但是许多剧本，也许是绝大部分影片——包括有史以来最优秀的部分电影——毋庸置疑充斥着性和色情。同样，精彩的影",
+      "epub_href": "OEBPS/Text/Chapter_0005.xhtml"
+    },
+    {
+      "number": 13,
+      "href": "section-013.md",
+      "file": "section-013.md",
+      "chars": 3115,
+      "preview": "#### Chapter 6幻觉：真实与电影\n\n电影是虚假的。\n\n首先，电影叫movie，其实根本不动。一部标准的剧情片事实上是由几十万幅单独静止的画面被放映机连续投影在一个空白银幕上。因为每一秒钟走",
+      "epub_href": "OEBPS/Text/Chapter_0006.xhtml"
+    },
+    {
+      "number": 14,
+      "href": "section-014.md",
+      "file": "section-014.md",
+      "chars": 18306,
+      "preview": "#### Chapter 7故事：情节装配\n\n故事之于电影犹如旋律之于音乐。\n\n当然，除旋律外，音乐还有很多其他元素，节奏、速度、结构和音调都是不可或缺的。但无论如何，旋律永远是第一位，它是最难以捉摸",
+      "epub_href": "OEBPS/Text/Chapter_0007.xhtml"
+    },
+    {
+      "number": 15,
+      "href": "section-015.md",
+      "file": "section-015.md",
+      "chars": 7646,
+      "preview": "#### Chapter 8角色\n\n要为观众创造出有价值的电影角色，需要遵守三个基本原则：\n\n第一、不能刻板定型。\n\n第二、要让每个角色，即使是最邪恶、最肮脏的小人也值得同情。\n\n第三、不要让你的角色",
+      "epub_href": "OEBPS/Text/Chapter_0008.xhtml"
+    },
+    {
+      "number": 16,
+      "href": "section-016.md",
+      "file": "section-016.md",
+      "chars": 16776,
+      "preview": "#### Chapter 9对白\n\n多年以前，大约在20世纪50年代中期，制片人麦克尔·托德进行了一种电影艺术的技术革新，乍看起来似乎有可能改变电影艺术的整个面貌——至少增加了电影艺术的嗅觉。这种技术",
+      "epub_href": "OEBPS/Text/Chapter_0009.xhtml"
+    },
+    {
+      "number": 17,
+      "href": "section-017.md",
+      "file": "section-017.md",
+      "chars": 7201,
+      "preview": "#### Chapter 10动作与场景设置\n\n“戏剧”（drama）一词源于希腊文，原意是“动作，行动”。\n\n原理30：戏剧就是行为动作。\n\n戏剧不是一群人围坐在一起聊天，无所事事地摆弄着大拇指，摇",
+      "epub_href": "OEBPS/Text/Chapter_0010.xhtml"
+    },
+    {
+      "number": 18,
+      "href": "section-018.md",
+      "file": "section-018.md",
+      "chars": 2828,
+      "preview": "#### Chapter 11格式\n\n与编织一个有着精彩人物、犀利对白的好故事相比，给剧本安排合适专业的格式比系鞋带还容易。\n\n不过，格式极为重要。首先，它体现了剧作家的专业水准。\n\n原理32：如果你",
+      "epub_href": "OEBPS/Text/Chapter_0011.xhtml"
+    },
+    {
+      "number": 19,
+      "href": "section-019.md",
+      "file": "section-019.md",
+      "chars": 0,
+      "preview": "",
+      "epub_href": "OEBPS/Text/Chapter_0011_0001.xhtml"
+    },
+    {
+      "number": 20,
+      "href": "section-020.md",
+      "file": "section-020.md",
+      "chars": 0,
+      "preview": "",
+      "epub_href": "OEBPS/Text/Chapter_0011_0002.xhtml"
+    },
+    {
+      "number": 21,
+      "href": "section-021.md",
+      "file": "section-021.md",
+      "chars": 17031,
+      "preview": "数字：页码，稿次，日期，场景号\n\n当然，编剧应该在剧本上标页码。但是，他不应该标明稿次、给场景编号，也不应该在任何地方——封面、扉页或别的地方——提及写作日期。\n\n1.页码\n\n首先，关于剧本页数，总数",
+      "epub_href": "OEBPS/Text/Chapter_0011_0003.xhtml"
+    },
+    {
+      "number": 22,
+      "href": "section-022.md",
+      "file": "section-022.md",
+      "chars": 8,
+      "preview": ",,,,[]';",
+      "epub_href": "OEBPS/Text/Chapter_0011_0004.xhtml"
+    },
+    {
+      "number": 23,
+      "href": "section-023.md",
+      "file": "section-023.md",
+      "chars": 27543,
+      "preview": "#### Chapter 12反馈：初稿意见的标注符号\n\n秋天总是让我充满期待和兴奋。\n\n我渴望迎接我们UCLA编剧专业的新生。如果说过去才是开始，那么短短几年后，他们将主宰电影和电视业；用不了多久，",
+      "epub_href": "OEBPS/Text/Chapter_0012.xhtml"
+    },
+    {
+      "number": 24,
+      "href": "section-024.md",
+      "file": "section-024.md",
+      "chars": 1860,
+      "preview": "河边尼尔·吉米尼兹\n\n外景 河流 刚刚破晓\n\nDrekt/Akt\n 提姆，12岁，站在人行桥上俯瞰着河流，勇敢地面对寒冷、黑暗的早晨。手里拿着一个玩具娃娃。（盯着下面急速流淌的河水）。9 v. 7\n\n",
+      "epub_href": "OEBPS/Text/Chapter_0012_0001.xhtml"
+    },
+    {
+      "number": 25,
+      "href": "section-025.md",
+      "file": "section-025.md",
+      "chars": 19,
+      "preview": "### Part Two技巧Craft",
+      "epub_href": "OEBPS/Text/Part2.xhtml"
+    },
+    {
+      "number": 26,
+      "href": "section-026.md",
+      "file": "section-026.md",
+      "chars": 17986,
+      "preview": "#### Chapter 13写作习惯\n\n当作家汤米·汤普森应邀给作家们提供一个最重要的忠告时，他回答道：不管你还要做什么别的事情，每天都要把衣服穿好。一个作家可能犯的最致命的错误，汤普森说，就是一整",
+      "epub_href": "OEBPS/Text/Chapter_0013.xhtml"
+    },
+    {
+      "number": 27,
+      "href": "section-027.md",
+      "file": "section-027.md",
+      "chars": 9645,
+      "preview": "#### Chapter 14情感\n\n电影是表达情感的。\n\n当然，电影包含的层面要多很多，但情感是最基本和最重要的东西。此外，观众并不是一定要感到快乐。使他们惊恐，让他们哭泣，令他们愤怒吧；他们会排队",
+      "epub_href": "OEBPS/Text/Chapter_0014.xhtml"
+    },
+    {
+      "number": 28,
+      "href": "section-028.md",
+      "file": "section-028.md",
+      "chars": 5583,
+      "preview": "#### Chapter 15疯狂的艺术\n\n至今我已经教了四十年的书。\n\n然而，如果从幼儿园算起的话，可能我当学生的时间仍然要比当教授的时间更长。\n\n不可思议的是，我仍能清楚地记得进入校门接受正规教育",
+      "epub_href": "OEBPS/Text/Chapter_0015.xhtml"
+    },
+    {
+      "number": 29,
+      "href": "section-029.md",
+      "file": "section-029.md",
+      "chars": 26,
+      "preview": "### Part Three商业运作Business",
+      "epub_href": "OEBPS/Text/Part3.xhtml"
+    },
+    {
+      "number": 30,
+      "href": "section-030.md",
+      "file": "section-030.md",
+      "chars": 5668,
+      "preview": "#### Chapter 16合作与协作\n\n如果不是有照片为证，我会希望整件事情是20世纪60年代后期我吃了迷魂药幻想出来的。事实上，那是在1967年的秋天，当时我还是南加州大学电影系的学生，我给最厉",
+      "epub_href": "OEBPS/Text/Chapter_0016.xhtml"
+    },
+    {
+      "number": 31,
+      "href": "section-031.md",
+      "file": "section-031.md",
+      "chars": 36318,
+      "preview": "#### Chapter 17剧本销售策略\n\n在一所广受尊敬的高等学府教授如此竞争激烈的课程，使我有机会和电影写作专业的很多最聪明、最敏锐的学生密切接触。他们带来了才华、纪律、语言技巧——写作实力的总",
+      "epub_href": "OEBPS/Text/Chapter_0017.xhtml"
+    },
+    {
+      "number": 32,
+      "href": "section-032.md",
+      "file": "section-032.md",
+      "chars": 34,
+      "preview": "### Part Four电影全景The whole picture",
+      "epub_href": "OEBPS/Text/Part4.xhtml"
+    },
+    {
+      "number": 33,
+      "href": "section-033.md",
+      "file": "section-033.md",
+      "chars": 12374,
+      "preview": "#### 一个案例研究：“那个和我们一起上电影学院的家伙”\n\n电话铃响的时候，没有哪位作家会不接。\n\n1971年4月的一个晚上，我正匆匆忙忙赶往特罗巴多会所去听东海岸音乐家朋友们的演出，电话铃响了。听",
+      "epub_href": "OEBPS/Text/Chapter_0018.xhtml"
+    },
+    {
+      "number": 34,
+      "href": "section-034.md",
+      "file": "section-034.md",
+      "chars": 7750,
+      "preview": "#### 一个编写故事的技巧练习《物质享受》：主题和身份\n\n现在我们来探讨一下主题所起的贯穿始终的作用，我们将深入研讨一个我自己写的剧本故事。《物质享受》（Creature Comforts）的想法是",
+      "epub_href": "OEBPS/Text/Chapter_0019.xhtml"
+    },
+    {
+      "number": 35,
+      "href": "section-035.md",
+      "file": "section-035.md",
+      "chars": 1003,
+      "preview": "《物质享受》\n\n淡入：\n\n外景 贾维茨展览中心——纽约\n\n早晨。入口处挂满了条幅，上面写着“欢迎书商光临！！！”\n\n一辆出租汽车开过来停到门口。\n\n神态沮丧的赫布·卡斯尔，四十岁上下，从出租车中钻出来",
+      "epub_href": "OEBPS/Text/Chapter_0019_0001.xhtml"
+    },
+    {
+      "number": 36,
+      "href": "section-036.md",
+      "file": "section-036.md",
+      "chars": 10339,
+      "preview": "我们关于箱子里装的是什么的构思\n\n现在让我们继续讨论箱子里装的是什么。赫布打开箱子发现，里面除了别的，还装有各种高档衣服：时尚的三件套西装、丝绸衬衫、领带、长裤、高级的袜子和内衣。他拿出一件羊绒运动夹",
+      "epub_href": "OEBPS/Text/Chapter_0019_0002.xhtml"
+    },
+    {
+      "number": 37,
+      "href": "section-037.md",
+      "file": "section-037.md",
+      "chars": 1921,
+      "preview": "### Appendix附录\n\n原理1：所有作家都憎恶写作。\n\n原理2：写作是扮演上帝。\n\n原理3：找到一个经纪人不难，难的是写出一部值得经纪人推销的剧本。\n\n原理4：写作是精神分裂的过程。\n\n原理5",
+      "epub_href": "OEBPS/Text/Appendix.xhtml"
+    }
+  ],
+  "path_base": "containing-json-directory",
+  "epub_href_note": "epub_href为未随包原EPUB内部定位元数据，不是本包文件路径；href/file为同目录可读Markdown。",
+  "original_included": false,
+  "original_sha256": "b27e50fe5ee4eb73610a5d3746a0ac532594afc225dadb6465b0afdbb193f003",
+  "original_filename": "剧本：影视写作的艺术、技巧和商业运作 (理查德·沃尔特) (Z-Library).epub",
+  "full_markdown": "full.md",
+  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。"
+}

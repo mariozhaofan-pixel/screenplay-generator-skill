@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-29",
+  "path_base": "this_file_directory",
+  "note": "这是缺失证据清单，不是可用文件索引；file=null 不得解析为工作路径。未重新获取或重建缺失媒体。",
+  "search_scope": [
+    "原记录的抖音数据库目录（不存在）",
+    "原记录的抖音每日进化工作流目录（不存在）",
+    "用户知识库工作区",
+    "用户反推工作区",
+    "当前用户 Documents 目录，包括可见迁移备份",
+    "补充核查：AIGC工作区文件名",
+    "补充核查：BaiduNetdiskDownload目录文件名"
+  ],
+  "search_method": [
+    "按作品ID、片名、作者、词条数据库名、旧工作流名查文件名",
+    "按14个去重关键帧精确文件名查找",
+    "按作品ID、31样本独特统计值与描述检索可读文本；忽略第三方运行时及依赖目录"
+  ],
+  "findings": "可定位到若干旧技能迁移副本，但只重复规则文字，未发现所需原始样本、词条数据或关键帧；不把重复副本计为独立证据。",
+  "missing_keyframe_count": 14,
+  "keyframe_reference_count_in_current_rules": 16,
+  "items": [
+    {
+      "id": "KEYFRAME-S032",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S032_t000060.600.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S032",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S035",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S035_t000064.300.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S035",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S043",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S043_t000073.733.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S043",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S057",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S057_t000116.000.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S057",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S071",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S071_t000140.300.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S071",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S113",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S113_t000249.833.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S113",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S118",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S118_t000260.067.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S118",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S119",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S119_t000262.067.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S119",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S122",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S122_t000268.133.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S122",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S123",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S123_t000270.067.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S123",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S124",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S124_t000271.867.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S124",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S125",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S125_t000273.567.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S125",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S126",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S126_t000275.667.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S126",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "KEYFRAME-S131",
+      "kind": "keyframe",
+      "file": null,
+      "original_filename": "S131_t000288.867.jpg",
+      "work_id": "7681901839177134011",
+      "shot_id": "S131",
+      "status": "missing",
+      "original_collection": "抖音每日进化工作流 / 2026-09-05 / 02作品 / 7681901839177134011 / keyframes",
+      "locally_verifiable": false
+    },
+    {
+      "id": "TERMS-IP-001",
+      "kind": "term_database",
+      "file": null,
+      "original_filename": "ip_characters.json",
+      "original_collection": "抖音数据库 / data / editorial",
+      "term_id": "jingxigui-lilingchong",
+      "status": "missing",
+      "locally_verifiable": false
+    },
+    {
+      "id": "WORKFLOW-DOC-001",
+      "kind": "workflow_protocol",
+      "file": null,
+      "original_filename": "双库互证与更新.md",
+      "original_collection": "抖音每日进化工作流 / docs",
+      "status": "missing",
+      "replacement_protocol": "../../references/daily-evolution.md",
+      "locally_verifiable": false
+    },
+    {
+      "id": "BASELINE-31-001",
+      "kind": "sample_corpus_and_statistics",
+      "file": null,
+      "original_filename": null,
+      "expected_sample_count_from_historical_claim": 31,
+      "status": "missing",
+      "missing_parts": [
+        "逐片身份清单",
+        "31份真实切镜级终稿",
+        "逐镜时长及特征原表",
+        "下载时点赞及采样记录",
+        "原始视频和声画核验材料"
+      ],
+      "summary_snapshot": "baseline-31-summary.json",
+      "locally_verifiable": false
+    },
+    {
+      "id": "DYNAMIC-WORK-001",
+      "kind": "source_video_and_review",
+      "file": null,
+      "original_filename": null,
+      "work_id": "7681901839177134011",
+      "work_title": "《万妖浮生录》第五卷",
+      "source_url": "https://www.douyin.com/video/7681901839177134011",
+      "status": "missing",
+      "missing_parts": [
+        "源视频",
+        "完整全帧审阅记录",
+        "原始逐镜反推稿",
+        "完整音频核验记录"
+      ],
+      "historical_audio_review": false,
+      "locally_verifiable": false
+    }
+  ]
+}

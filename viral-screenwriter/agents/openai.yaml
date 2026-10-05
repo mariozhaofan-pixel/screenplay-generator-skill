@@ -1,0 +1,6 @@
+interface:
+  display_name: "爆款编剧skill"
+  short_description: "用书库方法发展人物、反转与对白，按需研究参考片，分批交付Markdown剧本"
+  default_prompt: "使用 $viral-screenwriter 根据我的故事种子或参考作品，用书库方法发展人物、因果反转与对白，按标准格式交付Markdown剧本，关键分岔才让我选择。"
+policy:
+  allow_implicit_invocation: true

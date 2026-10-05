@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "historical_summary_only_not_recomputed",
+  "statistical_date": "2026-09-05",
+  "packaged_at": "2026-09-29",
+  "source": "../../references/viral-rules.md",
+  "locally_verifiable": false,
+  "raw_data": null,
+  "missing_evidence_id": "BASELINE-31-001",
+  "historical_reported_values": {
+    "sample_count": 31,
+    "shot_count": 4030,
+    "accepted_boundary_count": 3999,
+    "annotated_duration_seconds": 8982.041,
+    "weighted_mean_shot_seconds": 2.229,
+    "median_shot_seconds": 1.7,
+    "shot_p25_seconds": 1.1,
+    "shot_p75_seconds": 2.7,
+    "median_per_film_mean_shot_seconds": 2.304,
+    "top8_likes_weighted_mean_shot_seconds": 2.069,
+    "bottom8_likes_weighted_mean_shot_seconds": 2.372,
+    "verified_realtime_trends_count": 0
+  },
+  "usage": "仅用于保留历史说法和启发式方法背景，不是包内复算、重新核验或因果证据；完整历史特征频数仍保存在 source 指向的文字快照。"
+}

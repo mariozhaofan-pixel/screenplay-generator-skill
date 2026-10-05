@@ -1,0 +1,1622 @@
+{
+  "edition": "中文第2版 ISBN9787115558145",
+  "sha256": "41324ab68235fc5e3de73ecefe82032e6e22650253c83b3b84032a6df0f82951",
+  "pdf_pages": 199,
+  "ocr_pages": 198,
+  "printed_body": [
+    1,
+    178
+  ],
+  "exercise_chapters": [
+    1,
+    166
+  ],
+  "reading_status": "all-11-chapters-read-and-exercise-cards-indexed; appendix-read; OCR-not-verbatim-proofread",
+  "cards_count": 127,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "故事",
+      "file": "ch01-story.md",
+      "printed_range": [
+        1,
+        14
+      ],
+      "pdf_range": [
+        20,
+        33
+      ],
+      "cards": 14,
+      "read_status": "read-with-visual-checks"
+    },
+    {
+      "number": 2,
+      "title": "结构",
+      "file": "ch02-structure.md",
+      "printed_range": [
+        15,
+        23
+      ],
+      "pdf_range": [
+        34,
+        42
+      ],
+      "cards": 5,
+      "read_status": "read-with-visual-checks"
+    },
+    {
+      "number": 3,
+      "title": "大纲",
+      "file": "ch03-outline.md",
+      "printed_range": [
+        24,
+        46
+      ],
+      "pdf_range": [
+        43,
+        65
+      ],
+      "cards": 15,
+      "read_status": "read-with-visual-checks"
+    },
+    {
+      "number": 4,
+      "title": "人物",
+      "file": "ch04-character.md",
+      "printed_range": [
+        47,
+        58
+      ],
+      "pdf_range": [
+        66,
+        77
+      ],
+      "cards": 12,
+      "read_status": "read-with-visual-checks"
+    },
+    {
+      "number": 5,
+      "title": "初稿",
+      "file": "ch05-draft.md",
+      "printed_range": [
+        59,
+        77
+      ],
+      "pdf_range": [
+        78,
+        96
+      ],
+      "cards": 12,
+      "read_status": "read-with-visual-checks"
+    },
+    {
+      "number": 6,
+      "title": "对白",
+      "file": "ch06-dialogue.md",
+      "printed_range": [
+        78,
+        87
+      ],
+      "pdf_range": [
+        97,
+        106
+      ],
+      "cards": 7,
+      "read_status": "read-with-visual-checks"
+    },
+    {
+      "number": 7,
+      "title": "改写",
+      "file": "ch07-rewrite.md",
+      "printed_range": [
+        88,
+        115
+      ],
+      "pdf_range": [
+        107,
+        134
+      ],
+      "cards": 29,
+      "read_status": "read-with-visual-checks"
+    },
+    {
+      "number": 8,
+      "title": "打磨",
+      "file": "ch08-polish.md",
+      "printed_range": [
+        116,
+        132
+      ],
+      "pdf_range": [
+        135,
+        151
+      ],
+      "cards": 11,
+      "read_status": "read-with-visual-checks"
+    },
+    {
+      "number": 9,
+      "title": "定稿",
+      "file": "ch09-finalize.md",
+      "printed_range": [
+        133,
+        140
+      ],
+      "pdf_range": [
+        152,
+        159
+      ],
+      "cards": 5,
+      "read_status": "read-with-visual-checks"
+    },
+    {
+      "number": 10,
+      "title": "提案",
+      "file": "ch10-pitch.md",
+      "printed_range": [
+        141,
+        157
+      ],
+      "pdf_range": [
+        160,
+        176
+      ],
+      "cards": 13,
+      "read_status": "read-with-visual-checks"
+    },
+    {
+      "number": 11,
+      "title": "机遇",
+      "file": "ch11-opportunities.md",
+      "printed_range": [
+        158,
+        166
+      ],
+      "pdf_range": [
+        177,
+        185
+      ],
+      "cards": 4,
+      "read_status": "read-with-visual-checks"
+    }
+  ],
+  "cards": [
+    {
+      "id": "CB01-01",
+      "title": "概述",
+      "printed_start": 1,
+      "printed_end": 2,
+      "pdf_start": 20,
+      "pdf_end": 21,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-02",
+      "title": "情感＋行动＝故事",
+      "printed_start": 2,
+      "printed_end": 2,
+      "pdf_start": 21,
+      "pdf_end": 21,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-03",
+      "title": "主人公缺点的头脑风暴",
+      "printed_start": 3,
+      "printed_end": 4,
+      "pdf_start": 22,
+      "pdf_end": 23,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-04",
+      "title": "寻找你的故事线",
+      "printed_start": 5,
+      "printed_end": 6,
+      "pdf_start": 24,
+      "pdf_end": 25,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-05",
+      "title": "次要人物的故事线",
+      "printed_start": 6,
+      "printed_end": 7,
+      "pdf_start": 25,
+      "pdf_end": 26,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-06",
+      "title": "发掘难题",
+      "printed_start": 7,
+      "printed_end": 8,
+      "pdf_start": 26,
+      "pdf_end": 27,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-07",
+      "title": "简明梗概",
+      "printed_start": 8,
+      "printed_end": 9,
+      "pdf_start": 27,
+      "pdf_end": 28,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-08",
+      "title": "建立你的着陆点",
+      "printed_start": 9,
+      "printed_end": 10,
+      "pdf_start": 28,
+      "pdf_end": 29,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-09",
+      "title": "逆推结尾",
+      "printed_start": 10,
+      "printed_end": 11,
+      "pdf_start": 29,
+      "pdf_end": 30,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-10",
+      "title": "要素单",
+      "printed_start": 11,
+      "printed_end": 11,
+      "pdf_start": 30,
+      "pdf_end": 30,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-11",
+      "title": "像讲睡前故事一样描述你的电影：开端",
+      "printed_start": 12,
+      "printed_end": 12,
+      "pdf_start": 31,
+      "pdf_end": 31,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-12",
+      "title": "中段（第一部分）",
+      "printed_start": 12,
+      "printed_end": 13,
+      "pdf_start": 31,
+      "pdf_end": 32,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-13",
+      "title": "中段（第二部分）",
+      "printed_start": 13,
+      "printed_end": 13,
+      "pdf_start": 32,
+      "pdf_end": 32,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB01-14",
+      "title": "结尾",
+      "printed_start": 13,
+      "printed_end": 14,
+      "pdf_start": 32,
+      "pdf_end": 33,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 1,
+      "file": "ch01-story.md"
+    },
+    {
+      "id": "CB02-01",
+      "title": "发掘故事片结构",
+      "printed_start": 15,
+      "printed_end": 16,
+      "pdf_start": 34,
+      "pdf_end": 35,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 2,
+      "file": "ch02-structure.md"
+    },
+    {
+      "id": "CB02-02",
+      "title": "发掘试播集结构",
+      "printed_start": 16,
+      "printed_end": 17,
+      "pdf_start": 35,
+      "pdf_end": 36,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 2,
+      "file": "ch02-structure.md"
+    },
+    {
+      "id": "CB02-03",
+      "title": "发掘多幕结构",
+      "printed_start": 18,
+      "printed_end": 21,
+      "pdf_start": 37,
+      "pdf_end": 40,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 2,
+      "file": "ch02-structure.md"
+    },
+    {
+      "id": "CB02-04",
+      "title": "增加幕间",
+      "printed_start": 21,
+      "printed_end": 22,
+      "pdf_start": 40,
+      "pdf_end": 41,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 2,
+      "file": "ch02-structure.md"
+    },
+    {
+      "id": "CB02-05",
+      "title": "增加关键事件",
+      "printed_start": 22,
+      "printed_end": 23,
+      "pdf_start": 41,
+      "pdf_end": 42,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 2,
+      "file": "ch02-structure.md"
+    },
+    {
+      "id": "CB03-01",
+      "title": "节拍表",
+      "printed_start": 24,
+      "printed_end": 28,
+      "pdf_start": 43,
+      "pdf_end": 47,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-02",
+      "title": "故事发展表的改写",
+      "printed_start": 28,
+      "printed_end": 29,
+      "pdf_start": 47,
+      "pdf_end": 48,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-03",
+      "title": "次要人物／反派改写",
+      "printed_start": 29,
+      "printed_end": 30,
+      "pdf_start": 48,
+      "pdf_end": 49,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-04",
+      "title": "难题改写",
+      "printed_start": 30,
+      "printed_end": 31,
+      "pdf_start": 49,
+      "pdf_end": 50,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-05",
+      "title": "中间点改写",
+      "printed_start": 31,
+      "printed_end": 32,
+      "pdf_start": 50,
+      "pdf_end": 51,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-06",
+      "title": "结构改写",
+      "printed_start": 32,
+      "printed_end": 32,
+      "pdf_start": 51,
+      "pdf_end": 51,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-07",
+      "title": "非线性结构改写",
+      "printed_start": 32,
+      "printed_end": 33,
+      "pdf_start": 51,
+      "pdf_end": 52,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-08",
+      "title": "情感改写",
+      "printed_start": 33,
+      "printed_end": 34,
+      "pdf_start": 52,
+      "pdf_end": 53,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-09",
+      "title": "写场景列表",
+      "printed_start": 34,
+      "printed_end": 39,
+      "pdf_start": 53,
+      "pdf_end": 58,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-10",
+      "title": "人物缺点创建场景行动",
+      "printed_start": 39,
+      "printed_end": 40,
+      "pdf_start": 58,
+      "pdf_end": 59,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-11",
+      "title": "为你的人物建立外在障碍",
+      "printed_start": 40,
+      "printed_end": 42,
+      "pdf_start": 59,
+      "pdf_end": 61,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-12",
+      "title": "通过物件回馈构建场景",
+      "printed_start": 42,
+      "printed_end": 43,
+      "pdf_start": 61,
+      "pdf_end": 62,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-13",
+      "title": "通过事件回馈构建场景",
+      "printed_start": 43,
+      "printed_end": 44,
+      "pdf_start": 62,
+      "pdf_end": 63,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-14",
+      "title": "通过台词回馈构建场景",
+      "printed_start": 44,
+      "printed_end": 45,
+      "pdf_start": 63,
+      "pdf_end": 64,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB03-15",
+      "title": "添加场景列表并完成大纲！",
+      "printed_start": 46,
+      "printed_end": 46,
+      "pdf_start": 65,
+      "pdf_end": 65,
+      "type": "10-minute-exercise",
+      "source_checked": "visual-full-page",
+      "chapter": 3,
+      "file": "ch03-outline.md"
+    },
+    {
+      "id": "CB04-01",
+      "title": "建立缺点与能力的平衡",
+      "printed_start": 47,
+      "printed_end": 48,
+      "pdf_start": 66,
+      "pdf_end": 67,
+      "type": "exercise",
+      "chapter": 4,
+      "file": "ch04-character.md"
+    },
+    {
+      "id": "CB04-02",
+      "title": "创建人物图谱",
+      "printed_start": 48,
+      "printed_end": 48,
+      "pdf_start": 67,
+      "pdf_end": 67,
+      "type": "exercise",
+      "chapter": 4,
+      "file": "ch04-character.md"
+    },
+    {
+      "id": "CB04-03",
+      "title": "通过伏笔和回馈创建人物小传",
+      "printed_start": 49,
+      "printed_end": 49,
+      "pdf_start": 68,
+      "pdf_end": 68,
+      "type": "exercise",
+      "chapter": 4,
+      "file": "ch04-character.md"
+    },
+    {
+      "id": "CB04-04",
+      "title": "人物出场",
+      "printed_start": 50,
+      "printed_end": 50,
+      "pdf_start": 69,
+      "pdf_end": 69,
+      "type": "exercise",
+      "chapter": 4,
+      "file": "ch04-character.md"
+    },
+    {
+      "id": "CB04-05",
+      "title": "创建一个人物原则",
+      "printed_start": 51,
+      "printed_end": 52,
+      "pdf_start": 70,
+      "pdf_end": 71,
+      "type": "exercise",
+      "chapter": 4,
+      "file": "ch04-character.md"
+    },
+    {
+      "id": "CB04-06",
+      "title": "创建三维人物原则",
+      "printed_start": 52,
+      "printed_end": 52,
+      "pdf_start": 71,
+      "pdf_end": 71,
+      "type": "exercise",
+      "chapter": 4,
+      "file": "ch04-character.md"
+    },
+    {
+      "id": "CB04-07",
+      "title": "人物原则制造喜剧性",
+      "printed_start": 53,
+      "printed_end": 54,
+      "pdf_start": 72,
+      "pdf_end": 73,
+      "type": "exercise",
+      "chapter": 4,
+      "file": "ch04-character.md"
+    },
+    {
+      "id": "CB04-08",
+      "title": "人物原则构建难题",
+      "printed_start": 54,
+      "printed_end": 54,
+      "pdf_start": 73,
+      "pdf_end": 73,
+      "type": "exercise",
+      "chapter": 4,
+      "file": "ch04-character.md"
+    },
+    {
+      "id": "CB04-09",
+      "title": "原则的打破",
+      "printed_start": 55,
+      "printed_end": 55,
+      "pdf_start": 74,
+      "pdf_end": 74,
+      "type": "exercise",
+      "chapter": 4,
+      "file": "ch04-character.md"
+    },
+    {
+      "id": "CB04-10",
+      "title": "通过人物原则发掘你的人物",
+      "printed_start": 55,
+      "printed_end": 56,
+      "pdf_start": 74,
+      "pdf_end": 75,
+      "type": "exercise",
+      "chapter": 4,
+      "file": "ch04-character.md"
+    },
+    {
+      "id": "CB04-11",
+      "title": "关系原则",
+      "printed_start": 56,
+      "printed_end": 56,
+      "pdf_start": 75,
+      "pdf_end": 75,
+      "type": "exercise",
+      "chapter": 4,
+      "file": "ch04-character.md"
+    },
+    {
+      "id": "CB04-12",
+      "title": "反派的人性化处理",
+      "printed_start": 57,
+      "printed_end": 57,
+      "pdf_start": 76,
+      "pdf_end": 76,
+      "type": "exercise",
+      "chapter": 4,
+      "file": "ch04-character.md"
+    },
+    {
+      "id": "CB05-01",
+      "title": "写出你的第一个场景的速写稿",
+      "printed_start": 61,
+      "printed_end": 61,
+      "pdf_start": 80,
+      "pdf_end": 80,
+      "type": "exercise",
+      "chapter": 5,
+      "file": "ch05-draft.md"
+    },
+    {
+      "id": "CB05-02",
+      "title": "场景写作日程表",
+      "printed_start": 63,
+      "printed_end": 63,
+      "pdf_start": 82,
+      "pdf_end": 82,
+      "type": "exercise",
+      "chapter": 5,
+      "file": "ch05-draft.md"
+    },
+    {
+      "id": "CB05-03",
+      "title": "写速写稿",
+      "printed_start": 63,
+      "printed_end": 64,
+      "pdf_start": 82,
+      "pdf_end": 83,
+      "type": "exercise",
+      "chapter": 5,
+      "file": "ch05-draft.md"
+    },
+    {
+      "id": "CB05-04",
+      "title": "增加一个触发场景",
+      "printed_start": 65,
+      "printed_end": 65,
+      "pdf_start": 84,
+      "pdf_end": 84,
+      "type": "exercise",
+      "chapter": 5,
+      "file": "ch05-draft.md"
+    },
+    {
+      "id": "CB05-05",
+      "title": "主人公与次要人物的情感联系",
+      "printed_start": 66,
+      "printed_end": 67,
+      "pdf_start": 85,
+      "pdf_end": 86,
+      "type": "exercise",
+      "chapter": 5,
+      "file": "ch05-draft.md"
+    },
+    {
+      "id": "CB05-06",
+      "title": "主人公与反派的情感关联",
+      "printed_start": 67,
+      "printed_end": 68,
+      "pdf_start": 86,
+      "pdf_end": 87,
+      "type": "exercise",
+      "chapter": 5,
+      "file": "ch05-draft.md"
+    },
+    {
+      "id": "CB05-07",
+      "title": "写一个引子",
+      "printed_start": 69,
+      "printed_end": 69,
+      "pdf_start": 88,
+      "pdf_end": 88,
+      "type": "exercise",
+      "chapter": 5,
+      "file": "ch05-draft.md"
+    },
+    {
+      "id": "CB05-08",
+      "title": "写一个典型场景",
+      "printed_start": 70,
+      "printed_end": 70,
+      "pdf_start": 89,
+      "pdf_end": 89,
+      "type": "exercise",
+      "chapter": 5,
+      "file": "ch05-draft.md"
+    },
+    {
+      "id": "CB05-09",
+      "title": "扩写场景",
+      "printed_start": 73,
+      "printed_end": 73,
+      "pdf_start": 92,
+      "pdf_end": 92,
+      "type": "exercise",
+      "chapter": 5,
+      "file": "ch05-draft.md"
+    },
+    {
+      "id": "CB05-10",
+      "title": "场景拆分",
+      "printed_start": 73,
+      "printed_end": 74,
+      "pdf_start": 92,
+      "pdf_end": 93,
+      "type": "exercise",
+      "chapter": 5,
+      "file": "ch05-draft.md"
+    },
+    {
+      "id": "CB05-11",
+      "title": "呈现",
+      "printed_start": 74,
+      "printed_end": 74,
+      "pdf_start": 93,
+      "pdf_end": 93,
+      "type": "exercise",
+      "chapter": 5,
+      "file": "ch05-draft.md"
+    },
+    {
+      "id": "CB05-12",
+      "title": "加入自己的声音",
+      "printed_start": 77,
+      "printed_end": 77,
+      "pdf_start": 96,
+      "pdf_end": 96,
+      "type": "exercise",
+      "chapter": 5,
+      "file": "ch05-draft.md"
+    },
+    {
+      "id": "CB06-01",
+      "title": "对白驱动的场景中的人物动机",
+      "printed_start": 79,
+      "printed_end": 79,
+      "pdf_start": 98,
+      "pdf_end": 98,
+      "type": "exercise",
+      "chapter": 6,
+      "file": "ch06-dialogue.md"
+    },
+    {
+      "id": "CB06-02",
+      "title": "说话策略",
+      "printed_start": 81,
+      "printed_end": 81,
+      "pdf_start": 100,
+      "pdf_end": 100,
+      "type": "exercise",
+      "chapter": 6,
+      "file": "ch06-dialogue.md"
+    },
+    {
+      "id": "CB06-03",
+      "title": "说一点小谎",
+      "printed_start": 82,
+      "printed_end": 82,
+      "pdf_start": 101,
+      "pdf_end": 101,
+      "type": "exercise",
+      "chapter": 6,
+      "file": "ch06-dialogue.md"
+    },
+    {
+      "id": "CB06-04",
+      "title": "创建对白游戏",
+      "printed_start": 86,
+      "printed_end": 86,
+      "pdf_start": 105,
+      "pdf_end": 105,
+      "type": "exercise",
+      "chapter": 6,
+      "file": "ch06-dialogue.md"
+    },
+    {
+      "id": "CB06-05",
+      "title": "通过选角找到人物的声音",
+      "printed_start": 86,
+      "printed_end": 86,
+      "pdf_start": 105,
+      "pdf_end": 105,
+      "type": "exercise",
+      "chapter": 6,
+      "file": "ch06-dialogue.md"
+    },
+    {
+      "id": "CB06-06",
+      "title": "发掘人物的语言",
+      "printed_start": 87,
+      "printed_end": 87,
+      "pdf_start": 106,
+      "pdf_end": 106,
+      "type": "exercise",
+      "chapter": 6,
+      "file": "ch06-dialogue.md"
+    },
+    {
+      "id": "CB06-07",
+      "title": "创建说话原则",
+      "printed_start": 87,
+      "printed_end": 87,
+      "pdf_start": 106,
+      "pdf_end": 106,
+      "type": "exercise",
+      "chapter": 6,
+      "file": "ch06-dialogue.md"
+    },
+    {
+      "id": "CB07-01",
+      "title": "概念检验",
+      "printed_start": 90,
+      "printed_end": 90,
+      "pdf_start": 109,
+      "pdf_end": 109,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-02",
+      "title": "世界构建",
+      "printed_start": 91,
+      "printed_end": 91,
+      "pdf_start": 110,
+      "pdf_end": 110,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-03",
+      "title": "结构重塑（一）",
+      "printed_start": 92,
+      "printed_end": 93,
+      "pdf_start": 111,
+      "pdf_end": 112,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-04",
+      "title": "结构重塑（二）",
+      "printed_start": 93,
+      "printed_end": 93,
+      "pdf_start": 112,
+      "pdf_end": 112,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-05",
+      "title": "逆向节拍检查",
+      "printed_start": 94,
+      "printed_end": 94,
+      "pdf_start": 113,
+      "pdf_end": 113,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-06",
+      "title": "次要情节改写",
+      "printed_start": 95,
+      "printed_end": 95,
+      "pdf_start": 114,
+      "pdf_end": 114,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-07",
+      "title": "选择改写",
+      "printed_start": 95,
+      "printed_end": 95,
+      "pdf_start": 114,
+      "pdf_end": 114,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-08",
+      "title": "揭示改写",
+      "printed_start": 95,
+      "printed_end": 95,
+      "pdf_start": 114,
+      "pdf_end": 114,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-09",
+      "title": "包袱改写",
+      "printed_start": 95,
+      "printed_end": 95,
+      "pdf_start": 114,
+      "pdf_end": 114,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-10",
+      "title": "各个场景的故事检查（保留、删除或修改）",
+      "printed_start": 96,
+      "printed_end": 96,
+      "pdf_start": 115,
+      "pdf_end": 115,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-11",
+      "title": "寻找新意",
+      "printed_start": 97,
+      "printed_end": 97,
+      "pdf_start": 116,
+      "pdf_end": 116,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-12",
+      "title": "聚焦主人公",
+      "printed_start": 98,
+      "printed_end": 98,
+      "pdf_start": 117,
+      "pdf_end": 117,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-13",
+      "title": "你我皆凡人",
+      "printed_start": 98,
+      "printed_end": 99,
+      "pdf_start": 117,
+      "pdf_end": 118,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-14",
+      "title": "让主人公变得更糟糕",
+      "printed_start": 99,
+      "printed_end": 99,
+      "pdf_start": 118,
+      "pdf_end": 118,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-15",
+      "title": "发展人物技能",
+      "printed_start": 100,
+      "printed_end": 100,
+      "pdf_start": 119,
+      "pdf_end": 119,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-16",
+      "title": "应用种族和性别",
+      "printed_start": 101,
+      "printed_end": 101,
+      "pdf_start": 120,
+      "pdf_end": 120,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-17",
+      "title": "以成见击败成见",
+      "printed_start": 102,
+      "printed_end": 102,
+      "pdf_start": 121,
+      "pdf_end": 121,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-18",
+      "title": "反其道而行之",
+      "printed_start": 103,
+      "printed_end": 103,
+      "pdf_start": 122,
+      "pdf_end": 122,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-19",
+      "title": "人物动机与策略",
+      "printed_start": 104,
+      "printed_end": 104,
+      "pdf_start": 123,
+      "pdf_end": 123,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-20",
+      "title": "形成人物的三角关系",
+      "printed_start": 105,
+      "printed_end": 105,
+      "pdf_start": 124,
+      "pdf_end": 124,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-21",
+      "title": "避免直接呈示",
+      "printed_start": 107,
+      "printed_end": 107,
+      "pdf_start": 126,
+      "pdf_end": 126,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-22",
+      "title": "寻找完美台词（一）",
+      "printed_start": 108,
+      "printed_end": 108,
+      "pdf_start": 127,
+      "pdf_end": 127,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-23",
+      "title": "寻找完美台词（二）",
+      "printed_start": 108,
+      "printed_end": 109,
+      "pdf_start": 127,
+      "pdf_end": 128,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-24",
+      "title": "场景描写分段",
+      "printed_start": 110,
+      "printed_end": 110,
+      "pdf_start": 129,
+      "pdf_end": 129,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-25",
+      "title": "替换摄影机描述",
+      "printed_start": 111,
+      "printed_end": 111,
+      "pdf_start": 130,
+      "pdf_end": 130,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-26",
+      "title": "创建次级场景标题",
+      "printed_start": 112,
+      "printed_end": 112,
+      "pdf_start": 131,
+      "pdf_end": 131,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-27",
+      "title": "连接各点",
+      "printed_start": 113,
+      "printed_end": 114,
+      "pdf_start": 132,
+      "pdf_end": 133,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-28",
+      "title": "寻求平衡",
+      "printed_start": 114,
+      "printed_end": 114,
+      "pdf_start": 133,
+      "pdf_end": 133,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB07-29",
+      "title": "聚焦",
+      "printed_start": 114,
+      "printed_end": 115,
+      "pdf_start": 133,
+      "pdf_end": 134,
+      "type": "exercise",
+      "chapter": 7,
+      "file": "ch07-rewrite.md"
+    },
+    {
+      "id": "CB08-01",
+      "title": "编辑复杂的场景描写",
+      "printed_start": 116,
+      "printed_end": 117,
+      "pdf_start": 135,
+      "pdf_end": 136,
+      "type": "explicit_exercise",
+      "chapter": 8,
+      "file": "ch08-polish.md"
+    },
+    {
+      "id": "CB08-02",
+      "title": "写一个打斗场景",
+      "printed_start": 118,
+      "printed_end": 118,
+      "pdf_start": 137,
+      "pdf_end": 137,
+      "type": "explicit_exercise",
+      "chapter": 8,
+      "file": "ch08-polish.md"
+    },
+    {
+      "id": "CB08-03",
+      "title": "创建情绪化的动作描写",
+      "printed_start": 120,
+      "printed_end": 120,
+      "pdf_start": 139,
+      "pdf_end": 139,
+      "type": "explicit_exercise",
+      "chapter": 8,
+      "file": "ch08-polish.md"
+    },
+    {
+      "id": "CB08-04",
+      "title": "创建场景描写的“叙事点”",
+      "printed_start": 121,
+      "printed_end": 121,
+      "pdf_start": 140,
+      "pdf_end": 140,
+      "type": "explicit_exercise",
+      "chapter": 8,
+      "file": "ch08-polish.md"
+    },
+    {
+      "id": "CB08-05",
+      "title": "创建精妙的场景“开关”",
+      "printed_start": 123,
+      "printed_end": 123,
+      "pdf_start": 142,
+      "pdf_end": 142,
+      "type": "explicit_exercise",
+      "chapter": 8,
+      "file": "ch08-polish.md"
+    },
+    {
+      "id": "CB08-06",
+      "title": "转场练习（原框无独立标题）",
+      "printed_start": 124,
+      "printed_end": 124,
+      "pdf_start": 143,
+      "pdf_end": 143,
+      "type": "explicit_exercise",
+      "chapter": 8,
+      "file": "ch08-polish.md"
+    },
+    {
+      "id": "CB08-07",
+      "title": "聚焦你的叙事技巧",
+      "printed_start": 126,
+      "printed_end": 126,
+      "pdf_start": 145,
+      "pdf_end": 145,
+      "type": "explicit_exercise",
+      "chapter": 8,
+      "file": "ch08-polish.md"
+    },
+    {
+      "id": "CB08-08",
+      "title": "叙事技巧检测",
+      "printed_start": 127,
+      "printed_end": 127,
+      "pdf_start": 146,
+      "pdf_end": 146,
+      "type": "explicit_exercise",
+      "chapter": 8,
+      "file": "ch08-polish.md"
+    },
+    {
+      "id": "CB08-09",
+      "title": "描写“人物本质”",
+      "printed_start": 129,
+      "printed_end": 129,
+      "pdf_start": 148,
+      "pdf_end": 148,
+      "type": "explicit_exercise",
+      "chapter": 8,
+      "file": "ch08-polish.md"
+    },
+    {
+      "id": "CB08-10",
+      "title": "本质描写＋行动描写",
+      "printed_start": 130,
+      "printed_end": 130,
+      "pdf_start": 149,
+      "pdf_end": 149,
+      "type": "explicit_exercise",
+      "chapter": 8,
+      "file": "ch08-polish.md"
+    },
+    {
+      "id": "CB08-11",
+      "title": "风格和气氛",
+      "printed_start": 132,
+      "printed_end": 132,
+      "pdf_start": 151,
+      "pdf_end": 151,
+      "type": "explicit_exercise",
+      "chapter": 8,
+      "file": "ch08-polish.md"
+    },
+    {
+      "id": "CB09-01",
+      "title": "类型编辑",
+      "printed_start": 134,
+      "printed_end": 134,
+      "pdf_start": 153,
+      "pdf_end": 153,
+      "type": "explicit_exercise",
+      "chapter": 9,
+      "file": "ch09-finalize.md"
+    },
+    {
+      "id": "CB09-02",
+      "title": "内容删减",
+      "printed_start": 136,
+      "printed_end": 136,
+      "pdf_start": 155,
+      "pdf_end": 155,
+      "type": "explicit_exercise",
+      "chapter": 9,
+      "file": "ch09-finalize.md"
+    },
+    {
+      "id": "CB09-03",
+      "title": "故事编辑",
+      "printed_start": 137,
+      "printed_end": 137,
+      "pdf_start": 156,
+      "pdf_end": 156,
+      "type": "explicit_exercise",
+      "chapter": 9,
+      "file": "ch09-finalize.md"
+    },
+    {
+      "id": "CB09-04",
+      "title": "推迟进入和提前离场",
+      "printed_start": 138,
+      "printed_end": 138,
+      "pdf_start": 157,
+      "pdf_end": 157,
+      "type": "explicit_exercise",
+      "chapter": 9,
+      "file": "ch09-finalize.md"
+    },
+    {
+      "id": "CB09-05",
+      "title": "综合编辑（原框无独立标题）",
+      "printed_start": 140,
+      "printed_end": 140,
+      "pdf_start": 159,
+      "pdf_end": 159,
+      "type": "explicit_exercise",
+      "chapter": 9,
+      "file": "ch09-finalize.md"
+    },
+    {
+      "id": "CB10-01",
+      "title": "故事线，四步范例",
+      "printed_start": 142,
+      "printed_end": 142,
+      "pdf_start": 161,
+      "pdf_end": 161,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB10-02",
+      "title": "连续剧故事线与试播集故事线",
+      "printed_start": 143,
+      "printed_end": 143,
+      "pdf_start": 162,
+      "pdf_end": 162,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB10-03",
+      "title": "剧集头脑风暴",
+      "printed_start": 143,
+      "printed_end": 144,
+      "pdf_start": 162,
+      "pdf_end": 163,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB10-04",
+      "title": "创建整季的故事发展弧",
+      "printed_start": 144,
+      "printed_end": 144,
+      "pdf_start": 163,
+      "pdf_end": 163,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB10-05",
+      "title": "一分钟提案——故事片",
+      "printed_start": 149,
+      "printed_end": 149,
+      "pdf_start": 168,
+      "pdf_end": 168,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB10-06",
+      "title": "一分钟提案——电视剧",
+      "printed_start": 149,
+      "printed_end": 150,
+      "pdf_start": 168,
+      "pdf_end": 169,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB10-07",
+      "title": "一分钟提案——试播集",
+      "printed_start": 150,
+      "printed_end": 150,
+      "pdf_start": 169,
+      "pdf_end": 169,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB10-08",
+      "title": "用你自己的文字重写提案",
+      "printed_start": 151,
+      "printed_end": 152,
+      "pdf_start": 170,
+      "pdf_end": 171,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB10-09",
+      "title": "创建个人提案",
+      "printed_start": 153,
+      "printed_end": 153,
+      "pdf_start": 172,
+      "pdf_end": 172,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB10-10",
+      "title": "创建概念表",
+      "printed_start": 154,
+      "printed_end": 155,
+      "pdf_start": 173,
+      "pdf_end": 174,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB10-11",
+      "title": "写一封咨询信",
+      "printed_start": 155,
+      "printed_end": 155,
+      "pdf_start": 174,
+      "pdf_end": 174,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB10-12",
+      "title": "一页梗概",
+      "printed_start": 155,
+      "printed_end": 156,
+      "pdf_start": 174,
+      "pdf_end": 175,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB10-13",
+      "title": "创建单页",
+      "printed_start": 156,
+      "printed_end": 156,
+      "pdf_start": 175,
+      "pdf_end": 175,
+      "type": "explicit_exercise",
+      "chapter": 10,
+      "file": "ch10-pitch.md"
+    },
+    {
+      "id": "CB11-01",
+      "title": "创建联络表",
+      "printed_start": 160,
+      "printed_end": 160,
+      "pdf_start": 179,
+      "pdf_end": 179,
+      "type": "explicit_exercise",
+      "chapter": 11,
+      "file": "ch11-opportunities.md"
+    },
+    {
+      "id": "CB11-02",
+      "title": "行业会议和提案会议数据库",
+      "printed_start": 160,
+      "printed_end": 161,
+      "pdf_start": 179,
+      "pdf_end": 180,
+      "type": "explicit_exercise",
+      "chapter": 11,
+      "file": "ch11-opportunities.md"
+    },
+    {
+      "id": "CB11-03",
+      "title": "创作网络短片",
+      "printed_start": 162,
+      "printed_end": 163,
+      "pdf_start": 181,
+      "pdf_end": 182,
+      "type": "explicit_exercise",
+      "chapter": 11,
+      "file": "ch11-opportunities.md"
+    },
+    {
+      "id": "CB11-04",
+      "title": "长提案指南",
+      "printed_start": 164,
+      "printed_end": 165,
+      "pdf_start": 183,
+      "pdf_end": 184,
+      "type": "explicit_exercise",
+      "chapter": 11,
+      "file": "ch11-opportunities.md"
+    }
+  ],
+  "original_included": false,
+  "original_filename": "15032652.pdf",
+  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。",
+  "path_base": "containing-json-directory",
+  "full_markdown": "../../assets/books/coffee-break/full.md",
+  "historical_review_note": "阅读、source_checked及read_status沿用原有整理记录；本次文字版适配未重新OCR、研读或核图。"
+}

@@ -1,0 +1,63 @@
+{
+  "B02": {
+    "status": "selected-chapters-read",
+    "chapters": [
+      2,
+      8,
+      9
+    ],
+    "sections": [
+      9,
+      15,
+      16
+    ],
+    "skill_tool_file": "../../../references/library/supplement-walter.md"
+  },
+  "B05": {
+    "status": "selected-chapters-read",
+    "chapters": [
+      4,
+      5,
+      6,
+      7,
+      13
+    ],
+    "sections": [
+      9,
+      10,
+      11,
+      12,
+      18
+    ],
+    "skill_tool_file": "../../../references/library/supplement-cron.md"
+  },
+  "B09": {
+    "status": "selected-sections-read",
+    "sections": [
+      9,
+      10,
+      11,
+      35,
+      36,
+      37,
+      69,
+      70,
+      71,
+      89,
+      90
+    ],
+    "skill_tool_file": "../../../references/library/supplement-snyder.md"
+  },
+  "B03": {
+    "status": "not-read",
+    "conversion_status": "complete",
+    "full_markdown": "B03/full.md",
+    "note": "仅完成本地资料转换与机械完整性检查，未研读、未据此增加编剧规则。"
+  },
+  "B08": {
+    "status": "not-read",
+    "conversion_status": "complete",
+    "full_markdown": "B08/full.md",
+    "note": "仅完成本地资料转换与机械完整性检查，未研读、未据此增加编剧规则。"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "record_type": "packaging_evidence_availability",
+  "recorded_at": "2026-09-29",
+  "mechanism_content_version_unchanged": 1,
+  "packaging_revision": 1,
+  "description": "本次只改变证据可用性标记、失效路径与可移植运行说明，不新增样本或机制，不声称重新审阅；原机制版本与打包元数据版本分开。",
+  "changed_files": [
+    {
+      "file": "references/evolution/history/20260907T011043+0800-v0000-to-v0001.json",
+      "original_sha256": "dffe96cec8e0fc4f86e43fcf466b3ed68f4c7b270e6610db9e5f590999b9f4a9",
+      "change": "portable paths and explicit unavailable evidence metadata; historical mechanism/statistics retained"
+    },
+    {
+      "file": "references/evolution/history/version-0000.json",
+      "original_sha256": "4e99f89ab6e9ebf887a3c874c76f67479e3630460bd847a86d4a64ff32021bc8",
+      "change": "portable paths and explicit unavailable evidence metadata; historical mechanism/statistics retained"
+    },
+    {
+      "file": "references/evolution/rules.json",
+      "original_sha256": "22677b54b99bc683602ae0dbdebfa083ee3e0ce3e9becbd7a1a490adf18c1ce0",
+      "change": "portable paths and explicit unavailable evidence metadata; historical mechanism/statistics retained"
+    }
+  ],
+  "missing_manifest": "../../../assets/evidence/missing-evidence.json"
+}

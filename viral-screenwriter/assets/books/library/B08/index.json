@@ -1,0 +1,4002 @@
+{
+  "id": "B08",
+  "title": "救猫咪（三本经典合集，看电影、懂电影、编剧本，从菜鸟到行家的快速通道）",
+  "pages": 795,
+  "reading_status": "not-read",
+  "conversion_method": "本地 pypdf 文字层提取；仅封面第1页以本机 Windows WinRT OCR 补充",
+  "page_records": [
+    {
+      "pdf_page": 1,
+      "file": "full.md#pdf-第-1-页",
+      "characters": 110
+    },
+    {
+      "pdf_page": 2,
+      "file": "full.md#pdf-第-2-页",
+      "characters": 1
+    },
+    {
+      "pdf_page": 3,
+      "file": "full.md#pdf-第-3-页",
+      "characters": 70
+    },
+    {
+      "pdf_page": 4,
+      "file": "full.md#pdf-第-4-页",
+      "characters": 1
+    },
+    {
+      "pdf_page": 5,
+      "file": "full.md#pdf-第-5-页",
+      "characters": 565
+    },
+    {
+      "pdf_page": 6,
+      "file": "full.md#pdf-第-6-页",
+      "characters": 238
+    },
+    {
+      "pdf_page": 7,
+      "file": "full.md#pdf-第-7-页",
+      "characters": 219
+    },
+    {
+      "pdf_page": 8,
+      "file": "full.md#pdf-第-8-页",
+      "characters": 255
+    },
+    {
+      "pdf_page": 9,
+      "file": "full.md#pdf-第-9-页",
+      "characters": 32
+    },
+    {
+      "pdf_page": 10,
+      "file": "full.md#pdf-第-10-页",
+      "characters": 594
+    },
+    {
+      "pdf_page": 11,
+      "file": "full.md#pdf-第-11-页",
+      "characters": 480
+    },
+    {
+      "pdf_page": 12,
+      "file": "full.md#pdf-第-12-页",
+      "characters": 592
+    },
+    {
+      "pdf_page": 13,
+      "file": "full.md#pdf-第-13-页",
+      "characters": 273
+    },
+    {
+      "pdf_page": 14,
+      "file": "full.md#pdf-第-14-页",
+      "characters": 361
+    },
+    {
+      "pdf_page": 15,
+      "file": "full.md#pdf-第-15-页",
+      "characters": 765
+    },
+    {
+      "pdf_page": 16,
+      "file": "full.md#pdf-第-16-页",
+      "characters": 679
+    },
+    {
+      "pdf_page": 17,
+      "file": "full.md#pdf-第-17-页",
+      "characters": 534
+    },
+    {
+      "pdf_page": 18,
+      "file": "full.md#pdf-第-18-页",
+      "characters": 772
+    },
+    {
+      "pdf_page": 19,
+      "file": "full.md#pdf-第-19-页",
+      "characters": 697
+    },
+    {
+      "pdf_page": 20,
+      "file": "full.md#pdf-第-20-页",
+      "characters": 664
+    },
+    {
+      "pdf_page": 21,
+      "file": "full.md#pdf-第-21-页",
+      "characters": 863
+    },
+    {
+      "pdf_page": 22,
+      "file": "full.md#pdf-第-22-页",
+      "characters": 255
+    },
+    {
+      "pdf_page": 23,
+      "file": "full.md#pdf-第-23-页",
+      "characters": 576
+    },
+    {
+      "pdf_page": 24,
+      "file": "full.md#pdf-第-24-页",
+      "characters": 582
+    },
+    {
+      "pdf_page": 25,
+      "file": "full.md#pdf-第-25-页",
+      "characters": 799
+    },
+    {
+      "pdf_page": 26,
+      "file": "full.md#pdf-第-26-页",
+      "characters": 75
+    },
+    {
+      "pdf_page": 27,
+      "file": "full.md#pdf-第-27-页",
+      "characters": 720
+    },
+    {
+      "pdf_page": 28,
+      "file": "full.md#pdf-第-28-页",
+      "characters": 263
+    },
+    {
+      "pdf_page": 29,
+      "file": "full.md#pdf-第-29-页",
+      "characters": 594
+    },
+    {
+      "pdf_page": 30,
+      "file": "full.md#pdf-第-30-页",
+      "characters": 734
+    },
+    {
+      "pdf_page": 31,
+      "file": "full.md#pdf-第-31-页",
+      "characters": 653
+    },
+    {
+      "pdf_page": 32,
+      "file": "full.md#pdf-第-32-页",
+      "characters": 786
+    },
+    {
+      "pdf_page": 33,
+      "file": "full.md#pdf-第-33-页",
+      "characters": 348
+    },
+    {
+      "pdf_page": 34,
+      "file": "full.md#pdf-第-34-页",
+      "characters": 301
+    },
+    {
+      "pdf_page": 35,
+      "file": "full.md#pdf-第-35-页",
+      "characters": 745
+    },
+    {
+      "pdf_page": 36,
+      "file": "full.md#pdf-第-36-页",
+      "characters": 444
+    },
+    {
+      "pdf_page": 37,
+      "file": "full.md#pdf-第-37-页",
+      "characters": 452
+    },
+    {
+      "pdf_page": 38,
+      "file": "full.md#pdf-第-38-页",
+      "characters": 871
+    },
+    {
+      "pdf_page": 39,
+      "file": "full.md#pdf-第-39-页",
+      "characters": 310
+    },
+    {
+      "pdf_page": 40,
+      "file": "full.md#pdf-第-40-页",
+      "characters": 590
+    },
+    {
+      "pdf_page": 41,
+      "file": "full.md#pdf-第-41-页",
+      "characters": 240
+    },
+    {
+      "pdf_page": 42,
+      "file": "full.md#pdf-第-42-页",
+      "characters": 507
+    },
+    {
+      "pdf_page": 43,
+      "file": "full.md#pdf-第-43-页",
+      "characters": 555
+    },
+    {
+      "pdf_page": 44,
+      "file": "full.md#pdf-第-44-页",
+      "characters": 51
+    },
+    {
+      "pdf_page": 45,
+      "file": "full.md#pdf-第-45-页",
+      "characters": 532
+    },
+    {
+      "pdf_page": 46,
+      "file": "full.md#pdf-第-46-页",
+      "characters": 463
+    },
+    {
+      "pdf_page": 47,
+      "file": "full.md#pdf-第-47-页",
+      "characters": 676
+    },
+    {
+      "pdf_page": 48,
+      "file": "full.md#pdf-第-48-页",
+      "characters": 802
+    },
+    {
+      "pdf_page": 49,
+      "file": "full.md#pdf-第-49-页",
+      "characters": 917
+    },
+    {
+      "pdf_page": 50,
+      "file": "full.md#pdf-第-50-页",
+      "characters": 666
+    },
+    {
+      "pdf_page": 51,
+      "file": "full.md#pdf-第-51-页",
+      "characters": 787
+    },
+    {
+      "pdf_page": 52,
+      "file": "full.md#pdf-第-52-页",
+      "characters": 581
+    },
+    {
+      "pdf_page": 53,
+      "file": "full.md#pdf-第-53-页",
+      "characters": 777
+    },
+    {
+      "pdf_page": 54,
+      "file": "full.md#pdf-第-54-页",
+      "characters": 232
+    },
+    {
+      "pdf_page": 55,
+      "file": "full.md#pdf-第-55-页",
+      "characters": 818
+    },
+    {
+      "pdf_page": 56,
+      "file": "full.md#pdf-第-56-页",
+      "characters": 812
+    },
+    {
+      "pdf_page": 57,
+      "file": "full.md#pdf-第-57-页",
+      "characters": 632
+    },
+    {
+      "pdf_page": 58,
+      "file": "full.md#pdf-第-58-页",
+      "characters": 870
+    },
+    {
+      "pdf_page": 59,
+      "file": "full.md#pdf-第-59-页",
+      "characters": 204
+    },
+    {
+      "pdf_page": 60,
+      "file": "full.md#pdf-第-60-页",
+      "characters": 1008
+    },
+    {
+      "pdf_page": 61,
+      "file": "full.md#pdf-第-61-页",
+      "characters": 766
+    },
+    {
+      "pdf_page": 62,
+      "file": "full.md#pdf-第-62-页",
+      "characters": 672
+    },
+    {
+      "pdf_page": 63,
+      "file": "full.md#pdf-第-63-页",
+      "characters": 760
+    },
+    {
+      "pdf_page": 64,
+      "file": "full.md#pdf-第-64-页",
+      "characters": 111
+    },
+    {
+      "pdf_page": 65,
+      "file": "full.md#pdf-第-65-页",
+      "characters": 780
+    },
+    {
+      "pdf_page": 66,
+      "file": "full.md#pdf-第-66-页",
+      "characters": 281
+    },
+    {
+      "pdf_page": 67,
+      "file": "full.md#pdf-第-67-页",
+      "characters": 818
+    },
+    {
+      "pdf_page": 68,
+      "file": "full.md#pdf-第-68-页",
+      "characters": 205
+    },
+    {
+      "pdf_page": 69,
+      "file": "full.md#pdf-第-69-页",
+      "characters": 789
+    },
+    {
+      "pdf_page": 70,
+      "file": "full.md#pdf-第-70-页",
+      "characters": 673
+    },
+    {
+      "pdf_page": 71,
+      "file": "full.md#pdf-第-71-页",
+      "characters": 397
+    },
+    {
+      "pdf_page": 72,
+      "file": "full.md#pdf-第-72-页",
+      "characters": 574
+    },
+    {
+      "pdf_page": 73,
+      "file": "full.md#pdf-第-73-页",
+      "characters": 105
+    },
+    {
+      "pdf_page": 74,
+      "file": "full.md#pdf-第-74-页",
+      "characters": 634
+    },
+    {
+      "pdf_page": 75,
+      "file": "full.md#pdf-第-75-页",
+      "characters": 222
+    },
+    {
+      "pdf_page": 76,
+      "file": "full.md#pdf-第-76-页",
+      "characters": 812
+    },
+    {
+      "pdf_page": 77,
+      "file": "full.md#pdf-第-77-页",
+      "characters": 344
+    },
+    {
+      "pdf_page": 78,
+      "file": "full.md#pdf-第-78-页",
+      "characters": 744
+    },
+    {
+      "pdf_page": 79,
+      "file": "full.md#pdf-第-79-页",
+      "characters": 714
+    },
+    {
+      "pdf_page": 80,
+      "file": "full.md#pdf-第-80-页",
+      "characters": 670
+    },
+    {
+      "pdf_page": 81,
+      "file": "full.md#pdf-第-81-页",
+      "characters": 539
+    },
+    {
+      "pdf_page": 82,
+      "file": "full.md#pdf-第-82-页",
+      "characters": 533
+    },
+    {
+      "pdf_page": 83,
+      "file": "full.md#pdf-第-83-页",
+      "characters": 627
+    },
+    {
+      "pdf_page": 84,
+      "file": "full.md#pdf-第-84-页",
+      "characters": 261
+    },
+    {
+      "pdf_page": 85,
+      "file": "full.md#pdf-第-85-页",
+      "characters": 724
+    },
+    {
+      "pdf_page": 86,
+      "file": "full.md#pdf-第-86-页",
+      "characters": 861
+    },
+    {
+      "pdf_page": 87,
+      "file": "full.md#pdf-第-87-页",
+      "characters": 156
+    },
+    {
+      "pdf_page": 88,
+      "file": "full.md#pdf-第-88-页",
+      "characters": 737
+    },
+    {
+      "pdf_page": 89,
+      "file": "full.md#pdf-第-89-页",
+      "characters": 821
+    },
+    {
+      "pdf_page": 90,
+      "file": "full.md#pdf-第-90-页",
+      "characters": 495
+    },
+    {
+      "pdf_page": 91,
+      "file": "full.md#pdf-第-91-页",
+      "characters": 606
+    },
+    {
+      "pdf_page": 92,
+      "file": "full.md#pdf-第-92-页",
+      "characters": 394
+    },
+    {
+      "pdf_page": 93,
+      "file": "full.md#pdf-第-93-页",
+      "characters": 327
+    },
+    {
+      "pdf_page": 94,
+      "file": "full.md#pdf-第-94-页",
+      "characters": 423
+    },
+    {
+      "pdf_page": 95,
+      "file": "full.md#pdf-第-95-页",
+      "characters": 752
+    },
+    {
+      "pdf_page": 96,
+      "file": "full.md#pdf-第-96-页",
+      "characters": 315
+    },
+    {
+      "pdf_page": 97,
+      "file": "full.md#pdf-第-97-页",
+      "characters": 222
+    },
+    {
+      "pdf_page": 98,
+      "file": "full.md#pdf-第-98-页",
+      "characters": 680
+    },
+    {
+      "pdf_page": 99,
+      "file": "full.md#pdf-第-99-页",
+      "characters": 664
+    },
+    {
+      "pdf_page": 100,
+      "file": "full.md#pdf-第-100-页",
+      "characters": 282
+    },
+    {
+      "pdf_page": 101,
+      "file": "full.md#pdf-第-101-页",
+      "characters": 318
+    },
+    {
+      "pdf_page": 102,
+      "file": "full.md#pdf-第-102-页",
+      "characters": 731
+    },
+    {
+      "pdf_page": 103,
+      "file": "full.md#pdf-第-103-页",
+      "characters": 312
+    },
+    {
+      "pdf_page": 104,
+      "file": "full.md#pdf-第-104-页",
+      "characters": 710
+    },
+    {
+      "pdf_page": 105,
+      "file": "full.md#pdf-第-105-页",
+      "characters": 727
+    },
+    {
+      "pdf_page": 106,
+      "file": "full.md#pdf-第-106-页",
+      "characters": 522
+    },
+    {
+      "pdf_page": 107,
+      "file": "full.md#pdf-第-107-页",
+      "characters": 782
+    },
+    {
+      "pdf_page": 108,
+      "file": "full.md#pdf-第-108-页",
+      "characters": 20
+    },
+    {
+      "pdf_page": 109,
+      "file": "full.md#pdf-第-109-页",
+      "characters": 830
+    },
+    {
+      "pdf_page": 110,
+      "file": "full.md#pdf-第-110-页",
+      "characters": 142
+    },
+    {
+      "pdf_page": 111,
+      "file": "full.md#pdf-第-111-页",
+      "characters": 706
+    },
+    {
+      "pdf_page": 112,
+      "file": "full.md#pdf-第-112-页",
+      "characters": 429
+    },
+    {
+      "pdf_page": 113,
+      "file": "full.md#pdf-第-113-页",
+      "characters": 143
+    },
+    {
+      "pdf_page": 114,
+      "file": "full.md#pdf-第-114-页",
+      "characters": 730
+    },
+    {
+      "pdf_page": 115,
+      "file": "full.md#pdf-第-115-页",
+      "characters": 177
+    },
+    {
+      "pdf_page": 116,
+      "file": "full.md#pdf-第-116-页",
+      "characters": 739
+    },
+    {
+      "pdf_page": 117,
+      "file": "full.md#pdf-第-117-页",
+      "characters": 395
+    },
+    {
+      "pdf_page": 118,
+      "file": "full.md#pdf-第-118-页",
+      "characters": 523
+    },
+    {
+      "pdf_page": 119,
+      "file": "full.md#pdf-第-119-页",
+      "characters": 287
+    },
+    {
+      "pdf_page": 120,
+      "file": "full.md#pdf-第-120-页",
+      "characters": 307
+    },
+    {
+      "pdf_page": 121,
+      "file": "full.md#pdf-第-121-页",
+      "characters": 113
+    },
+    {
+      "pdf_page": 122,
+      "file": "full.md#pdf-第-122-页",
+      "characters": 383
+    },
+    {
+      "pdf_page": 123,
+      "file": "full.md#pdf-第-123-页",
+      "characters": 249
+    },
+    {
+      "pdf_page": 124,
+      "file": "full.md#pdf-第-124-页",
+      "characters": 761
+    },
+    {
+      "pdf_page": 125,
+      "file": "full.md#pdf-第-125-页",
+      "characters": 371
+    },
+    {
+      "pdf_page": 126,
+      "file": "full.md#pdf-第-126-页",
+      "characters": 752
+    },
+    {
+      "pdf_page": 127,
+      "file": "full.md#pdf-第-127-页",
+      "characters": 311
+    },
+    {
+      "pdf_page": 128,
+      "file": "full.md#pdf-第-128-页",
+      "characters": 377
+    },
+    {
+      "pdf_page": 129,
+      "file": "full.md#pdf-第-129-页",
+      "characters": 753
+    },
+    {
+      "pdf_page": 130,
+      "file": "full.md#pdf-第-130-页",
+      "characters": 259
+    },
+    {
+      "pdf_page": 131,
+      "file": "full.md#pdf-第-131-页",
+      "characters": 710
+    },
+    {
+      "pdf_page": 132,
+      "file": "full.md#pdf-第-132-页",
+      "characters": 542
+    },
+    {
+      "pdf_page": 133,
+      "file": "full.md#pdf-第-133-页",
+      "characters": 525
+    },
+    {
+      "pdf_page": 134,
+      "file": "full.md#pdf-第-134-页",
+      "characters": 657
+    },
+    {
+      "pdf_page": 135,
+      "file": "full.md#pdf-第-135-页",
+      "characters": 204
+    },
+    {
+      "pdf_page": 136,
+      "file": "full.md#pdf-第-136-页",
+      "characters": 430
+    },
+    {
+      "pdf_page": 137,
+      "file": "full.md#pdf-第-137-页",
+      "characters": 432
+    },
+    {
+      "pdf_page": 138,
+      "file": "full.md#pdf-第-138-页",
+      "characters": 252
+    },
+    {
+      "pdf_page": 139,
+      "file": "full.md#pdf-第-139-页",
+      "characters": 469
+    },
+    {
+      "pdf_page": 140,
+      "file": "full.md#pdf-第-140-页",
+      "characters": 505
+    },
+    {
+      "pdf_page": 141,
+      "file": "full.md#pdf-第-141-页",
+      "characters": 596
+    },
+    {
+      "pdf_page": 142,
+      "file": "full.md#pdf-第-142-页",
+      "characters": 710
+    },
+    {
+      "pdf_page": 143,
+      "file": "full.md#pdf-第-143-页",
+      "characters": 624
+    },
+    {
+      "pdf_page": 144,
+      "file": "full.md#pdf-第-144-页",
+      "characters": 652
+    },
+    {
+      "pdf_page": 145,
+      "file": "full.md#pdf-第-145-页",
+      "characters": 323
+    },
+    {
+      "pdf_page": 146,
+      "file": "full.md#pdf-第-146-页",
+      "characters": 517
+    },
+    {
+      "pdf_page": 147,
+      "file": "full.md#pdf-第-147-页",
+      "characters": 576
+    },
+    {
+      "pdf_page": 148,
+      "file": "full.md#pdf-第-148-页",
+      "characters": 357
+    },
+    {
+      "pdf_page": 149,
+      "file": "full.md#pdf-第-149-页",
+      "characters": 399
+    },
+    {
+      "pdf_page": 150,
+      "file": "full.md#pdf-第-150-页",
+      "characters": 561
+    },
+    {
+      "pdf_page": 151,
+      "file": "full.md#pdf-第-151-页",
+      "characters": 182
+    },
+    {
+      "pdf_page": 152,
+      "file": "full.md#pdf-第-152-页",
+      "characters": 773
+    },
+    {
+      "pdf_page": 153,
+      "file": "full.md#pdf-第-153-页",
+      "characters": 872
+    },
+    {
+      "pdf_page": 154,
+      "file": "full.md#pdf-第-154-页",
+      "characters": 219
+    },
+    {
+      "pdf_page": 155,
+      "file": "full.md#pdf-第-155-页",
+      "characters": 728
+    },
+    {
+      "pdf_page": 156,
+      "file": "full.md#pdf-第-156-页",
+      "characters": 728
+    },
+    {
+      "pdf_page": 157,
+      "file": "full.md#pdf-第-157-页",
+      "characters": 601
+    },
+    {
+      "pdf_page": 158,
+      "file": "full.md#pdf-第-158-页",
+      "characters": 392
+    },
+    {
+      "pdf_page": 159,
+      "file": "full.md#pdf-第-159-页",
+      "characters": 327
+    },
+    {
+      "pdf_page": 160,
+      "file": "full.md#pdf-第-160-页",
+      "characters": 775
+    },
+    {
+      "pdf_page": 161,
+      "file": "full.md#pdf-第-161-页",
+      "characters": 764
+    },
+    {
+      "pdf_page": 162,
+      "file": "full.md#pdf-第-162-页",
+      "characters": 738
+    },
+    {
+      "pdf_page": 163,
+      "file": "full.md#pdf-第-163-页",
+      "characters": 614
+    },
+    {
+      "pdf_page": 164,
+      "file": "full.md#pdf-第-164-页",
+      "characters": 693
+    },
+    {
+      "pdf_page": 165,
+      "file": "full.md#pdf-第-165-页",
+      "characters": 521
+    },
+    {
+      "pdf_page": 166,
+      "file": "full.md#pdf-第-166-页",
+      "characters": 668
+    },
+    {
+      "pdf_page": 167,
+      "file": "full.md#pdf-第-167-页",
+      "characters": 492
+    },
+    {
+      "pdf_page": 168,
+      "file": "full.md#pdf-第-168-页",
+      "characters": 835
+    },
+    {
+      "pdf_page": 169,
+      "file": "full.md#pdf-第-169-页",
+      "characters": 631
+    },
+    {
+      "pdf_page": 170,
+      "file": "full.md#pdf-第-170-页",
+      "characters": 454
+    },
+    {
+      "pdf_page": 171,
+      "file": "full.md#pdf-第-171-页",
+      "characters": 344
+    },
+    {
+      "pdf_page": 172,
+      "file": "full.md#pdf-第-172-页",
+      "characters": 475
+    },
+    {
+      "pdf_page": 173,
+      "file": "full.md#pdf-第-173-页",
+      "characters": 407
+    },
+    {
+      "pdf_page": 174,
+      "file": "full.md#pdf-第-174-页",
+      "characters": 609
+    },
+    {
+      "pdf_page": 175,
+      "file": "full.md#pdf-第-175-页",
+      "characters": 336
+    },
+    {
+      "pdf_page": 176,
+      "file": "full.md#pdf-第-176-页",
+      "characters": 724
+    },
+    {
+      "pdf_page": 177,
+      "file": "full.md#pdf-第-177-页",
+      "characters": 246
+    },
+    {
+      "pdf_page": 178,
+      "file": "full.md#pdf-第-178-页",
+      "characters": 755
+    },
+    {
+      "pdf_page": 179,
+      "file": "full.md#pdf-第-179-页",
+      "characters": 268
+    },
+    {
+      "pdf_page": 180,
+      "file": "full.md#pdf-第-180-页",
+      "characters": 652
+    },
+    {
+      "pdf_page": 181,
+      "file": "full.md#pdf-第-181-页",
+      "characters": 368
+    },
+    {
+      "pdf_page": 182,
+      "file": "full.md#pdf-第-182-页",
+      "characters": 681
+    },
+    {
+      "pdf_page": 183,
+      "file": "full.md#pdf-第-183-页",
+      "characters": 237
+    },
+    {
+      "pdf_page": 184,
+      "file": "full.md#pdf-第-184-页",
+      "characters": 612
+    },
+    {
+      "pdf_page": 185,
+      "file": "full.md#pdf-第-185-页",
+      "characters": 354
+    },
+    {
+      "pdf_page": 186,
+      "file": "full.md#pdf-第-186-页",
+      "characters": 752
+    },
+    {
+      "pdf_page": 187,
+      "file": "full.md#pdf-第-187-页",
+      "characters": 132
+    },
+    {
+      "pdf_page": 188,
+      "file": "full.md#pdf-第-188-页",
+      "characters": 669
+    },
+    {
+      "pdf_page": 189,
+      "file": "full.md#pdf-第-189-页",
+      "characters": 295
+    },
+    {
+      "pdf_page": 190,
+      "file": "full.md#pdf-第-190-页",
+      "characters": 587
+    },
+    {
+      "pdf_page": 191,
+      "file": "full.md#pdf-第-191-页",
+      "characters": 308
+    },
+    {
+      "pdf_page": 192,
+      "file": "full.md#pdf-第-192-页",
+      "characters": 439
+    },
+    {
+      "pdf_page": 193,
+      "file": "full.md#pdf-第-193-页",
+      "characters": 373
+    },
+    {
+      "pdf_page": 194,
+      "file": "full.md#pdf-第-194-页",
+      "characters": 243
+    },
+    {
+      "pdf_page": 195,
+      "file": "full.md#pdf-第-195-页",
+      "characters": 602
+    },
+    {
+      "pdf_page": 196,
+      "file": "full.md#pdf-第-196-页",
+      "characters": 143
+    },
+    {
+      "pdf_page": 197,
+      "file": "full.md#pdf-第-197-页",
+      "characters": 653
+    },
+    {
+      "pdf_page": 198,
+      "file": "full.md#pdf-第-198-页",
+      "characters": 831
+    },
+    {
+      "pdf_page": 199,
+      "file": "full.md#pdf-第-199-页",
+      "characters": 389
+    },
+    {
+      "pdf_page": 200,
+      "file": "full.md#pdf-第-200-页",
+      "characters": 522
+    },
+    {
+      "pdf_page": 201,
+      "file": "full.md#pdf-第-201-页",
+      "characters": 611
+    },
+    {
+      "pdf_page": 202,
+      "file": "full.md#pdf-第-202-页",
+      "characters": 578
+    },
+    {
+      "pdf_page": 203,
+      "file": "full.md#pdf-第-203-页",
+      "characters": 716
+    },
+    {
+      "pdf_page": 204,
+      "file": "full.md#pdf-第-204-页",
+      "characters": 414
+    },
+    {
+      "pdf_page": 205,
+      "file": "full.md#pdf-第-205-页",
+      "characters": 764
+    },
+    {
+      "pdf_page": 206,
+      "file": "full.md#pdf-第-206-页",
+      "characters": 734
+    },
+    {
+      "pdf_page": 207,
+      "file": "full.md#pdf-第-207-页",
+      "characters": 497
+    },
+    {
+      "pdf_page": 208,
+      "file": "full.md#pdf-第-208-页",
+      "characters": 3
+    },
+    {
+      "pdf_page": 209,
+      "file": "full.md#pdf-第-209-页",
+      "characters": 325
+    },
+    {
+      "pdf_page": 210,
+      "file": "full.md#pdf-第-210-页",
+      "characters": 451
+    },
+    {
+      "pdf_page": 211,
+      "file": "full.md#pdf-第-211-页",
+      "characters": 674
+    },
+    {
+      "pdf_page": 212,
+      "file": "full.md#pdf-第-212-页",
+      "characters": 433
+    },
+    {
+      "pdf_page": 213,
+      "file": "full.md#pdf-第-213-页",
+      "characters": 703
+    },
+    {
+      "pdf_page": 214,
+      "file": "full.md#pdf-第-214-页",
+      "characters": 859
+    },
+    {
+      "pdf_page": 215,
+      "file": "full.md#pdf-第-215-页",
+      "characters": 885
+    },
+    {
+      "pdf_page": 216,
+      "file": "full.md#pdf-第-216-页",
+      "characters": 853
+    },
+    {
+      "pdf_page": 217,
+      "file": "full.md#pdf-第-217-页",
+      "characters": 782
+    },
+    {
+      "pdf_page": 218,
+      "file": "full.md#pdf-第-218-页",
+      "characters": 892
+    },
+    {
+      "pdf_page": 219,
+      "file": "full.md#pdf-第-219-页",
+      "characters": 869
+    },
+    {
+      "pdf_page": 220,
+      "file": "full.md#pdf-第-220-页",
+      "characters": 848
+    },
+    {
+      "pdf_page": 221,
+      "file": "full.md#pdf-第-221-页",
+      "characters": 867
+    },
+    {
+      "pdf_page": 222,
+      "file": "full.md#pdf-第-222-页",
+      "characters": 218
+    },
+    {
+      "pdf_page": 223,
+      "file": "full.md#pdf-第-223-页",
+      "characters": 504
+    },
+    {
+      "pdf_page": 224,
+      "file": "full.md#pdf-第-224-页",
+      "characters": 568
+    },
+    {
+      "pdf_page": 225,
+      "file": "full.md#pdf-第-225-页",
+      "characters": 607
+    },
+    {
+      "pdf_page": 226,
+      "file": "full.md#pdf-第-226-页",
+      "characters": 605
+    },
+    {
+      "pdf_page": 227,
+      "file": "full.md#pdf-第-227-页",
+      "characters": 537
+    },
+    {
+      "pdf_page": 228,
+      "file": "full.md#pdf-第-228-页",
+      "characters": 529
+    },
+    {
+      "pdf_page": 229,
+      "file": "full.md#pdf-第-229-页",
+      "characters": 580
+    },
+    {
+      "pdf_page": 230,
+      "file": "full.md#pdf-第-230-页",
+      "characters": 560
+    },
+    {
+      "pdf_page": 231,
+      "file": "full.md#pdf-第-231-页",
+      "characters": 564
+    },
+    {
+      "pdf_page": 232,
+      "file": "full.md#pdf-第-232-页",
+      "characters": 535
+    },
+    {
+      "pdf_page": 233,
+      "file": "full.md#pdf-第-233-页",
+      "characters": 559
+    },
+    {
+      "pdf_page": 234,
+      "file": "full.md#pdf-第-234-页",
+      "characters": 603
+    },
+    {
+      "pdf_page": 235,
+      "file": "full.md#pdf-第-235-页",
+      "characters": 590
+    },
+    {
+      "pdf_page": 236,
+      "file": "full.md#pdf-第-236-页",
+      "characters": 535
+    },
+    {
+      "pdf_page": 237,
+      "file": "full.md#pdf-第-237-页",
+      "characters": 545
+    },
+    {
+      "pdf_page": 238,
+      "file": "full.md#pdf-第-238-页",
+      "characters": 525
+    },
+    {
+      "pdf_page": 239,
+      "file": "full.md#pdf-第-239-页",
+      "characters": 584
+    },
+    {
+      "pdf_page": 240,
+      "file": "full.md#pdf-第-240-页",
+      "characters": 563
+    },
+    {
+      "pdf_page": 241,
+      "file": "full.md#pdf-第-241-页",
+      "characters": 294
+    },
+    {
+      "pdf_page": 242,
+      "file": "full.md#pdf-第-242-页",
+      "characters": 712
+    },
+    {
+      "pdf_page": 243,
+      "file": "full.md#pdf-第-243-页",
+      "characters": 699
+    },
+    {
+      "pdf_page": 244,
+      "file": "full.md#pdf-第-244-页",
+      "characters": 654
+    },
+    {
+      "pdf_page": 245,
+      "file": "full.md#pdf-第-245-页",
+      "characters": 120
+    },
+    {
+      "pdf_page": 246,
+      "file": "full.md#pdf-第-246-页",
+      "characters": 217
+    },
+    {
+      "pdf_page": 247,
+      "file": "full.md#pdf-第-247-页",
+      "characters": 3
+    },
+    {
+      "pdf_page": 248,
+      "file": "full.md#pdf-第-248-页",
+      "characters": 610
+    },
+    {
+      "pdf_page": 249,
+      "file": "full.md#pdf-第-249-页",
+      "characters": 3
+    },
+    {
+      "pdf_page": 250,
+      "file": "full.md#pdf-第-250-页",
+      "characters": 540
+    },
+    {
+      "pdf_page": 251,
+      "file": "full.md#pdf-第-251-页",
+      "characters": 726
+    },
+    {
+      "pdf_page": 252,
+      "file": "full.md#pdf-第-252-页",
+      "characters": 703
+    },
+    {
+      "pdf_page": 253,
+      "file": "full.md#pdf-第-253-页",
+      "characters": 448
+    },
+    {
+      "pdf_page": 254,
+      "file": "full.md#pdf-第-254-页",
+      "characters": 463
+    },
+    {
+      "pdf_page": 255,
+      "file": "full.md#pdf-第-255-页",
+      "characters": 660
+    },
+    {
+      "pdf_page": 256,
+      "file": "full.md#pdf-第-256-页",
+      "characters": 592
+    },
+    {
+      "pdf_page": 257,
+      "file": "full.md#pdf-第-257-页",
+      "characters": 691
+    },
+    {
+      "pdf_page": 258,
+      "file": "full.md#pdf-第-258-页",
+      "characters": 662
+    },
+    {
+      "pdf_page": 259,
+      "file": "full.md#pdf-第-259-页",
+      "characters": 564
+    },
+    {
+      "pdf_page": 260,
+      "file": "full.md#pdf-第-260-页",
+      "characters": 818
+    },
+    {
+      "pdf_page": 261,
+      "file": "full.md#pdf-第-261-页",
+      "characters": 220
+    },
+    {
+      "pdf_page": 262,
+      "file": "full.md#pdf-第-262-页",
+      "characters": 604
+    },
+    {
+      "pdf_page": 263,
+      "file": "full.md#pdf-第-263-页",
+      "characters": 519
+    },
+    {
+      "pdf_page": 264,
+      "file": "full.md#pdf-第-264-页",
+      "characters": 652
+    },
+    {
+      "pdf_page": 265,
+      "file": "full.md#pdf-第-265-页",
+      "characters": 755
+    },
+    {
+      "pdf_page": 266,
+      "file": "full.md#pdf-第-266-页",
+      "characters": 3
+    },
+    {
+      "pdf_page": 267,
+      "file": "full.md#pdf-第-267-页",
+      "characters": 470
+    },
+    {
+      "pdf_page": 268,
+      "file": "full.md#pdf-第-268-页",
+      "characters": 423
+    },
+    {
+      "pdf_page": 269,
+      "file": "full.md#pdf-第-269-页",
+      "characters": 476
+    },
+    {
+      "pdf_page": 270,
+      "file": "full.md#pdf-第-270-页",
+      "characters": 353
+    },
+    {
+      "pdf_page": 271,
+      "file": "full.md#pdf-第-271-页",
+      "characters": 465
+    },
+    {
+      "pdf_page": 272,
+      "file": "full.md#pdf-第-272-页",
+      "characters": 721
+    },
+    {
+      "pdf_page": 273,
+      "file": "full.md#pdf-第-273-页",
+      "characters": 1052
+    },
+    {
+      "pdf_page": 274,
+      "file": "full.md#pdf-第-274-页",
+      "characters": 1066
+    },
+    {
+      "pdf_page": 275,
+      "file": "full.md#pdf-第-275-页",
+      "characters": 668
+    },
+    {
+      "pdf_page": 276,
+      "file": "full.md#pdf-第-276-页",
+      "characters": 819
+    },
+    {
+      "pdf_page": 277,
+      "file": "full.md#pdf-第-277-页",
+      "characters": 924
+    },
+    {
+      "pdf_page": 278,
+      "file": "full.md#pdf-第-278-页",
+      "characters": 887
+    },
+    {
+      "pdf_page": 279,
+      "file": "full.md#pdf-第-279-页",
+      "characters": 327
+    },
+    {
+      "pdf_page": 280,
+      "file": "full.md#pdf-第-280-页",
+      "characters": 949
+    },
+    {
+      "pdf_page": 281,
+      "file": "full.md#pdf-第-281-页",
+      "characters": 862
+    },
+    {
+      "pdf_page": 282,
+      "file": "full.md#pdf-第-282-页",
+      "characters": 860
+    },
+    {
+      "pdf_page": 283,
+      "file": "full.md#pdf-第-283-页",
+      "characters": 363
+    },
+    {
+      "pdf_page": 284,
+      "file": "full.md#pdf-第-284-页",
+      "characters": 973
+    },
+    {
+      "pdf_page": 285,
+      "file": "full.md#pdf-第-285-页",
+      "characters": 1017
+    },
+    {
+      "pdf_page": 286,
+      "file": "full.md#pdf-第-286-页",
+      "characters": 982
+    },
+    {
+      "pdf_page": 287,
+      "file": "full.md#pdf-第-287-页",
+      "characters": 435
+    },
+    {
+      "pdf_page": 288,
+      "file": "full.md#pdf-第-288-页",
+      "characters": 940
+    },
+    {
+      "pdf_page": 289,
+      "file": "full.md#pdf-第-289-页",
+      "characters": 842
+    },
+    {
+      "pdf_page": 290,
+      "file": "full.md#pdf-第-290-页",
+      "characters": 930
+    },
+    {
+      "pdf_page": 291,
+      "file": "full.md#pdf-第-291-页",
+      "characters": 373
+    },
+    {
+      "pdf_page": 292,
+      "file": "full.md#pdf-第-292-页",
+      "characters": 849
+    },
+    {
+      "pdf_page": 293,
+      "file": "full.md#pdf-第-293-页",
+      "characters": 916
+    },
+    {
+      "pdf_page": 294,
+      "file": "full.md#pdf-第-294-页",
+      "characters": 814
+    },
+    {
+      "pdf_page": 295,
+      "file": "full.md#pdf-第-295-页",
+      "characters": 316
+    },
+    {
+      "pdf_page": 296,
+      "file": "full.md#pdf-第-296-页",
+      "characters": 734
+    },
+    {
+      "pdf_page": 297,
+      "file": "full.md#pdf-第-297-页",
+      "characters": 503
+    },
+    {
+      "pdf_page": 298,
+      "file": "full.md#pdf-第-298-页",
+      "characters": 1118
+    },
+    {
+      "pdf_page": 299,
+      "file": "full.md#pdf-第-299-页",
+      "characters": 953
+    },
+    {
+      "pdf_page": 300,
+      "file": "full.md#pdf-第-300-页",
+      "characters": 796
+    },
+    {
+      "pdf_page": 301,
+      "file": "full.md#pdf-第-301-页",
+      "characters": 56
+    },
+    {
+      "pdf_page": 302,
+      "file": "full.md#pdf-第-302-页",
+      "characters": 1048
+    },
+    {
+      "pdf_page": 303,
+      "file": "full.md#pdf-第-303-页",
+      "characters": 1000
+    },
+    {
+      "pdf_page": 304,
+      "file": "full.md#pdf-第-304-页",
+      "characters": 912
+    },
+    {
+      "pdf_page": 305,
+      "file": "full.md#pdf-第-305-页",
+      "characters": 451
+    },
+    {
+      "pdf_page": 306,
+      "file": "full.md#pdf-第-306-页",
+      "characters": 981
+    },
+    {
+      "pdf_page": 307,
+      "file": "full.md#pdf-第-307-页",
+      "characters": 930
+    },
+    {
+      "pdf_page": 308,
+      "file": "full.md#pdf-第-308-页",
+      "characters": 934
+    },
+    {
+      "pdf_page": 309,
+      "file": "full.md#pdf-第-309-页",
+      "characters": 524
+    },
+    {
+      "pdf_page": 310,
+      "file": "full.md#pdf-第-310-页",
+      "characters": 981
+    },
+    {
+      "pdf_page": 311,
+      "file": "full.md#pdf-第-311-页",
+      "characters": 939
+    },
+    {
+      "pdf_page": 312,
+      "file": "full.md#pdf-第-312-页",
+      "characters": 918
+    },
+    {
+      "pdf_page": 313,
+      "file": "full.md#pdf-第-313-页",
+      "characters": 522
+    },
+    {
+      "pdf_page": 314,
+      "file": "full.md#pdf-第-314-页",
+      "characters": 1022
+    },
+    {
+      "pdf_page": 315,
+      "file": "full.md#pdf-第-315-页",
+      "characters": 986
+    },
+    {
+      "pdf_page": 316,
+      "file": "full.md#pdf-第-316-页",
+      "characters": 978
+    },
+    {
+      "pdf_page": 317,
+      "file": "full.md#pdf-第-317-页",
+      "characters": 504
+    },
+    {
+      "pdf_page": 318,
+      "file": "full.md#pdf-第-318-页",
+      "characters": 918
+    },
+    {
+      "pdf_page": 319,
+      "file": "full.md#pdf-第-319-页",
+      "characters": 914
+    },
+    {
+      "pdf_page": 320,
+      "file": "full.md#pdf-第-320-页",
+      "characters": 955
+    },
+    {
+      "pdf_page": 321,
+      "file": "full.md#pdf-第-321-页",
+      "characters": 367
+    },
+    {
+      "pdf_page": 322,
+      "file": "full.md#pdf-第-322-页",
+      "characters": 632
+    },
+    {
+      "pdf_page": 323,
+      "file": "full.md#pdf-第-323-页",
+      "characters": 295
+    },
+    {
+      "pdf_page": 324,
+      "file": "full.md#pdf-第-324-页",
+      "characters": 380
+    },
+    {
+      "pdf_page": 325,
+      "file": "full.md#pdf-第-325-页",
+      "characters": 1085
+    },
+    {
+      "pdf_page": 326,
+      "file": "full.md#pdf-第-326-页",
+      "characters": 830
+    },
+    {
+      "pdf_page": 327,
+      "file": "full.md#pdf-第-327-页",
+      "characters": 936
+    },
+    {
+      "pdf_page": 328,
+      "file": "full.md#pdf-第-328-页",
+      "characters": 283
+    },
+    {
+      "pdf_page": 329,
+      "file": "full.md#pdf-第-329-页",
+      "characters": 894
+    },
+    {
+      "pdf_page": 330,
+      "file": "full.md#pdf-第-330-页",
+      "characters": 923
+    },
+    {
+      "pdf_page": 331,
+      "file": "full.md#pdf-第-331-页",
+      "characters": 838
+    },
+    {
+      "pdf_page": 332,
+      "file": "full.md#pdf-第-332-页",
+      "characters": 251
+    },
+    {
+      "pdf_page": 333,
+      "file": "full.md#pdf-第-333-页",
+      "characters": 1094
+    },
+    {
+      "pdf_page": 334,
+      "file": "full.md#pdf-第-334-页",
+      "characters": 890
+    },
+    {
+      "pdf_page": 335,
+      "file": "full.md#pdf-第-335-页",
+      "characters": 893
+    },
+    {
+      "pdf_page": 336,
+      "file": "full.md#pdf-第-336-页",
+      "characters": 377
+    },
+    {
+      "pdf_page": 337,
+      "file": "full.md#pdf-第-337-页",
+      "characters": 993
+    },
+    {
+      "pdf_page": 338,
+      "file": "full.md#pdf-第-338-页",
+      "characters": 892
+    },
+    {
+      "pdf_page": 339,
+      "file": "full.md#pdf-第-339-页",
+      "characters": 913
+    },
+    {
+      "pdf_page": 340,
+      "file": "full.md#pdf-第-340-页",
+      "characters": 682
+    },
+    {
+      "pdf_page": 341,
+      "file": "full.md#pdf-第-341-页",
+      "characters": 946
+    },
+    {
+      "pdf_page": 342,
+      "file": "full.md#pdf-第-342-页",
+      "characters": 755
+    },
+    {
+      "pdf_page": 343,
+      "file": "full.md#pdf-第-343-页",
+      "characters": 1117
+    },
+    {
+      "pdf_page": 344,
+      "file": "full.md#pdf-第-344-页",
+      "characters": 804
+    },
+    {
+      "pdf_page": 345,
+      "file": "full.md#pdf-第-345-页",
+      "characters": 83
+    },
+    {
+      "pdf_page": 346,
+      "file": "full.md#pdf-第-346-页",
+      "characters": 933
+    },
+    {
+      "pdf_page": 347,
+      "file": "full.md#pdf-第-347-页",
+      "characters": 840
+    },
+    {
+      "pdf_page": 348,
+      "file": "full.md#pdf-第-348-页",
+      "characters": 992
+    },
+    {
+      "pdf_page": 349,
+      "file": "full.md#pdf-第-349-页",
+      "characters": 681
+    },
+    {
+      "pdf_page": 350,
+      "file": "full.md#pdf-第-350-页",
+      "characters": 320
+    },
+    {
+      "pdf_page": 351,
+      "file": "full.md#pdf-第-351-页",
+      "characters": 1116
+    },
+    {
+      "pdf_page": 352,
+      "file": "full.md#pdf-第-352-页",
+      "characters": 882
+    },
+    {
+      "pdf_page": 353,
+      "file": "full.md#pdf-第-353-页",
+      "characters": 963
+    },
+    {
+      "pdf_page": 354,
+      "file": "full.md#pdf-第-354-页",
+      "characters": 262
+    },
+    {
+      "pdf_page": 355,
+      "file": "full.md#pdf-第-355-页",
+      "characters": 1002
+    },
+    {
+      "pdf_page": 356,
+      "file": "full.md#pdf-第-356-页",
+      "characters": 868
+    },
+    {
+      "pdf_page": 357,
+      "file": "full.md#pdf-第-357-页",
+      "characters": 1043
+    },
+    {
+      "pdf_page": 358,
+      "file": "full.md#pdf-第-358-页",
+      "characters": 685
+    },
+    {
+      "pdf_page": 359,
+      "file": "full.md#pdf-第-359-页",
+      "characters": 1000
+    },
+    {
+      "pdf_page": 360,
+      "file": "full.md#pdf-第-360-页",
+      "characters": 899
+    },
+    {
+      "pdf_page": 361,
+      "file": "full.md#pdf-第-361-页",
+      "characters": 971
+    },
+    {
+      "pdf_page": 362,
+      "file": "full.md#pdf-第-362-页",
+      "characters": 868
+    },
+    {
+      "pdf_page": 363,
+      "file": "full.md#pdf-第-363-页",
+      "characters": 1002
+    },
+    {
+      "pdf_page": 364,
+      "file": "full.md#pdf-第-364-页",
+      "characters": 939
+    },
+    {
+      "pdf_page": 365,
+      "file": "full.md#pdf-第-365-页",
+      "characters": 850
+    },
+    {
+      "pdf_page": 366,
+      "file": "full.md#pdf-第-366-页",
+      "characters": 399
+    },
+    {
+      "pdf_page": 367,
+      "file": "full.md#pdf-第-367-页",
+      "characters": 965
+    },
+    {
+      "pdf_page": 368,
+      "file": "full.md#pdf-第-368-页",
+      "characters": 920
+    },
+    {
+      "pdf_page": 369,
+      "file": "full.md#pdf-第-369-页",
+      "characters": 932
+    },
+    {
+      "pdf_page": 370,
+      "file": "full.md#pdf-第-370-页",
+      "characters": 662
+    },
+    {
+      "pdf_page": 371,
+      "file": "full.md#pdf-第-371-页",
+      "characters": 890
+    },
+    {
+      "pdf_page": 372,
+      "file": "full.md#pdf-第-372-页",
+      "characters": 888
+    },
+    {
+      "pdf_page": 373,
+      "file": "full.md#pdf-第-373-页",
+      "characters": 881
+    },
+    {
+      "pdf_page": 374,
+      "file": "full.md#pdf-第-374-页",
+      "characters": 279
+    },
+    {
+      "pdf_page": 375,
+      "file": "full.md#pdf-第-375-页",
+      "characters": 520
+    },
+    {
+      "pdf_page": 376,
+      "file": "full.md#pdf-第-376-页",
+      "characters": 1120
+    },
+    {
+      "pdf_page": 377,
+      "file": "full.md#pdf-第-377-页",
+      "characters": 930
+    },
+    {
+      "pdf_page": 378,
+      "file": "full.md#pdf-第-378-页",
+      "characters": 943
+    },
+    {
+      "pdf_page": 379,
+      "file": "full.md#pdf-第-379-页",
+      "characters": 263
+    },
+    {
+      "pdf_page": 380,
+      "file": "full.md#pdf-第-380-页",
+      "characters": 1000
+    },
+    {
+      "pdf_page": 381,
+      "file": "full.md#pdf-第-381-页",
+      "characters": 930
+    },
+    {
+      "pdf_page": 382,
+      "file": "full.md#pdf-第-382-页",
+      "characters": 937
+    },
+    {
+      "pdf_page": 383,
+      "file": "full.md#pdf-第-383-页",
+      "characters": 406
+    },
+    {
+      "pdf_page": 384,
+      "file": "full.md#pdf-第-384-页",
+      "characters": 969
+    },
+    {
+      "pdf_page": 385,
+      "file": "full.md#pdf-第-385-页",
+      "characters": 942
+    },
+    {
+      "pdf_page": 386,
+      "file": "full.md#pdf-第-386-页",
+      "characters": 868
+    },
+    {
+      "pdf_page": 387,
+      "file": "full.md#pdf-第-387-页",
+      "characters": 304
+    },
+    {
+      "pdf_page": 388,
+      "file": "full.md#pdf-第-388-页",
+      "characters": 995
+    },
+    {
+      "pdf_page": 389,
+      "file": "full.md#pdf-第-389-页",
+      "characters": 809
+    },
+    {
+      "pdf_page": 390,
+      "file": "full.md#pdf-第-390-页",
+      "characters": 945
+    },
+    {
+      "pdf_page": 391,
+      "file": "full.md#pdf-第-391-页",
+      "characters": 547
+    },
+    {
+      "pdf_page": 392,
+      "file": "full.md#pdf-第-392-页",
+      "characters": 930
+    },
+    {
+      "pdf_page": 393,
+      "file": "full.md#pdf-第-393-页",
+      "characters": 912
+    },
+    {
+      "pdf_page": 394,
+      "file": "full.md#pdf-第-394-页",
+      "characters": 870
+    },
+    {
+      "pdf_page": 395,
+      "file": "full.md#pdf-第-395-页",
+      "characters": 431
+    },
+    {
+      "pdf_page": 396,
+      "file": "full.md#pdf-第-396-页",
+      "characters": 924
+    },
+    {
+      "pdf_page": 397,
+      "file": "full.md#pdf-第-397-页",
+      "characters": 870
+    },
+    {
+      "pdf_page": 398,
+      "file": "full.md#pdf-第-398-页",
+      "characters": 885
+    },
+    {
+      "pdf_page": 399,
+      "file": "full.md#pdf-第-399-页",
+      "characters": 331
+    },
+    {
+      "pdf_page": 400,
+      "file": "full.md#pdf-第-400-页",
+      "characters": 455
+    },
+    {
+      "pdf_page": 401,
+      "file": "full.md#pdf-第-401-页",
+      "characters": 965
+    },
+    {
+      "pdf_page": 402,
+      "file": "full.md#pdf-第-402-页",
+      "characters": 1008
+    },
+    {
+      "pdf_page": 403,
+      "file": "full.md#pdf-第-403-页",
+      "characters": 1102
+    },
+    {
+      "pdf_page": 404,
+      "file": "full.md#pdf-第-404-页",
+      "characters": 644
+    },
+    {
+      "pdf_page": 405,
+      "file": "full.md#pdf-第-405-页",
+      "characters": 1023
+    },
+    {
+      "pdf_page": 406,
+      "file": "full.md#pdf-第-406-页",
+      "characters": 853
+    },
+    {
+      "pdf_page": 407,
+      "file": "full.md#pdf-第-407-页",
+      "characters": 887
+    },
+    {
+      "pdf_page": 408,
+      "file": "full.md#pdf-第-408-页",
+      "characters": 756
+    },
+    {
+      "pdf_page": 409,
+      "file": "full.md#pdf-第-409-页",
+      "characters": 1006
+    },
+    {
+      "pdf_page": 410,
+      "file": "full.md#pdf-第-410-页",
+      "characters": 893
+    },
+    {
+      "pdf_page": 411,
+      "file": "full.md#pdf-第-411-页",
+      "characters": 962
+    },
+    {
+      "pdf_page": 412,
+      "file": "full.md#pdf-第-412-页",
+      "characters": 455
+    },
+    {
+      "pdf_page": 413,
+      "file": "full.md#pdf-第-413-页",
+      "characters": 951
+    },
+    {
+      "pdf_page": 414,
+      "file": "full.md#pdf-第-414-页",
+      "characters": 873
+    },
+    {
+      "pdf_page": 415,
+      "file": "full.md#pdf-第-415-页",
+      "characters": 921
+    },
+    {
+      "pdf_page": 416,
+      "file": "full.md#pdf-第-416-页",
+      "characters": 415
+    },
+    {
+      "pdf_page": 417,
+      "file": "full.md#pdf-第-417-页",
+      "characters": 937
+    },
+    {
+      "pdf_page": 418,
+      "file": "full.md#pdf-第-418-页",
+      "characters": 986
+    },
+    {
+      "pdf_page": 419,
+      "file": "full.md#pdf-第-419-页",
+      "characters": 909
+    },
+    {
+      "pdf_page": 420,
+      "file": "full.md#pdf-第-420-页",
+      "characters": 692
+    },
+    {
+      "pdf_page": 421,
+      "file": "full.md#pdf-第-421-页",
+      "characters": 932
+    },
+    {
+      "pdf_page": 422,
+      "file": "full.md#pdf-第-422-页",
+      "characters": 835
+    },
+    {
+      "pdf_page": 423,
+      "file": "full.md#pdf-第-423-页",
+      "characters": 955
+    },
+    {
+      "pdf_page": 424,
+      "file": "full.md#pdf-第-424-页",
+      "characters": 546
+    },
+    {
+      "pdf_page": 425,
+      "file": "full.md#pdf-第-425-页",
+      "characters": 485
+    },
+    {
+      "pdf_page": 426,
+      "file": "full.md#pdf-第-426-页",
+      "characters": 1143
+    },
+    {
+      "pdf_page": 427,
+      "file": "full.md#pdf-第-427-页",
+      "characters": 949
+    },
+    {
+      "pdf_page": 428,
+      "file": "full.md#pdf-第-428-页",
+      "characters": 1013
+    },
+    {
+      "pdf_page": 429,
+      "file": "full.md#pdf-第-429-页",
+      "characters": 370
+    },
+    {
+      "pdf_page": 430,
+      "file": "full.md#pdf-第-430-页",
+      "characters": 997
+    },
+    {
+      "pdf_page": 431,
+      "file": "full.md#pdf-第-431-页",
+      "characters": 846
+    },
+    {
+      "pdf_page": 432,
+      "file": "full.md#pdf-第-432-页",
+      "characters": 1031
+    },
+    {
+      "pdf_page": 433,
+      "file": "full.md#pdf-第-433-页",
+      "characters": 503
+    },
+    {
+      "pdf_page": 434,
+      "file": "full.md#pdf-第-434-页",
+      "characters": 1001
+    },
+    {
+      "pdf_page": 435,
+      "file": "full.md#pdf-第-435-页",
+      "characters": 875
+    },
+    {
+      "pdf_page": 436,
+      "file": "full.md#pdf-第-436-页",
+      "characters": 1062
+    },
+    {
+      "pdf_page": 437,
+      "file": "full.md#pdf-第-437-页",
+      "characters": 499
+    },
+    {
+      "pdf_page": 438,
+      "file": "full.md#pdf-第-438-页",
+      "characters": 919
+    },
+    {
+      "pdf_page": 439,
+      "file": "full.md#pdf-第-439-页",
+      "characters": 913
+    },
+    {
+      "pdf_page": 440,
+      "file": "full.md#pdf-第-440-页",
+      "characters": 967
+    },
+    {
+      "pdf_page": 441,
+      "file": "full.md#pdf-第-441-页",
+      "characters": 661
+    },
+    {
+      "pdf_page": 442,
+      "file": "full.md#pdf-第-442-页",
+      "characters": 924
+    },
+    {
+      "pdf_page": 443,
+      "file": "full.md#pdf-第-443-页",
+      "characters": 939
+    },
+    {
+      "pdf_page": 444,
+      "file": "full.md#pdf-第-444-页",
+      "characters": 893
+    },
+    {
+      "pdf_page": 445,
+      "file": "full.md#pdf-第-445-页",
+      "characters": 687
+    },
+    {
+      "pdf_page": 446,
+      "file": "full.md#pdf-第-446-页",
+      "characters": 884
+    },
+    {
+      "pdf_page": 447,
+      "file": "full.md#pdf-第-447-页",
+      "characters": 937
+    },
+    {
+      "pdf_page": 448,
+      "file": "full.md#pdf-第-448-页",
+      "characters": 975
+    },
+    {
+      "pdf_page": 449,
+      "file": "full.md#pdf-第-449-页",
+      "characters": 635
+    },
+    {
+      "pdf_page": 450,
+      "file": "full.md#pdf-第-450-页",
+      "characters": 447
+    },
+    {
+      "pdf_page": 451,
+      "file": "full.md#pdf-第-451-页",
+      "characters": 941
+    },
+    {
+      "pdf_page": 452,
+      "file": "full.md#pdf-第-452-页",
+      "characters": 1086
+    },
+    {
+      "pdf_page": 453,
+      "file": "full.md#pdf-第-453-页",
+      "characters": 851
+    },
+    {
+      "pdf_page": 454,
+      "file": "full.md#pdf-第-454-页",
+      "characters": 231
+    },
+    {
+      "pdf_page": 455,
+      "file": "full.md#pdf-第-455-页",
+      "characters": 939
+    },
+    {
+      "pdf_page": 456,
+      "file": "full.md#pdf-第-456-页",
+      "characters": 873
+    },
+    {
+      "pdf_page": 457,
+      "file": "full.md#pdf-第-457-页",
+      "characters": 978
+    },
+    {
+      "pdf_page": 458,
+      "file": "full.md#pdf-第-458-页",
+      "characters": 304
+    },
+    {
+      "pdf_page": 459,
+      "file": "full.md#pdf-第-459-页",
+      "characters": 1004
+    },
+    {
+      "pdf_page": 460,
+      "file": "full.md#pdf-第-460-页",
+      "characters": 779
+    },
+    {
+      "pdf_page": 461,
+      "file": "full.md#pdf-第-461-页",
+      "characters": 1033
+    },
+    {
+      "pdf_page": 462,
+      "file": "full.md#pdf-第-462-页",
+      "characters": 869
+    },
+    {
+      "pdf_page": 463,
+      "file": "full.md#pdf-第-463-页",
+      "characters": 105
+    },
+    {
+      "pdf_page": 464,
+      "file": "full.md#pdf-第-464-页",
+      "characters": 888
+    },
+    {
+      "pdf_page": 465,
+      "file": "full.md#pdf-第-465-页",
+      "characters": 853
+    },
+    {
+      "pdf_page": 466,
+      "file": "full.md#pdf-第-466-页",
+      "characters": 988
+    },
+    {
+      "pdf_page": 467,
+      "file": "full.md#pdf-第-467-页",
+      "characters": 478
+    },
+    {
+      "pdf_page": 468,
+      "file": "full.md#pdf-第-468-页",
+      "characters": 945
+    },
+    {
+      "pdf_page": 469,
+      "file": "full.md#pdf-第-469-页",
+      "characters": 812
+    },
+    {
+      "pdf_page": 470,
+      "file": "full.md#pdf-第-470-页",
+      "characters": 979
+    },
+    {
+      "pdf_page": 471,
+      "file": "full.md#pdf-第-471-页",
+      "characters": 778
+    },
+    {
+      "pdf_page": 472,
+      "file": "full.md#pdf-第-472-页",
+      "characters": 1020
+    },
+    {
+      "pdf_page": 473,
+      "file": "full.md#pdf-第-473-页",
+      "characters": 918
+    },
+    {
+      "pdf_page": 474,
+      "file": "full.md#pdf-第-474-页",
+      "characters": 1008
+    },
+    {
+      "pdf_page": 475,
+      "file": "full.md#pdf-第-475-页",
+      "characters": 667
+    },
+    {
+      "pdf_page": 476,
+      "file": "full.md#pdf-第-476-页",
+      "characters": 453
+    },
+    {
+      "pdf_page": 477,
+      "file": "full.md#pdf-第-477-页",
+      "characters": 857
+    },
+    {
+      "pdf_page": 478,
+      "file": "full.md#pdf-第-478-页",
+      "characters": 1099
+    },
+    {
+      "pdf_page": 479,
+      "file": "full.md#pdf-第-479-页",
+      "characters": 1077
+    },
+    {
+      "pdf_page": 480,
+      "file": "full.md#pdf-第-480-页",
+      "characters": 524
+    },
+    {
+      "pdf_page": 481,
+      "file": "full.md#pdf-第-481-页",
+      "characters": 954
+    },
+    {
+      "pdf_page": 482,
+      "file": "full.md#pdf-第-482-页",
+      "characters": 924
+    },
+    {
+      "pdf_page": 483,
+      "file": "full.md#pdf-第-483-页",
+      "characters": 969
+    },
+    {
+      "pdf_page": 484,
+      "file": "full.md#pdf-第-484-页",
+      "characters": 610
+    },
+    {
+      "pdf_page": 485,
+      "file": "full.md#pdf-第-485-页",
+      "characters": 981
+    },
+    {
+      "pdf_page": 486,
+      "file": "full.md#pdf-第-486-页",
+      "characters": 1030
+    },
+    {
+      "pdf_page": 487,
+      "file": "full.md#pdf-第-487-页",
+      "characters": 903
+    },
+    {
+      "pdf_page": 488,
+      "file": "full.md#pdf-第-488-页",
+      "characters": 668
+    },
+    {
+      "pdf_page": 489,
+      "file": "full.md#pdf-第-489-页",
+      "characters": 972
+    },
+    {
+      "pdf_page": 490,
+      "file": "full.md#pdf-第-490-页",
+      "characters": 985
+    },
+    {
+      "pdf_page": 491,
+      "file": "full.md#pdf-第-491-页",
+      "characters": 959
+    },
+    {
+      "pdf_page": 492,
+      "file": "full.md#pdf-第-492-页",
+      "characters": 474
+    },
+    {
+      "pdf_page": 493,
+      "file": "full.md#pdf-第-493-页",
+      "characters": 938
+    },
+    {
+      "pdf_page": 494,
+      "file": "full.md#pdf-第-494-页",
+      "characters": 870
+    },
+    {
+      "pdf_page": 495,
+      "file": "full.md#pdf-第-495-页",
+      "characters": 960
+    },
+    {
+      "pdf_page": 496,
+      "file": "full.md#pdf-第-496-页",
+      "characters": 483
+    },
+    {
+      "pdf_page": 497,
+      "file": "full.md#pdf-第-497-页",
+      "characters": 835
+    },
+    {
+      "pdf_page": 498,
+      "file": "full.md#pdf-第-498-页",
+      "characters": 928
+    },
+    {
+      "pdf_page": 499,
+      "file": "full.md#pdf-第-499-页",
+      "characters": 766
+    },
+    {
+      "pdf_page": 500,
+      "file": "full.md#pdf-第-500-页",
+      "characters": 697
+    },
+    {
+      "pdf_page": 501,
+      "file": "full.md#pdf-第-501-页",
+      "characters": 255
+    },
+    {
+      "pdf_page": 502,
+      "file": "full.md#pdf-第-502-页",
+      "characters": 417
+    },
+    {
+      "pdf_page": 503,
+      "file": "full.md#pdf-第-503-页",
+      "characters": 918
+    },
+    {
+      "pdf_page": 504,
+      "file": "full.md#pdf-第-504-页",
+      "characters": 996
+    },
+    {
+      "pdf_page": 505,
+      "file": "full.md#pdf-第-505-页",
+      "characters": 1001
+    },
+    {
+      "pdf_page": 506,
+      "file": "full.md#pdf-第-506-页",
+      "characters": 670
+    },
+    {
+      "pdf_page": 507,
+      "file": "full.md#pdf-第-507-页",
+      "characters": 930
+    },
+    {
+      "pdf_page": 508,
+      "file": "full.md#pdf-第-508-页",
+      "characters": 851
+    },
+    {
+      "pdf_page": 509,
+      "file": "full.md#pdf-第-509-页",
+      "characters": 998
+    },
+    {
+      "pdf_page": 510,
+      "file": "full.md#pdf-第-510-页",
+      "characters": 572
+    },
+    {
+      "pdf_page": 511,
+      "file": "full.md#pdf-第-511-页",
+      "characters": 1073
+    },
+    {
+      "pdf_page": 512,
+      "file": "full.md#pdf-第-512-页",
+      "characters": 888
+    },
+    {
+      "pdf_page": 513,
+      "file": "full.md#pdf-第-513-页",
+      "characters": 929
+    },
+    {
+      "pdf_page": 514,
+      "file": "full.md#pdf-第-514-页",
+      "characters": 760
+    },
+    {
+      "pdf_page": 515,
+      "file": "full.md#pdf-第-515-页",
+      "characters": 916
+    },
+    {
+      "pdf_page": 516,
+      "file": "full.md#pdf-第-516-页",
+      "characters": 1003
+    },
+    {
+      "pdf_page": 517,
+      "file": "full.md#pdf-第-517-页",
+      "characters": 913
+    },
+    {
+      "pdf_page": 518,
+      "file": "full.md#pdf-第-518-页",
+      "characters": 461
+    },
+    {
+      "pdf_page": 519,
+      "file": "full.md#pdf-第-519-页",
+      "characters": 1021
+    },
+    {
+      "pdf_page": 520,
+      "file": "full.md#pdf-第-520-页",
+      "characters": 844
+    },
+    {
+      "pdf_page": 521,
+      "file": "full.md#pdf-第-521-页",
+      "characters": 976
+    },
+    {
+      "pdf_page": 522,
+      "file": "full.md#pdf-第-522-页",
+      "characters": 714
+    },
+    {
+      "pdf_page": 523,
+      "file": "full.md#pdf-第-523-页",
+      "characters": 903
+    },
+    {
+      "pdf_page": 524,
+      "file": "full.md#pdf-第-524-页",
+      "characters": 903
+    },
+    {
+      "pdf_page": 525,
+      "file": "full.md#pdf-第-525-页",
+      "characters": 862
+    },
+    {
+      "pdf_page": 526,
+      "file": "full.md#pdf-第-526-页",
+      "characters": 693
+    },
+    {
+      "pdf_page": 527,
+      "file": "full.md#pdf-第-527-页",
+      "characters": 226
+    },
+    {
+      "pdf_page": 528,
+      "file": "full.md#pdf-第-528-页",
+      "characters": 720
+    },
+    {
+      "pdf_page": 529,
+      "file": "full.md#pdf-第-529-页",
+      "characters": 794
+    },
+    {
+      "pdf_page": 530,
+      "file": "full.md#pdf-第-530-页",
+      "characters": 904
+    },
+    {
+      "pdf_page": 531,
+      "file": "full.md#pdf-第-531-页",
+      "characters": 242
+    },
+    {
+      "pdf_page": 532,
+      "file": "full.md#pdf-第-532-页",
+      "characters": 876
+    },
+    {
+      "pdf_page": 533,
+      "file": "full.md#pdf-第-533-页",
+      "characters": 3
+    },
+    {
+      "pdf_page": 534,
+      "file": "full.md#pdf-第-534-页",
+      "characters": 3
+    },
+    {
+      "pdf_page": 535,
+      "file": "full.md#pdf-第-535-页",
+      "characters": 608
+    },
+    {
+      "pdf_page": 536,
+      "file": "full.md#pdf-第-536-页",
+      "characters": 3
+    },
+    {
+      "pdf_page": 537,
+      "file": "full.md#pdf-第-537-页",
+      "characters": 366
+    },
+    {
+      "pdf_page": 538,
+      "file": "full.md#pdf-第-538-页",
+      "characters": 365
+    },
+    {
+      "pdf_page": 539,
+      "file": "full.md#pdf-第-539-页",
+      "characters": 75
+    },
+    {
+      "pdf_page": 540,
+      "file": "full.md#pdf-第-540-页",
+      "characters": 496
+    },
+    {
+      "pdf_page": 541,
+      "file": "full.md#pdf-第-541-页",
+      "characters": 503
+    },
+    {
+      "pdf_page": 542,
+      "file": "full.md#pdf-第-542-页",
+      "characters": 407
+    },
+    {
+      "pdf_page": 543,
+      "file": "full.md#pdf-第-543-页",
+      "characters": 591
+    },
+    {
+      "pdf_page": 544,
+      "file": "full.md#pdf-第-544-页",
+      "characters": 495
+    },
+    {
+      "pdf_page": 545,
+      "file": "full.md#pdf-第-545-页",
+      "characters": 349
+    },
+    {
+      "pdf_page": 546,
+      "file": "full.md#pdf-第-546-页",
+      "characters": 638
+    },
+    {
+      "pdf_page": 547,
+      "file": "full.md#pdf-第-547-页",
+      "characters": 642
+    },
+    {
+      "pdf_page": 548,
+      "file": "full.md#pdf-第-548-页",
+      "characters": 163
+    },
+    {
+      "pdf_page": 549,
+      "file": "full.md#pdf-第-549-页",
+      "characters": 644
+    },
+    {
+      "pdf_page": 550,
+      "file": "full.md#pdf-第-550-页",
+      "characters": 659
+    },
+    {
+      "pdf_page": 551,
+      "file": "full.md#pdf-第-551-页",
+      "characters": 490
+    },
+    {
+      "pdf_page": 552,
+      "file": "full.md#pdf-第-552-页",
+      "characters": 749
+    },
+    {
+      "pdf_page": 553,
+      "file": "full.md#pdf-第-553-页",
+      "characters": 328
+    },
+    {
+      "pdf_page": 554,
+      "file": "full.md#pdf-第-554-页",
+      "characters": 689
+    },
+    {
+      "pdf_page": 555,
+      "file": "full.md#pdf-第-555-页",
+      "characters": 706
+    },
+    {
+      "pdf_page": 556,
+      "file": "full.md#pdf-第-556-页",
+      "characters": 682
+    },
+    {
+      "pdf_page": 557,
+      "file": "full.md#pdf-第-557-页",
+      "characters": 430
+    },
+    {
+      "pdf_page": 558,
+      "file": "full.md#pdf-第-558-页",
+      "characters": 678
+    },
+    {
+      "pdf_page": 559,
+      "file": "full.md#pdf-第-559-页",
+      "characters": 635
+    },
+    {
+      "pdf_page": 560,
+      "file": "full.md#pdf-第-560-页",
+      "characters": 881
+    },
+    {
+      "pdf_page": 561,
+      "file": "full.md#pdf-第-561-页",
+      "characters": 732
+    },
+    {
+      "pdf_page": 562,
+      "file": "full.md#pdf-第-562-页",
+      "characters": 666
+    },
+    {
+      "pdf_page": 563,
+      "file": "full.md#pdf-第-563-页",
+      "characters": 245
+    },
+    {
+      "pdf_page": 564,
+      "file": "full.md#pdf-第-564-页",
+      "characters": 742
+    },
+    {
+      "pdf_page": 565,
+      "file": "full.md#pdf-第-565-页",
+      "characters": 44
+    },
+    {
+      "pdf_page": 566,
+      "file": "full.md#pdf-第-566-页",
+      "characters": 725
+    },
+    {
+      "pdf_page": 567,
+      "file": "full.md#pdf-第-567-页",
+      "characters": 725
+    },
+    {
+      "pdf_page": 568,
+      "file": "full.md#pdf-第-568-页",
+      "characters": 672
+    },
+    {
+      "pdf_page": 569,
+      "file": "full.md#pdf-第-569-页",
+      "characters": 418
+    },
+    {
+      "pdf_page": 570,
+      "file": "full.md#pdf-第-570-页",
+      "characters": 35
+    },
+    {
+      "pdf_page": 571,
+      "file": "full.md#pdf-第-571-页",
+      "characters": 630
+    },
+    {
+      "pdf_page": 572,
+      "file": "full.md#pdf-第-572-页",
+      "characters": 617
+    },
+    {
+      "pdf_page": 573,
+      "file": "full.md#pdf-第-573-页",
+      "characters": 9
+    },
+    {
+      "pdf_page": 574,
+      "file": "full.md#pdf-第-574-页",
+      "characters": 564
+    },
+    {
+      "pdf_page": 575,
+      "file": "full.md#pdf-第-575-页",
+      "characters": 528
+    },
+    {
+      "pdf_page": 576,
+      "file": "full.md#pdf-第-576-页",
+      "characters": 460
+    },
+    {
+      "pdf_page": 577,
+      "file": "full.md#pdf-第-577-页",
+      "characters": 584
+    },
+    {
+      "pdf_page": 578,
+      "file": "full.md#pdf-第-578-页",
+      "characters": 759
+    },
+    {
+      "pdf_page": 579,
+      "file": "full.md#pdf-第-579-页",
+      "characters": 652
+    },
+    {
+      "pdf_page": 580,
+      "file": "full.md#pdf-第-580-页",
+      "characters": 109
+    },
+    {
+      "pdf_page": 581,
+      "file": "full.md#pdf-第-581-页",
+      "characters": 609
+    },
+    {
+      "pdf_page": 582,
+      "file": "full.md#pdf-第-582-页",
+      "characters": 610
+    },
+    {
+      "pdf_page": 583,
+      "file": "full.md#pdf-第-583-页",
+      "characters": 749
+    },
+    {
+      "pdf_page": 584,
+      "file": "full.md#pdf-第-584-页",
+      "characters": 731
+    },
+    {
+      "pdf_page": 585,
+      "file": "full.md#pdf-第-585-页",
+      "characters": 266
+    },
+    {
+      "pdf_page": 586,
+      "file": "full.md#pdf-第-586-页",
+      "characters": 875
+    },
+    {
+      "pdf_page": 587,
+      "file": "full.md#pdf-第-587-页",
+      "characters": 402
+    },
+    {
+      "pdf_page": 588,
+      "file": "full.md#pdf-第-588-页",
+      "characters": 722
+    },
+    {
+      "pdf_page": 589,
+      "file": "full.md#pdf-第-589-页",
+      "characters": 270
+    },
+    {
+      "pdf_page": 590,
+      "file": "full.md#pdf-第-590-页",
+      "characters": 640
+    },
+    {
+      "pdf_page": 591,
+      "file": "full.md#pdf-第-591-页",
+      "characters": 610
+    },
+    {
+      "pdf_page": 592,
+      "file": "full.md#pdf-第-592-页",
+      "characters": 545
+    },
+    {
+      "pdf_page": 593,
+      "file": "full.md#pdf-第-593-页",
+      "characters": 167
+    },
+    {
+      "pdf_page": 594,
+      "file": "full.md#pdf-第-594-页",
+      "characters": 623
+    },
+    {
+      "pdf_page": 595,
+      "file": "full.md#pdf-第-595-页",
+      "characters": 831
+    },
+    {
+      "pdf_page": 596,
+      "file": "full.md#pdf-第-596-页",
+      "characters": 25
+    },
+    {
+      "pdf_page": 597,
+      "file": "full.md#pdf-第-597-页",
+      "characters": 653
+    },
+    {
+      "pdf_page": 598,
+      "file": "full.md#pdf-第-598-页",
+      "characters": 112
+    },
+    {
+      "pdf_page": 599,
+      "file": "full.md#pdf-第-599-页",
+      "characters": 727
+    },
+    {
+      "pdf_page": 600,
+      "file": "full.md#pdf-第-600-页",
+      "characters": 700
+    },
+    {
+      "pdf_page": 601,
+      "file": "full.md#pdf-第-601-页",
+      "characters": 415
+    },
+    {
+      "pdf_page": 602,
+      "file": "full.md#pdf-第-602-页",
+      "characters": 39
+    },
+    {
+      "pdf_page": 603,
+      "file": "full.md#pdf-第-603-页",
+      "characters": 692
+    },
+    {
+      "pdf_page": 604,
+      "file": "full.md#pdf-第-604-页",
+      "characters": 692
+    },
+    {
+      "pdf_page": 605,
+      "file": "full.md#pdf-第-605-页",
+      "characters": 245
+    },
+    {
+      "pdf_page": 606,
+      "file": "full.md#pdf-第-606-页",
+      "characters": 717
+    },
+    {
+      "pdf_page": 607,
+      "file": "full.md#pdf-第-607-页",
+      "characters": 559
+    },
+    {
+      "pdf_page": 608,
+      "file": "full.md#pdf-第-608-页",
+      "characters": 580
+    },
+    {
+      "pdf_page": 609,
+      "file": "full.md#pdf-第-609-页",
+      "characters": 534
+    },
+    {
+      "pdf_page": 610,
+      "file": "full.md#pdf-第-610-页",
+      "characters": 128
+    },
+    {
+      "pdf_page": 611,
+      "file": "full.md#pdf-第-611-页",
+      "characters": 759
+    },
+    {
+      "pdf_page": 612,
+      "file": "full.md#pdf-第-612-页",
+      "characters": 791
+    },
+    {
+      "pdf_page": 613,
+      "file": "full.md#pdf-第-613-页",
+      "characters": 69
+    },
+    {
+      "pdf_page": 614,
+      "file": "full.md#pdf-第-614-页",
+      "characters": 674
+    },
+    {
+      "pdf_page": 615,
+      "file": "full.md#pdf-第-615-页",
+      "characters": 678
+    },
+    {
+      "pdf_page": 616,
+      "file": "full.md#pdf-第-616-页",
+      "characters": 336
+    },
+    {
+      "pdf_page": 617,
+      "file": "full.md#pdf-第-617-页",
+      "characters": 868
+    },
+    {
+      "pdf_page": 618,
+      "file": "full.md#pdf-第-618-页",
+      "characters": 917
+    },
+    {
+      "pdf_page": 619,
+      "file": "full.md#pdf-第-619-页",
+      "characters": 499
+    },
+    {
+      "pdf_page": 620,
+      "file": "full.md#pdf-第-620-页",
+      "characters": 760
+    },
+    {
+      "pdf_page": 621,
+      "file": "full.md#pdf-第-621-页",
+      "characters": 870
+    },
+    {
+      "pdf_page": 622,
+      "file": "full.md#pdf-第-622-页",
+      "characters": 564
+    },
+    {
+      "pdf_page": 623,
+      "file": "full.md#pdf-第-623-页",
+      "characters": 597
+    },
+    {
+      "pdf_page": 624,
+      "file": "full.md#pdf-第-624-页",
+      "characters": 401
+    },
+    {
+      "pdf_page": 625,
+      "file": "full.md#pdf-第-625-页",
+      "characters": 758
+    },
+    {
+      "pdf_page": 626,
+      "file": "full.md#pdf-第-626-页",
+      "characters": 842
+    },
+    {
+      "pdf_page": 627,
+      "file": "full.md#pdf-第-627-页",
+      "characters": 164
+    },
+    {
+      "pdf_page": 628,
+      "file": "full.md#pdf-第-628-页",
+      "characters": 693
+    },
+    {
+      "pdf_page": 629,
+      "file": "full.md#pdf-第-629-页",
+      "characters": 594
+    },
+    {
+      "pdf_page": 630,
+      "file": "full.md#pdf-第-630-页",
+      "characters": 416
+    },
+    {
+      "pdf_page": 631,
+      "file": "full.md#pdf-第-631-页",
+      "characters": 786
+    },
+    {
+      "pdf_page": 632,
+      "file": "full.md#pdf-第-632-页",
+      "characters": 972
+    },
+    {
+      "pdf_page": 633,
+      "file": "full.md#pdf-第-633-页",
+      "characters": 934
+    },
+    {
+      "pdf_page": 634,
+      "file": "full.md#pdf-第-634-页",
+      "characters": 927
+    },
+    {
+      "pdf_page": 635,
+      "file": "full.md#pdf-第-635-页",
+      "characters": 657
+    },
+    {
+      "pdf_page": 636,
+      "file": "full.md#pdf-第-636-页",
+      "characters": 666
+    },
+    {
+      "pdf_page": 637,
+      "file": "full.md#pdf-第-637-页",
+      "characters": 600
+    },
+    {
+      "pdf_page": 638,
+      "file": "full.md#pdf-第-638-页",
+      "characters": 145
+    },
+    {
+      "pdf_page": 639,
+      "file": "full.md#pdf-第-639-页",
+      "characters": 675
+    },
+    {
+      "pdf_page": 640,
+      "file": "full.md#pdf-第-640-页",
+      "characters": 162
+    },
+    {
+      "pdf_page": 641,
+      "file": "full.md#pdf-第-641-页",
+      "characters": 660
+    },
+    {
+      "pdf_page": 642,
+      "file": "full.md#pdf-第-642-页",
+      "characters": 514
+    },
+    {
+      "pdf_page": 643,
+      "file": "full.md#pdf-第-643-页",
+      "characters": 571
+    },
+    {
+      "pdf_page": 644,
+      "file": "full.md#pdf-第-644-页",
+      "characters": 848
+    },
+    {
+      "pdf_page": 645,
+      "file": "full.md#pdf-第-645-页",
+      "characters": 247
+    },
+    {
+      "pdf_page": 646,
+      "file": "full.md#pdf-第-646-页",
+      "characters": 622
+    },
+    {
+      "pdf_page": 647,
+      "file": "full.md#pdf-第-647-页",
+      "characters": 708
+    },
+    {
+      "pdf_page": 648,
+      "file": "full.md#pdf-第-648-页",
+      "characters": 767
+    },
+    {
+      "pdf_page": 649,
+      "file": "full.md#pdf-第-649-页",
+      "characters": 374
+    },
+    {
+      "pdf_page": 650,
+      "file": "full.md#pdf-第-650-页",
+      "characters": 741
+    },
+    {
+      "pdf_page": 651,
+      "file": "full.md#pdf-第-651-页",
+      "characters": 534
+    },
+    {
+      "pdf_page": 652,
+      "file": "full.md#pdf-第-652-页",
+      "characters": 770
+    },
+    {
+      "pdf_page": 653,
+      "file": "full.md#pdf-第-653-页",
+      "characters": 826
+    },
+    {
+      "pdf_page": 654,
+      "file": "full.md#pdf-第-654-页",
+      "characters": 533
+    },
+    {
+      "pdf_page": 655,
+      "file": "full.md#pdf-第-655-页",
+      "characters": 653
+    },
+    {
+      "pdf_page": 656,
+      "file": "full.md#pdf-第-656-页",
+      "characters": 662
+    },
+    {
+      "pdf_page": 657,
+      "file": "full.md#pdf-第-657-页",
+      "characters": 710
+    },
+    {
+      "pdf_page": 658,
+      "file": "full.md#pdf-第-658-页",
+      "characters": 508
+    },
+    {
+      "pdf_page": 659,
+      "file": "full.md#pdf-第-659-页",
+      "characters": 588
+    },
+    {
+      "pdf_page": 660,
+      "file": "full.md#pdf-第-660-页",
+      "characters": 767
+    },
+    {
+      "pdf_page": 661,
+      "file": "full.md#pdf-第-661-页",
+      "characters": 817
+    },
+    {
+      "pdf_page": 662,
+      "file": "full.md#pdf-第-662-页",
+      "characters": 384
+    },
+    {
+      "pdf_page": 663,
+      "file": "full.md#pdf-第-663-页",
+      "characters": 353
+    },
+    {
+      "pdf_page": 664,
+      "file": "full.md#pdf-第-664-页",
+      "characters": 631
+    },
+    {
+      "pdf_page": 665,
+      "file": "full.md#pdf-第-665-页",
+      "characters": 360
+    },
+    {
+      "pdf_page": 666,
+      "file": "full.md#pdf-第-666-页",
+      "characters": 535
+    },
+    {
+      "pdf_page": 667,
+      "file": "full.md#pdf-第-667-页",
+      "characters": 528
+    },
+    {
+      "pdf_page": 668,
+      "file": "full.md#pdf-第-668-页",
+      "characters": 282
+    },
+    {
+      "pdf_page": 669,
+      "file": "full.md#pdf-第-669-页",
+      "characters": 763
+    },
+    {
+      "pdf_page": 670,
+      "file": "full.md#pdf-第-670-页",
+      "characters": 761
+    },
+    {
+      "pdf_page": 671,
+      "file": "full.md#pdf-第-671-页",
+      "characters": 380
+    },
+    {
+      "pdf_page": 672,
+      "file": "full.md#pdf-第-672-页",
+      "characters": 721
+    },
+    {
+      "pdf_page": 673,
+      "file": "full.md#pdf-第-673-页",
+      "characters": 681
+    },
+    {
+      "pdf_page": 674,
+      "file": "full.md#pdf-第-674-页",
+      "characters": 709
+    },
+    {
+      "pdf_page": 675,
+      "file": "full.md#pdf-第-675-页",
+      "characters": 594
+    },
+    {
+      "pdf_page": 676,
+      "file": "full.md#pdf-第-676-页",
+      "characters": 795
+    },
+    {
+      "pdf_page": 677,
+      "file": "full.md#pdf-第-677-页",
+      "characters": 813
+    },
+    {
+      "pdf_page": 678,
+      "file": "full.md#pdf-第-678-页",
+      "characters": 476
+    },
+    {
+      "pdf_page": 679,
+      "file": "full.md#pdf-第-679-页",
+      "characters": 768
+    },
+    {
+      "pdf_page": 680,
+      "file": "full.md#pdf-第-680-页",
+      "characters": 512
+    },
+    {
+      "pdf_page": 681,
+      "file": "full.md#pdf-第-681-页",
+      "characters": 793
+    },
+    {
+      "pdf_page": 682,
+      "file": "full.md#pdf-第-682-页",
+      "characters": 558
+    },
+    {
+      "pdf_page": 683,
+      "file": "full.md#pdf-第-683-页",
+      "characters": 857
+    },
+    {
+      "pdf_page": 684,
+      "file": "full.md#pdf-第-684-页",
+      "characters": 136
+    },
+    {
+      "pdf_page": 685,
+      "file": "full.md#pdf-第-685-页",
+      "characters": 807
+    },
+    {
+      "pdf_page": 686,
+      "file": "full.md#pdf-第-686-页",
+      "characters": 855
+    },
+    {
+      "pdf_page": 687,
+      "file": "full.md#pdf-第-687-页",
+      "characters": 76
+    },
+    {
+      "pdf_page": 688,
+      "file": "full.md#pdf-第-688-页",
+      "characters": 697
+    },
+    {
+      "pdf_page": 689,
+      "file": "full.md#pdf-第-689-页",
+      "characters": 785
+    },
+    {
+      "pdf_page": 690,
+      "file": "full.md#pdf-第-690-页",
+      "characters": 370
+    },
+    {
+      "pdf_page": 691,
+      "file": "full.md#pdf-第-691-页",
+      "characters": 358
+    },
+    {
+      "pdf_page": 692,
+      "file": "full.md#pdf-第-692-页",
+      "characters": 351
+    },
+    {
+      "pdf_page": 693,
+      "file": "full.md#pdf-第-693-页",
+      "characters": 274
+    },
+    {
+      "pdf_page": 694,
+      "file": "full.md#pdf-第-694-页",
+      "characters": 338
+    },
+    {
+      "pdf_page": 695,
+      "file": "full.md#pdf-第-695-页",
+      "characters": 339
+    },
+    {
+      "pdf_page": 696,
+      "file": "full.md#pdf-第-696-页",
+      "characters": 397
+    },
+    {
+      "pdf_page": 697,
+      "file": "full.md#pdf-第-697-页",
+      "characters": 519
+    },
+    {
+      "pdf_page": 698,
+      "file": "full.md#pdf-第-698-页",
+      "characters": 107
+    },
+    {
+      "pdf_page": 699,
+      "file": "full.md#pdf-第-699-页",
+      "characters": 512
+    },
+    {
+      "pdf_page": 700,
+      "file": "full.md#pdf-第-700-页",
+      "characters": 360
+    },
+    {
+      "pdf_page": 701,
+      "file": "full.md#pdf-第-701-页",
+      "characters": 605
+    },
+    {
+      "pdf_page": 702,
+      "file": "full.md#pdf-第-702-页",
+      "characters": 718
+    },
+    {
+      "pdf_page": 703,
+      "file": "full.md#pdf-第-703-页",
+      "characters": 548
+    },
+    {
+      "pdf_page": 704,
+      "file": "full.md#pdf-第-704-页",
+      "characters": 691
+    },
+    {
+      "pdf_page": 705,
+      "file": "full.md#pdf-第-705-页",
+      "characters": 140
+    },
+    {
+      "pdf_page": 706,
+      "file": "full.md#pdf-第-706-页",
+      "characters": 658
+    },
+    {
+      "pdf_page": 707,
+      "file": "full.md#pdf-第-707-页",
+      "characters": 843
+    },
+    {
+      "pdf_page": 708,
+      "file": "full.md#pdf-第-708-页",
+      "characters": 711
+    },
+    {
+      "pdf_page": 709,
+      "file": "full.md#pdf-第-709-页",
+      "characters": 194
+    },
+    {
+      "pdf_page": 710,
+      "file": "full.md#pdf-第-710-页",
+      "characters": 650
+    },
+    {
+      "pdf_page": 711,
+      "file": "full.md#pdf-第-711-页",
+      "characters": 325
+    },
+    {
+      "pdf_page": 712,
+      "file": "full.md#pdf-第-712-页",
+      "characters": 679
+    },
+    {
+      "pdf_page": 713,
+      "file": "full.md#pdf-第-713-页",
+      "characters": 619
+    },
+    {
+      "pdf_page": 714,
+      "file": "full.md#pdf-第-714-页",
+      "characters": 721
+    },
+    {
+      "pdf_page": 715,
+      "file": "full.md#pdf-第-715-页",
+      "characters": 709
+    },
+    {
+      "pdf_page": 716,
+      "file": "full.md#pdf-第-716-页",
+      "characters": 374
+    },
+    {
+      "pdf_page": 717,
+      "file": "full.md#pdf-第-717-页",
+      "characters": 682
+    },
+    {
+      "pdf_page": 718,
+      "file": "full.md#pdf-第-718-页",
+      "characters": 501
+    },
+    {
+      "pdf_page": 719,
+      "file": "full.md#pdf-第-719-页",
+      "characters": 847
+    },
+    {
+      "pdf_page": 720,
+      "file": "full.md#pdf-第-720-页",
+      "characters": 57
+    },
+    {
+      "pdf_page": 721,
+      "file": "full.md#pdf-第-721-页",
+      "characters": 491
+    },
+    {
+      "pdf_page": 722,
+      "file": "full.md#pdf-第-722-页",
+      "characters": 753
+    },
+    {
+      "pdf_page": 723,
+      "file": "full.md#pdf-第-723-页",
+      "characters": 603
+    },
+    {
+      "pdf_page": 724,
+      "file": "full.md#pdf-第-724-页",
+      "characters": 686
+    },
+    {
+      "pdf_page": 725,
+      "file": "full.md#pdf-第-725-页",
+      "characters": 457
+    },
+    {
+      "pdf_page": 726,
+      "file": "full.md#pdf-第-726-页",
+      "characters": 755
+    },
+    {
+      "pdf_page": 727,
+      "file": "full.md#pdf-第-727-页",
+      "characters": 545
+    },
+    {
+      "pdf_page": 728,
+      "file": "full.md#pdf-第-728-页",
+      "characters": 421
+    },
+    {
+      "pdf_page": 729,
+      "file": "full.md#pdf-第-729-页",
+      "characters": 622
+    },
+    {
+      "pdf_page": 730,
+      "file": "full.md#pdf-第-730-页",
+      "characters": 569
+    },
+    {
+      "pdf_page": 731,
+      "file": "full.md#pdf-第-731-页",
+      "characters": 858
+    },
+    {
+      "pdf_page": 732,
+      "file": "full.md#pdf-第-732-页",
+      "characters": 840
+    },
+    {
+      "pdf_page": 733,
+      "file": "full.md#pdf-第-733-页",
+      "characters": 615
+    },
+    {
+      "pdf_page": 734,
+      "file": "full.md#pdf-第-734-页",
+      "characters": 219
+    },
+    {
+      "pdf_page": 735,
+      "file": "full.md#pdf-第-735-页",
+      "characters": 586
+    },
+    {
+      "pdf_page": 736,
+      "file": "full.md#pdf-第-736-页",
+      "characters": 728
+    },
+    {
+      "pdf_page": 737,
+      "file": "full.md#pdf-第-737-页",
+      "characters": 655
+    },
+    {
+      "pdf_page": 738,
+      "file": "full.md#pdf-第-738-页",
+      "characters": 220
+    },
+    {
+      "pdf_page": 739,
+      "file": "full.md#pdf-第-739-页",
+      "characters": 652
+    },
+    {
+      "pdf_page": 740,
+      "file": "full.md#pdf-第-740-页",
+      "characters": 766
+    },
+    {
+      "pdf_page": 741,
+      "file": "full.md#pdf-第-741-页",
+      "characters": 737
+    },
+    {
+      "pdf_page": 742,
+      "file": "full.md#pdf-第-742-页",
+      "characters": 36
+    },
+    {
+      "pdf_page": 743,
+      "file": "full.md#pdf-第-743-页",
+      "characters": 629
+    },
+    {
+      "pdf_page": 744,
+      "file": "full.md#pdf-第-744-页",
+      "characters": 711
+    },
+    {
+      "pdf_page": 745,
+      "file": "full.md#pdf-第-745-页",
+      "characters": 434
+    },
+    {
+      "pdf_page": 746,
+      "file": "full.md#pdf-第-746-页",
+      "characters": 401
+    },
+    {
+      "pdf_page": 747,
+      "file": "full.md#pdf-第-747-页",
+      "characters": 693
+    },
+    {
+      "pdf_page": 748,
+      "file": "full.md#pdf-第-748-页",
+      "characters": 604
+    },
+    {
+      "pdf_page": 749,
+      "file": "full.md#pdf-第-749-页",
+      "characters": 489
+    },
+    {
+      "pdf_page": 750,
+      "file": "full.md#pdf-第-750-页",
+      "characters": 422
+    },
+    {
+      "pdf_page": 751,
+      "file": "full.md#pdf-第-751-页",
+      "characters": 640
+    },
+    {
+      "pdf_page": 752,
+      "file": "full.md#pdf-第-752-页",
+      "characters": 422
+    },
+    {
+      "pdf_page": 753,
+      "file": "full.md#pdf-第-753-页",
+      "characters": 717
+    },
+    {
+      "pdf_page": 754,
+      "file": "full.md#pdf-第-754-页",
+      "characters": 893
+    },
+    {
+      "pdf_page": 755,
+      "file": "full.md#pdf-第-755-页",
+      "characters": 357
+    },
+    {
+      "pdf_page": 756,
+      "file": "full.md#pdf-第-756-页",
+      "characters": 561
+    },
+    {
+      "pdf_page": 757,
+      "file": "full.md#pdf-第-757-页",
+      "characters": 91
+    },
+    {
+      "pdf_page": 758,
+      "file": "full.md#pdf-第-758-页",
+      "characters": 543
+    },
+    {
+      "pdf_page": 759,
+      "file": "full.md#pdf-第-759-页",
+      "characters": 340
+    },
+    {
+      "pdf_page": 760,
+      "file": "full.md#pdf-第-760-页",
+      "characters": 638
+    },
+    {
+      "pdf_page": 761,
+      "file": "full.md#pdf-第-761-页",
+      "characters": 522
+    },
+    {
+      "pdf_page": 762,
+      "file": "full.md#pdf-第-762-页",
+      "characters": 676
+    },
+    {
+      "pdf_page": 763,
+      "file": "full.md#pdf-第-763-页",
+      "characters": 707
+    },
+    {
+      "pdf_page": 764,
+      "file": "full.md#pdf-第-764-页",
+      "characters": 66
+    },
+    {
+      "pdf_page": 765,
+      "file": "full.md#pdf-第-765-页",
+      "characters": 646
+    },
+    {
+      "pdf_page": 766,
+      "file": "full.md#pdf-第-766-页",
+      "characters": 748
+    },
+    {
+      "pdf_page": 767,
+      "file": "full.md#pdf-第-767-页",
+      "characters": 480
+    },
+    {
+      "pdf_page": 768,
+      "file": "full.md#pdf-第-768-页",
+      "characters": 684
+    },
+    {
+      "pdf_page": 769,
+      "file": "full.md#pdf-第-769-页",
+      "characters": 877
+    },
+    {
+      "pdf_page": 770,
+      "file": "full.md#pdf-第-770-页",
+      "characters": 807
+    },
+    {
+      "pdf_page": 771,
+      "file": "full.md#pdf-第-771-页",
+      "characters": 385
+    },
+    {
+      "pdf_page": 772,
+      "file": "full.md#pdf-第-772-页",
+      "characters": 721
+    },
+    {
+      "pdf_page": 773,
+      "file": "full.md#pdf-第-773-页",
+      "characters": 434
+    },
+    {
+      "pdf_page": 774,
+      "file": "full.md#pdf-第-774-页",
+      "characters": 204
+    },
+    {
+      "pdf_page": 775,
+      "file": "full.md#pdf-第-775-页",
+      "characters": 3
+    },
+    {
+      "pdf_page": 776,
+      "file": "full.md#pdf-第-776-页",
+      "characters": 610
+    },
+    {
+      "pdf_page": 777,
+      "file": "full.md#pdf-第-777-页",
+      "characters": 284
+    },
+    {
+      "pdf_page": 778,
+      "file": "full.md#pdf-第-778-页",
+      "characters": 791
+    },
+    {
+      "pdf_page": 779,
+      "file": "full.md#pdf-第-779-页",
+      "characters": 859
+    },
+    {
+      "pdf_page": 780,
+      "file": "full.md#pdf-第-780-页",
+      "characters": 874
+    },
+    {
+      "pdf_page": 781,
+      "file": "full.md#pdf-第-781-页",
+      "characters": 898
+    },
+    {
+      "pdf_page": 782,
+      "file": "full.md#pdf-第-782-页",
+      "characters": 976
+    },
+    {
+      "pdf_page": 783,
+      "file": "full.md#pdf-第-783-页",
+      "characters": 994
+    },
+    {
+      "pdf_page": 784,
+      "file": "full.md#pdf-第-784-页",
+      "characters": 962
+    },
+    {
+      "pdf_page": 785,
+      "file": "full.md#pdf-第-785-页",
+      "characters": 265
+    },
+    {
+      "pdf_page": 786,
+      "file": "full.md#pdf-第-786-页",
+      "characters": 3
+    },
+    {
+      "pdf_page": 787,
+      "file": "full.md#pdf-第-787-页",
+      "characters": 3
+    },
+    {
+      "pdf_page": 788,
+      "file": "full.md#pdf-第-788-页",
+      "characters": 534
+    },
+    {
+      "pdf_page": 789,
+      "file": "full.md#pdf-第-789-页",
+      "characters": 501
+    },
+    {
+      "pdf_page": 790,
+      "file": "full.md#pdf-第-790-页",
+      "characters": 705
+    },
+    {
+      "pdf_page": 791,
+      "file": "full.md#pdf-第-791-页",
+      "characters": 299
+    },
+    {
+      "pdf_page": 792,
+      "file": "full.md#pdf-第-792-页",
+      "characters": 3
+    },
+    {
+      "pdf_page": 793,
+      "file": "full.md#pdf-第-793-页",
+      "characters": 392
+    },
+    {
+      "pdf_page": 794,
+      "file": "full.md#pdf-第-794-页",
+      "characters": 3
+    },
+    {
+      "pdf_page": 795,
+      "file": "full.md#pdf-第-795-页",
+      "characters": 382
+    }
+  ],
+  "conversion_status": "complete",
+  "summary": {
+    "pages": 795,
+    "nonempty_pages": 795,
+    "empty_pages": [],
+    "failed_pages": [],
+    "characters": 495060,
+    "method": "本地 pypdf 文字层提取；仅封面第1页以本机 Windows WinRT OCR 补充",
+    "review_status": "not-proofread",
+    "reading_status": "not-read",
+    "full_markdown": "full.md"
+  },
+  "path_base": "containing-json-directory",
+  "original_included": false,
+  "original_sha256": "1e23fadf7f2b47b28ac51c3e129bbe8319dc2da1359ca7f901f5e8f61cce22c3",
+  "original_filename": "救猫咪（三本经典合集，看电影、懂电影、编剧本，从菜鸟到行家的快速通道） (布莱克·斯奈德) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "full_markdown": "full.md",
+  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。"
+}

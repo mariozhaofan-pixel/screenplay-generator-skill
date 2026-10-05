@@ -1,0 +1,1225 @@
+{
+  "title": "开始写吧！影视剧本创作",
+  "author": "",
+  "toc": [
+    {
+      "title": "版权信息",
+      "href": "section-002.md",
+      "epub_href": "Text/Copyright.xhtml#sigil_toc_id_1"
+    },
+    {
+      "title": "译者序",
+      "href": "section-003.md",
+      "epub_href": "Text/chapter_00001.xhtml#CHP1"
+    },
+    {
+      "title": "编者的话",
+      "href": "section-004.md",
+      "epub_href": "Text/chapter_00002.xhtml#CHP2"
+    },
+    {
+      "title": "精选故事",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3"
+    },
+    {
+      "title": "从冲突开始",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-1"
+    },
+    {
+      "title": "令人胆寒的练习",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-2"
+    },
+    {
+      "title": "相信自己",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-3"
+    },
+    {
+      "title": "卡片研发方法",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-4"
+    },
+    {
+      "title": "概念为王",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-5"
+    },
+    {
+      "title": "当萨莉遇到哈利",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-6"
+    },
+    {
+      "title": "离开老窝",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-7"
+    },
+    {
+      "title": "找到属于你的故事",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-8"
+    },
+    {
+      "title": "良好的写作状态",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4"
+    },
+    {
+      "title": "塞住内心批评家的嘴",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-1"
+    },
+    {
+      "title": "谈话疗法",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-2"
+    },
+    {
+      "title": "全能的动词",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-3"
+    },
+    {
+      "title": "抛开书本",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-4"
+    },
+    {
+      "title": "透过音乐感受风格",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-5"
+    },
+    {
+      "title": "读字出图——写出一流的电影叙事",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-6"
+    },
+    {
+      "title": "继续做梦吧",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-7"
+    },
+    {
+      "title": "让思维漫步",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-8"
+    },
+    {
+      "title": "剖析人物",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-9"
+    },
+    {
+      "title": "逆向思维的力量",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-10"
+    },
+    {
+      "title": "当伟大的剧本遇到伟大的演员： 为明星而作",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-11"
+    },
+    {
+      "title": "警方调查",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-12"
+    },
+    {
+      "title": "想象真实的创作：内心的神话",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-13"
+    },
+    {
+      "title": "创造力的边缘：明信片",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-14"
+    },
+    {
+      "title": "在翻译中发现",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-15"
+    },
+    {
+      "title": "结构",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5"
+    },
+    {
+      "title": "我能教你的大战略",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-1"
+    },
+    {
+      "title": "人物／行动网格",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-2"
+    },
+    {
+      "title": "黑暗中的写作",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-3"
+    },
+    {
+      "title": "读报学编剧",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-4"
+    },
+    {
+      "title": "不离正轨的21个问题",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-5"
+    },
+    {
+      "title": "创作须知",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-6"
+    },
+    {
+      "title": "电影编剧的四个魔法",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-7"
+    },
+    {
+      "title": "制造不可预测性",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-8"
+    },
+    {
+      "title": "提纲就是生命线",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-9"
+    },
+    {
+      "title": "打开阻塞、不再自卑",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-10"
+    },
+    {
+      "title": "类型的游戏",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-11"
+    },
+    {
+      "title": "主题",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6"
+    },
+    {
+      "title": "如何运走一堆尘土",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-1"
+    },
+    {
+      "title": "饱含情感的图标",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-2"
+    },
+    {
+      "title": "真爱无面具",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-3"
+    },
+    {
+      "title": "寻找普世的主题",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-4"
+    },
+    {
+      "title": "构思的提炼",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-5"
+    },
+    {
+      "title": "对白里的主题句",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-6"
+    },
+    {
+      "title": "情感的纲要",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-7"
+    },
+    {
+      "title": "生活何处不喜剧",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-8"
+    },
+    {
+      "title": "改变你的视角",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-9"
+    },
+    {
+      "title": "对立面的统一",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-10"
+    },
+    {
+      "title": "创意罗盘",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-11"
+    },
+    {
+      "title": "打造场景",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7"
+    },
+    {
+      "title": "节奏、层次与敬业精神",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-1"
+    },
+    {
+      "title": "此处无声胜有声",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-2"
+    },
+    {
+      "title": "多亏有点儿自知之明",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-3"
+    },
+    {
+      "title": "那后来呢？",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-4"
+    },
+    {
+      "title": "为概念服务的场景",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-5"
+    },
+    {
+      "title": "打造强劲的场景",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-6"
+    },
+    {
+      "title": "故事的画面讲述",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-7"
+    },
+    {
+      "title": "文字底下还有什么",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-8"
+    },
+    {
+      "title": "为电影而写的场景",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-9"
+    },
+    {
+      "title": "对白，背景，潜台词",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-10"
+    },
+    {
+      "title": "一页人物简介",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-11"
+    },
+    {
+      "title": "超越反讽",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-12"
+    },
+    {
+      "title": "人物的发展",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8"
+    },
+    {
+      "title": "说说人物塑造",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-1"
+    },
+    {
+      "title": "给我真相或者死亡！",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-2"
+    },
+    {
+      "title": "人物塑造的功与过",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-3"
+    },
+    {
+      "title": "像演员一样把握人物！",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-4"
+    },
+    {
+      "title": "揭示人物精神的镜头",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-5"
+    },
+    {
+      "title": "发现全新的场景",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-6"
+    },
+    {
+      "title": "魅力人物的关键",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-7"
+    },
+    {
+      "title": "请你问罗森格兰兹去吧",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-8"
+    },
+    {
+      "title": "人物骨子里的东西",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-9"
+    },
+    {
+      "title": "狮身人面像之谜",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-10"
+    },
+    {
+      "title": "人物日记",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-11"
+    },
+    {
+      "title": "想人物所想，说人物想说",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-12"
+    },
+    {
+      "title": "银幕拉开之前的故事",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-13"
+    },
+    {
+      "title": "人物的爱与恨",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-14"
+    },
+    {
+      "title": "认识你的人物",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-15"
+    },
+    {
+      "title": "口头与非口头的沟通",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9"
+    },
+    {
+      "title": "找到内心的演员",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-1"
+    },
+    {
+      "title": "无政府主义编剧论对白",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-2"
+    },
+    {
+      "title": "非口头沟通",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-3"
+    },
+    {
+      "title": "窃听电话",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-4"
+    },
+    {
+      "title": "震颤：表情的象征物",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-5"
+    },
+    {
+      "title": "好玩儿的脸：动画创作秘诀",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-6"
+    },
+    {
+      "title": "伪情感",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-7"
+    },
+    {
+      "title": "字里行间的建构",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-8"
+    },
+    {
+      "title": "隐喻在喜剧中的运用",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-9"
+    },
+    {
+      "title": "真人说真话",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-10"
+    },
+    {
+      "title": "修订",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10"
+    },
+    {
+      "title": "逆向的头脑风暴",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-1"
+    },
+    {
+      "title": "批评有助提高",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-2"
+    },
+    {
+      "title": "珠宝盒提纲",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-3"
+    },
+    {
+      "title": "他叫喊“大声点儿”",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-4"
+    },
+    {
+      "title": "不要搬起石头砸自己的脚！",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-5"
+    },
+    {
+      "title": "写好前10页",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-6"
+    },
+    {
+      "title": "记叙文及其反面",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-7"
+    },
+    {
+      "title": "写作遇阻怎么办？",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-8"
+    },
+    {
+      "title": "扣好扣子——话痨的疗法",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-9"
+    },
+    {
+      "title": "把好演员这一关",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-10"
+    },
+    {
+      "title": "还有什么事？",
+      "href": "section-013.md",
+      "epub_href": "Text/chapter_00011.xhtml#CHP11"
+    },
+    {
+      "title": "一句话剧情简介的绝技",
+      "href": "section-013.md",
+      "epub_href": "Text/chapter_00011.xhtml#CHP11-1"
+    },
+    {
+      "title": "要是自掏腰包你会怎么做？",
+      "href": "section-013.md",
+      "epub_href": "Text/chapter_00011.xhtml#CHP11-2"
+    },
+    {
+      "title": "如何找到经纪人",
+      "href": "section-013.md",
+      "epub_href": "Text/chapter_00011.xhtml#CHP11-3"
+    },
+    {
+      "title": "作者网址",
+      "href": "section-014.md",
+      "epub_href": "Text/chapter_00011_0001.xhtml#CHP11-4"
+    },
+    {
+      "title": "致谢",
+      "href": "section-015.md",
+      "epub_href": "Text/chapter_00011_0001_0001.xhtml#CHP11-5"
+    },
+    {
+      "title": "版权信息",
+      "href": "section-002.md",
+      "epub_href": "Text/Copyright.xhtml#sigil_toc_id_1"
+    },
+    {
+      "title": "译者序",
+      "href": "section-003.md",
+      "epub_href": "Text/chapter_00001.xhtml#CHP1"
+    },
+    {
+      "title": "编者的话",
+      "href": "section-004.md",
+      "epub_href": "Text/chapter_00002.xhtml#CHP2"
+    },
+    {
+      "title": "精选故事",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3"
+    },
+    {
+      "title": "从冲突开始",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-1"
+    },
+    {
+      "title": "令人胆寒的练习",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-2"
+    },
+    {
+      "title": "相信自己",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-3"
+    },
+    {
+      "title": "卡片研发方法",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-4"
+    },
+    {
+      "title": "概念为王",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-5"
+    },
+    {
+      "title": "当萨莉遇到哈利",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-6"
+    },
+    {
+      "title": "离开老窝",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-7"
+    },
+    {
+      "title": "找到属于你的故事",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter_00003.xhtml#CHP3-8"
+    },
+    {
+      "title": "良好的写作状态",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4"
+    },
+    {
+      "title": "塞住内心批评家的嘴",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-1"
+    },
+    {
+      "title": "谈话疗法",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-2"
+    },
+    {
+      "title": "全能的动词",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-3"
+    },
+    {
+      "title": "抛开书本",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-4"
+    },
+    {
+      "title": "透过音乐感受风格",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-5"
+    },
+    {
+      "title": "读字出图——写出一流的电影叙事",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-6"
+    },
+    {
+      "title": "继续做梦吧",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-7"
+    },
+    {
+      "title": "让思维漫步",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-8"
+    },
+    {
+      "title": "剖析人物",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-9"
+    },
+    {
+      "title": "逆向思维的力量",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-10"
+    },
+    {
+      "title": "当伟大的剧本遇到伟大的演员： 为明星而作",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-11"
+    },
+    {
+      "title": "警方调查",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-12"
+    },
+    {
+      "title": "想象真实的创作：内心的神话",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-13"
+    },
+    {
+      "title": "创造力的边缘：明信片",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-14"
+    },
+    {
+      "title": "在翻译中发现",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter_00004.xhtml#CHP4-15"
+    },
+    {
+      "title": "结构",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5"
+    },
+    {
+      "title": "我能教你的大战略",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-1"
+    },
+    {
+      "title": "人物／行动网格",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-2"
+    },
+    {
+      "title": "黑暗中的写作",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-3"
+    },
+    {
+      "title": "读报学编剧",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-4"
+    },
+    {
+      "title": "不离正轨的21个问题",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-5"
+    },
+    {
+      "title": "创作须知",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-6"
+    },
+    {
+      "title": "电影编剧的四个魔法",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-7"
+    },
+    {
+      "title": "制造不可预测性",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-8"
+    },
+    {
+      "title": "提纲就是生命线",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-9"
+    },
+    {
+      "title": "打开阻塞、不再自卑",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-10"
+    },
+    {
+      "title": "类型的游戏",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter_00005.xhtml#CHP5-11"
+    },
+    {
+      "title": "主题",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6"
+    },
+    {
+      "title": "如何运走一堆尘土",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-1"
+    },
+    {
+      "title": "饱含情感的图标",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-2"
+    },
+    {
+      "title": "真爱无面具",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-3"
+    },
+    {
+      "title": "寻找普世的主题",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-4"
+    },
+    {
+      "title": "构思的提炼",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-5"
+    },
+    {
+      "title": "对白里的主题句",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-6"
+    },
+    {
+      "title": "情感的纲要",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-7"
+    },
+    {
+      "title": "生活何处不喜剧",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-8"
+    },
+    {
+      "title": "改变你的视角",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-9"
+    },
+    {
+      "title": "对立面的统一",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-10"
+    },
+    {
+      "title": "创意罗盘",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter_00006.xhtml#CHP6-11"
+    },
+    {
+      "title": "打造场景",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7"
+    },
+    {
+      "title": "节奏、层次与敬业精神",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-1"
+    },
+    {
+      "title": "此处无声胜有声",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-2"
+    },
+    {
+      "title": "多亏有点儿自知之明",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-3"
+    },
+    {
+      "title": "那后来呢？",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-4"
+    },
+    {
+      "title": "为概念服务的场景",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-5"
+    },
+    {
+      "title": "打造强劲的场景",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-6"
+    },
+    {
+      "title": "故事的画面讲述",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-7"
+    },
+    {
+      "title": "文字底下还有什么",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-8"
+    },
+    {
+      "title": "为电影而写的场景",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-9"
+    },
+    {
+      "title": "对白，背景，潜台词",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-10"
+    },
+    {
+      "title": "一页人物简介",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-11"
+    },
+    {
+      "title": "超越反讽",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter_00007.xhtml#CHP7-12"
+    },
+    {
+      "title": "人物的发展",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8"
+    },
+    {
+      "title": "说说人物塑造",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-1"
+    },
+    {
+      "title": "给我真相或者死亡！",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-2"
+    },
+    {
+      "title": "人物塑造的功与过",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-3"
+    },
+    {
+      "title": "像演员一样把握人物！",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-4"
+    },
+    {
+      "title": "揭示人物精神的镜头",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-5"
+    },
+    {
+      "title": "发现全新的场景",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-6"
+    },
+    {
+      "title": "魅力人物的关键",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-7"
+    },
+    {
+      "title": "请你问罗森格兰兹去吧",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-8"
+    },
+    {
+      "title": "人物骨子里的东西",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-9"
+    },
+    {
+      "title": "狮身人面像之谜",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-10"
+    },
+    {
+      "title": "人物日记",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-11"
+    },
+    {
+      "title": "想人物所想，说人物想说",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-12"
+    },
+    {
+      "title": "银幕拉开之前的故事",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-13"
+    },
+    {
+      "title": "人物的爱与恨",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-14"
+    },
+    {
+      "title": "认识你的人物",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter_00008.xhtml#CHP8-15"
+    },
+    {
+      "title": "口头与非口头的沟通",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9"
+    },
+    {
+      "title": "找到内心的演员",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-1"
+    },
+    {
+      "title": "无政府主义编剧论对白",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-2"
+    },
+    {
+      "title": "非口头沟通",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-3"
+    },
+    {
+      "title": "窃听电话",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-4"
+    },
+    {
+      "title": "震颤：表情的象征物",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-5"
+    },
+    {
+      "title": "好玩儿的脸：动画创作秘诀",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-6"
+    },
+    {
+      "title": "伪情感",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-7"
+    },
+    {
+      "title": "字里行间的建构",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-8"
+    },
+    {
+      "title": "隐喻在喜剧中的运用",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-9"
+    },
+    {
+      "title": "真人说真话",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter_00009.xhtml#CHP9-10"
+    },
+    {
+      "title": "修订",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10"
+    },
+    {
+      "title": "逆向的头脑风暴",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-1"
+    },
+    {
+      "title": "批评有助提高",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-2"
+    },
+    {
+      "title": "珠宝盒提纲",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-3"
+    },
+    {
+      "title": "他叫喊“大声点儿”",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-4"
+    },
+    {
+      "title": "不要搬起石头砸自己的脚！",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-5"
+    },
+    {
+      "title": "写好前10页",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-6"
+    },
+    {
+      "title": "记叙文及其反面",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-7"
+    },
+    {
+      "title": "写作遇阻怎么办？",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-8"
+    },
+    {
+      "title": "扣好扣子——话痨的疗法",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-9"
+    },
+    {
+      "title": "把好演员这一关",
+      "href": "section-012.md",
+      "epub_href": "Text/chapter_00010.xhtml#CHP10-10"
+    },
+    {
+      "title": "还有什么事？",
+      "href": "section-013.md",
+      "epub_href": "Text/chapter_00011.xhtml#CHP11"
+    },
+    {
+      "title": "一句话剧情简介的绝技",
+      "href": "section-013.md",
+      "epub_href": "Text/chapter_00011.xhtml#CHP11-1"
+    },
+    {
+      "title": "要是自掏腰包你会怎么做？",
+      "href": "section-013.md",
+      "epub_href": "Text/chapter_00011.xhtml#CHP11-2"
+    },
+    {
+      "title": "如何找到经纪人",
+      "href": "section-013.md",
+      "epub_href": "Text/chapter_00011.xhtml#CHP11-3"
+    },
+    {
+      "title": "作者网址",
+      "href": "section-014.md",
+      "epub_href": "Text/chapter_00011_0001.xhtml#CHP11-4"
+    },
+    {
+      "title": "致谢",
+      "href": "section-015.md",
+      "epub_href": "Text/chapter_00011_0001_0001.xhtml#CHP11-5"
+    }
+  ],
+  "sections": [
+    {
+      "number": 1,
+      "href": "section-001.md",
+      "file": "section-001.md",
+      "chars": 0,
+      "preview": "",
+      "epub_href": "OEBPS/Text/a_cover.xhtml"
+    },
+    {
+      "number": 2,
+      "href": "section-002.md",
+      "file": "section-002.md",
+      "chars": 143,
+      "preview": "### 版权信息\n\nCOPYRIGHT\n\n书名：开始写吧！——影视剧本创作 \n 作者：雪莉·艾利斯 \n 出版社：中国人民大学出版社 \n 出版时间：2012年7月 \n ISBN：978730015963",
+      "epub_href": "OEBPS/Text/Copyright.xhtml"
+    },
+    {
+      "number": 3,
+      "href": "section-003.md",
+      "file": "section-003.md",
+      "chars": 1343,
+      "preview": "### 译者序\n\n影视剧本创作的春天\n\n哪里有需求，哪里就会有供给。文化产品亦然。今天，诗歌隐身于流行音乐；小说隐身于影视作品。随着社会发展和技术进步，我们相信文化产品的供需矛盾将会得到更好的解决。\n",
+      "epub_href": "OEBPS/Text/chapter_00001.xhtml"
+    },
+    {
+      "number": 4,
+      "href": "section-004.md",
+      "file": "section-004.md",
+      "chars": 412,
+      "preview": "### 编者的话\n\n2008年夏天，雪莉姨妈开始和我酝酿出版一本影视剧本创作方面的练习册。雪莉姨妈已经编著了《开始写吧！——虚构文学创作》以及《开始写吧！——非虚构文学创作》两部书，看到这一切我也深受",
+      "epub_href": "OEBPS/Text/chapter_00002.xhtml"
+    },
+    {
+      "number": 5,
+      "href": "section-005.md",
+      "file": "section-005.md",
+      "chars": 16133,
+      "preview": "### 精选故事\n\n#### 从冲突开始\n\nMardik Martin\n\nMardik Mart in，德高望重的影视剧本作家，著有Mean Streets， 《愤怒的公牛》，New York，New",
+      "epub_href": "OEBPS/Text/chapter_00003.xhtml"
+    },
+    {
+      "number": 6,
+      "href": "section-006.md",
+      "file": "section-006.md",
+      "chars": 34789,
+      "preview": "### 良好的写作状态\n\n#### 塞住内心批评家的嘴\n\nKim Krizan\n\nKim Krizan，学院奖获奖电影编剧，美国编剧协会奖（WGA）提名编剧，因颇受评论界叫好的电影《爱在黎明破晓前》和",
+      "epub_href": "OEBPS/Text/chapter_00004.xhtml"
+    },
+    {
+      "number": 7,
+      "href": "section-007.md",
+      "file": "section-007.md",
+      "chars": 25877,
+      "preview": "### 结构\n\n#### 我能教你的大战略\n\nChris Soth\n\nChris Soth，电影编剧，剧本有Firestorm，他在南加州大学所作的学位论文以75万美元售出，作品还有随后的Outrag",
+      "epub_href": "OEBPS/Text/chapter_00005.xhtml"
+    },
+    {
+      "number": 8,
+      "href": "section-008.md",
+      "file": "section-008.md",
+      "chars": 24418,
+      "preview": "### 主题\n\n#### 如何运走一堆尘土\n\nDanny Rubin\n\nDanny Rubin，多年为专业戏剧公司创作，还为工业宣传片和儿童电视节目编写字幕，后来才开始创作电影剧本。他的电影成就包括H",
+      "epub_href": "OEBPS/Text/chapter_00006.xhtml"
+    },
+    {
+      "number": 9,
+      "href": "section-009.md",
+      "file": "section-009.md",
+      "chars": 26179,
+      "preview": "### 打造场景\n\n#### 节奏、层次与敬业精神\n\nMichael Genet\n\nMichael Genet，因为替Focus Features的Talkto Me节目工作而荣获2008年度电影杰出",
+      "epub_href": "OEBPS/Text/chapter_00007.xhtml"
+    },
+    {
+      "number": 10,
+      "href": "section-010.md",
+      "file": "section-010.md",
+      "chars": 28542,
+      "preview": "### 人物的发展\n\n#### 说说人物塑造\n\nSyd Field\n\nSyd Field，著有8本有关电影剧本创作的书籍，包括Screenplay，The Screenwriter's Workboo",
+      "epub_href": "OEBPS/Text/chapter_00008.xhtml"
+    },
+    {
+      "number": 11,
+      "href": "section-011.md",
+      "file": "section-011.md",
+      "chars": 18761,
+      "preview": "### 口头与非口头的沟通\n\n#### 找到内心的演员\n\nAmy Holden Jones\n\nAmy Holden Jones，好莱坞作家、剪辑师兼导演。她的作品包括Mystic Pizza，Inde",
+      "epub_href": "OEBPS/Text/chapter_00009.xhtml"
+    },
+    {
+      "number": 12,
+      "href": "section-012.md",
+      "file": "section-012.md",
+      "chars": 20144,
+      "preview": "### 修订\n\n#### 逆向的头脑风暴\n\nPilar Alessandra\n\nPi lar Alessandra， “纸面创作”课程的主任。担任梦工厂和Radar电影公司的高级故事分析师，并且为AB",
+      "epub_href": "OEBPS/Text/chapter_00010.xhtml"
+    },
+    {
+      "number": 13,
+      "href": "section-013.md",
+      "file": "section-013.md",
+      "chars": 7470,
+      "preview": "### 还有什么事？\n\n#### 一句话剧情简介的绝技\n\nBill Lundy\n\nBill Lundy，顶级剧本顾问兼教师，人称“剧情一句话简介医生”，已为科幻频道创作了两部电影，而且出售多个故事给S",
+      "epub_href": "OEBPS/Text/chapter_00011.xhtml"
+    },
+    {
+      "number": 14,
+      "href": "section-014.md",
+      "file": "section-014.md",
+      "chars": 8,
+      "preview": "### 作者网址",
+      "epub_href": "OEBPS/Text/chapter_00011_0001.xhtml"
+    },
+    {
+      "number": 15,
+      "href": "section-015.md",
+      "file": "section-015.md",
+      "chars": 6,
+      "preview": "### 致谢",
+      "epub_href": "OEBPS/Text/chapter_00011_0001_0001.xhtml"
+    }
+  ],
+  "path_base": "containing-json-directory",
+  "epub_href_note": "epub_href为未随包原EPUB内部定位元数据，不是本包文件路径；href/file为同目录可读Markdown。",
+  "original_included": false,
+  "original_sha256": "2f376a0f4bd7649d281475ac93da88d2a06c4120a981935c4f1f120ce229bfb8",
+  "original_filename": "开始写吧！影视剧本创作 ([美] 雪莉·艾利斯, [美] 劳丽·拉姆森) (Z-Library).epub",
+  "full_markdown": "full.md",
+  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。"
+}

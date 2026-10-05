@@ -1,0 +1,71 @@
+{
+  "package": "text-only-books",
+  "result": "passed",
+  "scope": "assets/books，以及书库来源/导航相关的7份references文件；不含技能其他部分的检查",
+  "source_book_file_count": 2415,
+  "source_book_bytes": 335566783,
+  "retained_existing_markdown_files": 435,
+  "body_files_verified": 433,
+  "body_file_breakdown": {
+    "complete_books": 12,
+    "coffee_break_chapters_and_front_back_matter": 14,
+    "epub_sections": 407
+  },
+  "body_preservation": {
+    "method": "逐文件比较：跳过书籍头部包装元数据与新增导航，PDF正文中仅排除旧页图链接行及对应的新定位说明行；其他正文字符与顺序逐字比较。换行统一为LF。",
+    "all_equal": true,
+    "mismatched_files": 0,
+    "compared_body_characters_including_duplicate_full_and_sections": 4107654,
+    "aggregate_source_sha256": "319bee895e3869f175620502344673f4feb8e430a28476b3e49a0b23f5e45b71",
+    "aggregate_text_package_sha256": "319bee895e3869f175620502344673f4feb8e430a28476b3e49a0b23f5e45b71",
+    "aggregate_method": "排序后的每一正文相对技能根路径、NUL、规范化正文、NUL，UTF-8累加SHA-256"
+  },
+  "page_coverage": {
+    "coffee_break": {
+      "expected": 199,
+      "observed": 199,
+      "continuous": true
+    },
+    "B03": {
+      "expected": 120,
+      "observed": 120,
+      "continuous": true
+    },
+    "B08": {
+      "expected": 795,
+      "observed": 795,
+      "continuous": true
+    }
+  },
+  "epub_sections": {
+    "B01": 2,
+    "B02": 37,
+    "B04": 15,
+    "B05": 20,
+    "B06": 113,
+    "B07": 13,
+    "B09": 112,
+    "B10": 75,
+    "B11": 20,
+    "total": 407
+  },
+  "omitted_source_files_by_extension": {
+    ".json": 336,
+    ".pdf": 3,
+    ".txt": 1313,
+    ".png": 319,
+    ".epub": 9
+  },
+  "originals_images_and_caches_included": false,
+  "changes": "复制全部435份既有Markdown，调整元数据/来源限制/原件和页图导航；重建15份必要来源与定位JSON，加本文字版验证与当前文件清单。未重做OCR、未改写正文、未重新研读或核图。",
+  "limits": "机械保真证明已有文字未损失，不证明OCR正确、图片和复杂表格被文字还原或全书已研读。原件哈希沿用来源清单的既有核验记录。",
+  "reference_files_adapted": 7,
+  "reference_files_bytes": 76997,
+  "books_file_count": 453,
+  "books_bytes": 11445210,
+  "markdown_local_links_checked": 504,
+  "json_local_path_references_checked": 3035,
+  "missing_local_targets": 0,
+  "missing_pdf_page_anchors": 0,
+  "absolute_computer_paths_found": 0
+}

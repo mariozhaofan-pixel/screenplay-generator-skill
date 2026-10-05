@@ -1,0 +1,985 @@
+{
+  "title": "游戏剧本怎么写",
+  "author": "（日）佐佐木智广",
+  "toc": [
+    {
+      "title": "版权信息",
+      "href": "section-002.md",
+      "epub_href": "Text/Copyright.xhtml#sigil_toc_id_1"
+    },
+    {
+      "title": "前言",
+      "href": "section-003.md",
+      "epub_href": "Text/chapter0001.xhtml#sigil_toc_id_2"
+    },
+    {
+      "title": "序章 体验开发现场",
+      "href": "section-004.md",
+      "epub_href": "Text/chapter0002.xhtml#sigil_toc_id_3"
+    },
+    {
+      "title": "0-1 创作情节",
+      "href": "section-005.md",
+      "epub_href": "Text/chapter0003.xhtml#sigil_toc_id_4"
+    },
+    {
+      "title": "0-2 遵从策划书",
+      "href": "section-006.md",
+      "epub_href": "Text/chapter0004.xhtml#sigil_toc_id_5"
+    },
+    {
+      "title": "0-3 充实情节——序破急",
+      "href": "section-007.md",
+      "epub_href": "Text/chapter0005.xhtml#sigil_toc_id_6"
+    },
+    {
+      "title": "0-4 前辈的精神论",
+      "href": "section-008.md",
+      "epub_href": "Text/chapter0006.xhtml#sigil_toc_id_7"
+    },
+    {
+      "title": "0-5 剧本是写给开发人员看的",
+      "href": "section-009.md",
+      "epub_href": "Text/chapter0007.xhtml#sigil_toc_id_8"
+    },
+    {
+      "title": "0-6 剧本是给开发人员的信息",
+      "href": "section-010.md",
+      "epub_href": "Text/chapter0008.xhtml#sigil_toc_id_9"
+    },
+    {
+      "title": "0-7 游戏剧本的格式",
+      "href": "section-011.md",
+      "epub_href": "Text/chapter0009.xhtml#sigil_toc_id_10"
+    },
+    {
+      "title": "第1部分 游戏剧本的主要成分",
+      "href": "section-012.md",
+      "epub_href": "Text/Section0001.xhtml#sigil_toc_id_11"
+    },
+    {
+      "title": "导读",
+      "href": "section-013.md",
+      "epub_href": "Text/chapter0011.xhtml#sigil_toc_id_12"
+    },
+    {
+      "title": "第1章 主题与故事",
+      "href": "section-014.md",
+      "epub_href": "Text/chapter0012.xhtml#sigil_toc_id_13"
+    },
+    {
+      "title": "1-1 游戏剧本的创作流程",
+      "href": "section-015.md",
+      "epub_href": "Text/chapter0013.xhtml#sigil_toc_id_14"
+    },
+    {
+      "title": "1-2 主题",
+      "href": "section-016.md",
+      "epub_href": "Text/chapter0014.xhtml#sigil_toc_id_15"
+    },
+    {
+      "title": "1-3 故事",
+      "href": "section-017.md",
+      "epub_href": "Text/chapter0015.xhtml#sigil_toc_id_16"
+    },
+    {
+      "title": "1-4 主题与故事",
+      "href": "section-018.md",
+      "epub_href": "Text/chapter0016.xhtml#sigil_toc_id_17"
+    },
+    {
+      "title": "1-5 如何表现主题",
+      "href": "section-019.md",
+      "epub_href": "Text/chapter0017.xhtml#sigil_toc_id_18"
+    },
+    {
+      "title": "第2章 角色",
+      "href": "section-020.md",
+      "epub_href": "Text/chapter0018.xhtml#sigil_toc_id_19"
+    },
+    {
+      "title": "2-1 角色",
+      "href": "section-021.md",
+      "epub_href": "Text/chapter0019.xhtml#sigil_toc_id_20"
+    },
+    {
+      "title": "2-2 角色设定",
+      "href": "section-022.md",
+      "epub_href": "Text/chapter0020.xhtml#sigil_toc_id_21"
+    },
+    {
+      "title": "2-3 角色设定实例",
+      "href": "section-023.md",
+      "epub_href": "Text/chapter0021.xhtml#sigil_toc_id_22"
+    },
+    {
+      "title": "第3章 角色的定位",
+      "href": "section-024.md",
+      "epub_href": "Text/chapter0022.xhtml#sigil_toc_id_23"
+    },
+    {
+      "title": "3-1 角色的定位",
+      "href": "section-025.md",
+      "epub_href": "Text/chapter0023.xhtml#sigil_toc_id_24"
+    },
+    {
+      "title": "3-2 与游戏系统有直接关联的定位",
+      "href": "section-026.md",
+      "epub_href": "Text/chapter0024.xhtml#sigil_toc_id_25"
+    },
+    {
+      "title": "3-3 与主人公对立的定位",
+      "href": "section-027.md",
+      "epub_href": "Text/chapter0025.xhtml#sigil_toc_id_26"
+    },
+    {
+      "title": "3-4 与主人公同阵营的定位",
+      "href": "section-028.md",
+      "epub_href": "Text/chapter0026.xhtml#sigil_toc_id_27"
+    },
+    {
+      "title": "3-5 让故事产生变化的定位",
+      "href": "section-029.md",
+      "epub_href": "Text/chapter0027.xhtml#sigil_toc_id_28"
+    },
+    {
+      "title": "3-6 补充和强化故事的定位",
+      "href": "section-030.md",
+      "epub_href": "Text/chapter0028.xhtml#sigil_toc_id_29"
+    },
+    {
+      "title": "3-7 将角色设定与故事关联起来",
+      "href": "section-031.md",
+      "epub_href": "Text/chapter0029.xhtml#sigil_toc_id_30"
+    },
+    {
+      "title": "3-8 根据角色创作故事",
+      "href": "section-032.md",
+      "epub_href": "Text/chapter0030.xhtml#sigil_toc_id_31"
+    },
+    {
+      "title": "第4章 世界",
+      "href": "section-033.md",
+      "epub_href": "Text/chapter0031.xhtml#sigil_toc_id_32"
+    },
+    {
+      "title": "4-1 世界",
+      "href": "section-034.md",
+      "epub_href": "Text/chapter0032.xhtml#sigil_toc_id_33"
+    },
+    {
+      "title": "4-2 创建什么样的世界",
+      "href": "section-035.md",
+      "epub_href": "Text/chapter0033.xhtml#sigil_toc_id_34"
+    },
+    {
+      "title": "4-3 世界与角色、故事的关系",
+      "href": "section-036.md",
+      "epub_href": "Text/chapter0034.xhtml#sigil_toc_id_35"
+    },
+    {
+      "title": "第2部分 结构",
+      "href": "section-037.md",
+      "epub_href": "Text/Section0002.xhtml#sigil_toc_id_36"
+    },
+    {
+      "title": "导读",
+      "href": "section-038.md",
+      "epub_href": "Text/chapter0036.xhtml#sigil_toc_id_37"
+    },
+    {
+      "title": "第5章 结构的基础",
+      "href": "section-039.md",
+      "epub_href": "Text/chapter0037.xhtml#sigil_toc_id_38"
+    },
+    {
+      "title": "5-1 什么是结构",
+      "href": "section-040.md",
+      "epub_href": "Text/chapter0038.xhtml#sigil_toc_id_39"
+    },
+    {
+      "title": "5-2 结构的种类",
+      "href": "section-041.md",
+      "epub_href": "Text/chapter0039.xhtml#sigil_toc_id_40"
+    },
+    {
+      "title": "第6章 结构的要素",
+      "href": "section-042.md",
+      "epub_href": "Text/chapter0040.xhtml#sigil_toc_id_41"
+    },
+    {
+      "title": "6-1 开端",
+      "href": "section-043.md",
+      "epub_href": "Text/chapter0041.xhtml#sigil_toc_id_42"
+    },
+    {
+      "title": "6-2 通往高潮的过程",
+      "href": "section-044.md",
+      "epub_href": "Text/chapter0042.xhtml#sigil_toc_id_43"
+    },
+    {
+      "title": "6-3 高潮",
+      "href": "section-045.md",
+      "epub_href": "Text/chapter0043.xhtml#sigil_toc_id_44"
+    },
+    {
+      "title": "6-4 结局",
+      "href": "section-046.md",
+      "epub_href": "Text/chapter0044.xhtml#sigil_toc_id_45"
+    },
+    {
+      "title": "第7章 好结构与坏结构",
+      "href": "section-047.md",
+      "epub_href": "Text/chapter0045.xhtml#sigil_toc_id_46"
+    },
+    {
+      "title": "7-1 为什么需要结构",
+      "href": "section-048.md",
+      "epub_href": "Text/chapter0046.xhtml#sigil_toc_id_47"
+    },
+    {
+      "title": "7-2 要考虑听者的回应",
+      "href": "section-049.md",
+      "epub_href": "Text/chapter0047.xhtml#sigil_toc_id_48"
+    },
+    {
+      "title": "7-3 实现高表现力结构的要点",
+      "href": "section-050.md",
+      "epub_href": "Text/chapter0048.xhtml#sigil_toc_id_49"
+    },
+    {
+      "title": "第8章 选项",
+      "href": "section-051.md",
+      "epub_href": "Text/chapter0049.xhtml#sigil_toc_id_50"
+    },
+    {
+      "title": "8-1 选项",
+      "href": "section-052.md",
+      "epub_href": "Text/chapter0050.xhtml#sigil_toc_id_51"
+    },
+    {
+      "title": "8-2 选项的种类",
+      "href": "section-053.md",
+      "epub_href": "Text/chapter0051.xhtml#sigil_toc_id_52"
+    },
+    {
+      "title": "8-3 选项与世界",
+      "href": "section-054.md",
+      "epub_href": "Text/chapter0052.xhtml#sigil_toc_id_53"
+    },
+    {
+      "title": "8-4 设计选项的要点",
+      "href": "section-055.md",
+      "epub_href": "Text/chapter0053.xhtml#sigil_toc_id_54"
+    },
+    {
+      "title": "8-5 选项的出现时机",
+      "href": "section-056.md",
+      "epub_href": "Text/chapter0054.xhtml#sigil_toc_id_55"
+    },
+    {
+      "title": "8-6 标志",
+      "href": "section-057.md",
+      "epub_href": "Text/chapter0055.xhtml#sigil_toc_id_56"
+    },
+    {
+      "title": "第9章 让结构更有趣",
+      "href": "section-058.md",
+      "epub_href": "Text/chapter0056.xhtml#sigil_toc_id_57"
+    },
+    {
+      "title": "9-1 在开端吸引玩家",
+      "href": "section-059.md",
+      "epub_href": "Text/chapter0057.xhtml#sigil_toc_id_58"
+    },
+    {
+      "title": "9-2 前置准备不能写成说明文",
+      "href": "section-060.md",
+      "epub_href": "Text/chapter0058.xhtml#sigil_toc_id_59"
+    },
+    {
+      "title": "9-3 场景序列",
+      "href": "section-061.md",
+      "epub_href": "Text/chapter0059.xhtml#sigil_toc_id_60"
+    },
+    {
+      "title": "9-4 其他技巧",
+      "href": "section-062.md",
+      "epub_href": "Text/chapter0060.xhtml#sigil_toc_id_61"
+    },
+    {
+      "title": "第3部分 文本",
+      "href": "section-063.md",
+      "epub_href": "Text/Section0003.xhtml#sigil_toc_id_62"
+    },
+    {
+      "title": "导读",
+      "href": "section-064.md",
+      "epub_href": "Text/chapter0063.xhtml#sigil_toc_id_63"
+    },
+    {
+      "title": "第10章 文本的基础",
+      "href": "section-065.md",
+      "epub_href": "Text/chapter0064.xhtml#sigil_toc_id_64"
+    },
+    {
+      "title": "10-1 文本",
+      "href": "section-066.md",
+      "epub_href": "Text/chapter0065.xhtml#sigil_toc_id_65"
+    },
+    {
+      "title": "10-2 台词",
+      "href": "section-067.md",
+      "epub_href": "Text/chapter0066.xhtml#sigil_toc_id_66"
+    },
+    {
+      "title": "10-3 旁白",
+      "href": "section-068.md",
+      "epub_href": "Text/chapter0067.xhtml#sigil_toc_id_67"
+    },
+    {
+      "title": "10-4 指示",
+      "href": "section-069.md",
+      "epub_href": "Text/chapter0068.xhtml#sigil_toc_id_68"
+    },
+    {
+      "title": "第11章 外观与台词",
+      "href": "section-070.md",
+      "epub_href": "Text/chapter0070.xhtml#sigil_toc_id_69"
+    },
+    {
+      "title": "11-1 创作时顾及外观",
+      "href": "section-071.md",
+      "epub_href": "Text/chapter0071.xhtml#sigil_toc_id_70"
+    },
+    {
+      "title": "11-2 台词的基本技巧",
+      "href": "section-072.md",
+      "epub_href": "Text/chapter0072.xhtml#sigil_toc_id_71"
+    },
+    {
+      "title": "11-3 利用台词展示信息",
+      "href": "section-073.md",
+      "epub_href": "Text/chapter0073.xhtml#sigil_toc_id_72"
+    },
+    {
+      "title": "11-4 写好台词的要点",
+      "href": "section-074.md",
+      "epub_href": "Text/chapter0074.xhtml#sigil_toc_id_73"
+    },
+    {
+      "title": "后记",
+      "href": "section-075.md",
+      "epub_href": "Text/chapter0075.xhtml#sigil_toc_id_74"
+    }
+  ],
+  "sections": [
+    {
+      "number": 1,
+      "href": "section-001.md",
+      "file": "section-001.md",
+      "chars": 0,
+      "preview": "",
+      "epub_href": "OEBPS/Text/cover.xhtml"
+    },
+    {
+      "number": 2,
+      "href": "section-002.md",
+      "file": "section-002.md",
+      "chars": 129,
+      "preview": "### 版权信息\n\nCOPYRIGHT\n\n书名：游戏剧本怎么写\n 作者：【日】佐佐木智广\n 出版社：人民邮电出版社\n 出版时间：2018年8月\n ISBN：9787115484338\n 本书由人民邮电",
+      "epub_href": "OEBPS/Text/Copyright.xhtml"
+    },
+    {
+      "number": 3,
+      "href": "section-003.md",
+      "file": "section-003.md",
+      "chars": 968,
+      "preview": "### 前言\n\n《游戏剧本怎么写》——顾名思义，本书是关于游戏剧本的。相信拿起它的读者都对“游戏剧本”有兴趣。\n\n各位不妨随便翻一翻。\n\n写游戏剧本的窍门就藏在本书的各个章节里。\n\n“为什么我的剧本总",
+      "epub_href": "OEBPS/Text/chapter0001.xhtml"
+    },
+    {
+      "number": 4,
+      "href": "section-004.md",
+      "file": "section-004.md",
+      "chars": 109,
+      "preview": "### 序章\n 体验开发现场\n\n先来大致看看剧本创作的流程吧。序章以笔者本人的经验为基础，描述了刚进入游戏制作公司的新人\n\n向职场前辈学习游戏剧本创作方法的故事。\n\n在这一章中，我们将学习创作游戏剧本",
+      "epub_href": "OEBPS/Text/chapter0002.xhtml"
+    },
+    {
+      "number": 5,
+      "href": "section-005.md",
+      "file": "section-005.md",
+      "chars": 940,
+      "preview": "##### 0-1\n 创作情节\n\n作为新员工进入这家游戏制作公司，眨眼间已经是一个月前的事了。担任编剧一职之后，我接到的第一个任务就是编写情节[1]。\n\n所谓情节，按照指导我的前辈的话说，就是类似“故",
+      "epub_href": "OEBPS/Text/chapter0003.xhtml"
+    },
+    {
+      "number": 6,
+      "href": "section-006.md",
+      "file": "section-006.md",
+      "chars": 803,
+      "preview": "##### 0-2\n 遵从策划书\n\n于是我遵照前辈的指点，创作了5个情节。主人公的设定在策划书[1]中已有定论，所以每个情节的主人公都严格按照策划书的内容设计。至于其他角色[2]，则根据各个情节的需要",
+      "epub_href": "OEBPS/Text/chapter0004.xhtml"
+    },
+    {
+      "number": 7,
+      "href": "section-007.md",
+      "file": "section-007.md",
+      "chars": 613,
+      "preview": "##### 0-3\n 充实情节——序破急\n\n经过两个星期的交流，我们终于筛选出了一个可用的情节。在此期间，主人公的角色曾按照客户的意向进行过更改，但不论怎样，最后的情节总算是成形了。\n\nOK，既然情节",
+      "epub_href": "OEBPS/Text/chapter0005.xhtml"
+    },
+    {
+      "number": 8,
+      "href": "section-008.md",
+      "file": "section-008.md",
+      "chars": 474,
+      "preview": "##### 0-4\n 前辈的精神论\n\n开始给情节充实内容之后，我才发现之前的困难都是小儿科。随着情节的成形，客户的需求如洪水般涌来。面对着一大堆需求，我显得有些手足无措。\n\n前辈，打扰一下。客户说要把",
+      "epub_href": "OEBPS/Text/chapter0006.xhtml"
+    },
+    {
+      "number": 9,
+      "href": "section-009.md",
+      "file": "section-009.md",
+      "chars": 1051,
+      "preview": "##### 0-5\n 剧本是写给开发人员看的\n\n序破急成形，客户的需求也回应得差不多了，情节的创作终于接近了尾声。我来到前辈的桌边，把刚改好的情节交给她查看。\n\n……怎么样？\n\n……嗯，还行。你现在去",
+      "epub_href": "OEBPS/Text/chapter0007.xhtml"
+    },
+    {
+      "number": 10,
+      "href": "section-010.md",
+      "file": "section-010.md",
+      "chars": 1265,
+      "preview": "##### 0-6\n 剧本是给开发人员的信息\n\n可是前辈，我不清楚什么样才叫“像样的剧本”。\n\n那我给你举个例子。你先看这个。\n\n前辈给我看的是小说中的一段文字。\n\n我做了一个梦。\n\n梦中，我抱臂坐在",
+      "epub_href": "OEBPS/Text/chapter0008.xhtml"
+    },
+    {
+      "number": 11,
+      "href": "section-011.md",
+      "file": "section-011.md",
+      "chars": 1316,
+      "preview": "##### 0-7\n 游戏剧本的格式\n\n前辈，我写好了，您看看。\n\n前辈那边客户打来的洽谈电话一个接着一个，我好不容易找到个空档交作业。\n\n※ 画面全黑。\n\n我做了一个梦。▼\n\n※ 显示一个夜晚的房间",
+      "epub_href": "OEBPS/Text/chapter0009.xhtml"
+    },
+    {
+      "number": 12,
+      "href": "section-012.md",
+      "file": "section-012.md",
+      "chars": 19,
+      "preview": "### 第1部分\n 游戏剧本的主要成分",
+      "epub_href": "OEBPS/Text/Section0001.xhtml"
+    },
+    {
+      "number": 13,
+      "href": "section-013.md",
+      "file": "section-013.md",
+      "chars": 248,
+      "preview": "#### 导读\n\n第1部分将按顺序讲解游戏剧本的“主题”“故事”“角色”和“世界”四个主要成分。不过要注意的是，实际创作剧本时，这四个主要成分并不是按照顺序逐一完成的。\n\n四个主要成分的创作是同时进行",
+      "epub_href": "OEBPS/Text/chapter0011.xhtml"
+    },
+    {
+      "number": 14,
+      "href": "section-014.md",
+      "file": "section-014.md",
+      "chars": 15,
+      "preview": "#### 第1章\n 主题与故事",
+      "epub_href": "OEBPS/Text/chapter0012.xhtml"
+    },
+    {
+      "number": 15,
+      "href": "section-015.md",
+      "file": "section-015.md",
+      "chars": 736,
+      "preview": "##### 1-1\n 游戏剧本的创作流程\n\n###### 纵观游戏剧本的创作流程\n\n首先让我们来简单了解一下游戏剧本的创作流程。\n\n请看下页这张图。游戏剧本的成型过程大致分为两个阶段。一是“策划阶段”",
+      "epub_href": "OEBPS/Text/chapter0013.xhtml"
+    },
+    {
+      "number": 16,
+      "href": "section-016.md",
+      "file": "section-016.md",
+      "chars": 1109,
+      "preview": "##### 1-2\n 主题\n\n“最强”这个词能让你联想到什么？\n\n高田延彦[1]曾说过，格斗技术团体PRIDE[2]的主题是“最强”。该团体以“六十亿分之一”的宣传语在全世界寻找最强的男人，让他们在“",
+      "epub_href": "OEBPS/Text/chapter0014.xhtml"
+    },
+    {
+      "number": 17,
+      "href": "section-017.md",
+      "file": "section-017.md",
+      "chars": 1578,
+      "preview": "##### 1-3\n 故事\n\n###### 什么是故事\n\n有了主题，只能算在纸上画了个饼。再怎么高呼“友情——友情——”，那也只是个题目而已，人们会说：“然后呢？友情怎么了？”\n\n于是，接下来我们需要",
+      "epub_href": "OEBPS/Text/chapter0015.xhtml"
+    },
+    {
+      "number": 18,
+      "href": "section-018.md",
+      "file": "section-018.md",
+      "chars": 1622,
+      "preview": "##### 1-4\n 主题与故事\n\n###### 从主题导出故事\n\n接下来，我们看看如何从主题导出故事。下面采用的方法是从主题出发，发挥一连串想象，从中引出整个故事。\n\n假设主题是“能逃出丧尸横行的大",
+      "epub_href": "OEBPS/Text/chapter0016.xhtml"
+    },
+    {
+      "number": 19,
+      "href": "section-019.md",
+      "file": "section-019.md",
+      "chars": 1542,
+      "preview": "##### 1-5\n 如何表现主题\n\n###### 主题不能写在剧本里\n\n大部分剧本创作入门书里都会有这么一句话：主题不能写在台词里。\n\n这是什么意思呢？以《勇者斗恶龙Ⅴ》为例，主人公结婚生子，有了家",
+      "epub_href": "OEBPS/Text/chapter0017.xhtml"
+    },
+    {
+      "number": 20,
+      "href": "section-020.md",
+      "file": "section-020.md",
+      "chars": 12,
+      "preview": "#### 第2章\n 角色",
+      "epub_href": "OEBPS/Text/chapter0018.xhtml"
+    },
+    {
+      "number": 21,
+      "href": "section-021.md",
+      "file": "section-021.md",
+      "chars": 3119,
+      "preview": "##### 2-1\n 角色\n\n###### 什么是角色\n\n近来，角色文化已经成为一种日常，泛化得到处都是。例如，迪士尼乐园是角色文化的王国，米奇、米妮、唐老鸭等“角色”齐聚一堂，迎接游客的到来。记得有",
+      "epub_href": "OEBPS/Text/chapter0019.xhtml"
+    },
+    {
+      "number": 22,
+      "href": "section-022.md",
+      "file": "section-022.md",
+      "chars": 9852,
+      "preview": "##### 2-2\n 角色设定\n\n###### 角色设定表\n\n创作角色时，为了提升工作效率，建议将与角色相关的一些项目列成表，向里面逐一填写信息。这张表称为“角色设定表”或者“角色表”。\n\n在游戏开发",
+      "epub_href": "OEBPS/Text/chapter0020.xhtml"
+    },
+    {
+      "number": 23,
+      "href": "section-023.md",
+      "file": "section-023.md",
+      "chars": 700,
+      "preview": "##### 2-3\n 角色设定实例\n\n下面，我们试着实际设定一下角色。\n\n这里我们对几个经典故事做一番改编，以其登场人物为蓝本进行角色设定。改编的角色分别是《桃太郎》[1]里的“桃太郎”，《小红帽》里",
+      "epub_href": "OEBPS/Text/chapter0021.xhtml"
+    },
+    {
+      "number": 24,
+      "href": "section-024.md",
+      "file": "section-024.md",
+      "chars": 15,
+      "preview": "#### 第3章\n 角色的定位",
+      "epub_href": "OEBPS/Text/chapter0022.xhtml"
+    },
+    {
+      "number": 25,
+      "href": "section-025.md",
+      "file": "section-025.md",
+      "chars": 1538,
+      "preview": "##### 3-1\n 角色的定位\n\n###### 什么是定位\n\n单有角色设定并不能让角色在剧本中活起来，因为角色在故事中的“定位”还没有定下来。\n\n所谓定位，就是分配给故事中各个角色的立场，比如主人公",
+      "epub_href": "OEBPS/Text/chapter0023.xhtml"
+    },
+    {
+      "number": 26,
+      "href": "section-026.md",
+      "file": "section-026.md",
+      "chars": 3194,
+      "preview": "##### 3-2\n 与游戏系统有直接关联的定位\n\n与游戏系统有直接关联的定位包括主人公、待攻克对象、系统角色等，这些是游戏或游戏系统中必不可少的定位。只有让这类定位的角色在各种情境中活动起来，游戏系",
+      "epub_href": "OEBPS/Text/chapter0024.xhtml"
+    },
+    {
+      "number": 27,
+      "href": "section-027.md",
+      "file": "section-027.md",
+      "chars": 3072,
+      "preview": "##### 3-3\n 与主人公对立的定位\n\n让角色对立便于我们创作故事。与主人公对立的定位主要有敌人角色、难关角色和竞争者角色。\n\n###### 敌人角色\n\n敌人角色的定位是与主人公敌对，妨碍主人公达",
+      "epub_href": "OEBPS/Text/chapter0025.xhtml"
+    },
+    {
+      "number": 28,
+      "href": "section-028.md",
+      "file": "section-028.md",
+      "chars": 9214,
+      "preview": "##### 3-4\n 与主人公同阵营的定位\n\n与主人公同阵营的定位是帮助主人公达成目的的定位。这一定位能够让故事顺利发展下去。另外，我们还可以利用这一定位给主人公附加一些“枷锁”。所谓枷锁，指束缚主人",
+      "epub_href": "OEBPS/Text/chapter0026.xhtml"
+    },
+    {
+      "number": 29,
+      "href": "section-029.md",
+      "file": "section-029.md",
+      "chars": 2714,
+      "preview": "##### 3-5\n 让故事产生变化的定位\n\n如果不加以处理，故事很容易就会发展成一条直线。一条直线的故事在来龙去脉上虽然没有不合理之处，但往往太过单调，缺乏趣味性。有几种角色可以打破这种倾向，分别是",
+      "epub_href": "OEBPS/Text/chapter0027.xhtml"
+    },
+    {
+      "number": 30,
+      "href": "section-030.md",
+      "file": "section-030.md",
+      "chars": 3159,
+      "preview": "##### 3-6\n 补充和强化故事的定位\n\n补充和强化故事的定位可以让故事内容更具可信度、更简单易懂。玩家跟不上故事发展时，或者希望主题更具说服力时，就要设置补充和强化故事的定位。\n\n设置这种定位的",
+      "epub_href": "OEBPS/Text/chapter0028.xhtml"
+    },
+    {
+      "number": 31,
+      "href": "section-031.md",
+      "file": "section-031.md",
+      "chars": 936,
+      "preview": "##### 3-7\n 将角色设定与故事关联起来\n\n如我们在第2章中所讲，给角色添加设定，再分配一个前面介绍的定位，一个角色就算创作完成了。不过，要想完全发挥出角色的魅力，还必须将角色设定与故事关联起来",
+      "epub_href": "OEBPS/Text/chapter0029.xhtml"
+    },
+    {
+      "number": 32,
+      "href": "section-032.md",
+      "file": "section-032.md",
+      "chars": 1650,
+      "preview": "##### 3-8\n 根据角色创作故事\n\n前面我们详细介绍了定位，从定位的角度出发反观剧本，可以清晰地看到故事的脉络。这对于我们梳理和发展人物关系大有助益。\n\n###### 从定位的分配考虑故事设定\n",
+      "epub_href": "OEBPS/Text/chapter0030.xhtml"
+    },
+    {
+      "number": 33,
+      "href": "section-033.md",
+      "file": "section-033.md",
+      "chars": 12,
+      "preview": "#### 第4章\n 世界",
+      "epub_href": "OEBPS/Text/chapter0031.xhtml"
+    },
+    {
+      "number": 34,
+      "href": "section-034.md",
+      "file": "section-034.md",
+      "chars": 748,
+      "preview": "##### 4-1\n 世界\n\n###### 什么是世界\n\nA long time ago in a galaxy far, far away...\n\n（很久很久以前，在遥远的星河之中……）\n\n上面这句",
+      "epub_href": "OEBPS/Text/chapter0032.xhtml"
+    },
+    {
+      "number": 35,
+      "href": "section-035.md",
+      "file": "section-035.md",
+      "chars": 2266,
+      "preview": "##### 4-2\n 创建什么样的世界\n\n###### “如果世界是这样的呢？”\n\n创建世界时，请先参考1-4节“主题与故事”。把1-4节里的“故事”全都替换成“世界”，就成了创建世界的说明。\n\n再稍",
+      "epub_href": "OEBPS/Text/chapter0033.xhtml"
+    },
+    {
+      "number": 36,
+      "href": "section-036.md",
+      "file": "section-036.md",
+      "chars": 704,
+      "preview": "##### 4-3\n 世界与角色、故事的关系\n\n###### 以世界为起点创作角色与故事\n\n有时候，我们可以以世界为起点创作角色与故事。比如创作一个帝制国家时，我们理所当然地可以安排一位国王登场。同样",
+      "epub_href": "OEBPS/Text/chapter0034.xhtml"
+    },
+    {
+      "number": 37,
+      "href": "section-037.md",
+      "file": "section-037.md",
+      "chars": 12,
+      "preview": "### 第2部分\n 结构",
+      "epub_href": "OEBPS/Text/Section0002.xhtml"
+    },
+    {
+      "number": 38,
+      "href": "section-038.md",
+      "file": "section-038.md",
+      "chars": 85,
+      "preview": "#### 导读\n\n在第1部分中，我们说明了主题、角色、世界、故事的创作方法。接下来等待我们的工作，是根据已创作好的故事写出剧本。第2部分中，我们将说明如何将故事写成剧本。",
+      "epub_href": "OEBPS/Text/chapter0036.xhtml"
+    },
+    {
+      "number": 39,
+      "href": "section-039.md",
+      "file": "section-039.md",
+      "chars": 15,
+      "preview": "#### 第5章\n 结构的基础",
+      "epub_href": "OEBPS/Text/chapter0037.xhtml"
+    },
+    {
+      "number": 40,
+      "href": "section-040.md",
+      "file": "section-040.md",
+      "chars": 4125,
+      "preview": "##### 5-1\n 什么是结构\n\n###### 为什么剧本写不到最后\n\n从头到尾写完整个剧本是一件挺难的事情。高高兴兴提笔开工却坚持不到最后一个场景的情况，相信不少人都经历过。读书玩游戏的时候经常有",
+      "epub_href": "OEBPS/Text/chapter0038.xhtml"
+    },
+    {
+      "number": 41,
+      "href": "section-041.md",
+      "file": "section-041.md",
+      "chars": 2387,
+      "preview": "##### 5-2\n 结构的种类\n\n###### 结构的形式——不止是起承转合\n\n就像音乐有“前奏→旋律A→旋律B→副歌→尾声”这种结构上的经典形式，剧本也有自古以来的经典结构。\n\n翻开各大剧本入门书",
+      "epub_href": "OEBPS/Text/chapter0039.xhtml"
+    },
+    {
+      "number": 42,
+      "href": "section-042.md",
+      "file": "section-042.md",
+      "chars": 15,
+      "preview": "#### 第6章\n 结构的要素",
+      "epub_href": "OEBPS/Text/chapter0040.xhtml"
+    },
+    {
+      "number": 43,
+      "href": "section-043.md",
+      "file": "section-043.md",
+      "chars": 1051,
+      "preview": "##### 6-1\n 开端\n\n###### 什么是开端\n\n顾名思义，开端就是游戏的开头，“序破急”的序。\n\n既然是刚刚被玩家打开的游戏，开端自然要有无懈可击的剧本，确保能抓住玩家的心。开端剧本要想成功",
+      "epub_href": "OEBPS/Text/chapter0041.xhtml"
+    },
+    {
+      "number": 44,
+      "href": "section-044.md",
+      "file": "section-044.md",
+      "chars": 2689,
+      "preview": "##### 6-2\n 通往高潮的过程\n\n###### 什么是通往高潮的过程\n\n第5章中我们提到过，创作音乐时，旋律A、旋律B等通往高潮的过程十分重要。同样道理，对游戏剧本而言，“通往高潮的过程”也很重",
+      "epub_href": "OEBPS/Text/chapter0042.xhtml"
+    },
+    {
+      "number": 45,
+      "href": "section-045.md",
+      "file": "section-045.md",
+      "chars": 686,
+      "preview": "##### 6-3\n 高潮\n\n###### 什么是高潮\n\n高潮具有以下意思：剧烈、兴奋、纠葛的最高峰、对立的最高峰。\n\n游戏的高潮指“达成游戏目的的瞬间”。推理类游戏是得知犯人是谁的瞬间；冒险类游戏是",
+      "epub_href": "OEBPS/Text/chapter0043.xhtml"
+    },
+    {
+      "number": 46,
+      "href": "section-046.md",
+      "file": "section-046.md",
+      "chars": 1776,
+      "preview": "##### 6-4\n 结局\n\n###### 什么是结局\n\n结局是向玩家传达游戏目的达成后产生了什么结果的部分。\n\n我们仍以前面多次提到的以“打倒魔王”为目的的游戏为例，看看它的结局是什么。主人公克服千",
+      "epub_href": "OEBPS/Text/chapter0044.xhtml"
+    },
+    {
+      "number": 47,
+      "href": "section-047.md",
+      "file": "section-047.md",
+      "chars": 17,
+      "preview": "#### 第7章\n 好结构与坏结构",
+      "epub_href": "OEBPS/Text/chapter0045.xhtml"
+    },
+    {
+      "number": 48,
+      "href": "section-048.md",
+      "file": "section-048.md",
+      "chars": 3369,
+      "preview": "##### 7-1\n 为什么需要结构\n\n###### 善于表达与不善表达\n\n结构是剧本创作的关键。游戏系统再好玩，剧本章节再有趣，结构不好也能抹消该游戏的一切优点。特别是以剧本为生命的有声小说和冒险游",
+      "epub_href": "OEBPS/Text/chapter0046.xhtml"
+    },
+    {
+      "number": 49,
+      "href": "section-049.md",
+      "file": "section-049.md",
+      "chars": 3703,
+      "preview": "##### 7-2\n 要考虑听者的回应\n\n###### 女朋友们是什么感受\n\n前面我们都看到了，对于善于表达的人和不善表达的人，两位女朋友的反应大不一样。其原因是，善于表达的人和不善表达的人的表达方式",
+      "epub_href": "OEBPS/Text/chapter0047.xhtml"
+    },
+    {
+      "number": 50,
+      "href": "section-050.md",
+      "file": "section-050.md",
+      "chars": 1901,
+      "preview": "##### 7-3\n 实现高表现力结构的要点\n\n###### 可以从钓鱼的对话中看出的结构的基本要点\n\n前面我们以钓鱼的对话为例，验证了结构的重要性。从例子中可以看出，同样的体验、同样的内容，表达方式",
+      "epub_href": "OEBPS/Text/chapter0048.xhtml"
+    },
+    {
+      "number": 51,
+      "href": "section-051.md",
+      "file": "section-051.md",
+      "chars": 12,
+      "preview": "#### 第8章\n 选项",
+      "epub_href": "OEBPS/Text/chapter0049.xhtml"
+    },
+    {
+      "number": 52,
+      "href": "section-052.md",
+      "file": "section-052.md",
+      "chars": 2381,
+      "preview": "##### 8-1\n 选项\n\n###### 交互\n\n英文中有Interactive一词，翻译过来就是“交互”。\n\n交互指“用户和内容双向影响”。简单说来就是“用户也参与到内容中去”。从这个角度讲，“交",
+      "epub_href": "OEBPS/Text/chapter0050.xhtml"
+    },
+    {
+      "number": 53,
+      "href": "section-053.md",
+      "file": "section-053.md",
+      "chars": 1037,
+      "preview": "##### 8-2\n 选项的种类\n\n###### 选项与分支\n\n游戏与小说、电影最大的不同是能通过选项创造剧本的分支。剧本的分支能实现其他几种体裁做不到的事情。\n\n一个是“剧本多线发展”，另一个是“可",
+      "epub_href": "OEBPS/Text/chapter0051.xhtml"
+    },
+    {
+      "number": 54,
+      "href": "section-054.md",
+      "file": "section-054.md",
+      "chars": 1804,
+      "preview": "##### 8-3\n 选项与世界\n\n###### 掌上世界与黄色的电线\n\n电影《楚门的世界》中，金·凯瑞饰演的主人公从一出生开始，人生就通过无数个隐蔽的摄像头被放映在电视上——他生活的世界其实是一个巨",
+      "epub_href": "OEBPS/Text/chapter0052.xhtml"
+    },
+    {
+      "number": 55,
+      "href": "section-055.md",
+      "file": "section-055.md",
+      "chars": 1085,
+      "preview": "##### 8-4\n 设计选项的要点\n\n再强调一遍，设计选项时的铁则，一是要设计没有破绽的选项，二是设计的选项不能给玩家带来压力。\n\n那么，怎么做才能守住两条铁则呢？\n\n●明确选择的基准\n\n●设计具有",
+      "epub_href": "OEBPS/Text/chapter0053.xhtml"
+    },
+    {
+      "number": 56,
+      "href": "section-056.md",
+      "file": "section-056.md",
+      "chars": 3691,
+      "preview": "##### 8-5\n 选项的出现时机\n\n除内容之外，选项在剧本中出现的时机同样重要。如果在没有任何必然性的地方出现选项，那就不但会给玩家带来压力，还会破坏剧本的连贯性。\n\n所以，决定要在剧本的哪个地方",
+      "epub_href": "OEBPS/Text/chapter0054.xhtml"
+    },
+    {
+      "number": 57,
+      "href": "section-057.md",
+      "file": "section-057.md",
+      "chars": 1706,
+      "preview": "##### 8-6\n 标志\n\n###### 用标志管理剧本发展\n\n我们再三提到，游戏与电影、小说不同，剧情不必按照一条故事线发展。游戏可能会玩到一半突然失败，也可能会随玩家的行为、选择或者主人公参数的",
+      "epub_href": "OEBPS/Text/chapter0055.xhtml"
+    },
+    {
+      "number": 58,
+      "href": "section-058.md",
+      "file": "section-058.md",
+      "chars": 16,
+      "preview": "#### 第9章\n 让结构更有趣",
+      "epub_href": "OEBPS/Text/chapter0056.xhtml"
+    },
+    {
+      "number": 59,
+      "href": "section-059.md",
+      "file": "section-059.md",
+      "chars": 1864,
+      "preview": "##### 9-1\n 在开端吸引玩家\n\n凡事开头总是最重要的。游戏开始之后，如何能以最快速度将玩家引入游戏世界，是一款游戏成败的关键。如何利用游戏开始时主人公在故事上的初始状态来吸引玩家，是游戏剧本的",
+      "epub_href": "OEBPS/Text/chapter0057.xhtml"
+    },
+    {
+      "number": 60,
+      "href": "section-060.md",
+      "file": "section-060.md",
+      "chars": 1200,
+      "preview": "##### 9-2\n 前置准备不能写成说明文\n\n所谓前置准备，指游戏目的、主要角色的介绍、世界的解说、人物关系的说明等工作。游戏初期，我们需要向玩家说明的东西有很多，尤其是开端的前置准备，很容易变成说",
+      "epub_href": "OEBPS/Text/chapter0058.xhtml"
+    },
+    {
+      "number": 61,
+      "href": "section-061.md",
+      "file": "section-061.md",
+      "chars": 530,
+      "preview": "##### 9-3\n 场景序列\n\n前一节举的女剑士的例子是一个拥有序破急的完整小故事（如下图）。\n\n如例子所示，这种将时间连续的章节以序破急的形式创作成小故事的手法称为“场景序列”（scene seq",
+      "epub_href": "OEBPS/Text/chapter0059.xhtml"
+    },
+    {
+      "number": 62,
+      "href": "section-062.md",
+      "file": "section-062.md",
+      "chars": 3217,
+      "preview": "##### 9-4\n 其他技巧\n\n###### 设置支线故事\n\n许多游戏的故事都分为主线故事和支线故事。主线故事是与游戏目的或世界相关的故事流程，而支线故事则是诸如“角色情感与人物关系的变化”等故事流",
+      "epub_href": "OEBPS/Text/chapter0060.xhtml"
+    },
+    {
+      "number": 63,
+      "href": "section-063.md",
+      "file": "section-063.md",
+      "chars": 12,
+      "preview": "### 第3部分\n 文本",
+      "epub_href": "OEBPS/Text/Section0003.xhtml"
+    },
+    {
+      "number": 64,
+      "href": "section-064.md",
+      "file": "section-064.md",
+      "chars": 61,
+      "preview": "#### 导读\n\n在第2部分中，我们看了故事是如何构成、如何构建的。在第3部分中，我们将了解如何基于构建好的结构来写文本。",
+      "epub_href": "OEBPS/Text/chapter0063.xhtml"
+    },
+    {
+      "number": 65,
+      "href": "section-065.md",
+      "file": "section-065.md",
+      "chars": 16,
+      "preview": "#### 第10章\n 文本的基础",
+      "epub_href": "OEBPS/Text/chapter0064.xhtml"
+    },
+    {
+      "number": 66,
+      "href": "section-066.md",
+      "file": "section-066.md",
+      "chars": 885,
+      "preview": "##### 10-1\n 文本\n\n###### 什么是文本\n\n在游戏开发现场，我们习惯把构成游戏剧本的文章称作“文本”。这或许是因为单纯记录文字数据的文件被称为“文本文件”。“文本”的英文text来源于",
+      "epub_href": "OEBPS/Text/chapter0065.xhtml"
+    },
+    {
+      "number": 67,
+      "href": "section-067.md",
+      "file": "section-067.md",
+      "chars": 1179,
+      "preview": "##### 10-2\n 台词\n\n###### 什么是台词\n\n台词又称科白、对白，在本书里指的是游戏中角色所讲的话语。台词的种类可大致分为对话与独白两类。\n\n###### 对话\n\n首先，我们看看两个或更",
+      "epub_href": "OEBPS/Text/chapter0066.xhtml"
+    },
+    {
+      "number": 68,
+      "href": "section-068.md",
+      "file": "section-068.md",
+      "chars": 648,
+      "preview": "##### 10-3\n 旁白\n\n###### 什么是旁白\n\n“旁白”指的是“<主人公>抵达了教室”“<女主角>快步离去了”“我觉得如果不在这里说清楚，往后肯定会一拖再拖”等，说明场面情况或登场人物心理",
+      "epub_href": "OEBPS/Text/chapter0067.xhtml"
+    },
+    {
+      "number": 69,
+      "href": "section-069.md",
+      "file": "section-069.md",
+      "chars": 2848,
+      "preview": "##### 10-4\n 指示\n\n###### 什么是指示\n\n“指示”就相当于传统戏剧剧本中的“科介”。\n\n“科介”是传统戏曲表演术语，是用于表达人物动作、表情以及舞台效果的提示。北杂剧多用“科”，如笑",
+      "epub_href": "OEBPS/Text/chapter0068.xhtml"
+    },
+    {
+      "number": 70,
+      "href": "section-070.md",
+      "file": "section-070.md",
+      "chars": 16,
+      "preview": "#### 第11章\n 外观与台词",
+      "epub_href": "OEBPS/Text/chapter0070.xhtml"
+    },
+    {
+      "number": 71,
+      "href": "section-071.md",
+      "file": "section-071.md",
+      "chars": 1968,
+      "preview": "##### 11-1\n 创作时顾及外观\n\n###### 文本的观赏性\n\n文本在画面中的显示效果是一个需要重视的事情。因为台词和旁白\n\n与小说一样，是直接映入读者（玩家）眼帘的东西。除内容和文体之外，文",
+      "epub_href": "OEBPS/Text/chapter0071.xhtml"
+    },
+    {
+      "number": 72,
+      "href": "section-072.md",
+      "file": "section-072.md",
+      "chars": 3823,
+      "preview": "##### 11-2\n 台词的基本技巧\n\n###### 如何写好台词\n\n一般说来，游戏比小说拥有更多对话。原因很简单，写游戏剧本的时候，我们以拥有大量图像与动画为前提，所以描写服装、风景的需求没有小说",
+      "epub_href": "OEBPS/Text/chapter0072.xhtml"
+    },
+    {
+      "number": 73,
+      "href": "section-073.md",
+      "file": "section-073.md",
+      "chars": 637,
+      "preview": "##### 11-3\n 利用台词展示信息\n\n在台词的措辞、句尾、语调上稍作变化，就能体现出说话人或其所处世界的相关信息。前面我们讲了敬语体现角色间关系性的问题。这里我们来看看台词还能够体现出一些什么东",
+      "epub_href": "OEBPS/Text/chapter0073.xhtml"
+    },
+    {
+      "number": 74,
+      "href": "section-074.md",
+      "file": "section-074.md",
+      "chars": 4325,
+      "preview": "##### 11-4\n 写好台词的要点\n\n这里我们准备了一篇差强人意的例文，接下来笔者将在打磨例文的过程中说明写好台词的要点。\n\n###### 差强人意的例文\n\n我们讲以下面这篇差强人意的例文为基础来",
+      "epub_href": "OEBPS/Text/chapter0074.xhtml"
+    },
+    {
+      "number": 75,
+      "href": "section-075.md",
+      "file": "section-075.md",
+      "chars": 965,
+      "preview": "### 后记\n\n人们总是一脸不可思议地问笔者：“剧本是怎么写出来的啊？”在不接触这方面的东西的人眼中，游戏剧本总像是魔法变出来的一样。可实际上并非如此。游戏剧本更像数学，只要明白其中的机制，任何人都写",
+      "epub_href": "OEBPS/Text/chapter0075.xhtml"
+    }
+  ],
+  "path_base": "containing-json-directory",
+  "epub_href_note": "epub_href为未随包原EPUB内部定位元数据，不是本包文件路径；href/file为同目录可读Markdown。",
+  "original_included": false,
+  "original_sha256": "3cce986a742cd885638f538f213fbfe218dd0bb049ebbf8a50dc9da4a299ceb0",
+  "original_filename": "游戏剧本怎么写 (（日）佐佐木智广) (Z-Library).epub",
+  "full_markdown": "full.md",
+  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。"
+}

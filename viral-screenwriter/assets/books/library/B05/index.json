@@ -1,0 +1,285 @@
+{
+  "title": "怎样写故事：小说与剧本创作的6W原则",
+  "author": "莉萨•克龙",
+  "toc": [
+    {
+      "title": "扉页",
+      "href": "section-002.md",
+      "epub_href": "Text/part0000.xhtml"
+    },
+    {
+      "title": "版权页",
+      "href": "section-003.md",
+      "epub_href": "Text/part0001.xhtml"
+    },
+    {
+      "title": "目录",
+      "href": "section-004.md",
+      "epub_href": "Text/part0002.xhtml"
+    },
+    {
+      "title": "引言",
+      "href": "section-005.md",
+      "epub_href": "Text/part0003.xhtml"
+    },
+    {
+      "title": "第一部分 真正的故事应该是什么样的",
+      "href": "section-006.md",
+      "epub_href": "Text/part0004.xhtml"
+    },
+    {
+      "title": "1 故事：大脑的解码器",
+      "href": "section-006.md",
+      "epub_href": "Text/part0004.xhtml#sigil_toc_id_1"
+    },
+    {
+      "title": "2 谬论：我们学到的写作知识都是错误的",
+      "href": "section-007.md",
+      "epub_href": "Text/part0005.xhtml"
+    },
+    {
+      "title": "第二部分 创造故事的6W原则",
+      "href": "section-008.md",
+      "epub_href": "Text/part0006.xhtml"
+    },
+    {
+      "title": "3 What If：打破“万一……怎么办？”的思维惯性",
+      "href": "section-008.md",
+      "epub_href": "Text/part0006.xhtml#sigil_toc_id_2"
+    },
+    {
+      "title": "4 Who：你要彻底颠覆“谁”的生活",
+      "href": "section-009.md",
+      "epub_href": "Text/part0007.xhtml"
+    },
+    {
+      "title": "5 Why：你的主人公究竟“为什么”在意",
+      "href": "section-010.md",
+      "epub_href": "Text/part0008.xhtml"
+    },
+    {
+      "title": "6 Worldview：主人公的世界观",
+      "href": "section-011.md",
+      "epub_href": "Text/part0009.xhtml"
+    },
+    {
+      "title": "7 What Next：完美的因果关系",
+      "href": "section-012.md",
+      "epub_href": "Text/part0010.xhtml"
+    },
+    {
+      "title": "8 When：给你的主人公一个无法拒绝的提议",
+      "href": "section-013.md",
+      "epub_href": "Text/part0011.xhtml"
+    },
+    {
+      "title": "第三部分 为主人公的内在挣扎创造一个外部刺激",
+      "href": "section-014.md",
+      "epub_href": "Text/part0012.xhtml"
+    },
+    {
+      "title": "9 开篇：小说开头与故事蓝图规划体系",
+      "href": "section-014.md",
+      "epub_href": "Text/part0012.xhtml#sigil_toc_id_3"
+    },
+    {
+      "title": "10 真正的顿悟时刻：你的故事在哪里结束",
+      "href": "section-015.md",
+      "epub_href": "Text/part0013.xhtml"
+    },
+    {
+      "title": "11 构建蓝图：串联起游离的各个部分",
+      "href": "section-016.md",
+      "epub_href": "Text/part0014.xhtml"
+    },
+    {
+      "title": "12 以退为进：如何从过去中收获情节",
+      "href": "section-017.md",
+      "epub_href": "Text/part0015.xhtml"
+    },
+    {
+      "title": "13 故事逻辑：保证每一个“是什么”背后都有一个“为什么”",
+      "href": "section-018.md",
+      "epub_href": "Text/part0016.xhtml"
+    },
+    {
+      "title": "14 故事层次：次要情节、故事线及次要人物",
+      "href": "section-019.md",
+      "epub_href": "Text/part0017.xhtml"
+    },
+    {
+      "title": "15 坚持写下去：故事的螺旋进展",
+      "href": "section-020.md",
+      "epub_href": "Text/part0018.xhtml"
+    }
+  ],
+  "sections": [
+    {
+      "number": 1,
+      "href": "section-001.md",
+      "file": "section-001.md",
+      "chars": 0,
+      "preview": "",
+      "epub_href": "OEBPS/Text/cover_page.xhtml"
+    },
+    {
+      "number": 2,
+      "href": "section-002.md",
+      "file": "section-002.md",
+      "chars": 0,
+      "preview": "",
+      "epub_href": "OEBPS/Text/part0000.xhtml"
+    },
+    {
+      "number": 3,
+      "href": "section-003.md",
+      "file": "section-003.md",
+      "chars": 130,
+      "preview": "### 版权信息\n\n书名：怎样写故事：小说与剧本创作的6W原则\n\n作者：【美】莉萨·克龙\n\n译者：王君\n\n出版社：读者出版社\n\n出版日期：2019-01-01\n\nISBN：9787552705522\n",
+      "epub_href": "OEBPS/Text/part0001.xhtml"
+    },
+    {
+      "number": 4,
+      "href": "section-004.md",
+      "file": "section-004.md",
+      "chars": 390,
+      "preview": "目录\n\n引言\n\n第一部分 真正的故事应该是什么样的\n\n1 故事：大脑的解码器\n\n2 谬论：我们学到的写作知识都是错误的\n\n第二部分 创造故事的6W原则\n\n3 What If：打破“万一……怎么办？”的",
+      "epub_href": "OEBPS/Text/part0002.xhtml"
+    },
+    {
+      "number": 5,
+      "href": "section-005.md",
+      "file": "section-005.md",
+      "chars": 3110,
+      "preview": "### 引言\n\n作者犯的最严重的错误是什么？多年来，一直有人问我这个问题。答案很简单：他们不知道什么是故事。所以，即便他们创意绝佳、妙笔生花，但往往写了很多事，也讲不出一个真正的故事，因此难以让人手不",
+      "epub_href": "OEBPS/Text/part0003.xhtml"
+    },
+    {
+      "number": 6,
+      "href": "section-006.md",
+      "file": "section-006.md",
+      "chars": 6904,
+      "preview": "### 第一部分　真正的故事应该是什么样的\n\n#### 1　故事：大脑的解码器\n\n不开汽车的社会有不少，但不讲故事的社会还没有过。\n\n厄休拉·勒古恩\n\n美国作家，著有《黑暗的左手》《失去一切的人》等。",
+      "epub_href": "OEBPS/Text/part0004.xhtml"
+    },
+    {
+      "number": 7,
+      "href": "section-007.md",
+      "file": "section-007.md",
+      "chars": 9196,
+      "preview": "#### 2　谬论：我们学到的写作知识都是错误的\n\n文学难，不是难在写，而是难在把你想的事情写出来。\n\n罗伯特·路易斯·史蒂文森\n\n19世纪英国作家，著有《金银岛》《化身博士》等。\n\n想要抓住读者的心",
+      "epub_href": "OEBPS/Text/part0005.xhtml"
+    },
+    {
+      "number": 8,
+      "href": "section-008.md",
+      "file": "section-008.md",
+      "chars": 12059,
+      "preview": "### 第二部分　创造故事的6W原则\n\n#### 3　What If：打破“万一……怎么办？”的思维惯性\n\n所有的想法都要考虑进去，无论有多古怪。\n\n温斯顿·丘吉尔\n\n曾任英国首相，诺贝尔文学奖获得者",
+      "epub_href": "OEBPS/Text/part0006.xhtml"
+    },
+    {
+      "number": 9,
+      "href": "section-009.md",
+      "file": "section-009.md",
+      "chars": 8144,
+      "preview": "#### 4　Who：你要彻底颠覆“谁”的生活\n\n我认为写作的全部荣耀就在于它把我们赶出自己，赶进别人的生活里。\n\n舍伍德·安德森\n\n美国作家，《俄亥俄，温斯堡》作者。\n\n既然你已经找到了假设问题，我",
+      "epub_href": "OEBPS/Text/part0007.xhtml"
+    },
+    {
+      "number": 10,
+      "href": "section-010.md",
+      "file": "section-010.md",
+      "chars": 11537,
+      "preview": "#### 5　Why：你的主人公究竟“为什么”在意\n\n戏剧的本质在于一个人要对自己做的事所留下的后果负责。\n\n哈罗德·海斯\n\n美国作家，曾任《君子》杂志编辑。\n\n现在你有了一个有力的假设问题和一个可信",
+      "epub_href": "OEBPS/Text/part0008.xhtml"
+    },
+    {
+      "number": 11,
+      "href": "section-011.md",
+      "file": "section-011.md",
+      "chars": 12651,
+      "preview": "#### 6　Worldview：主人公的世界观\n\n过去永远不会死去。过去甚至从来都没有过去。\n\n威廉·福克纳\n\n美国作家，《喧哗与骚动》作者。\n\n既然你已经知道了主人公希望得到什么，也知道是什么错误",
+      "epub_href": "OEBPS/Text/part0009.xhtml"
+    },
+    {
+      "number": 12,
+      "href": "section-012.md",
+      "file": "section-012.md",
+      "chars": 11715,
+      "preview": "#### 7　What Next：完美的因果关系\n\n因与果、手段与目的、种子与果实，皆不能分离；\n\n因为果早已酝酿在因中，目的存在于手段之前，果实则蕴含于种子之内。\n\n爱默生\n\n美国思想家、诗人。\n\n",
+      "epub_href": "OEBPS/Text/part0010.xhtml"
+    },
+    {
+      "number": 13,
+      "href": "section-013.md",
+      "file": "section-013.md",
+      "chars": 14116,
+      "preview": "#### 8　When：给你的主人公一个无法拒绝的提议\n\n凡事必定有个开始……而那个开始必定与之前发生的事情相连。\n\n玛丽·雪莱\n\n英国作家，《弗兰肯斯坦》作者。\n\n我们在前五章里挖掘、扩展了故事的第",
+      "epub_href": "OEBPS/Text/part0011.xhtml"
+    },
+    {
+      "number": 14,
+      "href": "section-014.md",
+      "file": "section-014.md",
+      "chars": 10166,
+      "preview": "### 第三部分　为主人公的内在挣扎创造一个外部刺激\n\n#### 9　开篇：小说开头与故事蓝图规划体系\n\n不要把进展与行动混为一谈。\n\n海明威\n\n美国作家，《永别了，武器》作者。\n\n故事蓝图究竟是什么",
+      "epub_href": "OEBPS/Text/part0012.xhtml"
+    },
+    {
+      "number": 15,
+      "href": "section-015.md",
+      "file": "section-015.md",
+      "chars": 12933,
+      "preview": "#### 10　真正的顿悟时刻：你的故事在哪里结束\n\n给我一个结尾，我就能倒着写。\n\n阿瑟·米勒\n\n美国作家，《推销员之死》作者。\n\n我们要解决的下一个问题是，你的故事到哪里结束？你可能觉得，我们才刚",
+      "epub_href": "OEBPS/Text/part0013.xhtml"
+    },
+    {
+      "number": 16,
+      "href": "section-016.md",
+      "file": "section-016.md",
+      "chars": 4717,
+      "preview": "#### 11　构建蓝图：串联起游离的各个部分\n\n每个有勇气提笔写点东西的人，都值得我敬佩。\n\nE. B. 怀特\n\n美国作家，《夏洛的网》作者。\n\n现在，小说首尾部分已经确立。你写出了开头一幕，即主人",
+      "epub_href": "OEBPS/Text/part0014.xhtml"
+    },
+    {
+      "number": 17,
+      "href": "section-017.md",
+      "file": "section-017.md",
+      "chars": 7422,
+      "preview": "#### 12　以退为进：如何从过去中收获情节\n\n行动中深埋着命运的种子；种子不断生长，成为命运。\n\n杜鲁门\n\n即曾任美国第三十三任总统的哈里.S. 杜鲁门。\n\n在背景故事的支撑下，主人公一步步走到了",
+      "epub_href": "OEBPS/Text/part0015.xhtml"
+    },
+    {
+      "number": 18,
+      "href": "section-018.md",
+      "file": "section-018.md",
+      "chars": 7862,
+      "preview": "#### 13　故事逻辑：保证每一个“是什么”背后都有一个“为什么”\n\n现实比小说更离奇，因为小说需要遵照可能性发展，而现实不需要。\n\n马克·吐温\n\n美国作家，《汤姆·索亚历险记》作者。\n\n现在，你已",
+      "epub_href": "OEBPS/Text/part0016.xhtml"
+    },
+    {
+      "number": 19,
+      "href": "section-019.md",
+      "file": "section-019.md",
+      "chars": 13439,
+      "preview": "#### 14　故事层次：次要情节、故事线及次要人物\n\n在一部优秀的剧作里，每个人都如其所是。\n\n弗里德里希·黑贝尔\n\n德国剧作家。\n\n显然，到目前为止，你们当中有些人已经很了解自己的主要故事线了。事",
+      "epub_href": "OEBPS/Text/part0017.xhtml"
+    },
+    {
+      "number": 20,
+      "href": "section-020.md",
+      "file": "section-020.md",
+      "chars": 12092,
+      "preview": "#### 15　坚持写下去：故事的螺旋进展\n\n一件事在办成之前，总是看起来难于登天。\n\n纳尔逊·曼德拉\n\n曾任南非总统。\n\n我们来清点一下手上现在都有什么：已确定的次要人物有了简介与背景故事；第一个场",
+      "epub_href": "OEBPS/Text/part0018.xhtml"
+    }
+  ],
+  "path_base": "containing-json-directory",
+  "epub_href_note": "epub_href为未随包原EPUB内部定位元数据，不是本包文件路径；href/file为同目录可读Markdown。",
+  "original_included": false,
+  "original_sha256": "d48eb3606b3b97ee86ec469574c0ec33750a5798889c480f764f14e14e5e2669",
+  "original_filename": "怎样写故事：小说与剧本创作的6W原则 (莉萨•克龙) (Z-Library).epub",
+  "full_markdown": "full.md",
+  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。"
+}

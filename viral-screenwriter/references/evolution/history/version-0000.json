@@ -1,0 +1,15 @@
+{
+  "version": 0,
+  "updated_at": "2026-09-06T23:30:00+08:00",
+  "baseline": "../../viral-rules.md",
+  "rules": [],
+  "portable_evidence": {
+    "packaging_revision": 1,
+    "packaged_at": "2026-09-29",
+    "status": "historical_claims_only_source_evidence_missing",
+    "missing_manifest": "../../../assets/evidence/missing-evidence.json",
+    "path_base": "this_file_directory",
+    "local_verified_support_count": 0,
+    "note": "规则及计数保留原记录；visual_review、support_count 和分母均属历史声称，本包未重新核验。旧源盘路径替换为 null、原文件名和 missing 状态。candidate 不可据此升级 active；新创作仅可把机制当启发式。"
+  }
+}

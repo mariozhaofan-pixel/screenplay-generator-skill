@@ -1,0 +1,976 @@
+{
+  "title": "救猫咪：电影编剧指南（畅销好莱坞15年的编剧实战秘籍，与《故事》《电影剧本写作基础》并称“编剧三宝”。专业译者全新翻译）",
+  "author": "布莱克·斯奈德",
+  "toc": [
+    {
+      "title": "Title Page 扉页",
+      "href": "section-004.md",
+      "epub_href": "text/part0001.html"
+    },
+    {
+      "title": "Introduction 序言",
+      "href": "section-007.md",
+      "epub_href": "text/part0004.html"
+    },
+    {
+      "title": "Chapter 01 它讲的是什么？",
+      "href": "section-008.md",
+      "epub_href": "text/part0005.html"
+    },
+    {
+      "title": "Chapter 02 给我相同的东西……但要不一样！",
+      "href": "section-019.md",
+      "epub_href": "text/part0016.html"
+    },
+    {
+      "title": "Chapter 03 讲的是这样一个人，他……",
+      "href": "section-034.md",
+      "epub_href": "text/part0031.html"
+    },
+    {
+      "title": "Chapter 04 来构建节拍吧！",
+      "href": "section-044.md",
+      "epub_href": "text/part0041.html"
+    },
+    {
+      "title": "Chapter 05 演示板：助你打造完美剧本",
+      "href": "section-063.md",
+      "epub_href": "text/part0060.html"
+    },
+    {
+      "title": "Chapter 06 剧本创作的不变法则",
+      "href": "section-077.md",
+      "epub_href": "text/part0074.html"
+    },
+    {
+      "title": "Chapter 07 这电影出了什么问题？",
+      "href": "section-088.md",
+      "epub_href": "text/part0085.html"
+    },
+    {
+      "title": "Chapter 08 终于可以淡入了",
+      "href": "section-100.md",
+      "epub_href": "text/part0097.html"
+    },
+    {
+      "title": "Appendix 附录",
+      "href": "section-108.md",
+      "epub_href": "text/part0105.html"
+    },
+    {
+      "title": "Acknowledgements 鸣谢",
+      "href": "section-110.md",
+      "epub_href": "text/part0107.html"
+    },
+    {
+      "title": "About the Author 关于作者",
+      "href": "section-111.md",
+      "epub_href": "text/part0108.html"
+    }
+  ],
+  "sections": [
+    {
+      "number": 1,
+      "href": "section-001.md",
+      "file": "section-001.md",
+      "chars": 0,
+      "preview": "",
+      "epub_href": "titlepage.xhtml"
+    },
+    {
+      "number": 2,
+      "href": "section-002.md",
+      "file": "section-002.md",
+      "chars": 0,
+      "preview": "",
+      "epub_href": "text/part0000_split_000.html"
+    },
+    {
+      "number": 3,
+      "href": "section-003.md",
+      "file": "section-003.md",
+      "chars": 0,
+      "preview": "",
+      "epub_href": "text/part0000_split_001.html"
+    },
+    {
+      "number": 4,
+      "href": "section-004.md",
+      "file": "section-004.md",
+      "chars": 17,
+      "preview": "### Title Page 扉页",
+      "epub_href": "text/part0001.html"
+    },
+    {
+      "number": 5,
+      "href": "section-005.md",
+      "file": "section-005.md",
+      "chars": 870,
+      "preview": "图书在版编目（CIP）数据\n\n救猫咪 : 电影编剧指南 / (美) 布莱克·斯奈德著 ;孟影译. -- 杭州 : 浙江文艺出版社, 2021.1\n\nISBN 978-7-5339-6336-1\n\nⅠ ",
+      "epub_href": "text/part0002.html"
+    },
+    {
+      "number": 6,
+      "href": "section-006.md",
+      "file": "section-006.md",
+      "chars": 7,
+      "preview": "果麦文化 出品",
+      "epub_href": "text/part0003.html"
+    },
+    {
+      "number": 7,
+      "href": "section-007.md",
+      "file": "section-007.md",
+      "chars": 3647,
+      "preview": "### Introduction序言\n\n又是一本编剧书？！\n\n我敢肯定你们很多人都是这样想的。\n\n在某种程度上，你们是对的，市面上已经有很多优秀的编剧理论书了。如果你想追溯源头的话，去看悉德·菲尔德，",
+      "epub_href": "text/part0004.html"
+    },
+    {
+      "number": 8,
+      "href": "section-008.md",
+      "file": "section-008.md",
+      "chars": 2121,
+      "preview": "### Chapter 01它讲的是什么？\n\n我们都有过这样的经历……\n\n周六晚上。\n\n你和朋友们决定去看一场电影。\n\n其中一人被推选出来念报纸上的“正在上映”，其他人则负责倾听和做决定。如果你是一个",
+      "epub_href": "text/part0005.html"
+    },
+    {
+      "number": 9,
+      "href": "section-009.md",
+      "file": "section-009.md",
+      "chars": 1084,
+      "preview": "#### 让人抓狂的一句话故事The Logline From Hell\n\n我跟很多编剧打过交道，向我推销剧本的有行家也有业余爱好者。当他们一上来就开始讲剧情时，我都会问同一个问题：“你的一句话简介是",
+      "epub_href": "text/part0006.html"
+    },
+    {
+      "number": 10,
+      "href": "section-010.md",
+      "file": "section-010.md",
+      "chars": 722,
+      "preview": "#### 有没有反讽？Isn't It Ironic\n\n优秀的一句话故事必须具备的首要要素，最重要的要素，就是：反讽。我的好朋友兼前创作搭档科尔比·卡尔曾向我指出过这一点，他说得完全正确，而且不管是喜",
+      "epub_href": "text/part0007.html"
+    },
+    {
+      "number": 11,
+      "href": "section-011.md",
+      "file": "section-011.md",
+      "chars": 972,
+      "preview": "#### 美妙的脑补画面A Compelling Mental Picture\n\n一个优秀的一句话故事必备的第二重要的要素是，能让你从中看到整部电影。好的一句话故事就像普鲁斯特[8]的玛德琳蛋糕，会在",
+      "epub_href": "text/part0008.html"
+    },
+    {
+      "number": 12,
+      "href": "section-012.md",
+      "file": "section-012.md",
+      "chars": 877,
+      "preview": "#### 目标观众和拍摄成本Audience and Cost\n\n优秀的一句话故事还要具备一点——这对于吸引电影公司的买家非常重要——就是要能体现出这部电影是给谁看的，以及拍出来要花多少钱。\n\n让我们",
+      "epub_href": "text/part0009.html"
+    },
+    {
+      "number": 13,
+      "href": "section-013.md",
+      "file": "section-013.md",
+      "chars": 1260,
+      "preview": "#### 绝杀的片名A Killer Title\n\n最后，优秀的一句话故事必须配上合适的片名，这样才能产生绝妙的效果。实际上，片名和一句话故事就像一套组合拳，只要两者配合得够好，就肯定能征服我。正如出",
+      "epub_href": "text/part0010.html"
+    },
+    {
+      "number": 14,
+      "href": "section-014.md",
+      "file": "section-014.md",
+      "chars": 361,
+      "preview": "#### 先别动笔You and Your \"What Is It\"\n\n所有优秀的编剧都喜欢钻牛角尖。\n\n没错，我就这么说了。\n\n但我表达的是好意！因为如果说有人能够理解编剧们偶尔显露出的自大，那就是",
+      "epub_href": "text/part0011.html"
+    },
+    {
+      "number": 15,
+      "href": "section-015.md",
+      "file": "section-015.md",
+      "chars": 1830,
+      "preview": "#### 市场调查范例A Test Marketing Example\n\n我已经告诉过你，在想出绝杀的一句话故事和片名之前，先别急着动笔写剧本。我知道这样很痛苦，但这是值得的。我最近刚刚和一个编剧通过",
+      "epub_href": "text/part0012.html"
+    },
+    {
+      "number": 16,
+      "href": "section-016.md",
+      "file": "section-016.md",
+      "chars": 1238,
+      "preview": "#### 高概念之“死”The \"Death\" of High Concept\n\n上文中所提到的一切，都是围绕一个词展开的，这是一个被很多好莱坞人士痛恨的词：高概念（high concept）。杰弗里",
+      "epub_href": "text/part0013.html"
+    },
+    {
+      "number": 17,
+      "href": "section-017.md",
+      "file": "section-017.md",
+      "chars": 888,
+      "preview": "#### 总结Summary\n\n你的脑筋是不是已经开始打结了？是不是头疼得不行了？不管这句话你是熟悉还是陌生，总之，“它讲的是什么”是我们写剧本的唯一起点。编剧，尤其是写原创剧本的编剧，必须考虑到下游",
+      "epub_href": "text/part0014.html"
+    },
+    {
+      "number": 18,
+      "href": "section-018.md",
+      "file": "section-018.md",
+      "chars": 1025,
+      "preview": "#### 练习Exercises\n\n1.拿起报纸，向朋友推荐一下这周都有哪些电影在上映。你有没有办法来改进这些电影的一句话故事或海报？\n\n2.如果你正在写一个剧本，或者已经写过一些了，那么给每个剧本写",
+      "epub_href": "text/part0015.html"
+    },
+    {
+      "number": 19,
+      "href": "section-019.md",
+      "file": "section-019.md",
+      "chars": 1021,
+      "preview": "### Chapter 02给我相同的东西……但要不一样！\n\n编剧日常所面临的难题，就是怎样避免俗套。\n\n你可以接近俗套，可以绕着俗套起舞，可以奔向俗套，甚至几乎拥抱俗套。\n\n但在最后关头，你必须掉转",
+      "epub_href": "text/part0016.html"
+    },
+    {
+      "number": 20,
+      "href": "section-020.md",
+      "file": "section-020.md",
+      "chars": 2732,
+      "preview": "#### 它最像什么？What Is It… Most Like?\n\n现在你已经有了一句话故事。\n\n你也听从了我的建议，去外面向一些“受害者”推销了你的创意，然后根据他们的反馈进行了相应的调整。现在你",
+      "epub_href": "text/part0017.html"
+    },
+    {
+      "number": 21,
+      "href": "section-021.md",
+      "file": "section-021.md",
+      "chars": 1402,
+      "preview": "#### 屋里有怪物Monster in the House\n\n《大白鲨》、《驱魔人》和《异形》有什么共同之处？它们都属于“屋里有怪物”这个类型。这是一种历史悠久的故事类型，搞不好是人类历史上的第一个",
+      "epub_href": "text/part0018.html"
+    },
+    {
+      "number": 22,
+      "href": "section-022.md",
+      "file": "section-022.md",
+      "chars": 1094,
+      "preview": "#### 金羊毛The Golden Fleece\n\n自古以来，人们围坐在篝火旁时最喜欢讲的就是追寻类的神话故事。如果你的剧本是一部“公路电影”，那你就必须了解一下“金羊毛”这个类型的规则。这个名字源",
+      "epub_href": "text/part0019.html"
+    },
+    {
+      "number": 23,
+      "href": "section-023.md",
+      "file": "section-023.md",
+      "chars": 1629,
+      "preview": "#### 愿望成真Out of the Bottle\n\n“我真希望能有我自己的钱！”这句台词来自普莱斯顿·沃特斯，他是儿童电影《小鬼富翁》里的主角，而这个剧本正是科尔比·卡尔与我合写的，并成功卖给了迪",
+      "epub_href": "text/part0020.html"
+    },
+    {
+      "number": 24,
+      "href": "section-024.md",
+      "file": "section-024.md",
+      "chars": 752,
+      "preview": "#### 陷入困境Dude with a Problem\n\n这个类型的定义能用一句话来概括：“一个普通人发现自己陷入了不普通的处境当中。”你仔细想想就会发现，这又是一个我们自我想象时最常见也最原始的情",
+      "epub_href": "text/part0021.html"
+    },
+    {
+      "number": 25,
+      "href": "section-025.md",
+      "file": "section-025.md",
+      "chars": 1123,
+      "preview": "#### 人生变迁Rites of Passage\n\n还记得你的青春期是怎样尴尬度过的吗？你喜欢的那个漂亮姑娘，却连你的存在都不知道。还记得你的40岁生日派对吗？你丈夫向你提出了离婚。这些痛苦的人生转",
+      "epub_href": "text/part0022.html"
+    },
+    {
+      "number": 26,
+      "href": "section-026.md",
+      "file": "section-026.md",
+      "chars": 1709,
+      "preview": "#### 伙伴情谊Buddy Love\n\n我觉得“伙伴故事”这种经典类型是电影时代（movie age）的产物。虽然历史上也有一些伟大的伙伴故事（比如《堂吉诃德》），但直到电影时代来临之后，它才作为一",
+      "epub_href": "text/part0023.html"
+    },
+    {
+      "number": 27,
+      "href": "section-027.md",
+      "file": "section-027.md",
+      "chars": 809,
+      "preview": "#### 推理调查Whydunit[14]\n\n我们都知道人心险恶，会有贪婪，会有谋杀。这一切的背后，都隐藏着潜伏在暗处的作恶者。但“是谁”远远没有“为什么”来得有趣。跟金羊毛不同，优秀的“推理调查”类",
+      "epub_href": "text/part0024.html"
+    },
+    {
+      "number": 28,
+      "href": "section-028.md",
+      "file": "section-028.md",
+      "chars": 952,
+      "preview": "#### 傻瓜获胜The Fool Triumphant\n\n“傻瓜”从来都是神话和传奇里的一种重要角色。表面上，他只是个乡下的傻子，但通过进一步的检验，证明原来他才是我们所有人当中最聪明的那个。由于卑",
+      "epub_href": "text/part0025.html"
+    },
+    {
+      "number": 29,
+      "href": "section-029.md",
+      "file": "section-029.md",
+      "chars": 1210,
+      "preview": "#### 体制之下Institutionalized\n\n如果没有他人，我们会是什么样？而当我们因一个共同的理由组成一个群体时，少数人往往要为多数人作出牺牲，并因此经历很多起起伏伏。这个被我称作“体制之",
+      "epub_href": "text/part0026.html"
+    },
+    {
+      "number": 30,
+      "href": "section-030.md",
+      "file": "section-030.md",
+      "chars": 1111,
+      "preview": "#### 超级英雄Superhero\n\n“超级英雄”跟“陷入困境”完全相反，可以用后者的反义来给前者定义：一个超乎寻常的人发现自己身处一个非常普通的世界里。就好像格列佛被小人国居民绑在海滩上一样，超级",
+      "epub_href": "text/part0027.html"
+    },
+    {
+      "number": 31,
+      "href": "section-031.md",
+      "file": "section-031.md",
+      "chars": 823,
+      "preview": "#### 好莱坞黑暗的小秘密Hollywood's Dirty Little Secret\n\n我相信看完这个类型列表之后，你不仅会明白为什么这么多影片在结构上都互相类似，还有很多瞬间你会眼睛一亮，觉得",
+      "epub_href": "text/part0028.html"
+    },
+    {
+      "number": 32,
+      "href": "section-032.md",
+      "file": "section-032.md",
+      "chars": 1191,
+      "preview": "#### 总结Summary\n\n类型，指的是电影的类别划分。但不同于浪漫爱情喜剧、劫盗电影这种典型的划分方式，我们创造了10种新的类型来给故事定义。这些故事类型在现阶段足够帮助你捋清你正在构思的电影创",
+      "epub_href": "text/part0029.html"
+    },
+    {
+      "number": 33,
+      "href": "section-033.md",
+      "file": "section-033.md",
+      "chars": 521,
+      "preview": "#### 练习Exercises\n\n1.拿起报纸，翻到电影版，把正在上映的电影介绍都看一遍，然后判断它们分别属于什么类型。如果你真的去看了其中某一部，那么把它和同类型的其他影片做个对比。你之所以被这部",
+      "epub_href": "text/part0030.html"
+    },
+    {
+      "number": 34,
+      "href": "section-034.md",
+      "file": "section-034.md",
+      "chars": 938,
+      "preview": "### Chapter 03讲的是这样一个人，他……\n\n要搞清楚你的电影讲的是什么，下一步就是搞清它讲的是个什么样的人。\n\n以前，我那智慧的老爹常常这样说：“给我讲个故事，讲的是这样一个人，他……”\n",
+      "epub_href": "text/part0031.html"
+    },
+    {
+      "number": 35,
+      "href": "section-035.md",
+      "file": "section-035.md",
+      "chars": 1296,
+      "preview": "#### 关于谁？Who Is This About\n\n每一部电影，哪怕是《低俗小说》（Pulp Fiction，约翰·特拉沃尔塔主演）或《罪与错》（Crimes and Misdemeanors，伍",
+      "epub_href": "text/part0032.html"
+    },
+    {
+      "number": 36,
+      "href": "section-036.md",
+      "file": "section-036.md",
+      "chars": 2740,
+      "preview": "#### 用角色强化一句话故事Amping Up the Logline\n\n怎样才能给你的创意确立一个最适合它的主角呢？很多时候，创意本身所能提供给你的仅仅是一些暗示。若想让你的创意奏效，往往就得在角",
+      "epub_href": "text/part0033.html"
+    },
+    {
+      "number": 37,
+      "href": "section-037.md",
+      "file": "section-037.md",
+      "chars": 1234,
+      "preview": "#### 原始的驱动力The Primal Urge\n\n虽然我在这本书里已经一再强调过，但我还是要再说一遍：\n\n原始，原始，原始！\n\n当你定好了主角之后，促使主角追求胜利的必须是一种基本的动机。某某人",
+      "epub_href": "text/part0034.html"
+    },
+    {
+      "number": 38,
+      "href": "section-038.md",
+      "file": "section-038.md",
+      "chars": 1034,
+      "preview": "#### 给你的主角定演员Casting for the Role of Your Hero\n\n有经验的编剧很容易踩一个坑，就是以为自己知道哪个演员下一部戏想演什么样的角色。亚当·桑德勒（Adam S",
+      "epub_href": "text/part0035.html"
+    },
+    {
+      "number": 39,
+      "href": "section-039.md",
+      "file": "section-039.md",
+      "chars": 1895,
+      "preview": "#### 演员的类型Actor Archetypes\n\n要这么说的话，那为什么有些演员总是扮演同一类角色呢？正如我们在第二章里提到的，纵观影史，你会发现很多大明星都很擅长扮演某种特定的角色类型。想想玛",
+      "epub_href": "text/part0036.html"
+    },
+    {
+      "number": 40,
+      "href": "section-040.md",
+      "file": "section-040.md",
+      "chars": 2256,
+      "preview": "#### 特殊情况Special Circumstances\n\n现在，爱钻牛角尖的读者们请注意，我们要谈到例外情况了。怎样创作直线型的电影主角，我们差不多已经明白了。但如果遇到特殊情况呢？比如群戏该怎",
+      "epub_href": "text/part0037.html"
+    },
+    {
+      "number": 41,
+      "href": "section-041.md",
+      "file": "section-041.md",
+      "chars": 685,
+      "preview": "#### 一句话故事的奴隶Slave to the Logline\n\n当你给自己的故事确立了完美的主角，并给他设定好一个原始目标之后，就该回到一句话故事上去，用新学到的知识给它做进一步的完善。这话听起",
+      "epub_href": "text/part0038.html"
+    },
+    {
+      "number": 42,
+      "href": "section-042.md",
+      "file": "section-042.md",
+      "chars": 392,
+      "preview": "#### 总结Summary\n\n想要写出一个成功的电影概念，给故事确立主角的重要性排在第二位——成功的意思是指“能卖出去”。选角和概念其实是所有电影的起点。任何去看电影的人最先问的两个问题就是“讲的是",
+      "epub_href": "text/part0039.html"
+    },
+    {
+      "number": 43,
+      "href": "section-043.md",
+      "file": "section-043.md",
+      "chars": 322,
+      "preview": "#### 练习Exercises\n\n1.你正在写的剧本是什么类型？复习一下这个类型的片单，给每一部都写个一句话故事。要注意主角和反派分别属于什么角色类型，想出恰当的形容词来进行描述。还有，别忘了说清楚",
+      "epub_href": "text/part0040.html"
+    },
+    {
+      "number": 44,
+      "href": "section-044.md",
+      "file": "section-044.md",
+      "chars": 432,
+      "preview": "### Chapter 04来构建节拍吧！\n\n是不是蠢蠢欲动地想开始下笔写剧本了？\n\n肯定的！\n\n那我会不会让你开始写呢？\n\n你还是继续蠢蠢欲动吧！\n\n当然，你距离真正动笔的时刻的确越来越近了。想想你",
+      "epub_href": "text/part0041.html"
+    },
+    {
+      "number": 45,
+      "href": "section-045.md",
+      "file": "section-045.md",
+      "chars": 2332,
+      "preview": "#### 结构，结构，结构……Structure, Structure, Structure\n\n在定好了创意、主角和目标观众之后，对于剧本的写作和推销来说，最重要的元素就是结构了。出色的结构是无懈可击",
+      "epub_href": "text/part0042.html"
+    },
+    {
+      "number": 46,
+      "href": "section-046.md",
+      "file": "section-046.md",
+      "chars": 704,
+      "preview": "#### 开场画面（1）Opening Image (1)\n\n“开场画面”指的是一部影片给人的第一印象，它的基调、情绪、类型和规模都体现在开场画面中。我能想到很多优秀的例子：在英国乡间狂飙的摩托车引出",
+      "epub_href": "text/part0043.html"
+    },
+    {
+      "number": 47,
+      "href": "section-047.md",
+      "file": "section-047.md",
+      "chars": 672,
+      "preview": "#### 阐明主题（5）Theme Stated (5)\n\n在一个结构得当的剧本里，前5分钟内一定会有一个人（通常不是主角）来（通常是向主角）提出一个问题或做一番陈述，他所说的内容就是影片的主题。比如",
+      "epub_href": "text/part0044.html"
+    },
+    {
+      "number": 48,
+      "href": "section-048.md",
+      "file": "section-048.md",
+      "chars": 1186,
+      "preview": "#### 布局铺垫（1—10）Set-up (1—10)\n\n剧本的前10页，最多前12页，叫作“布局铺垫”。对于我或好莱坞大多数的剧本审读人来说，这个部分就是决定成败的关键，要么抓住我的兴趣，要么让我",
+      "epub_href": "text/part0045.html"
+    },
+    {
+      "number": 49,
+      "href": "section-049.md",
+      "file": "section-049.md",
+      "chars": 711,
+      "preview": "#### 触发事件（12）Catalyst (12)\n\n《绿宝石》里那封把女主角（凯瑟琳·特纳饰）带到南美洲的信，《雨人》里那通告知汤姆·克鲁斯他父亲死讯的电话，《律政俏佳人》里瑞茜·威瑟斯彭被分手的",
+      "epub_href": "text/part0046.html"
+    },
+    {
+      "number": 50,
+      "href": "section-050.md",
+      "file": "section-050.md",
+      "chars": 765,
+      "preview": "#### 展开讨论（12—25）Debate (12—25)\n\n这个部分是剧本的第12页到第25页，也是曾经难倒我的地方。在第12页，一封电报发过来，说我妹妹被海盗抓走了，我知道我应该做什么！那么我作",
+      "epub_href": "text/part0047.html"
+    },
+    {
+      "number": 51,
+      "href": "section-051.md",
+      "file": "section-051.md",
+      "chars": 521,
+      "preview": "#### 进入第二幕（25）Break into Two (25)\n\n它在剧本的第25页。很多人跟我争论过，为什么不是第28页？第30页为什么不行？别抬扛，拜托。\n\n在一个总长110页的剧本里，它的出",
+      "epub_href": "text/part0048.html"
+    },
+    {
+      "number": 52,
+      "href": "section-052.md",
+      "file": "section-052.md",
+      "chars": 724,
+      "preview": "#### 副线故事（30）B Story (30)\n\n“副线故事”从第30页开始。大多数剧本的副线故事都是爱情线，同时也是承载着电影主题的一条线。我认为在第30页前后开始走副线故事还是一个小小的助推器",
+      "epub_href": "text/part0049.html"
+    },
+    {
+      "number": 53,
+      "href": "section-053.md",
+      "file": "section-053.md",
+      "chars": 1043,
+      "preview": "#### 玩闹和游戏（30—35）Fun and Games (30—35)\n\n“玩闹和游戏”这个部分，我喜欢这么来说：它要兑现对前提的承诺（the promise of the premise）。它",
+      "epub_href": "text/part0050.html"
+    },
+    {
+      "number": 54,
+      "href": "section-054.md",
+      "file": "section-054.md",
+      "chars": 1306,
+      "preview": "#### 中点（55）Midpoint (55)\n\n电影剧本分为前后两半，而第55页的“中点”就是二者的界线。我们也可以聊两个转幕节点的重要性，但对我来说中点同样重要，尤其是在前期搭建剧本结构的时候。",
+      "epub_href": "text/part0051.html"
+    },
+    {
+      "number": 55,
+      "href": "section-055.md",
+      "file": "section-055.md",
+      "chars": 879,
+      "preview": "#### 反派逼近（55—75）Bad Guys Close in (55—75)\n\n这个部分是剧本的第55页到第75页，从中点到失去一切，这是整个剧本最难写的部分。（让你了解一点残酷的事实！）对我来",
+      "epub_href": "text/part0052.html"
+    },
+    {
+      "number": 56,
+      "href": "section-056.md",
+      "file": "section-056.md",
+      "chars": 1155,
+      "preview": "#### 失去一切（75）All is Lost (75)\n\n正如上文所说的，在一个结构得当的剧本里，失去一切发生在第75页。我们知道它是中点的反向对应，也是“失败的假象”最经常发生的位置，虽然看起来",
+      "epub_href": "text/part0053.html"
+    },
+    {
+      "number": 57,
+      "href": "section-057.md",
+      "file": "section-057.md",
+      "chars": 517,
+      "preview": "#### 灵魂黑夜（75—85）Dark Night of the Soul (75—85)\n\n现在，你正处在失去一切的阶段，正在经历死亡时刻，但你的主角在经历这一切时是什么感受呢？剧本里负责回答这个",
+      "epub_href": "text/part0054.html"
+    },
+    {
+      "number": 58,
+      "href": "section-058.md",
+      "file": "section-058.md",
+      "chars": 295,
+      "preview": "#### 进入第三幕（85）Break into Three (85)\n\n……哇！解决办法！\n\n感谢副线故事（爱情线）里的角色，感谢副线故事里那些关于主题的讨论，感谢主角最终拼尽全力找到了打败坏人（正",
+      "epub_href": "text/part0055.html"
+    },
+    {
+      "number": 59,
+      "href": "section-059.md",
+      "file": "section-059.md",
+      "chars": 318,
+      "preview": "#### 结局（85—110）Finale (85—110)\n\n“结局”就是第三幕，这是收尾的阶段。在这里，主角把学到的教训付诸行动，克服了自己的性格缺陷，在主线剧情和副线故事都获得了胜利。旧的世界成",
+      "epub_href": "text/part0056.html"
+    },
+    {
+      "number": 60,
+      "href": "section-060.md",
+      "file": "section-060.md",
+      "chars": 119,
+      "preview": "#### 终场画面（110）Final Image (110)\n\n前面说了，电影的终场画面跟开场画面是相反的，用来证明事情的的确确发生了变化。如果没有终场画面，或者不知道该怎么设计终场画面，请回头去检",
+      "epub_href": "text/part0057.html"
+    },
+    {
+      "number": 61,
+      "href": "section-061.md",
+      "file": "section-061.md",
+      "chars": 2678,
+      "preview": "#### 总结Summary\n\n现在我已经把15个节拍都告诉你了，还举了《爱的大追踪》这样的例子，但我知道你们这些年轻自负的编剧肯定会说：“是啊，老头子，也许这些在你那个年代是有用的，但我们已经不再需",
+      "epub_href": "text/part0058.html"
+    },
+    {
+      "number": 62,
+      "href": "section-062.md",
+      "file": "section-062.md",
+      "chars": 399,
+      "preview": "#### 练习Exercises\n\n1.把BS2打印出来并随身携带。有空的时候就想想某一部你喜欢的电影，想想它的结构，是否符合我这个每部分只用一句话就能描述的简洁表格？\n\n2.回到影音租售店去（店员肯",
+      "epub_href": "text/part0059.html"
+    },
+    {
+      "number": 63,
+      "href": "section-063.md",
+      "file": "section-063.md",
+      "chars": 1244,
+      "preview": "### Chapter 05演示板：助你打造完美剧本\n\n如果足够幸运，我们会找到一位导师。这样的人虽然远比我们智慧，但令人惊讶的是，他们也乐于分享自己的知识。麦克·切达就是我在编剧行业遇到的第一位导师",
+      "epub_href": "text/part0060.html"
+    },
+    {
+      "number": 64,
+      "href": "section-064.md",
+      "file": "section-064.md",
+      "chars": 1319,
+      "preview": "#### 演示板高手Chairman of the Board\n\n演示板（the board）可能是编剧在工作时最重要的一件工具了——仅次于纸、笔和笔记本电脑。这么多年以来，不管我走进谁的办公室，只要",
+      "epub_href": "text/part0061.html"
+    },
+    {
+      "number": 65,
+      "href": "section-065.md",
+      "file": "section-065.md",
+      "chars": 1390,
+      "preview": "#### 第一批卡片First Cards First\n\n你买来了尺寸和样式最合适的板子，挂在墙上，端详着它。它是空的，对吧？现在请在上面贴三条胶带，把板子分成四等份。如果你更大胆的话，也可以用记号笔",
+      "epub_href": "text/part0062.html"
+    },
+    {
+      "number": 66,
+      "href": "section-066.md",
+      "file": "section-066.md",
+      "chars": 495,
+      "preview": "#### 主要转折点The Major Turns\n\n下一批要钉上的卡片是故事的转折点：中点、第二幕的转幕节点、第三幕的转幕节点。由于你已经学习了BS2，你应该知道它们有多重要。虽然你也可以按别的方法",
+      "epub_href": "text/part0063.html"
+    },
+    {
+      "number": 67,
+      "href": "section-067.md",
+      "file": "section-067.md",
+      "chars": 727,
+      "preview": "#### 过多描述和剧情黑洞Overloaded Acts and Black Holes\n\n我最大的问题是，写在卡片上的东西超出了故事的节拍，超出了具体的场景，这在前期布局铺垫和第一幕的时候尤其严重",
+      "epub_href": "text/part0064.html"
+    },
+    {
+      "number": 68,
+      "href": "section-068.md",
+      "file": "section-068.md",
+      "chars": 543,
+      "preview": "#### 总是空荡荡的第三幕The Eternally Light Act Three\n\n排卡片的过程中有个很好笑的地方：在初期阶段，你几乎总是要面对一个空荡荡的第三幕。\n\n通常只有两张卡片。一张上面",
+      "epub_href": "text/part0065.html"
+    },
+    {
+      "number": 69,
+      "href": "section-069.md",
+      "file": "section-069.md",
+      "chars": 579,
+      "preview": "#### 颜色编码Color-coding\n\n现在有一件很酷的事情要做。它会花费不少时间，但它非常重要。每个角色的故事怎样展开，怎样与其他角色的故事线相交，这些都要能清楚地看到，然后才能做出完美的安排",
+      "epub_href": "text/part0066.html"
+    },
+    {
+      "number": 70,
+      "href": "section-070.md",
+      "file": "section-070.md",
+      "chars": 554,
+      "preview": "#### 精简数量Stripping It Down\n\n40张卡片——这就是最终留在你板子上的，大致是每行10张。所以如果你有50张或者20张，都说明有问题。\n\n最常见的情况是，你留下的比你实际需要的",
+      "epub_href": "text/part0067.html"
+    },
+    {
+      "number": 71,
+      "href": "section-071.md",
+      "file": "section-071.md",
+      "chars": 1397,
+      "preview": "#### +/-和><\n\n现在你的板子上已经钉着40张卡片了，你很确定你的故事将要这样发展，觉得这项工作已经完事儿了，但其实并没有。在开始写剧本之前，你还得把两个特别重要的东西写在所有的卡片上：\n\n符",
+      "epub_href": "text/part0068.html"
+    },
+    {
+      "number": 72,
+      "href": "section-072.md",
+      "file": "section-072.md",
+      "chars": 715,
+      "preview": "#### 准备动笔……Ready to Let It Fly\n\n做完所有这些工作，你应该在第一行有9张卡片，第二行也是9张，第三行和第四行也都是——等等，总共只有36张啊！那是因为我多给了你4张的额度",
+      "epub_href": "text/part0069.html"
+    },
+    {
+      "number": 73,
+      "href": "section-073.md",
+      "file": "section-073.md",
+      "chars": 338,
+      "preview": "#### 最后的叮嘱Final Words on the Subject\n\n实际情况是：当你写下“淡入”两个字的时候，演示板就没有任何意义了。但我希望我教给你的东西能给你启发，伴你成长。也就是：在第2",
+      "epub_href": "text/part0070.html"
+    },
+    {
+      "number": 74,
+      "href": "section-074.md",
+      "file": "section-074.md",
+      "chars": 599,
+      "preview": "#### 我的秘密武器Checking in with My Secret Weapon\n\n当然，如果我真的写到卡壳的时候，我就会给麦克·切达打电话。\n\n“麦克，”我哼唧道，“我不知道反派逼近这里该写",
+      "epub_href": "text/part0071.html"
+    },
+    {
+      "number": 75,
+      "href": "section-075.md",
+      "file": "section-075.md",
+      "chars": 1015,
+      "preview": "#### 总结Summary\n\n现在，你已经搞清楚了动笔前需要弄懂的一切。如果你花了很长时间按照我的建议做了这些工作，那现在你已经准备好写下“淡入”并开始动笔了。\n\n激动吗？\n\n我想你一定很激动，但我",
+      "epub_href": "text/part0072.html"
+    },
+    {
+      "number": 76,
+      "href": "section-076.md",
+      "file": "section-076.md",
+      "chars": 252,
+      "preview": "#### 练习Exercises\n\n1.从你看过的同类型影片中找一部，做出它的节拍表，把各个节拍写在小卡片上，然后把卡片钉在演示板上。如果你还没来得及去文具店，那就试试便携式的演示板。\n\n2.从你最喜",
+      "epub_href": "text/part0073.html"
+    },
+    {
+      "number": 77,
+      "href": "section-077.md",
+      "file": "section-077.md",
+      "chars": 752,
+      "preview": "### Chapter 06剧本创作的不变法则\n\n我写这本书的真正灵感，其实是出于一种简单的欲望：我有一大堆厉害的剧作法则，想昭告天下这些都是我发现的。\n\n没错，我终于说出口了！\n\n这些都是我和我的创",
+      "epub_href": "text/part0074.html"
+    },
+    {
+      "number": 78,
+      "href": "section-078.md",
+      "file": "section-078.md",
+      "chars": 2008,
+      "preview": "#### 救猫咪Save the Cat\n\n我发现《救猫咪》这个书名和“救猫咪”这条法则竟然都很有争议！当我把本书的手稿拿给编剧们看时，虽然很多人都觉得这个前提很棒，但也有一些人觉得这个主意糟透了，简",
+      "epub_href": "text/part0075.html"
+    },
+    {
+      "number": 79,
+      "href": "section-079.md",
+      "file": "section-079.md",
+      "chars": 1543,
+      "preview": "#### 泳池里的教皇The Pope in the Pool\n\n泳池里的教皇其实更像一个窍门，而不是一个法则。但是它非常有趣，所以我喜欢聊它，也总能在电影里看到有人用。此外，它还是剧本大师麦克·切达",
+      "epub_href": "text/part0076.html"
+    },
+    {
+      "number": 80,
+      "href": "section-080.md",
+      "file": "section-080.md",
+      "chars": 1428,
+      "preview": "#### 双重魔幻Double Mumbo Jumbo\n\n“双重魔幻”是我最喜欢的规则，也是你和我都不能打破的一条规则。虽然我们总能看到有人在打破！\n\n我要告诉你的建议是，出于某种原因，观众只能接受一",
+      "epub_href": "text/part0077.html"
+    },
+    {
+      "number": 81,
+      "href": "section-081.md",
+      "file": "section-081.md",
+      "chars": 1536,
+      "preview": "#### 铺垫过长Laying Pipe\n\n汤姆·克鲁斯主演的《少数派报告》（Minority Report）就犯了这个错误，还有本·斯蒂勒和詹妮弗·安妮斯顿（Jennifer Aniston）主演的",
+      "epub_href": "text/part0078.html"
+    },
+    {
+      "number": 82,
+      "href": "section-082.md",
+      "file": "section-082.md",
+      "chars": 1417,
+      "preview": "#### 黑人兽医，也叫糖多齁死人Black Vet A.K.A. Too Much Marzipan\n\n在处理概念性创意的时候，“双重魔幻”规则有一个分支，我称之为“黑人兽医”规则。\n\n你通常会喜欢",
+      "epub_href": "text/part0079.html"
+    },
+    {
+      "number": 83,
+      "href": "section-083.md",
+      "file": "section-083.md",
+      "chars": 1340,
+      "preview": "#### 小心冰川！Watch Out for That Glacier\n\n当坏人出现的时候，通常都是藏在暗处，某个离主角很远的地方，然后慢慢“逼近”。有时候，他们逼近的速度过于缓慢，套在主角脖子上的",
+      "epub_href": "text/part0080.html"
+    },
+    {
+      "number": 84,
+      "href": "section-084.md",
+      "file": "section-084.md",
+      "chars": 1237,
+      "preview": "#### 人物弧光The Covenant of the Arc\n\n人物弧光这条剧作法则说的是：你的电影里每一个角色都必须在故事中有所转变，唯一一个不变的人就是反派，主角和他的朋友都必须有很大变化。\n",
+      "epub_href": "text/part0081.html"
+    },
+    {
+      "number": 85,
+      "href": "section-085.md",
+      "file": "section-085.md",
+      "chars": 1494,
+      "preview": "#### 别让媒体掺和Keep the Press Out\n\n说到这里我就要炫耀一下了。这一条我是私下里从史蒂文·斯皮尔伯格那里学来的，厉害吧！没错……我们一起合作过。那是我职业生涯中最有收获的经历之",
+      "epub_href": "text/part0082.html"
+    },
+    {
+      "number": 86,
+      "href": "section-086.md",
+      "file": "section-086.md",
+      "chars": 549,
+      "preview": "#### 总结Summary\n\n现在你已经了解了一些基本法则，如果你是像我一样的人，就会想要去了解更多，并总结出其他法则，在日积月累大量阅片的过程中，你会有很多小发现。你会突然一下想明白为什么要那么做",
+      "epub_href": "text/part0083.html"
+    },
+    {
+      "number": 87,
+      "href": "section-087.md",
+      "file": "section-087.md",
+      "chars": 360,
+      "preview": "#### 练习Exercises\n\n1.举一个不讨人喜欢的主角的例子。编剧有没有想办法去解决这个问题呢？哪一条新学到的技巧可以把他变成一个讨人喜欢但又不会假模假式的主角？\n\n2.找找看还有哪些电影用了",
+      "epub_href": "text/part0084.html"
+    },
+    {
+      "number": 88,
+      "href": "section-088.md",
+      "file": "section-088.md",
+      "chars": 924,
+      "preview": "### Chapter 07这电影出了什么问题？\n\n你做到了！\n\n祝贺你！\n\n你听取了我的建议，做了充分的准备工作，像一个专业编剧那样完成了每一个步骤，终于写下了“剧终”两个字。\n\n不管你写了90页还",
+      "epub_href": "text/part0085.html"
+    },
+    {
+      "number": 89,
+      "href": "section-089.md",
+      "file": "section-089.md",
+      "chars": 1034,
+      "preview": "#### 主角要主动The Hero Leads\n\n很多剧本的草稿都会犯一个共同的错误，就是被动的主角（inactive hero）。这个问题很难被发现，尤其是当你其他地方都没出错的时候。你特意设计了",
+      "epub_href": "text/part0086.html"
+    },
+    {
+      "number": 90,
+      "href": "section-090.md",
+      "file": "section-090.md",
+      "chars": 1058,
+      "preview": "#### 口述剧情Talking the Plot\n\n烂剧本还会有一个问题，就是“口述剧情”，这个致命伤能直接暴露编剧是个菜鸟。角色会走进一个场景，然后说：“你是我妹妹，你应该知道！”以及“现在的情况",
+      "epub_href": "text/part0087.html"
+    },
+    {
+      "number": 91,
+      "href": "section-091.md",
+      "file": "section-091.md",
+      "chars": 1070,
+      "preview": "#### 坏人要更坏Make the Bad Guy Badder\n\n这一条是对主角要主动的补充：坏人必须尽可能地坏。很多时候，你的主角已经做到了该做的一切，够积极够主动，寻找机会克服困难，并做出一些",
+      "epub_href": "text/part0088.html"
+    },
+    {
+      "number": 92,
+      "href": "section-092.md",
+      "file": "section-092.md",
+      "chars": 1137,
+      "preview": "#### 转折，转折，转折Turn, Turn, Turn\n\n这句口号也被我写在了一张褪色的草稿纸上，在桌子上方贴了20年。这是我职业生涯中听到的第一句关于剧作的诀窍，但我实在是想不起来到底是谁告诉我",
+      "epub_href": "text/part0089.html"
+    },
+    {
+      "number": 93,
+      "href": "section-093.md",
+      "file": "section-093.md",
+      "chars": 1051,
+      "preview": "#### 情感色轮The Emotional Color Wheel\n\n当人们说一部电影“像坐过山车一样”的时候，是指随着故事的展开，观众的情感被激发了出来。你笑，你哭，你被唤醒，被吓到，你感到悔恨、",
+      "epub_href": "text/part0090.html"
+    },
+    {
+      "number": 94,
+      "href": "section-094.md",
+      "file": "section-094.md",
+      "chars": 1101,
+      "preview": "#### “嗨，你好吗？我很好”Hi, How Are You? I'm Fine\n\n甚至在一些好电影里，也会有平淡的台词。但如果对白太乏味太无趣，你的剧本永远也不可能被拍出来。如果你读自己的剧本时，",
+      "epub_href": "text/part0091.html"
+    },
+    {
+      "number": 95,
+      "href": "section-095.md",
+      "file": "section-095.md",
+      "chars": 1002,
+      "preview": "#### 后退一步Take a Step Back\n\n过去十个月我都在和我的搭档谢尔顿一起修改我们的金羊毛故事，一共改了七稿才最终完成。之所以花了这么长时间，原因之一就是我们当初犯了一个基础性的错误—",
+      "epub_href": "text/part0092.html"
+    },
+    {
+      "number": 96,
+      "href": "section-096.md",
+      "file": "section-096.md",
+      "chars": 1060,
+      "preview": "#### 跛脚和眼罩A Limp and an Eye Patch\n\n有时候，一个剧本把所有的基本要求都做到了，主角和反派的设计很棒，中点之后的情节激烈而紧张，每个人的台词也都够有趣。一切都很棒，除了",
+      "epub_href": "text/part0093.html"
+    },
+    {
+      "number": 97,
+      "href": "section-097.md",
+      "file": "section-097.md",
+      "chars": 952,
+      "preview": "#### 够不够原始？Is It Primal\n\n这本书从头到尾都在用“原始”这个词。对我来说，不管是创作剧本的阶段还是写完后进行修改的阶段，它都是我的点金石。我会在一个项目的一开始就问“够不够原始”",
+      "epub_href": "text/part0094.html"
+    },
+    {
+      "number": 98,
+      "href": "section-098.md",
+      "file": "section-098.md",
+      "chars": 921,
+      "preview": "#### 总结Summary\n\n现在你已经知道了怎样运用一些简单的原则来复查自己的作品。如果你的剧本感觉太平淡，或者读者给你的反馈是虽然说不出具体为什么，但总感觉有些不对劲，那么有9个简单的方法能帮你",
+      "epub_href": "text/part0095.html"
+    },
+    {
+      "number": 99,
+      "href": "section-099.md",
+      "file": "section-099.md",
+      "chars": 283,
+      "preview": "#### 练习Exercises\n\n1.回顾你最喜欢的电影类型片片单，找一部你觉得比较差的，然后用“是否打破了原则”测试看看能不能把它改得更好。\n\n2.再从你的类型片片单里找一部喜欢的影片，检查里面主",
+      "epub_href": "text/part0096.html"
+    },
+    {
+      "number": 100,
+      "href": "section-100.md",
+      "file": "section-100.md",
+      "chars": 833,
+      "preview": "### Chapter 08终于可以淡入了\n\n现在来到我们这门剧作课的结尾部分了。\n\n我们已经讨论了很多相关话题，而在我写这本书和写剧本的同时，好莱坞又出现了很多新情况：\n\n> 续集电影成败参半。\n>",
+      "epub_href": "text/part0097.html"
+    },
+    {
+      "number": 101,
+      "href": "section-101.md",
+      "file": "section-101.md",
+      "chars": 2133,
+      "preview": "#### 野心与命运Ambition Vs. Fate\n\n在我给别人上完第一节编剧课之前，总是会被问到一个所有编剧都在思考的问题：\n\n“怎么才能找到一个经纪人？”\n\n如果我告诉你全凭运气，你会不会信？",
+      "epub_href": "text/part0098.html"
+    },
+    {
+      "number": 102,
+      "href": "section-102.md",
+      "file": "section-102.md",
+      "chars": 587,
+      "preview": "#### 战前准备Preparing the Field\n\n就像所有情节精彩且有着幸福结局（希望如此）的故事一样，你必须先制定一个计划，然后按计划一步步执行。\n\n这些是你已经有了的东西：\n\n你有你自己",
+      "epub_href": "text/part0099.html"
+    },
+    {
+      "number": 103,
+      "href": "section-103.md",
+      "file": "section-103.md",
+      "chars": 1484,
+      "preview": "#### 令人窒息的第一次接触That Soul-eating First Contact\n\n你可以给任何人写信，可以在你的目标人物家门口扎营并跟踪他，可以拍一集《空白秀》拿去给洛杉矶公共电视台，然后",
+      "epub_href": "text/part0100.html"
+    },
+    {
+      "number": 104,
+      "href": "section-104.md",
+      "file": "section-104.md",
+      "chars": 1149,
+      "preview": "#### 建立人脉Networking\n\n所有的经纪人和制片人都筛过一遍之后，你还能向谁去寻求帮助呢？肯定得是你认识的人，该死。所以怎么才能扩大交际圈呢？有一些事情是可以做到的——哪怕没有经纪人：\n\n",
+      "epub_href": "text/part0101.html"
+    },
+    {
+      "number": 105,
+      "href": "section-105.md",
+      "file": "section-105.md",
+      "chars": 961,
+      "preview": "#### 这些事不要做Don't Try This at Home\n\n知道什么事不该干和知道什么事该干同样重要。有一些别人建议去做的事情我却认为没什么好处。还记不记得自我推销的关键是什么？——尽量面对",
+      "epub_href": "text/part0102.html"
+    },
+    {
+      "number": 106,
+      "href": "section-106.md",
+      "file": "section-106.md",
+      "chars": 2286,
+      "preview": "#### 推销中的成功案例与失败案例Some Marketing Hits and Misses\n\n如果我教了你们半天如何推销自己和自己的剧本，却不拿自己举例子的话，那就太不负责任了。我推销的结果有成",
+      "epub_href": "text/part0103.html"
+    },
+    {
+      "number": 107,
+      "href": "section-107.md",
+      "file": "section-107.md",
+      "chars": 1016,
+      "preview": "#### 就这样吧It Is What It Is\n\n好了，到了整本书最后的部分了，要结束这本书让我有些伤感。写作的过程很有趣，我希望它能在某些方面对你有所帮助。我有幸在很年轻的时候就进入了这个行业，",
+      "epub_href": "text/part0104.html"
+    },
+    {
+      "number": 108,
+      "href": "section-108.md",
+      "file": "section-108.md",
+      "chars": 7808,
+      "preview": "### Appendix附录\n\n好莱坞常用术语\n\n[弧光（arc）]指一个角色从剧本开头，经过中间，到结尾期间所发生的变化。通常会在策划会上听到：“主角的弧光是什么？”以及“这些人物的弧光足够吗？”而",
+      "epub_href": "text/part0105.html"
+    },
+    {
+      "number": 109,
+      "href": "section-109.md",
+      "file": "section-109.md",
+      "chars": 5917,
+      "preview": "文中涉及影片列表\n\nA\n\n《阿拉伯的劳伦斯》（Lawrence of Arabia） 英国/美国 1962\n\n《爱的大追踪》（What's up, Doc?） 美国 1972\n\n《阿拉丁》（Aladd",
+      "epub_href": "text/part0106.html"
+    },
+    {
+      "number": 110,
+      "href": "section-110.md",
+      "file": "section-110.md",
+      "chars": 279,
+      "preview": "### Acknowledgements鸣谢\n\n在本书问世的过程中，我得到了很多人的帮助。我想首先感谢我的朋友及导师B. J. 马克尔，他不仅在娱乐产业方面给了我很多睿智的建议，还为本书做了极其耐心而",
+      "epub_href": "text/part0107.html"
+    },
+    {
+      "number": 111,
+      "href": "section-111.md",
+      "file": "section-111.md",
+      "chars": 326,
+      "preview": "### About the Author关于作者\n\n布莱克·斯奈德8岁时就开始给他父亲的节目配音。\n\n他编剧生涯的第一步是给迪士尼的电视剧《小鬼公司》写剧本，写了13集之后，开始全职写作原创剧本。不久",
+      "epub_href": "text/part0108.html"
+    },
+    {
+      "number": 112,
+      "href": "section-112.md",
+      "file": "section-112.md",
+      "chars": 95,
+      "preview": "救猫咪：电影编剧指南\n\n产品经理 | 白东旭\n装帧设计 | broussaille 私制\n\n产品监制 | 黄圆苑\n技术编辑 | 陈杰\n\nKindle电子书制作 | 李元沛\n\n策划人 | 于桐",
+      "epub_href": "text/part0109.html"
+    }
+  ],
+  "path_base": "containing-json-directory",
+  "epub_href_note": "epub_href为未随包原EPUB内部定位元数据，不是本包文件路径；href/file为同目录可读Markdown。",
+  "original_included": false,
+  "original_sha256": "8abe1d05ee6fd66fce2bb05102afd955e489dc06ac49dc73b632424a28f798a8",
+  "original_filename": "救猫咪：电影编剧指南（畅销好莱坞15年的编剧实战秘籍，与《故事》《电影剧本写作基础》并称“编剧三宝”。专业译者全新翻译） (布莱克·斯奈... (Z-Library).epub",
+  "full_markdown": "full.md",
+  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。"
+}

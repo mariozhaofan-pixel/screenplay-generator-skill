@@ -1,0 +1,270 @@
+{
+  "title": "电影剧本写作基础",
+  "author": "[美]悉德·菲尔德 著",
+  "toc": [
+    {
+      "title": "第一章 电影剧本是什么？",
+      "href": "section-001.md",
+      "epub_href": "text00000.html#filepos109"
+    },
+    {
+      "title": "第二章 主 题",
+      "href": "section-002.md",
+      "epub_href": "text00001.html#filepos15769"
+    },
+    {
+      "title": "第三章 人 物",
+      "href": "section-003.md",
+      "epub_href": "text00002.html#filepos36640"
+    },
+    {
+      "title": "第四章 构成人物",
+      "href": "section-004.md",
+      "epub_href": "text00003.html#filepos52965"
+    },
+    {
+      "title": "第五章 创造人物",
+      "href": "section-005.md",
+      "epub_href": "text00004.html#filepos72326"
+    },
+    {
+      "title": "第六章 结尾与开端",
+      "href": "section-006.md",
+      "epub_href": "text00005.html#filepos108462"
+    },
+    {
+      "title": "第七章 建 置",
+      "href": "section-007.md",
+      "epub_href": "text00006.html#filepos140076"
+    },
+    {
+      "title": "第八章 段 落",
+      "href": "section-008.md",
+      "epub_href": "text00007.html#filepos178655"
+    },
+    {
+      "title": "第九章 情节点",
+      "href": "section-009.md",
+      "epub_href": "text00008.html#filepos211627"
+    },
+    {
+      "title": "第一○章 场 面",
+      "href": "section-010.md",
+      "epub_href": "text00009.html#filepos252035"
+    },
+    {
+      "title": "第一一章 改 编",
+      "href": "section-011.md",
+      "epub_href": "text00010.html#filepos286488"
+    },
+    {
+      "title": "第一二章 剧本的形式",
+      "href": "section-012.md",
+      "epub_href": "text00011.html#filepos316229"
+    },
+    {
+      "title": "第一三章 构筑剧本",
+      "href": "section-013.md",
+      "epub_href": "text00012.html#filepos355362"
+    },
+    {
+      "title": "第一四章 写电影剧本",
+      "href": "section-014.md",
+      "epub_href": "text00013.html#filepos375612"
+    },
+    {
+      "title": "第一五章 论合作",
+      "href": "section-015.md",
+      "epub_href": "text00014.html#filepos404887"
+    },
+    {
+      "title": "第一六章 剧本写完之后",
+      "href": "section-016.md",
+      "epub_href": "text00015.html#filepos429957"
+    },
+    {
+      "title": "第一七章 作者札记",
+      "href": "section-017.md",
+      "epub_href": "text00016.html#filepos436925"
+    },
+    {
+      "title": "后 记",
+      "href": "section-018.md",
+      "epub_href": "text00017.html#filepos443456"
+    },
+    {
+      "title": "《电影剧本写作基础》──从构思到完成剧本的具体指南",
+      "href": "section-019.md",
+      "epub_href": "text00018.html#filepos450751"
+    }
+  ],
+  "sections": [
+    {
+      "number": 1,
+      "href": "section-001.md",
+      "file": "section-001.md",
+      "chars": 12238,
+      "preview": "ç¬¬ä¸ç«  çµå½±å§æ¬æ¯ä»ä¹ï¼\n\nå¨æ¬ç« æä»¬å°ä»ç»æå§å¼ç»æçç¤ºä¾\n\nçµå½±å§æ¬æ",
+      "epub_href": "OEBPS/text00000.html"
+    },
+    {
+      "number": 2,
+      "href": "section-002.md",
+      "file": "section-002.md",
+      "chars": 17449,
+      "preview": "ç¬¬äºç«  ä¸» é¢\n\nå¨æ¬ç« æä»¬å°æ¢ç´¢ä¸»é¢çæ§è´¨\n\nä½ ççµå½±å§æ¬çä¸»é¢æ¯ä»ä¹ï¼\n",
+      "epub_href": "OEBPS/text00001.html"
+    },
+    {
+      "number": 3,
+      "href": "section-003.md",
+      "file": "section-003.md",
+      "chars": 13040,
+      "preview": "ç¬¬ä¸ç«  äºº ç©\n\nå¨æ¬ç« æä»¬è¦è®¨è®ºäººç©çåé\n\nå¦ä½å»åé äººç©å¢ï¼\n\nä»ä¹æ¯äºº",
+      "epub_href": "OEBPS/text00002.html"
+    },
+    {
+      "number": 4,
+      "href": "section-004.md",
+      "file": "section-004.md",
+      "chars": 15203,
+      "preview": "ç¬¬åç«  ææäººç©\n\næ¬ç« è¯¦è®ºææäººç©çè¿ç¨\n\næä»¬å·²ç»è°å°éè¿äººç©ä¼ è®°åå",
+      "epub_href": "OEBPS/text00003.html"
+    },
+    {
+      "number": 5,
+      "href": "section-005.md",
+      "file": "section-005.md",
+      "chars": 28298,
+      "preview": "ç¬¬äºç«  åé äººç©\n\næ¬ç« éæä»¬æ¥åé ä¸ªäººç©ãå±å¼ä¸ªæäº\n\nååæ¬æä¸¤ç§åæ³",
+      "epub_href": "OEBPS/text00004.html"
+    },
+    {
+      "number": 6,
+      "href": "section-006.md",
+      "file": "section-006.md",
+      "chars": 25938,
+      "preview": "ç¬¬å­ç«  ç»å°¾ä¸å¼ç«¯\n\næ¬ç« æä»¬å°è®ºè¯ç»å°¾ä¸å¼ç«¯çéè¦æ§\n\né®é¢ï¼åçµå½±å§æ",
+      "epub_href": "OEBPS/text00005.html"
+    },
+    {
+      "number": 7,
+      "href": "section-007.md",
+      "file": "section-007.md",
+      "chars": 29499,
+      "preview": "ç¬¬ä¸ç«  å»º ç½®\n\næ¬ç« æä»¬å°è®¨è®ºçµå½±å§æ¬ãåäººè¡ãååé¡µçéè¦æ§\n\nçµå½±å§æ",
+      "epub_href": "OEBPS/text00006.html"
+    },
+    {
+      "number": 8,
+      "href": "section-008.md",
+      "file": "section-008.md",
+      "chars": 26514,
+      "preview": "ç¬¬å«ç«  æ®µ è½\n\nå¨æ¬ç« æä»¬å°è®¨è®ºæ®µè½çå¨åå­¦\n\nâååå¨åå­¦âï¼synergyï¼æ¯",
+      "epub_href": "OEBPS/text00007.html"
+    },
+    {
+      "number": 9,
+      "href": "section-009.md",
+      "file": "section-009.md",
+      "chars": 32386,
+      "preview": "ç¬¬ä¹ç«  æèç¹\n\nå¨æ¬ç« æä»¬è¦éææèç¹çæ¦å¿µåå¶æ§è´¨\n\nå½ä½ åçµå½±å§æ¬æ",
+      "epub_href": "OEBPS/text00008.html"
+    },
+    {
+      "number": 10,
+      "href": "section-010.md",
+      "file": "section-010.md",
+      "chars": 25511,
+      "preview": "ç¬¬ä¸âç«  åº é¢\n\nå¨æ¬ç« æä»¬è®¨è®ºåºé¢\n\nåºé¢æ¯ä½ å§æ¬ä¸­ææéè¦çå ç´ ãå¨å",
+      "epub_href": "OEBPS/text00009.html"
+    },
+    {
+      "number": 11,
+      "href": "section-011.md",
+      "file": "section-011.md",
+      "chars": 25445,
+      "preview": "ç¬¬ä¸ä¸ç«  æ¹ ç¼\n\næ¬ç« æä»¬å°æ¢è®¨æ¹ç¼çèºæ¯\n\næä¸é¨å°è¯´ãä¸æ¬ä¹¦ãä¸åºèå",
+      "epub_href": "OEBPS/text00010.html"
+    },
+    {
+      "number": 12,
+      "href": "section-012.md",
+      "file": "section-012.md",
+      "chars": 26970,
+      "preview": "ç¬¬ä¸äºç«  å§æ¬çå½¢å¼\n\nå¨æ¬ç« æä»¬å°å·ä½è¯´æçµå½± å§æ¬å½¢å¼çç®ç»æ§\n\næå¨æ",
+      "epub_href": "OEBPS/text00011.html"
+    },
+    {
+      "number": 13,
+      "href": "section-013.md",
+      "file": "section-013.md",
+      "chars": 15722,
+      "preview": "ç¬¬ä¸ä¸ç«  æç­å§æ¬\n\næ¬ç« æä»¬è®¨è®ºå¦ä½ææçµå½±å§æ¬\n\nå°ç°å¨ï¼æä»¬è®¨è®ºäºå",
+      "epub_href": "OEBPS/text00012.html"
+    },
+    {
+      "number": 14,
+      "href": "section-014.md",
+      "file": "section-014.md",
+      "chars": 23644,
+      "preview": "ç¬¬ä¸åç«  åçµå½±å§æ¬\n\næ¬ç« æä»¬è°âå·ä½åâ\n\nåä½çæé¾ä¹å¤å¨äºç¥éè¦å",
+      "epub_href": "OEBPS/text00013.html"
+    },
+    {
+      "number": 15,
+      "href": "section-015.md",
+      "file": "section-015.md",
+      "chars": 20130,
+      "preview": "ç¬¬ä¸äºç«  è®ºåä½\n\næ¬ç« æä»¬æ¢è®¨åç§åä½çæ¹æ³\n\nå½æå¨ä¼¯åå©çå å·å¤§å­¦è®",
+      "epub_href": "OEBPS/text00014.html"
+    },
+    {
+      "number": 16,
+      "href": "section-016.md",
+      "file": "section-016.md",
+      "chars": 5800,
+      "preview": "ç¬¬ä¸å­ç«  å§æ¬åå®ä¹å\n\nå¨å§æ¬å®æä¹åï¼ä½ å¯¹å®è¯¥æä¹åå¢ï¼\n\né¦åä½ å¾å¼",
+      "epub_href": "OEBPS/text00015.html"
+    },
+    {
+      "number": 17,
+      "href": "section-017.md",
+      "file": "section-017.md",
+      "chars": 4765,
+      "preview": "ç¬¬ä¸ä¸ç«  ä½èæ­è®°\n\næ¬ç« æä»¬è¿è¡è¯è¿°\n\näººäººé½æ¯ä½å®¶ã\n\nä½ ä»¬ä¼åç°è¿ä¸ç¹",
+      "epub_href": "OEBPS/text00016.html"
+    },
+    {
+      "number": 18,
+      "href": "section-018.md",
+      "file": "section-018.md",
+      "chars": 5685,
+      "preview": "å è®°\n\nå¨ ä¼  åº\n\nè¿å å¹´æ¥ï¼å½å¤åºç°äºä¸å°æå³å¥½è±åå§æ¬åä½çä¹¦ç±ï¼ç±",
+      "epub_href": "OEBPS/text00017.html"
+    },
+    {
+      "number": 19,
+      "href": "section-019.md",
+      "file": "section-019.md",
+      "chars": 1004,
+      "preview": "ãçµå½±å§æ¬åä½åºç¡ãââä»ææå°å®æå§æ¬çå·ä½æå\n\n[ç¾]æå¾·Â·è²å°å¾·\n",
+      "epub_href": "OEBPS/text00018.html"
+    },
+    {
+      "number": 20,
+      "href": "section-020.md",
+      "file": "section-020.md",
+      "chars": 526,
+      "preview": "Table of Contents\n\nç¬¬ä¸ç«  çµå½±å§æ¬æ¯ä»ä¹ï¼\n\nç¬¬äºç«  ä¸» é¢\n\nç¬¬ä¸ç«  äºº ç©\n\nç¬¬åç",
+      "epub_href": "OEBPS/text00019.html"
+    }
+  ],
+  "path_base": "containing-json-directory",
+  "epub_href_note": "epub_href为未随包原EPUB内部定位元数据，不是本包文件路径；href/file为同目录可读Markdown。",
+  "original_included": false,
+  "original_sha256": "661900f0fa6bb81d35f4d02b473fef7d1e7602e0d5f2c6f073364158e8223648",
+  "original_filename": "电影剧本写作基础 ([美]悉德·菲尔德 著 [[美]悉德·菲尔德 著]) (Z-Library).epub",
+  "full_markdown": "full.md",
+  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。"
+}

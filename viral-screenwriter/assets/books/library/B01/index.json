@@ -1,0 +1,36 @@
+{
+  "title": "你的剧本逊毙了",
+  "author": "我",
+  "toc": [
+    {
+      "title": "Inicio",
+      "href": "section-001.md",
+      "epub_href": "titlepage.xhtml"
+    }
+  ],
+  "sections": [
+    {
+      "number": 1,
+      "href": "section-001.md",
+      "file": "section-001.md",
+      "chars": 0,
+      "preview": "",
+      "epub_href": "titlepage.xhtml"
+    },
+    {
+      "number": 2,
+      "href": "section-002.md",
+      "file": "section-002.md",
+      "chars": 53662,
+      "preview": "<100 个腐朽变神奇对策：你的剧本逊毙了>\n\n第一部分 第 1 节：前言(1)\n\n◆前言◆\n\n忠言逆耳，诚实中肯的批评总是很难被接受，不管它是来自你的亲戚、朋友、\n\n熟人还是陌生人。\n\n——富兰克林",
+      "epub_href": "text/part0000.html"
+    }
+  ],
+  "path_base": "containing-json-directory",
+  "epub_href_note": "epub_href为未随包原EPUB内部定位元数据，不是本包文件路径；href/file为同目录可读Markdown。",
+  "original_included": false,
+  "original_sha256": "b3c877bbb5e586ac6104dfba2955984e789c1c71eab9a66638538b2e6d672ca9",
+  "original_filename": "100 个腐朽变神奇对策：你的剧本逊毙了 (威廉·M·埃克斯) (Z-Library) 2.epub",
+  "full_markdown": "full.md",
+  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。"
+}

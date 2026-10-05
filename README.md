@@ -1,4 +1,25 @@
-# 剧本生成器（Script Generator Skill）
+# 爆款编剧 Skill v7
+
+当前版本：2026-10-06。安装入口为 [`viral-screenwriter/SKILL.md`](viral-screenwriter/SKILL.md)，支持标准中文 Markdown 剧本、人物与对白开发、分批续写、定点修订、参考片研究及按需分镜。每批最多交付2集正文；视频模型提示词通过独立的 `director-seedance-prompt` 协作。
+
+## 安装当前版本
+
+将本仓库的 `viral-screenwriter/` 整个目录复制到宿主技能目录，例如 `~/.codex/skills/viral-screenwriter/`。旧版先备份到技能目录之外，避免多个入口重复触发；刷新技能或重新打开会话后调用 `$viral-screenwriter`。
+
+完整安装、媒体依赖及使用方式见 [INSTALL.md](viral-screenwriter/INSTALL.md)。当前包包含书库转写、方法卡、模板、来源索引和内置视频反推模块；书库按当前创作问题读取，不默认全量加载。第三方书籍及参考资料保留各自著作权与来源标识，不因仓库公开而赋予下游再发布或商业授权。
+
+在 `viral-screenwriter/` 目录验证：
+
+```text
+python -X utf8 scripts/verify_portable.py
+python -X utf8 scripts/check_environment.py --mode writing
+```
+
+本仓库保持公开可见，沿用 [LICENSE](LICENSE) 的使用及再发布限制。联系方式：MARIOZHAOFAN（微信）。
+
+## 历史 Script Generator
+
+`script-generator/` 保留为独立历史版本；其格式、校验及下列说明不作为新版 `viral-screenwriter` 的运行规则。安装新版无需同时安装旧入口。
 
 Codex skill for turning rough story ideas, genre briefs, short-video prompts, episodic concepts, or storyboard requests into complete executable screenplays and synchronized per-CUT director storyboards.
 
