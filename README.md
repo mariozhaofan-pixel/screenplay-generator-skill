@@ -28,13 +28,27 @@ Skill folder: `script-generator`
 
 ## What It Does
 
-- Expands loose story ideas into complete shootable screenplays followed by synchronized director-grade storyboards.
+- Expands loose story ideas or canon-safe revision requests into complete shootable screenplays followed by synchronized director-grade storyboards.
+- Runs an event-authenticity gate before dialogue polish so decisive beats arise from character choice and visible response; decisive clues also require provenance, custody, legal character knowledge, and credible hidden/sealed-object physics.
+- Doctors natural speech, subtext, breath, micro-action, and playable emotional transitions; production-lock mode synchronizes authoritative screenplay dialogue, CUT fragments, and the complete dialogue lock.
 - Adds one screenplay-specific overall image-style prompt and one unified camera-movement prompt to every screenplay delivery.
-- Produces scene/beat IDs and a detailed block for every CUT, including focal length, camera position, composition, focus, visual-focus/motion handoff, actor blocking, visible emotion, exact dialogue, sound, edit motivation, director intent, AI-readable visual facts, and continuity, without per-CUT durations or timecodes.
+- Produces one strict 13-field director map per screenplay scene and the canonical 14-field block for every CUT, including a separate viewpoint/knowledge-boundary field, focal length, camera position, composition, focus, visual-focus/motion handoff, actor blocking, visible emotion, exact dialogue, sound, transition phase, director intent, AI-readable visual facts, and continuity. Historical 12-field input is compatibility-only.
+- Separates editorial CUTs from model-generation GEN units and packs GENs by causal/production coherence rather than one prompt per CUT.
+- Supports three timing modes: silent by default, explicit hard production contracts, and measured media/frame locks. Even hard contracts keep numeric budgets out of individual CUT fields.
+- Protects source canon and occupied version lanes, builds revision impact matrices, scans stale story/asset residue, and keeps affected downstream work paused until re-baselined.
+- Registers authoritative Asset/SCN IDs, enforces one scene-space master per continuous event, and keeps songs, lyrics, audio paths, and theme cards in the post-production layer.
 - Supports short videos, episodic unit drama, web-series bibles, and production-ready分镜剧本.
 - Selectively strengthens character agency, power/advantage costs, opposing-force logic, fair strategic conflict, and payoff design when the brief needs them.
 - Uses web and open-source research when current facts, trend references, dialect, BGM, named works, or project logic matter.
+- Keeps explicit third-party film, character/likeness, costume, prop, dialogue,
+  music, lyric, and recording dependencies in the complete production plan under
+  `rights-asserted` by default; missing exact material receives full
+  `AUTHORIZED-ASSET`/`AUTHORIZED-LYRIC`/`AUTHORIZED-DIALOGUE` slots with
+  structure and downstream maps, while source and use choices are disclosed
+  only in the final rights notice.
 - Guards against style contamination: examples and test prompts do not become defaults.
+- Includes independent pre-write and post-delivery validators for version protection, scene-director-map/CUT schema, dialogue/timing/GEN/viewpoint/asset closure, and deterministic sidecar reports.
+- Locks ambiguous Chinese/English production terms, module triggers, and path/model capability boundaries so the same package behaves consistently across supported models and computers.
 
 ## Installation
 
@@ -45,6 +59,10 @@ Copy-Item -Recurse .\script-generator $env:USERPROFILE\.codex\skills\
 ```
 
 Then start a new Codex session and ask to use `$script-generator`.
+
+The optional report-only validators require Python 3.10 or newer and otherwise
+use only the standard library. `media-frame-lock` duration cross-checks also use
+`ffprobe` when it is installed; absence is reported rather than fabricated.
 
 ## Usage Example
 
