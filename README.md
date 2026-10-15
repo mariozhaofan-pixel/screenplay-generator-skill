@@ -1,6 +1,12 @@
-# 爆款编剧 Skill v7
+# 爆款编剧 Skill v10
 
-当前版本：2026-10-06。安装入口为 [`viral-screenwriter/SKILL.md`](viral-screenwriter/SKILL.md)，支持标准中文 Markdown 剧本、人物与对白开发、分批续写、定点修订、参考片研究及按需分镜。每批最多交付2集正文；视频模型提示词通过独立的 `director-seedance-prompt` 协作。
+当前版本：2026-10-15。安装入口为 [`viral-screenwriter/SKILL.md`](viral-screenwriter/SKILL.md)，支持标准中文 Markdown 剧本、人物与对白开发、分批续写、定点修订、参考片研究及按需分镜。每批最多交付2集正文；视频模型提示词通过独立的 `director-seedance-prompt` 协作。 每集开场按当前格式规范处理剧情介绍、钩子与剧集记忆锚点。
+
+## 可选飞书协作
+
+首次可选择本地工作、加入已有多维表或创建新库。与导演复用同一个 Base 和项目ID，用项目总览、剧本交付、资产库、段落交付四表组织资料；旧三表按需补齐第四表。定稿和已采用改稿在本地保存检查后自动上传真实剧本 Markdown，读回核验后更新本批当前采用版本，保留其他批次及历史。导演段落记录精确来源修订，旧提示词和用户视频保持原对应关系。
+
+本地模式不部署飞书。飞书模式先复用已有连接，缺环境时按[配置指引](viral-screenwriter/references/FEISHU_WORKSPACE_SETUP.md)独立配置；首次部署和授权会增加启动时间。新库默认密码分享与链接可编辑，用户明确的权限限制优先。包内仅含共享合同、蓝图和标准库同步规划器，不包含飞书 Skill、CLI、凭据或测试数据。同步合同见[剧本联动说明](viral-screenwriter/references/FEISHU_SCREENPLAY_SYNC.md)。
 
 ## 安装当前版本
 

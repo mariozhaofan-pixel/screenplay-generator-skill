@@ -1,0 +1,173 @@
+{
+  "kind": "director_feishu_base_blueprint",
+  "schema_version": "2.0.0",
+  "not_api_payload": true,
+  "description": "编剧与导演共用的四表建表蓝图；旧三表按字段增量补齐，保留记录、附件和人工列。fields 是可提取的 CLI 字段数组；deferred_links 和视图模板须按 references/FEISHU_BASE_LAYOUT.md 转换。整个文件不能直接提交 API。",
+  "table_order": ["projects", "assets", "segments", "scripts"],
+  "tables": [
+    {
+      "table_ref": "projects",
+      "name": "项目总览",
+      "primary_field": "名称",
+      "fields": [
+        {"name": "名称", "type": "text"},
+        {"name": "总索引md文件", "type": "attachment"},
+        {"name": "项目ID", "type": "text"},
+        {"name": "修订ID", "type": "text", "description": "当前总索引修订；项目记录保持稳定。"},
+        {"name": "同步键", "type": "text"},
+        {"name": "当前文件清单", "type": "text", "description": "JSON 文本，记录当前索引的真实 file_token、SHA256 与修订，不存下载临时 URL。"},
+        {"name": "生产负责人", "type": "text", "description": "约定的项目发布负责人或设备；不是原子锁。"},
+        {"name": "协作约定", "type": "text", "description": "项目范围、命名与发布者约定；不存密码或凭据。"},
+        {"name": "状态", "type": "select", "multiple": false, "options": [{"name": "进行中"}, {"name": "暂停"}, {"name": "完成"}, {"name": "冲突"}]},
+        {"name": "备注", "type": "text", "description": "人工维护；自动同步不覆盖。"}
+      ],
+      "views": [
+        {
+          "create": {"name": "项目入口", "type": "grid"},
+          "visible_fields": {"visible_fields": ["名称", "总索引md文件", "当前剧本", "剧本历史", "资产", "段落", "生产负责人", "状态", "备注"]}
+        }
+      ]
+    },
+    {
+      "table_ref": "assets",
+      "name": "资产库",
+      "primary_field": "名称",
+      "fields": [
+        {"name": "名称", "type": "text"},
+        {"name": "图片资产", "type": "attachment"},
+        {"name": "对应图片生成提示词md文件", "type": "attachment"},
+        {"name": "资产ID", "type": "text"},
+        {"name": "主体与别名", "type": "text", "description": "用于跨设备识别已有同一角色、场景或道具，不代替稳定资产ID。"},
+        {"name": "修订ID", "type": "text"},
+        {"name": "同步键", "type": "text"},
+        {"name": "空间组ID", "type": "text", "description": "同空间 A/B 共用；非场景可空。"},
+        {"name": "类型", "type": "select", "multiple": false, "options": [{"name": "角色"}, {"name": "场景"}, {"name": "道具"}, {"name": "屏幕画面"}, {"name": "其他"}]},
+        {"name": "方向", "type": "select", "multiple": false, "options": [{"name": "A"}, {"name": "B"}, {"name": "不适用"}]},
+        {"name": "状态", "type": "select", "multiple": false, "options": [{"name": "待生成"}, {"name": "生成中"}, {"name": "提示词已备"}, {"name": "文字锁定"}, {"name": "已生成待检查"}, {"name": "可用"}, {"name": "用户已验收"}, {"name": "冲突"}]},
+        {"name": "当前文件清单", "type": "text", "description": "JSON 文本，只指向本修订实际图片和 md 的 file_token、SHA256；不含用户视频。"},
+        {"name": "生产负责人", "type": "text"},
+        {"name": "任务ID", "type": "text"},
+        {"name": "备注", "type": "text", "description": "人工维护；自动同步不覆盖。"}
+      ],
+      "views": [
+        {
+          "create": {"name": "资产清单", "type": "grid"},
+          "visible_fields": {"visible_fields": ["名称", "图片资产", "对应图片生成提示词md文件", "所属项目", "使用段落", "类型", "方向", "空间组ID", "来源A", "状态", "生产负责人", "任务ID", "备注"]}
+        },
+        {
+          "create": {"name": "资产画廊", "type": "gallery"},
+          "card": {"cover_field": "图片资产"},
+          "visible_fields": {"visible_fields": ["名称", "图片资产", "对应图片生成提示词md文件", "所属项目", "使用段落", "类型", "方向", "状态", "来源A", "备注"]}
+        }
+      ]
+    },
+    {
+      "table_ref": "segments",
+      "name": "段落交付",
+      "primary_field": "名称",
+      "fields": [
+        {"name": "名称", "type": "text"},
+        {"name": "段号", "type": "number", "style": {"type": "plain", "precision": 0}},
+        {"name": "对应段落提示词md文件", "type": "attachment"},
+        {"name": "对应提示词的视频上传", "type": "attachment", "description": "仅用户维护。创建记录时省略；同步程序不上传、更新、清空或删除本字段内容。"},
+        {"name": "段落ID", "type": "text"},
+        {"name": "修订ID", "type": "text"},
+        {"name": "同步键", "type": "text"},
+        {"name": "状态", "type": "select", "multiple": false, "options": [{"name": "待编译"}, {"name": "编译中"}, {"name": "已编译"}, {"name": "已交付"}, {"name": "用户已验收提示词"}, {"name": "成片已验收"}, {"name": "冲突"}]},
+        {"name": "当前文件清单", "type": "text", "description": "JSON 文本，只记录本修订段落提示词 md；用户视频不进入程序文件清单。"},
+        {"name": "生产负责人", "type": "text"},
+        {"name": "任务ID", "type": "text"},
+        {"name": "备注", "type": "text", "description": "人工维护；自动同步不覆盖。"}
+      ],
+      "views": [
+        {
+          "create": {"name": "段落工作台", "type": "grid"},
+          "visible_fields": {"visible_fields": ["名称", "段号", "对应段落提示词md文件", "对应提示词的视频上传", "来源剧本", "关联资产", "所属项目", "状态", "生产负责人", "任务ID", "备注"]}
+        }
+      ]
+    },
+    {
+      "table_ref": "scripts",
+      "name": "剧本交付",
+      "primary_field": "名称",
+      "fields": [
+        {"name": "名称", "type": "text"},
+        {"name": "剧本md文件", "type": "attachment"},
+        {"name": "剧本ID", "type": "text", "description": "稳定业务标识；同一剧本改稿沿用，修订ID递增。"},
+        {"name": "修订ID", "type": "text"},
+        {"name": "集场范围", "type": "text", "description": "本修订覆盖的实际集号/场号或整稿范围；多批剧本分别关联当前采用修订。"},
+        {"name": "状态", "type": "select", "multiple": false, "options": [{"name": "草稿"}, {"name": "已定稿"}, {"name": "已采用修订"}, {"name": "冲突"}]},
+        {"name": "同步键", "type": "text"},
+        {"name": "当前文件清单", "type": "text", "description": "JSON 文本，只记录本修订剧本md的真实 file_token、SHA256 与修订；角色为 screenplay_md。"},
+        {"name": "生产负责人", "type": "text"},
+        {"name": "备注", "type": "text", "description": "人工维护；自动同步不覆盖。"}
+      ],
+      "views": [
+        {
+          "create": {"name": "剧本版本", "type": "grid"},
+          "visible_fields": {"visible_fields": ["名称", "剧本md文件", "所属项目", "剧本ID", "修订ID", "集场范围", "状态", "生产负责人", "备注"]}
+        }
+      ]
+    }
+  ],
+  "deferred_links": [
+    {
+      "source_table_ref": "assets",
+      "field": {"name": "所属项目", "type": "link", "table_ref": "projects", "bidirectional": true, "bidirectional_link_field_name": "资产"}
+    },
+    {
+      "source_table_ref": "segments",
+      "field": {"name": "所属项目", "type": "link", "table_ref": "projects", "bidirectional": true, "bidirectional_link_field_name": "段落"}
+    },
+    {
+      "source_table_ref": "segments",
+      "field": {"name": "关联资产", "type": "link", "table_ref": "assets", "bidirectional": true, "bidirectional_link_field_name": "使用段落"}
+    },
+    {
+      "source_table_ref": "assets",
+      "field": {"name": "来源A", "type": "link", "table_ref": "assets", "bidirectional": false}
+    },
+    {
+      "source_table_ref": "scripts",
+      "field": {"name": "所属项目", "type": "link", "table_ref": "projects", "bidirectional": true, "bidirectional_link_field_name": "剧本历史"}
+    },
+    {
+      "source_table_ref": "projects",
+      "field": {"name": "当前剧本", "type": "link", "table_ref": "scripts", "bidirectional": false}
+    },
+    {
+      "source_table_ref": "segments",
+      "field": {"name": "来源剧本", "type": "link", "table_ref": "scripts", "bidirectional": false}
+    }
+  ],
+  "record_contract": {
+    "project_sync_key": "project/{project_id}",
+    "asset_sync_key": "project/{project_id}/asset/{asset_id}/revision/{revision_id}",
+    "segment_sync_key": "project/{project_id}/segment/{segment_id}/revision/{revision_id}",
+    "script_sync_key": "project/{project_id}/script/{script_id}/revision/{revision_id}",
+    "project_row_policy": "一项目一行；总索引附件追加版本，当前文件清单只记录总索引，更新前核对远端基线并保留旧附件。当前剧本关联到已确认上传的剧本修订，可按多批集场范围同时关联多条。",
+    "revision_row_policy": "资产、段落与剧本按修订分行；已发布文件、业务身份、集场范围和精确来源关联不可换版覆写。段落提示词或来源剧本改版新建修订行，旧视频留在旧行；剧本改稿新建修订行，旧稿可追溯。",
+    "current_script_policy": "编剧定稿或用户采用改稿后自动同步到同一Base和项目。确认剧本附件、哈希与清单后再更新当前剧本；它是完整关联集合，更新某批范围时保留其他批次的当前修订。发布前刷新完整项目基线，发现双方改动先解决冲突，不盲目替换整个集合。草稿、未采用意见和冲突版本不自动成为当前剧本。",
+    "script_read_policy": "导演读取当前剧本中对应集场范围的实际修订文件，核对附件与SHA256，并将段落来源剧本关联到实际采用的精确修订；不按文件名或上传时间猜最新，不改写旧段落的来源记录。",
+    "scene_pair_policy": "A/B 各用不同资产ID与独立修订行，共用空间组ID；B 的来源A只指向实际用于生成B的A修订记录。",
+    "user_owned_fields": ["对应提示词的视频上传", "备注"],
+    "excluded_from_record_write_payloads": ["对应提示词的视频上传", "备注"],
+    "user_video_policy": "仅创建字段 schema；建行、普通更新、附件上传、删除和清空步骤均不得写入用户视频字段，连 null 或 [] 也不能发送。",
+    "human_acceptance_policy": "上传或交付不等于用户验收；只有实际用户验收证据才能登记验收状态。",
+    "file_roles": {
+      "projects": {"project_index_md": "总索引md文件"},
+      "assets": {"asset_image": "图片资产", "image_prompt_md": "对应图片生成提示词md文件"},
+      "segments": {"segment_prompt_md": "对应段落提示词md文件"},
+      "scripts": {"screenplay_md": "剧本md文件"}
+    },
+    "manifest_json_text_shape": {
+      "schema_version": 1,
+      "revision_id": "<actual_revision_id>",
+      "files": [
+        {"role": "<allowed_file_role>", "field_id": "<actual_attachment_field_id>", "revision_id": "<actual_revision_id>", "file_token": "<confirmed_file_token>", "name": "<actual_basename>", "size": 0, "sha256": "<actual_sha256>"}
+      ]
+    },
+    "manifest_policy": "上面的 shape 只是结构示例，不是记录数据。只加入上传响应确认的实际 token 与本地实算哈希；无文件角色省略，不填假 token 或空附件。",
+    "coordination_policy": "同项目约定单个发布执行者，同表串行写入；负责人/任务ID不是原子锁，不保证多写入者并发唯一性。"
+  }
+}
