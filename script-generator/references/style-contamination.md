@@ -21,14 +21,17 @@ Do not carry forward:
 
 ## Scope Reset
 
-Before drafting, rebuild the current task profile from the current user request: format, genre, relationships, naming, dialect, catchphrase density, music, reference works, image style, camera-movement style, and output depth. Mark every unspecified item as neutral rather than copying it from conversation history or examples.
+Before drafting, rebuild the current task profile from the current user request: mandatory premise, character objectives, decisive events, format, genre, relationships, naming, dialect, catchphrase density, music, reference works, image style, camera-movement style, and output depth. Mark every unspecified item as neutral rather than copying it from conversation history or examples. Treat replacement of the current premise with an unrelated premise as contamination even when the replacement is internally coherent.
 
 Apply the detailed domain rules from their single owners:
 
 - named-work abstraction and research: `open-source-research.md`
 - short-form catchphrases and requested dialect application: `short-video-series.md`
 - screenplay-derived image/camera grammar: `directing-and-shot-design.md`
+- deleted canon facts, old event variants, and deprecated asset paths: `revision-canon-and-impact.md`
 - names, relationships, genre, and all other creative facts: the current user brief
+
+This file checks cross-task style/example leakage only. Do not place revision residue patterns or deleted-canon scan rules here.
 
 ## Final Check
 

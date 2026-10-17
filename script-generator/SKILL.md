@@ -1,60 +1,81 @@
 ---
 name: script-generator
-description: Turn a rough story idea, genre brief, reference work, meme premise, episode concept, or user demand into a complete executable screenplay with script-derived image-style and camera-movement prompts, followed by a synchronized director-grade per-CUT storyboard. Use when the user asks for short-video scripts, episodic unit dramas, scene-by-scene screenplays, shot lists, AI-video storyboards, dialogue with catchphrases, character or antagonist design, power-system conflict, strategic confrontation, web-series bibles, or production-ready分镜剧本 with focal length, staging, emotion, dialogue, camera, sound, editing logic, and director intent, especially when the task benefits from web research, open-source project research, trend/meme lookup, dialect/tone research, or adaptation of screenwriting workflows.
+description: Turn a rough story idea, genre brief, existing canon, revision request, or production contract into a complete executable screenplay with script-derived visual-style prompts and a synchronized director-grade 14-field per-CUT storyboard. Use for short-video scripts, episodic drama, dialogue/performance rewrites, screenplay doctoring, canon-safe version revisions, exact dialogue locks, hard runtime or media/frame contracts, CUT-to-GEN production maps, AI-video storyboards, asset/scene-master continuity, strategic conflict, and research-backed screenwriting workflows.
 ---
 
 # 剧本生成器
 
 ## Core Behavior
 
-Transform loose input into a shootable script, not just an outline. Every delivered screenplay must be followed by one copy-ready `整体影像风格` prompt and one copy-ready `统一运镜风格` prompt derived from that screenplay. A complete script request continues into a synchronized storyboard in which every edit is an explicit `CUT`; only an explicit screenplay-only request omits the CUTs while keeping both global prompts. Default to a complete working draft when the user asks for a test, sample, full script, or "直接生成"; use interactive checkpoints only when the user explicitly wants step-by-step development.
+Transform loose input into a shootable script, not just an outline. Test the event before polishing dialogue: major changes must arise from character choice, visible response, and a credible new state rather than a convenient accident or a third party doing the relationship work.
 
-Use named reference works as high-level tonal or structural anchors only. Extract abstract traits such as pace, family chaos, social satire, handheld realism, or black-comedy density; do not copy specific plots, scenes, characters, or signature expression.
+Every delivered screenplay must be followed by one copy-ready `整体影像风格` prompt and one copy-ready `统一运镜风格` prompt derived from that screenplay. A complete script request continues into a synchronized storyboard in which every edit is an explicit `CUT`; only an explicit screenplay-only request omits CUTs while keeping both prompts. The default CUT schema has 14 fields, including a separate viewpoint/knowledge-boundary field.
 
-Never output a draft before an internal doctor pass. Remove psychological narration, over-explained dialogue, dead scenes, continuity breaks, unsupported trend claims, and shots that cannot be filmed.
+Respect explicit production contracts. Default timing remains silent, but a user-provided hard budget or generation limit must be shown and validated; `media-frame-lock` must use measured source values. Keep editorial CUTs separate from model-generation `GEN` units.
+
+Never overwrite a named canon or occupied version. Derive CUT text, dialogue locks, GEN maps, asset registries, and downstream handoffs from their authoritative screenplay/version sources.
+
+When a named work is only a style/reference anchor, use `trait-reference` and
+transfer abstract tonal, structural, or visual mechanisms. When the current
+brief explicitly requests a recreation or exact third-party dependency, use
+`exact-dependent`, preserve the full production slot, and route source/status
+facts to the final rights notice. Do not invent missing exact expression from
+memory. Default to a complete working draft for "直接生成", tests, and samples;
+use checkpoints only when requested or when canon/production stage boundaries
+require approval.
 
 ## Load References
 
 Read only the references needed for the current task:
 
+- `references/terminology-and-portability.md`: load for every substantive task; it locks canonical machine terms, condition triggers, ambiguity boundaries, and cross-model/cross-computer behavior.
 - `references/shanyin-methodology-notes.md`: load for every substantive screenplay/storyboard task.
-- `references/storyboard-output.md`: load whenever the user needs an executable script, shot list, storyboard, video prompt, or production table.
-- `references/directing-and-shot-design.md`: load for every screenplay delivery because it defines the required global image/camera style prompts; also use it for shots, CUTs, camera direction, AI-video prompts, actor blocking, focal lengths, visual continuity, or director intent.
+- `references/event-authenticity-and-callbacks.md`: load before writing or revising any major event; also use for behavior callbacks and repeated-event identity.
+- `references/dialogue-performance-and-sync.md`: load for complete screenplays, dialogue or performance work, production locks, exact line counts, and downstream dialogue compilation.
+- `references/timing-and-generation-units.md`: load for every complete screenplay/storyboard task; it alone selects timing mode and defines CUT/GEN separation.
+- `references/revision-canon-and-impact.md`: load when an existing source, canon, version, locked draft, or downstream production range is being revised.
+- `references/asset-and-scene-master-locks.md`: load when assets, reference images, scene plates, approved frames, paths, wardrobe periods, or downstream production handoffs are involved.
+- `references/storyboard-output.md`: load for every executable script, shot list, storyboard, GEN map, dialogue lock, or production table; it is the only output-schema owner.
+- `references/directing-and-shot-design.md`: load for every screenplay delivery and all CUT, viewpoint, transition, camera, focal-length, blocking, continuity, or director-intent work.
 - `references/short-video-series.md`: load for short video, web-series, episodic unit drama, meme comedy, recurring character relationships, catchphrases, dialect, or BGM-heavy requests.
 - `references/character-and-conflict-engine.md`: load when character identity, protagonist agency, a power/system/advantage, an opposing force, strategic conflict, suspense, reversal, or payoff is central. Activate only the relevant modules; do not invent a power or antagonist for briefs that do not need one.
 - `references/open-source-research.md`: load when current facts, internet memes, platform conventions, dialect examples, BGM references, named works, or open-source project logic need research.
-- `references/style-contamination.md`: load whenever a task references a prior example, named style, dialect, nickname rule, catchphrase density, or when output risks inheriting irrelevant test/example details.
-- `references/quality-checks.md`: load before final output or when the user asks for self-check, revision, or "剧本医生".
+- `references/style-contamination.md`: load for unrelated example/style leakage. Route stale canon residue to the revision owner instead.
+- `references/quality-checks.md`: load before every final output; it validates but does not redefine owner rules.
 
 ## Workflow
 
 1. Parse the brief.
-   Identify target format, platform, audience, genre, style anchors, must-use elements, taboo elements, character relationship constraints, production limits, and output depth. Treat any user-provided runtime as a silent, approximate density signal only. Internally form a broad runtime suggestion when useful, but never output runtime, scene/CUT durations, timecodes, or per-beat time budgets in a screenplay or storyboard. If scope is unspecified, infer it from the story and platform rather than defaulting to a fixed number of seconds. Add a next-episode hook only for a series/episodic brief or when the user requests one. Derive CUT count from story beats, visual emphasis, and production needs rather than a duration formula or fixed range.
+   Identify format, platform, audience, genre, style anchors, must-use material, inspiration-only material, excluded/post-only material, character constraints, production limits, and output depth. Freeze a current-brief contract before drafting: every mandatory premise, character objective, relationship, event, and deliverable must map to the screenplay or its production surfaces; do not substitute a different but well-executed premise.
 
-2. Research when useful.
-   Search the web or inspect open-source projects when references may be current or specialized. Convert findings into decisions: tone, structure, language texture, BGM direction, meme bank, platform pacing, or production constraints. Cite sources in the final response when web sources are used.
+2. Select operating modes and protect sources.
+   Select one timing mode from `timing-and-generation-units.md`; activate revision, production dialogue lock, GEN mapping, and asset/SCN locking only when their triggers apply. Before drafting, copy the literal mode lines, section labels, CUT field labels, and registry columns from `storyboard-output.md`; treat them as protocol symbols, not prose to paraphrase. In revision mode, run preflight before writing, read the complete source, preserve its hash, and allocate an unused output version.
 
-3. Build the story engine.
+3. Test event authenticity.
+   Run the event-first gate before dialogue polish. Replace contrived coincidence, humiliation, proxy action, or plot-bearing props when ordinary character choice and visible response can preserve the intended change with equal causal clarity and fewer arbitrary assumptions. For every decisive clue, lock origin, insertion/availability, custody/access, visible setup, reveal trigger, permitted inference, changed choice, and payoff; sealed or hidden objects also need a credible physical mechanism. Register EVT callbacks when repeated events change meaning.
+
+4. Research only when `terminology-and-portability.md` activates the `research`
+   trigger.
+   Search the web or inspect open-source projects when references may be current or specialized. Convert findings into decisions: tone, structure, language texture, BGM direction, meme bank, platform pacing, or production constraints. Named third-party dependencies proceed under `rights-asserted` by default; rights status does not reject or shorten the requested screenplay. Cite sources in the final response when web sources are used.
+
+5. Build the story engine.
    Reduce the episode to `protagonist want -> obstacle -> escalating choices -> cost -> irreversible choice/payoff`. When character identity, an advantage, an opposing force, or strategic conflict is central, select only the needed modules from `references/character-and-conflict-engine.md`. Make every major actor choose from the information and resources available at that moment. For unit drama, lock the recurring relationship matrix before writing the episode.
 
-4. Create a compact show bible when the premise is episodic.
-   Include series premise, fixed character roles, nicknames only when requested, running conflict, catchphrase rules only when requested, continuity ledger, and next-episode hook logic.
+6. Plan scenes and production constraints.
+   Define each scene's task, meaningful change, audience alignment, key images, information hierarchy, event identity, emotional turn, and required Asset/SCN state. For episodic work, maintain the series ledger. For a hard timing contract, require both arithmetic closure and a GEN/scene-level natural read/act feasibility ledger; never repair overload by timing every CUT.
 
-5. Plan the piece.
-   For short video, open on a visible disturbance, conflict, strong question, or active decision before exposition unless the chosen form deliberately calls for a slower reveal. Place at least three strong lines when the user asks for "金句" density: one near the hook, one around a midpoint turn, and one near the climax/tag. Keep every scene tied to a visible action. Define each scene's dramatic task, meaningful change, audience alignment, key images, information hierarchy, and emotional turn before choosing camera coverage.
+7. Write and doctor the authoritative screenplay.
+   Write visible/audible action and exact dialogue with stable scene/beat IDs. Apply language-action, cold-read, subtext, playable emotion, and micro-action checks. In production-lock mode, assign stable D-IDs; treat the screenplay as the sole dialogue authority.
 
-6. Write the screenplay.
-   Write the complete scene action and exact dialogue before designing shots. Use stable scene and beat IDs. Specify only visible or audible events, including prop state changes and performance actions that drive the scene.
+8. Derive global visual grammar, director maps, and 14-field CUTs.
+   Compile the two screenplay-specific global prompts first. Then lock geography, viewpoint legality, responsibility shots, transition phase, axis/screen direction, lighting, lens palette, information reveal, blocking, and continuity. Emit the canonical 13-field director map for every scene represented by CUTs. Every CUT uses the canonical 14-field schema in `storyboard-output.md`; CUTs remain editorial units, not generation prompts.
 
-7. Derive the global visual grammar, director map, and detailed CUTs.
-   First compile one global image-style prompt and one global camera-movement prompt from the finished screenplay's era, genre, locations, characters, emotional design, key images, platform, and production limits. Include this pair even when the user asks for a screenplay without a storyboard. When detailed shots are requested, lock each scene's geography, axis/screen direction, lighting and continuity, lens palette, key images, information reveal, visual-focus path, and dominant motion flow, then output every uninterrupted camera segment as one `CUT`. Each CUT must state scene and time of day when relevant, story change, characters and starting positions, blocking, visible emotion/performance, exact dialogue, 35mm-equivalent focal length, shot size, camera position/height/angle/distance, composition, movement, focus/depth plan, visual-focus and motion-vector handoff, sound, edit motivation, director intent, AI-readable visual facts, and continuity state. Do not add a duration or timecode. Split a CUT when the camera setup, story time/space, dominant action, or information task changes.
+9. Build derived production maps and propagate changes.
+   Map beats to CUTs; when the GEN trigger in `terminology-and-portability.md` is active, package CUTs into GEN units with a local visible trigger and complete cold-start IN state. Regenerate CUT dialogue fragments and the conditional dialogue-lock table, resolve active Asset/SCN and causal screen-state layers, and update active timing contracts. In revision mode, use the impact matrix and scan every affected surface for stale facts and paths.
 
-8. Reconcile screenplay and storyboard.
-   Map every screenplay beat to one or more CUTs and every CUT back to one beat. Keep dialogue, visible actions, story results, and continuity states consistent across both surfaces. Bind sound and edit cues to observable events rather than timestamps, and remove camera blocks that add no story, emotion, information, rhythm, or continuity value.
-
-9. Run the doctor pass internally.
-   Check visuality, qualitative rhythm, lens and spatial logic, blocking, edit motivation, dialogue/CUT synchronization, AI-video executability, joke/catchphrase density when requested, dialect consistency when requested, production feasibility, research grounding, continuity, and contamination from irrelevant examples. Silently correct obvious scope-density mismatches, then confirm the deliverable contains no runtime, duration, timecode, or per-beat timing output.
+10. Validate and deliver.
+   Run owner-aware quality checks and the deterministic validators when their modes apply. Require dialogue/CUT/lock equality, ID closure, timing-mode compliance, GEN limits, canon non-overwrite, residue clearance, viewpoint legality, and Asset/SCN closure. Deliver the complete screenplay and production surfaces first; place any third-party source, rights status, and user choice notice in the final `版权出处与使用声明`. Keep detailed audit findings in a sidecar report rather than contaminating the canon.
 
 ## Output Routing
 
-For a complete screenplay-and-storyboard request, follow the single canonical deliverable schema in `references/storyboard-output.md`. A screenplay-only request still includes the two global style prompts immediately after the screenplay. If the user requests only an outline, bible, scene list, dialogue polish, research summary, or doctor pass, output only that artifact. Do not expose internal workflow notes, runtime judgment, or quality-check reasoning unless the user explicitly requests a diagnostic report.
+For any screenplay delivery, follow the single canonical schema in `references/storyboard-output.md`. Include only the mode-conditional sections that apply. A screenplay-only request still includes both global style prompts. Outline, bible, research, dialogue-polish, and doctor-only requests remain scoped to the requested artifact. Do not expose internal reasoning; output contract, revision, or validation evidence only when the active mode or user request requires it.
