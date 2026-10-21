@@ -4,26 +4,35 @@
   "toc": [
     {
       "title": "Inicio",
-      "href": "section-001.md",
-      "epub_href": "titlepage.xhtml"
+      "href": "full.md",
+      "epub_href": "titlepage.xhtml",
+      "full_md_heading": "## 正文文件 1 · titlepage.xhtml",
+      "full_md_start_line": 12,
+      "full_md_end_line": 15
     }
   ],
   "sections": [
     {
       "number": 1,
-      "href": "section-001.md",
-      "file": "section-001.md",
+      "href": "full.md",
+      "file": "full.md",
       "chars": 0,
       "preview": "",
-      "epub_href": "titlepage.xhtml"
+      "epub_href": "titlepage.xhtml",
+      "full_md_heading": "## 正文文件 1 · titlepage.xhtml",
+      "full_md_start_line": 12,
+      "full_md_end_line": 15
     },
     {
       "number": 2,
-      "href": "section-002.md",
-      "file": "section-002.md",
+      "href": "full.md",
+      "file": "full.md",
       "chars": 53662,
       "preview": "<100 个腐朽变神奇对策：你的剧本逊毙了>\n\n第一部分 第 1 节：前言(1)\n\n◆前言◆\n\n忠言逆耳，诚实中肯的批评总是很难被接受，不管它是来自你的亲戚、朋友、\n\n熟人还是陌生人。\n\n——富兰克林",
-      "epub_href": "text/part0000.html"
+      "epub_href": "text/part0000.html",
+      "full_md_heading": "## 正文文件 2 · text/part0000.html",
+      "full_md_start_line": 16,
+      "full_md_end_line": 3348
     }
   ],
   "path_base": "containing-json-directory",
@@ -32,5 +41,6 @@
   "original_sha256": "b3c877bbb5e586ac6104dfba2955984e789c1c71eab9a66638538b2e6d672ca9",
   "original_filename": "100 个腐朽变神奇对策：你的剧本逊毙了 (威廉·M·埃克斯) (Z-Library) 2.epub",
   "full_markdown": "full.md",
-  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。"
+  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。",
+  "section_files_note": "全部分节正文保存在full.md。按full_md_heading完整标题及full_md_start_line/full_md_end_line读取目标节；行号从1开始，含末行。正文变化后重建索引并校验，不默认读取整本。"
 }

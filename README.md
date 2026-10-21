@@ -1,6 +1,6 @@
-# 爆款编剧 Skill v10
+# 爆款编剧 Skill v11
 
-当前版本：2026-10-15。安装入口为 [`viral-screenwriter/SKILL.md`](viral-screenwriter/SKILL.md)，支持标准中文 Markdown 剧本、人物与对白开发、分批续写、定点修订、参考片研究及按需分镜。每批最多交付2集正文；视频模型提示词通过独立的 `director-seedance-prompt` 协作。 每集开场按当前格式规范处理剧情介绍、钩子与剧集记忆锚点。
+当前版本：2026-10-22 v11，采用116文件精简布局。安装入口为 [`viral-screenwriter/SKILL.md`](viral-screenwriter/SKILL.md)，支持标准中文 Markdown 剧本、人物与对白开发、分批续写、定点修订、参考片研究及按需分镜。每批最多交付2集正文；视频模型提示词通过独立的 `director-seedance-prompt` 协作。每集开场按当前格式规范处理剧情介绍、钩子与剧集记忆锚点。v11增加观众体验、信息差与真实反馈的条件复盘，不预测爆款概率。
 
 ## 可选飞书协作
 
@@ -22,6 +22,18 @@ python -X utf8 scripts/check_environment.py --mode writing
 ```
 
 本仓库保持公开可见，沿用 [LICENSE](LICENSE) 的使用及再发布限制。联系方式：MARIOZHAOFAN（微信）。
+
+## 精简布局与后续维护
+
+后续以本仓库的 `viral-screenwriter/` 为维护源，发布包和本机安装均从该目录同步，不再从旧523文件版本重新组装。12份书源和原有正文全部保留；407份重复的EPUB分节文件已并入9本现有全文，按索引中的完整标题与精确行范围读取。Coffee Break的14份分章/前后附录保持，PDF按页定位。见[精简版验收记录](docs/compact-v11-validation.md)。
+
+维护后使用 Python 3.11+ 标准库重新生成索引、清单与ZIP：
+
+```text
+python -X utf8 tools/package_viral_screenwriter.py --refresh --output ../viral-screenwriter_v11_2026-10-22.zip
+```
+
+不加`--refresh`时源目录只读，仅校验并打包。版本或日期变化时同时更新版本说明和输出名称。打包器校验完整性、来源定位与章节范围，限制单一`SKILL.md`、最多200个文件和严格小于5,000,000字节；验证ZIP的CRC与逐文件SHA-256后才替换目标包。书库正文不由打包器改写。发布时只上传生成的技能ZIP，GitHub自动生成的整个仓库源码ZIP还包含独立历史技能，不能作为单技能安装包。
 
 ## 历史 Script Generator
 

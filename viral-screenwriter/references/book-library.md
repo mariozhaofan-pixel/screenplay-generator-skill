@@ -4,8 +4,8 @@
 
 - **已研读有卡**：主书11章、127张内部任务卡；补书仅B02、B05、B09下述范围。卡号为内部编号，原书释义与Skill改编分开。
 - **可读未研读**：其余正文供定位；目录、转换或搜索命中不等于掌握方法。新方法先读完整论述与必要上下文，再记录范围及边界。
-- `assets/books/`是**只读书库资产**：整本与现有分章/分节均保留，不因重复、暂不使用或入口精简而删改。默认读分节；`full.md`用于跨节检索、连续核对。B03/B08无独立分节时，按源PDF页标题截取需要的范围。
-- 搜索只选一种载体：通常限定目标书的分节，跨节时改搜该书`full.md`；若两者都命中，以“书号＋源页/EPUB锚点＋内容”合并为同一证据。B08与B09重复部分也不重复算新依据。
+- `assets/books/`是**只读书库资产**：12份书源的全部既有正文保留，不因暂不使用而删书。Coffee Break优先读对应分章；9本EPUB的407个逻辑分节保存在各书`full.md`中，不再重复存为独立文件；B03/B08按源PDF页标题定位。
+- 按需读一个范围：EPUB从对应`index.json`取完整标题和行范围，只读取该节；跨节检索也限定目标书。以“书号＋源页/EPUB锚点＋内容”合并重复证据，B08与B09重复部分不重复算新依据。
 
 ## 按当前创作问题选入口
 
@@ -25,19 +25,23 @@
 
 一句种子先用[第1章卡](coffee-break/ch01-story.md)CB01-01/02/06/08/09，核对[第1章文字](../assets/books/coffee-break/chapters/ch01.md)。额外提案/职业事项才开[第10/11章索引](coffee-break/index.md)；联络练习不构成外发授权。
 
+## 观众体验与项目反馈入口
+
+[短片创作](shortform-craft.md)将目标观众假设、信息差、人物情绪与观众体验分开处理；有动机缺口才补B05-01/02或SYN-03，信息与揭示用W01、CB07-08，人物情绪用CB03-08，记忆与回馈用CB03-12/13/14。观众体验检查属于Skill适配，不冒称原书的流量公式。已有真实试读、试演或发布数据时转[项目反馈复盘](exercise-orchestration.md#项目试读与发布反馈条件启用)，不为此通读全库。
+
 ## 已读补书：仅补一个具体薄弱点
 
 | 补书与已接入工具 | 适用缺口与可核对正文 |
 |---|---|
-| B05 克龙，[B05-01至06](library/supplement-cron.md) | 主角专属性读[第4章](../assets/books/library/B05/section-009.md)；私人意义读[第5章](../assets/books/library/B05/section-010.md)；信念来路/主观理解读[第6章](../assets/books/library/B05/section-011.md)；过去选择链读[第7章](../assets/books/library/B05/section-012.md)；三重为什么读[第13章](../assets/books/library/B05/section-018.md)。以上五章有完整阅读记录，其余未纳入。 |
-| B02 沃尔特，[W01至06](library/supplement-walter.md) | 观众位置读[第2章](../assets/books/library/B02/section-009.md)；逐步揭示、可信反应、反类型选择读[第8章](../assets/books/library/B02/section-015.md)；信息重复、双人声律、表演空间读[第9章](../assets/books/library/B02/section-016.md)。仅这三章有完整阅读记录。 |
-| B09 斯奈德，[SYN-01至05](library/supplement-snyder.md) | 前提反差从[section-009](../assets/books/library/B09/section-009.md)起读至011；人物匹配/切身利害从[035](../assets/books/library/B09/section-035.md)起读至037；场景变化读[070](../assets/books/library/B09/section-070.md)、[071](../assets/books/library/B09/section-071.md)；主动性/口述剧情读[089](../assets/books/library/B09/section-089.md)、[090](../assets/books/library/B09/section-090.md)。另有069选读记录；不据此声称全书或15拍已接入。 |
+| B05 克龙，[B05-01至06](library/supplement-cron.md) | 主角专属性读[第4章](../assets/books/library/B05/full.md)「## 正文文件 9」；私人意义读[第5章](../assets/books/library/B05/full.md)「## 正文文件 10」；信念来路/主观理解读[第6章](../assets/books/library/B05/full.md)「## 正文文件 11」；过去选择链读[第7章](../assets/books/library/B05/full.md)「## 正文文件 12」；三重为什么读[第13章](../assets/books/library/B05/full.md)「## 正文文件 18」。以上五章有完整阅读记录，其余未纳入。 |
+| B02 沃尔特，[W01至06](library/supplement-walter.md) | 观众位置读[第2章](../assets/books/library/B02/full.md)「## 正文文件 9」；逐步揭示、可信反应、反类型选择读[第8章](../assets/books/library/B02/full.md)「## 正文文件 15」；信息重复、双人声律、表演空间读[第9章](../assets/books/library/B02/full.md)「## 正文文件 16」。仅这三章有完整阅读记录。 |
+| B09 斯奈德，[SYN-01至05](library/supplement-snyder.md) | 前提反差从[009](../assets/books/library/B09/full.md)「## 正文文件 9」起读至011；人物匹配/切身利害从[035](../assets/books/library/B09/full.md)「## 正文文件 35」起读至037；场景变化读[070](../assets/books/library/B09/full.md)「## 正文文件 70」、[071](../assets/books/library/B09/full.md)「## 正文文件 71」；主动性/口述剧情读[089](../assets/books/library/B09/full.md)「## 正文文件 89」、[090](../assets/books/library/B09/full.md)「## 正文文件 90」。另有069选读记录；不据此声称全书或15拍已接入。 |
 
 17项工具不强制人人创伤、成长、洗白或争吵；边界详见卡片及[专项索引](library/index.md)。
 
 ## 12份书源目录与阅读状态
 
-“未研读”含无已研读记录的正文；用途是待查方向。EPUB先用索引选`section-NNN.md`，不要为找一章加载整本。
+“未研读”含无已研读记录的正文；用途是待查方向。下表的“分节”均指逻辑正文范围，不是独立文件数量。EPUB先在index.json中按目录或节号取`full_md_heading`（完整真实标题）、`full_md_start_line`与`full_md_end_line`，再只读full.md中该范围；行号从1开始且含末行。不能用“正文文件 9”模糊匹配90等节。若正文更新导致行号失效，用完整标题定位至下一真实分节标题前，并重新生成索引后验证；不要为找一章加载整本。B03/B08使用`page_records[].file`的PDF页锚点，不使用EPUB字段。
 
 | 编号／书名 | 全文与定位索引 | 状态／用途 |
 |---|---|---|

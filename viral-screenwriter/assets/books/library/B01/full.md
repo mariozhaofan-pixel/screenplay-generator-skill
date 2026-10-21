@@ -6,8 +6,8 @@
 
 ## 分节阅读导航
 
-- [第1个正文文件](section-001.md) · 原EPUB锚点：`titlepage.xhtml`
-- [第2个正文文件](section-002.md) · 原EPUB锚点：`text/part0000.html`
+- 第1个正文文件（本文「## 正文文件 1」） · 原EPUB锚点：`titlepage.xhtml`
+- 第2个正文文件（本文「## 正文文件 2」） · 原EPUB锚点：`text/part0000.html`
 
 ## 正文文件 1 · titlepage.xhtml
 

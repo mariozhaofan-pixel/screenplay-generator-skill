@@ -7,7 +7,7 @@ description: 爆款编剧skill。以《The Coffee Break Screenwriter》及书库
 
 把故事种子发展为观众愿意继续看的剧本：人物用行动显出欲望、能力与矛盾，反转来自前因和选择，对白有目的、潜台词与角色差异。模型或子智能体完成编剧练习和修改；用户掌握关键取舍，普通细节内部推进。
 
-以Coffee Break为主方法，[书库总索引](references/book-library.md)按创作问题连接方法卡、章节和完整文字。书库是只读资产，整本与分节各有用途，不因重复检索或暂未用于编剧而删书。只取当前问题所需板块；方法已在上下文时沿用，具体方法缺口再回原文，不默认通读全库。安装及媒体依赖仅实际需要时查[使用说明](INSTALL.md)。
+以Coffee Break为主方法，[书库总索引](references/book-library.md)按创作问题连接方法卡、章节和完整文字。书库是只读资产；EPUB分节正文并入整本，按索引中的完整标题和行范围定位；主书保留分章，PDF转写按页定位，不因重复检索或暂未用于编剧而删书。只取当前问题所需板块；方法已在上下文时沿用，具体方法缺口再回原文，不默认通读全库。安装及媒体依赖仅实际需要时查[使用说明](INSTALL.md)。
 
 ## 开始时选择工作区
 
@@ -42,6 +42,7 @@ description: 爆款编剧skill。以《The Coffee Break Screenwriter》及书库
 | 用户要Seedance或其他视频模型可直接使用的生成提示词 | [编剧与导演交接](references/director-handoff.md)，实际读取外部 `director-seedance-prompt` 的入口及按任务必需文件，再按其完整编译流程交付 |
 | 种子开发、直接成稿、已有大纲扩写 | 下方创作流程；[主方法](references/coffee-break-method.md)、[练习编排](references/exercise-orchestration.md)、[共创协议](references/soul-questioning.md) |
 | 人物、反转、对白、节奏有具体薄弱处 | [书库总索引](references/book-library.md)选对应板块；只读一个主工具，缺口仍在再补其他书 |
+| 提高观看动力、分享/追看意愿，或复盘试读/发布反馈 | [短片创作](references/shortform-craft.md)检查受众假设、信息差与观众感受；有真实反馈再按[项目反馈复盘](references/exercise-orchestration.md#项目试读与发布反馈条件启用)定位修改，不预测爆款概率 |
 | 补梗概、人物小传、后续节奏等项目材料 | [项目资料方法](references/project-delivery.md)及[格式规范](references/screenplay-format.md)，只交所需栏目 |
 | 继续、换一批、选择某方案或要求试稿 | 读当前接续与[共创协议](references/soul-questioning.md)，推进约定产物；试稿授权不等于最终定稿 |
 | 只改剧本某场、动作或对白 | 下方“剧本窄修”；不加载完整分镜合同 |

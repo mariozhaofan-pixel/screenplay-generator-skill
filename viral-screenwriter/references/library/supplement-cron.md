@@ -6,11 +6,11 @@
 
 | 提取文件 | EPUB href | 实际章名 | 核对关键词 |
 |---|---|---|---|
-| section-009.md | `OEBPS/Text/part0007.xhtml` | 4 Who：你要彻底颠覆“谁”的生活 | 偏心的重要性；主人公的大脑是读者的入口；首先，你看到了什么 |
-| section-010.md | `OEBPS/Text/part0008.xhtml` | 5 Why：你的主人公究竟“为什么”在意 | 深藏的欲望；第三条轨道；错误信念；练练笔 |
-| section-011.md | `OEBPS/Text/part0009.xhtml` | 6 Worldview：主人公的世界观 | 笼统的细节；原初场景；那么，你期望什么；写一个场景 |
-| section-012.md | `OEBPS/Text/part0010.xhtml` | 7 What Next：完美的因果关系 | 内部的故事与外部的情节；第一步：找到转折点；第二步：写场景 |
-| section-018.md | `OEBPS/Text/part0016.xhtml` | 13 故事逻辑：保证每一个“是什么”背后都有一个“为什么” | 三重考验；填空：创建新的情节点；情节的大小很重要 |
+| full.md「## 正文文件 9」 | `OEBPS/Text/part0007.xhtml` | 4 Who：你要彻底颠覆“谁”的生活 | 偏心的重要性；主人公的大脑是读者的入口；首先，你看到了什么 |
+| full.md「## 正文文件 10」 | `OEBPS/Text/part0008.xhtml` | 5 Why：你的主人公究竟“为什么”在意 | 深藏的欲望；第三条轨道；错误信念；练练笔 |
+| full.md「## 正文文件 11」 | `OEBPS/Text/part0009.xhtml` | 6 Worldview：主人公的世界观 | 笼统的细节；原初场景；那么，你期望什么；写一个场景 |
+| full.md「## 正文文件 12」 | `OEBPS/Text/part0010.xhtml` | 7 What Next：完美的因果关系 | 内部的故事与外部的情节；第一步：找到转折点；第二步：写场景 |
+| full.md「## 正文文件 18」 | `OEBPS/Text/part0016.xhtml` | 13 故事逻辑：保证每一个“是什么”背后都有一个“为什么” | 三重考验；填空：创建新的情节点；情节的大小很重要 |
 
 提取目录：`../../assets/books/library/B05/`。锚点是EPUB内部href，不是页码；以上章节正文及其练笔、案例说明均已读完。原书的心理或认知科学说明不在此升级为科学证明。
 

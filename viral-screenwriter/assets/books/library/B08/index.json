@@ -3998,5 +3998,6 @@
   "original_sha256": "1e23fadf7f2b47b28ac51c3e129bbe8319dc2da1359ca7f901f5e8f61cce22c3",
   "original_filename": "救猫咪（三本经典合集，看电影、懂电影、编剧本，从菜鸟到行家的快速通道） (布莱克·斯奈德) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
   "full_markdown": "full.md",
-  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。"
+  "source_note": "文字版仅保留既有转写、分章与定位元数据；原PDF/EPUB、页图及处理缓存未随包提供。图片、复杂表格、版式与OCR疑点无法在本包核图；需要精确引语时须另有合法原件核对。",
+  "section_files_note": "PDF转写按page_records[].file中的PDF页锚点定位full.md，从目标页标题读到下一页标题前；不使用EPUB分节字段。"
 }

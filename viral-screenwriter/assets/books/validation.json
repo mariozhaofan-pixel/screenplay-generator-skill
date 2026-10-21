@@ -1,24 +1,113 @@
 {
-  "package": "text-only-books",
+  "package": "text-only-books-compact",
   "result": "passed",
-  "scope": "assets/books，以及书库来源/导航相关的7份references文件；不含技能其他部分的检查",
-  "source_book_file_count": 2415,
-  "source_book_bytes": 335566783,
-  "retained_existing_markdown_files": 435,
-  "body_files_verified": 433,
-  "body_file_breakdown": {
+  "verified_date": "2026-10-22",
+  "scope": "精简版与原v11便携文字版的正文及来源定位等价比较；不代表重做OCR或重新研读。",
+  "baseline_archive_sha256": "3a18d8185a7cd57b3916bfa9aa53f004cdd15280a4afe1ef0b0338fb7b35c007",
+  "books_file_count": 46,
+  "physical_body_files": {
     "complete_books": 12,
     "coffee_break_chapters_and_front_back_matter": 14,
-    "epub_sections": 407
+    "total": 26
+  },
+  "epub_sections": {
+    "B01": 2,
+    "B02": 37,
+    "B04": 15,
+    "B05": 20,
+    "B06": 113,
+    "B07": 13,
+    "B09": 112,
+    "B10": 75,
+    "B11": 20,
+    "total": 407
   },
   "body_preservation": {
-    "method": "逐文件比较：跳过书籍头部包装元数据与新增导航，PDF正文中仅排除旧页图链接行及对应的新定位说明行；其他正文字符与顺序逐字比较。换行统一为LF。",
+    "method": "逐节将原独立文件正文与full.md对应节比较；统一LF，仅去除包装标题/来源行及节边界空白，不忽略正文内部空格、标点、段落或顺序。完整正文块也逐一比对。",
     "all_equal": true,
-    "mismatched_files": 0,
-    "compared_body_characters_including_duplicate_full_and_sections": 4107654,
-    "aggregate_source_sha256": "319bee895e3869f175620502344673f4feb8e430a28476b3e49a0b23f5e45b71",
-    "aggregate_text_package_sha256": "319bee895e3869f175620502344673f4feb8e430a28476b3e49a0b23f5e45b71",
-    "aggregate_method": "排序后的每一正文相对技能根路径、NUL、规范化正文、NUL，UTF-8累加SHA-256"
+    "removed_duplicate_files": 407,
+    "preserved_logical_sections": 407,
+    "section_body_characters": 1611293,
+    "books": [
+      {
+        "id": "B01",
+        "body_sections_before": 2,
+        "body_sections_after": 2,
+        "body_sha256_before": "3ee4514fadae21f457b54a54e45aa6f8e4098e0bfa8932b047a536da48358570",
+        "body_sha256_after": "3ee4514fadae21f457b54a54e45aa6f8e4098e0bfa8932b047a536da48358570"
+      },
+      {
+        "id": "B02",
+        "body_sections_before": 37,
+        "body_sections_after": 37,
+        "body_sha256_before": "e7f7185dcd6c93cfe4d68bae5094da489cbd88fc87e920fddfc3091202d44b81",
+        "body_sha256_after": "e7f7185dcd6c93cfe4d68bae5094da489cbd88fc87e920fddfc3091202d44b81"
+      },
+      {
+        "id": "B03",
+        "body_sections_before": 0,
+        "body_sections_after": 0,
+        "body_sha256_before": "378f03b23d73ef981c8163dba85d9270fb7bd0e52054b8982da1248d8219ca73",
+        "body_sha256_after": "378f03b23d73ef981c8163dba85d9270fb7bd0e52054b8982da1248d8219ca73"
+      },
+      {
+        "id": "B04",
+        "body_sections_before": 15,
+        "body_sections_after": 15,
+        "body_sha256_before": "76ab1f69984cca78622b1dad9de504f9c83672005ea36546a9ece1b1b2a5bf63",
+        "body_sha256_after": "76ab1f69984cca78622b1dad9de504f9c83672005ea36546a9ece1b1b2a5bf63"
+      },
+      {
+        "id": "B05",
+        "body_sections_before": 20,
+        "body_sections_after": 20,
+        "body_sha256_before": "abac0d384f4004ee0392c32927699cbda00d42820445f12dfabdc47322ae5c5f",
+        "body_sha256_after": "abac0d384f4004ee0392c32927699cbda00d42820445f12dfabdc47322ae5c5f"
+      },
+      {
+        "id": "B06",
+        "body_sections_before": 113,
+        "body_sections_after": 113,
+        "body_sha256_before": "66bc92109ea7694fbab4aec97d1fdca5f0b234f6fa4d0362f85b98c7064c4f01",
+        "body_sha256_after": "66bc92109ea7694fbab4aec97d1fdca5f0b234f6fa4d0362f85b98c7064c4f01"
+      },
+      {
+        "id": "B07",
+        "body_sections_before": 13,
+        "body_sections_after": 13,
+        "body_sha256_before": "d29bd35e29aa71ebf684552835fd8a562076a3419a93186829d74ab420af69c5",
+        "body_sha256_after": "d29bd35e29aa71ebf684552835fd8a562076a3419a93186829d74ab420af69c5"
+      },
+      {
+        "id": "B08",
+        "body_sections_before": 0,
+        "body_sections_after": 0,
+        "body_sha256_before": "fe40f0277c075ea765deacaf4425c6422da142b489296c6f1e83269de8841f13",
+        "body_sha256_after": "fe40f0277c075ea765deacaf4425c6422da142b489296c6f1e83269de8841f13"
+      },
+      {
+        "id": "B09",
+        "body_sections_before": 112,
+        "body_sections_after": 112,
+        "body_sha256_before": "523ec368b24b00b7543d6fd893d4ae7fc911845fa802410c02b160927e46f661",
+        "body_sha256_after": "523ec368b24b00b7543d6fd893d4ae7fc911845fa802410c02b160927e46f661"
+      },
+      {
+        "id": "B10",
+        "body_sections_before": 75,
+        "body_sections_after": 75,
+        "body_sha256_before": "46cf1aee682b95921763a39c2ab11b7e80f8520ca5bdc930bf6491487419082b",
+        "body_sha256_after": "46cf1aee682b95921763a39c2ab11b7e80f8520ca5bdc930bf6491487419082b"
+      },
+      {
+        "id": "B11",
+        "body_sections_before": 20,
+        "body_sections_after": 20,
+        "body_sha256_before": "2b4ecf6477e350a3f4ec0358e6076870855183247c2b349ee5657c7677c0f1ce",
+        "body_sha256_after": "2b4ecf6477e350a3f4ec0358e6076870855183247c2b349ee5657c7677c0f1ce"
+      }
+    ],
+    "coffee_break_full_and_14_parts": "byte-identical to baseline"
   },
   "page_coverage": {
     "coffee_break": {
@@ -37,35 +126,10 @@
       "continuous": true
     }
   },
-  "epub_sections": {
-    "B01": 2,
-    "B02": 37,
-    "B04": 15,
-    "B05": 20,
-    "B06": 113,
-    "B07": 13,
-    "B09": 112,
-    "B10": 75,
-    "B11": 20,
-    "total": 407
-  },
-  "omitted_source_files_by_extension": {
-    ".json": 336,
-    ".pdf": 3,
-    ".txt": 1313,
-    ".png": 319,
-    ".epub": 9
-  },
+  "source_anchor_failures": 0,
+  "pdf_anchor_checks": 915,
+  "pdf_anchor_failures": 0,
   "originals_images_and_caches_included": false,
-  "changes": "复制全部435份既有Markdown，调整元数据/来源限制/原件和页图导航；重建15份必要来源与定位JSON，加本文字版验证与当前文件清单。未重做OCR、未改写正文、未重新研读或核图。",
-  "limits": "机械保真证明已有文字未损失，不证明OCR正确、图片和复杂表格被文字还原或全书已研读。原件哈希沿用来源清单的既有核验记录。",
-  "reference_files_adapted": 7,
-  "reference_files_bytes": 76997,
-  "books_file_count": 453,
-  "books_bytes": 11445210,
-  "markdown_local_links_checked": 504,
-  "json_local_path_references_checked": 3035,
-  "missing_local_targets": 0,
-  "missing_pdf_page_anchors": 0,
-  "absolute_computer_paths_found": 0
+  "changes": "将重复EPUB分节载体合并到既有全文；保留全部正文、来源标识、目录及阅读状态；索引提供精确标题及行范围，修正PDF和EPUB载体说明。当前文件字节与哈希见inventory.json，避免将历史包统计当成当前值。",
+  "limits": "机械保真证明已有文字未损失，不证明OCR正确、图片和复杂表格被文字还原或全书已研读。原件哈希沿用来源清单的既有核验记录。"
 }

@@ -1,6 +1,6 @@
 # 编剧书库阅读导航
 
-11份书源均保留全部既有可读Markdown：9份EPUB按阅读顺序提取，2份PDF按文件页码提取或OCR。转换完成不等于全书已研读，阅读范围见[阅读状态](reading-status.json)。每书有full.md与index.json；EPUB另有全部section-NNN.md，完整转写顶部提供分节导航。原件、页图、逐页TXT及原始OCR坐标JSON未随文字版提供；版本与原件哈希见[来源清单](manifest.json)。
+11份书源均保留全部既有可读Markdown：9份EPUB按阅读顺序提取，2份PDF按文件页码提取或OCR。转换完成不等于全书已研读，阅读范围见[阅读状态](reading-status.json)。每书有full.md与index.json；EPUB各分节已并入full.md，以「## 正文文件 N」标题分隔（为符合200个文件的上传上限，不再单独拆成section文件），完整转写顶部提供分节导航。原件、页图、逐页TXT及原始OCR坐标JSON未随文字版提供；版本与原件哈希见[来源清单](manifest.json)。
 
 | 编号 | 书 | 本次用途 |
 |---|---|---|

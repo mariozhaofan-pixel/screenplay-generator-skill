@@ -47,6 +47,61 @@ def markdown_targets(text: str):
             yield value
 
 
+def verify_book_locators(root: Path) -> dict:
+    """Check exact EPUB boundaries, not just whether full.md exists."""
+    def source_key(href: str) -> str:
+        path = unquote(href.split('#', 1)[0])
+        return path.removeprefix('OEBPS/')
+
+    errors, books, records, sections = [], 0, 0, 0
+    for index_path in sorted((root / 'assets/books/library').glob('B*/index.json')):
+        data = json.loads(index_path.read_text(encoding='utf-8-sig'))
+        if 'page_records' in data:
+            continue  # PDF sources use their existing page_records, not EPUB fields.
+        relative = index_path.relative_to(root).as_posix()
+        if not data.get('sections') or not isinstance(data.get('toc'), list):
+            errors.append({'kind': 'book_missing_section_index', 'path': relative})
+            continue
+        full_path = (index_path.parent / data.get('full_markdown', 'full.md')).resolve()
+        if not full_path.is_relative_to(root) or not full_path.is_file():
+            errors.append({'kind': 'book_full_path', 'path': relative})
+            continue
+        lines = full_path.read_text(encoding='utf-8-sig').splitlines()
+        headings = [(i + 1, int(match[1]), line) for i, line in enumerate(lines)
+                    if (match := re.match(r'^## 正文文件 (\d+) · ', line))]
+        positions = {number: (line, headings[i + 1][0] - 1 if i + 1 < len(headings) else len(lines), heading)
+                     for i, (line, number, heading) in enumerate(headings)}
+        source_numbers = {source_key(heading.split(' · ', 1)[1]): number
+                          for _, number, heading in headings}
+        if not headings or len(positions) != len(headings):
+            errors.append({'kind': 'book_section_headings', 'path': relative})
+        if len(source_numbers) != len(headings):
+            errors.append({'kind': 'book_source_ambiguity', 'path': relative})
+        numbers = [record.get('number') for record in data['sections']]
+        if len(numbers) != len(set(numbers)) or set(numbers) != set(positions):
+            errors.append({'kind': 'book_section_coverage', 'path': relative})
+        for group in ('sections', 'toc'):
+            for record in data.get(group, []):
+                records += 1
+                match = re.match(r'^## 正文文件 (\d+) · ', record.get('full_md_heading', ''))
+                number = int(match[1]) if match else None
+                actual = (record.get('full_md_start_line'), record.get('full_md_end_line'), record.get('full_md_heading'))
+                expected = positions.get(number)
+                if expected is None or actual != expected or (group == 'sections' and record.get('number') != number):
+                    errors.append({'kind': 'book_section_locator', 'path': relative, 'group': group,
+                                   'title': record.get('title'), 'number': record.get('number')})
+                if source_numbers.get(source_key(record.get('epub_href', ''))) != number:
+                    errors.append({'kind': 'book_source_locator', 'path': relative, 'group': group,
+                                   'title': record.get('title'), 'number': record.get('number')})
+                for key in ('file', 'href'):
+                    if key in record and record[key] != 'full.md':
+                        errors.append({'kind': 'book_section_target', 'path': relative, 'field': key})
+        books += 1
+        sections += len(positions)
+    return {'epub_books': books, 'logical_sections': sections,
+            'locator_records_checked': records, 'errors': errors}
+
+
 def verify(root: Path) -> dict:
     errors = []
     skill_entrypoints = sorted(path.relative_to(root).as_posix()
@@ -107,9 +162,12 @@ def verify(root: Path) -> dict:
                 errors.append({'kind': 'link_leaves_package', 'path': relative, 'target': target})
             elif not resolved.exists():
                 errors.append({'kind': 'missing_link', 'path': relative, 'target': target})
+    book_locators = verify_book_locators(root)
+    errors.extend(book_locators.pop('errors'))
     return {'ok': not errors, 'files_checked': len(entries),
             'skill_entrypoints': skill_entrypoints,
-            'local_markdown_links_checked': checked_links, 'errors': errors}
+            'local_markdown_links_checked': checked_links,
+            'book_locators': book_locators, 'errors': errors}
 
 
 def main() -> int:

@@ -6,19 +6,19 @@
 
 ## 分节阅读导航
 
-- [第1个正文文件](section-001.md) · 原EPUB锚点：`titlepage.xhtml`
-- [第2个正文文件](section-002.md) · 原EPUB锚点：`index_split_000.html`
-- [第3个正文文件](section-003.md) · 原EPUB锚点：`index_split_001.html`
-- [第4个正文文件](section-004.md) · 原EPUB锚点：`index_split_002.html`
-- [第5个正文文件](section-005.md) · 原EPUB锚点：`index_split_003.html`
-- [第6个正文文件](section-006.md) · 原EPUB锚点：`index_split_004.html`
-- [第7个正文文件](section-007.md) · 原EPUB锚点：`index_split_005.html`
-- [第8个正文文件](section-008.md) · 原EPUB锚点：`index_split_006.html`
-- [第9个正文文件](section-009.md) · 原EPUB锚点：`index_split_007.html`
-- [第10个正文文件](section-010.md) · 原EPUB锚点：`index_split_008.html`
-- [第11个正文文件](section-011.md) · 原EPUB锚点：`index_split_009.html`
-- [第12个正文文件](section-012.md) · 原EPUB锚点：`index_split_010.html`
-- [第13个正文文件](section-013.md) · 原EPUB锚点：`index_split_011.html`
+- 第1个正文文件（本文「## 正文文件 1」） · 原EPUB锚点：`titlepage.xhtml`
+- 第2个正文文件（本文「## 正文文件 2」） · 原EPUB锚点：`index_split_000.html`
+- 第3个正文文件（本文「## 正文文件 3」） · 原EPUB锚点：`index_split_001.html`
+- 第4个正文文件（本文「## 正文文件 4」） · 原EPUB锚点：`index_split_002.html`
+- 第5个正文文件（本文「## 正文文件 5」） · 原EPUB锚点：`index_split_003.html`
+- 第6个正文文件（本文「## 正文文件 6」） · 原EPUB锚点：`index_split_004.html`
+- 第7个正文文件（本文「## 正文文件 7」） · 原EPUB锚点：`index_split_005.html`
+- 第8个正文文件（本文「## 正文文件 8」） · 原EPUB锚点：`index_split_006.html`
+- 第9个正文文件（本文「## 正文文件 9」） · 原EPUB锚点：`index_split_007.html`
+- 第10个正文文件（本文「## 正文文件 10」） · 原EPUB锚点：`index_split_008.html`
+- 第11个正文文件（本文「## 正文文件 11」） · 原EPUB锚点：`index_split_009.html`
+- 第12个正文文件（本文「## 正文文件 12」） · 原EPUB锚点：`index_split_010.html`
+- 第13个正文文件（本文「## 正文文件 13」） · 原EPUB锚点：`index_split_011.html`
 
 ## 正文文件 1 · titlepage.xhtml
 
