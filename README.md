@@ -2,6 +2,8 @@
 
 当前版本：2026-10-22 v11，采用116文件精简布局。安装入口为 [`viral-screenwriter/SKILL.md`](viral-screenwriter/SKILL.md)，支持标准中文 Markdown 剧本、人物与对白开发、分批续写、定点修订、参考片研究及按需分镜。每批最多交付2集正文；视频模型提示词通过独立的 `director-seedance-prompt` 协作。每集开场按当前格式规范处理剧情介绍、钩子与剧集记忆锚点。v11增加观众体验、信息差与真实反馈的条件复盘，不预测爆款概率。
 
+已同步B11《电影剧本写作基础》编码修复，正文恢复中文，四处补字与原EPUB核对；章节行号按真实LF重建。[修复验收记录](docs/b11-encoding-fix.md) · [最新修复安装包](https://github.com/mariozhaofan-pixel/screenplay-generator-skill/releases/tag/viral-screenwriter-v11-2026-10-22-b11-fix)。
+
 ## 可选飞书协作
 
 首次可选择本地工作、加入已有多维表或创建新库。与导演复用同一个 Base 和项目ID，用项目总览、剧本交付、资产库、段落交付四表组织资料；旧三表按需补齐第四表。定稿和已采用改稿在本地保存检查后自动上传真实剧本 Markdown，读回核验后更新本批当前采用版本，保留其他批次及历史。导演段落记录精确来源修订，旧提示词和用户视频保持原对应关系。
@@ -34,6 +36,8 @@ python -X utf8 tools/package_viral_screenwriter.py --refresh --output ../viral-s
 ```
 
 不加`--refresh`时源目录只读，仅校验并打包。版本或日期变化时同时更新版本说明和输出名称。打包器校验完整性、来源定位与章节范围，限制单一`SKILL.md`、最多200个文件和严格小于5,000,000字节；验证ZIP的CRC与逐文件SHA-256后才替换目标包。书库正文不由打包器改写。发布时只上传生成的技能ZIP，GitHub自动生成的整个仓库源码ZIP还包含独立历史技能，不能作为单技能安装包。
+
+行号计算的回归检查：`python -X utf8 tools/test_book_line_numbers.py`，覆盖LF、CRLF、末行无换行，以及不应计作物理换行的Unicode控制字符。
 
 ## 历史 Script Generator
 

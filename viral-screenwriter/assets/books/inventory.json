@@ -10,8 +10,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 1781,
-      "sha256": "af73108ecea7ad09dd56383ce23951682aa23946eee9c84ab542f38d01368282"
+      "bytes": 2954,
+      "sha256": "02d389a4db35a29b254e4ad4ffe5e8ea0fd134f51fd4ed7eea4b22b89ba23556"
     },
     {
       "path": "coffee-break/chapters/appendix.md",
@@ -195,13 +195,13 @@
     },
     {
       "path": "library/B11/full.md",
-      "bytes": 705374,
-      "sha256": "6c0ba800c598d054e9dc3042600f7ce3ad4ae3196e502b11d524089497bbc2bb"
+      "bytes": 358984,
+      "sha256": "e357b9fd82bcd0e920f9c9fbbc8d8fecf96ab384115fcb41e082b2d9c53e729e"
     },
     {
       "path": "library/B11/index.json",
-      "bytes": 16168,
-      "sha256": "7351cd0ebc7a99f852173422b3f855c25864643f12277c59afca1b63b5c7a3f1"
+      "bytes": 17888,
+      "sha256": "89782b792e675d5fd481b26c235564257ec2c48bfad291b8587782fbf6baddb3"
     },
     {
       "path": "library/index.md",
@@ -211,7 +211,7 @@
     {
       "path": "library/manifest.json",
       "bytes": 9298,
-      "sha256": "64b07a9f08fa14b4b810c8cf4e8053503474445ce7c8749bf054ca0ca76939f0"
+      "sha256": "dc22f43ee793e923ff687b9641fc992fca5b3688c004e57cf6c7ca270546600e"
     },
     {
       "path": "library/reading-status.json",
@@ -225,8 +225,8 @@
     },
     {
       "path": "validation.json",
-      "bytes": 5386,
-      "sha256": "a738db66ccbecf201edef350335a05ad1341d9976963eef796d123635a746294"
+      "bytes": 8361,
+      "sha256": "f9c0dfc3e5e6d7e2b0158c8f13be3d1148e1f057792b5040c95c778668f059c0"
     }
   ]
 }

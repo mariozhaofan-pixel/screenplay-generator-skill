@@ -66,7 +66,10 @@ def verify_book_locators(root: Path) -> dict:
         if not full_path.is_relative_to(root) or not full_path.is_file():
             errors.append({'kind': 'book_full_path', 'path': relative})
             continue
-        lines = full_path.read_text(encoding='utf-8-sig').splitlines()
+        # Match editor/CLI LF line numbers; U+0085/U+2028 are not file newlines.
+        lines = full_path.read_text(encoding='utf-8-sig').split('\n')
+        if lines[-1] == '':
+            lines.pop()
         headings = [(i + 1, int(match[1]), line) for i, line in enumerate(lines)
                     if (match := re.match(r'^## 正文文件 (\d+) · ', line))]
         positions = {number: (line, headings[i + 1][0] - 1 if i + 1 < len(headings) else len(lines), heading)

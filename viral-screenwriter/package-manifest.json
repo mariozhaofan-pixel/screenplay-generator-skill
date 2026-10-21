@@ -6,8 +6,8 @@
   "files": [
     {
       "path": "INSTALL.md",
-      "bytes": 9031,
-      "sha256": "bc4c3d041d189f7566e40e3e48e9466d11ba5635c6481f83cd9783de1b82ab1d"
+      "bytes": 9040,
+      "sha256": "d79673bd09f0a69ce7a2389a2b792eff051a29b5e042a44b2fc37cb6c6dc93e9"
     },
     {
       "path": "SKILL.md",
@@ -26,8 +26,8 @@
     },
     {
       "path": "assets/books/VALIDATION.md",
-      "bytes": 1781,
-      "sha256": "af73108ecea7ad09dd56383ce23951682aa23946eee9c84ab542f38d01368282"
+      "bytes": 2954,
+      "sha256": "02d389a4db35a29b254e4ad4ffe5e8ea0fd134f51fd4ed7eea4b22b89ba23556"
     },
     {
       "path": "assets/books/coffee-break/chapters/appendix.md",
@@ -112,7 +112,7 @@
     {
       "path": "assets/books/inventory.json",
       "bytes": 7298,
-      "sha256": "ddc6fb61d9c22751f1c6e509f0897569ff53267e682aa63550df9c79b335f0e5"
+      "sha256": "f4c4ad7601f33c05c1e081fed1c7534220e52388bd08a0f2af4810351637fadb"
     },
     {
       "path": "assets/books/library/B01/full.md",
@@ -216,13 +216,13 @@
     },
     {
       "path": "assets/books/library/B11/full.md",
-      "bytes": 705374,
-      "sha256": "6c0ba800c598d054e9dc3042600f7ce3ad4ae3196e502b11d524089497bbc2bb"
+      "bytes": 358984,
+      "sha256": "e357b9fd82bcd0e920f9c9fbbc8d8fecf96ab384115fcb41e082b2d9c53e729e"
     },
     {
       "path": "assets/books/library/B11/index.json",
-      "bytes": 16168,
-      "sha256": "7351cd0ebc7a99f852173422b3f855c25864643f12277c59afca1b63b5c7a3f1"
+      "bytes": 17888,
+      "sha256": "89782b792e675d5fd481b26c235564257ec2c48bfad291b8587782fbf6baddb3"
     },
     {
       "path": "assets/books/library/index.md",
@@ -232,7 +232,7 @@
     {
       "path": "assets/books/library/manifest.json",
       "bytes": 9298,
-      "sha256": "64b07a9f08fa14b4b810c8cf4e8053503474445ce7c8749bf054ca0ca76939f0"
+      "sha256": "dc22f43ee793e923ff687b9641fc992fca5b3688c004e57cf6c7ca270546600e"
     },
     {
       "path": "assets/books/library/reading-status.json",
@@ -246,8 +246,8 @@
     },
     {
       "path": "assets/books/validation.json",
-      "bytes": 5386,
-      "sha256": "a738db66ccbecf201edef350335a05ad1341d9976963eef796d123635a746294"
+      "bytes": 8361,
+      "sha256": "f9c0dfc3e5e6d7e2b0158c8f13be3d1148e1f057792b5040c95c778668f059c0"
     },
     {
       "path": "assets/evidence/README.md",
@@ -576,8 +576,8 @@
     },
     {
       "path": "scripts/verify_portable.py",
-      "bytes": 9256,
-      "sha256": "53e45e39442e93880a3ef6ee4497b04be860cf4b340624f0127b22affe6f8252"
+      "bytes": 9388,
+      "sha256": "9f815548f09ed7d936072d75ca13df3a158595fa3a78f188f585129b4db84443"
     }
   ],
   "baseline": {
@@ -593,9 +593,13 @@
   ],
   "entrypoint": "SKILL.md",
   "layout": "compact-full-text-v1",
-  "packaging_revision": "2026-10-22-compact-verified",
+  "packaging_revision": "2026-10-22-b11-encoding-fix-verified",
   "compact_source": {
     "archive": "viral-screenwriter_v11_2026-10-22_claude-upload.zip",
     "sha256": "bf77087d140de66e76895b05dabc15d4164b127395657fefaac57801a0793d59"
+  },
+  "text_repair_source": {
+    "archive": "viral-screenwriter_v11_2026-10-22_b11-fix_claude-upload.zip",
+    "sha256": "ccb3b1dc372ba9e0dba49269bd3962e9f0fd8af89c9988b998853cfb247e2323"
   }
 }

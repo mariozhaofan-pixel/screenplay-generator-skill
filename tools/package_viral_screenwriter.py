@@ -105,7 +105,10 @@ def write_object(path: Path, value: dict) -> None:
 
 def refreshed_epub_index(directory: Path) -> dict:
     value = read_object(directory / "index.json")
-    lines = (directory / "full.md").read_text(encoding="utf-8-sig").splitlines()
+    # Match editor/CLI LF line numbers; U+0085/U+2028 are not file newlines.
+    lines = (directory / "full.md").read_text(encoding="utf-8-sig").split("\n")
+    if lines[-1] == "":
+        lines.pop()
     headings = [(line_no, line, int(match[1]))
                 for line_no, line in enumerate(lines, 1)
                 if (match := HEADING.fullmatch(line))]
