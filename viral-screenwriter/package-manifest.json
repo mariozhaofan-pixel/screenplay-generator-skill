@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "package": "viral-screenwriter",
-  "edition": "2026-10-22-v11-viewer-experience",
+  "edition": "2026-10-22-v12-feishu",
   "path_base": "package-root",
   "files": [
     {
       "path": "INSTALL.md",
-      "bytes": 9040,
-      "sha256": "d79673bd09f0a69ce7a2389a2b792eff051a29b5e042a44b2fc37cb6c6dc93e9"
+      "bytes": 9256,
+      "sha256": "95dea405d3acc0492c20b8039ccb4612d52fce5f762d893fbd5636707280ae71"
     },
     {
       "path": "SKILL.md",
-      "bytes": 13343,
-      "sha256": "1b525556a0fbb8df9dae8b92a94c45288f81d320edce7623bec95cc532eb643b"
+      "bytes": 13373,
+      "sha256": "69524885c9b6a8305f6bdd900423c685a295a3a3e6f18688cb02111ac9ef1cb1"
     },
     {
       "path": "agents/openai.yaml",
-      "bytes": 429,
-      "sha256": "47865721ab9d452b8d4f50af03f5fa6f450df0d36057d3a6c40d8ce940190858"
+      "bytes": 444,
+      "sha256": "f7e65659153bb77ffb9c76f26031fdc0a7d94b6eaf2d1b131c5e5fd47be91f85"
     },
     {
       "path": "assets/books/SOURCES.md",
@@ -593,7 +593,7 @@
   ],
   "entrypoint": "SKILL.md",
   "layout": "compact-full-text-v1",
-  "packaging_revision": "2026-10-22-b11-encoding-fix-verified",
+  "packaging_revision": "2026-10-22-v12-dual-editions",
   "compact_source": {
     "archive": "viral-screenwriter_v11_2026-10-22_claude-upload.zip",
     "sha256": "bf77087d140de66e76895b05dabc15d4164b127395657fefaac57801a0793d59"
@@ -601,5 +601,8 @@
   "text_repair_source": {
     "archive": "viral-screenwriter_v11_2026-10-22_b11-fix_claude-upload.zip",
     "sha256": "ccb3b1dc372ba9e0dba49269bd3962e9f0fd8af89c9988b998853cfb247e2323"
-  }
+  },
+  "release_version": "v12",
+  "release_date": "2026-10-22",
+  "workspace_edition": "feishu"
 }

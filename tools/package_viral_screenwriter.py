@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Maintain and package the compact viral-screenwriter skill using the stdlib.
 
-Usage: python tools/package_viral_screenwriter.py --output release.zip [--refresh]
+Usage: python tools/package_viral_screenwriter.py --edition local --output release.zip [--refresh]
 Without --refresh the source tree is read-only. Refresh updates EPUB section
 locations and both hash inventories; it never rewrites a book's full.md.
+The maintained source is the Feishu-capable edition. Both release editions are
+built in an isolated temporary tree using guarded prose differences, one library.
 """
 from __future__ import annotations
 
@@ -13,6 +15,7 @@ import json
 import os
 from pathlib import Path
 import re
+import shutil
 import stat
 import subprocess
 import sys
@@ -26,6 +29,7 @@ ZIP_ROOT = "viral-screenwriter"
 EPUB_BOOKS = ("B01", "B02", "B04", "B05", "B06", "B07", "B09", "B10", "B11")
 HEADING = re.compile(r"^## 正文文件 ([1-9][0-9]*) · .+$")
 HEADING_REFERENCE = re.compile(r"^## 正文文件 ([1-9][0-9]*)(?: · .+)?$")
+EDITION_RULES = Path(__file__).with_name("edition_rules.json")
 
 
 class PackageError(Exception):
@@ -261,14 +265,100 @@ def package(root_argument: Path, output_argument: Path, refresh: bool = False) -
             temporary.unlink(missing_ok=True)
 
 
+def relative_file(root: Path, name: str) -> Path:
+    """Resolve only a portable regular file inside this exact edition tree."""
+    if not isinstance(name, str) or not name or "\\" in name or ":" in name:
+        raise PackageError(f"Invalid edition path: {name!r}")
+    path = root / name
+    if not path.resolve().is_relative_to(root.resolve()) or not path.is_file():
+        raise PackageError(f"Edition path is missing or outside root: {name}")
+    reject_link(path)
+    return path
+
+
+def apply_edition(root: Path, edition: str, rules: dict) -> None:
+    """Apply an explicit edition delta; changed source anchors fail closed."""
+    if edition not in ("local", "feishu") or rules.get("source_edition") != "feishu":
+        raise PackageError("Unsupported edition or edition rules")
+    if edition == "local":
+        for rule in rules["local_replacements"]:
+            path = relative_file(root, rule["path"])
+            text = path.read_text(encoding="utf-8-sig")
+            old, new = rule["old"], rule["new"]
+            if not old or text.count(old) != 1:
+                raise PackageError(f"Edition source changed; update the matching local delta: {rule['path']}")
+            path.write_text(text.replace(old, new, 1), encoding="utf-8", newline="\n")
+        for name in rules["local_exclude"]:
+            # These exact files are removed only from our newly created build tree.
+            relative_file(root, name).unlink()
+        # Block future cloud integration files or prose from silently leaking into
+        # local builds. Book text and historical provenance are not workflow rules.
+        for path in source_files(root):
+            name = path.relative_to(root).as_posix()
+            if "feishu" in name.casefold():
+                raise PackageError(f"Unclassified cloud integration file in local edition: {name}")
+            if name == "package-manifest.json" or name.startswith(("assets/books/", "assets/evidence/")):
+                continue
+            if path.suffix.casefold() in (".md", ".yaml", ".py", ".json"):
+                text = path.read_text(encoding="utf-8-sig")
+                if re.search(r"飞书|feishu|lark-cli|OAuth", text, flags=re.IGNORECASE):
+                    raise PackageError(f"Unclassified cloud workflow in local edition: {name}")
+    manifest = read_object(root / "package-manifest.json")
+    manifest.update(edition=f"{rules['date']}-{rules['version']}-{edition}",
+                    workspace_edition=edition, release_version=rules["version"],
+                    release_date=rules["date"])
+    write_object(root / "package-manifest.json", manifest)
+
+
+def package_edition(root_argument: Path, output_argument: Path, edition: str,
+                    refresh: bool = False) -> dict:
+    reject_link(root_argument)
+    root = root_argument.resolve(strict=True)
+    output = output_argument.absolute()
+    if output.resolve().is_relative_to(root):
+        raise PackageError("--output must be outside the maintained skill directory")
+    source_files(root)
+    if refresh:
+        refresh_metadata(root)
+    source_verification = verify_portable(root)
+    rules = read_object(EDITION_RULES)
+    source_manifest = read_object(root / "package-manifest.json")
+    if source_manifest.get("workspace_edition") != "feishu":
+        raise PackageError("The maintained source must be the Feishu-capable edition")
+    if (source_manifest.get("release_version"), source_manifest.get("release_date")) != (rules.get("version"), rules.get("date")):
+        raise PackageError("Release version/date differ between source manifest and edition rules")
+    source_snapshot = {p.relative_to(root).as_posix(): digest(p) for p in source_files(root)}
+    with tempfile.TemporaryDirectory(prefix="viral-screenwriter-edition-") as temporary:
+        temporary_root = Path(temporary).resolve()
+        if not temporary_root.is_relative_to(Path(tempfile.gettempdir()).resolve()):
+            raise PackageError("Build directory is outside the expected temporary parent")
+        stage = temporary_root / ZIP_ROOT
+        shutil.copytree(root, stage)
+        apply_edition(stage, edition, rules)
+        refresh_metadata(stage)
+        # Every book file, including indexes, must be identical in both editions.
+        book_names = [name for name in source_snapshot if name.startswith("assets/books/")]
+        if any(digest(stage / name) != source_snapshot[name] for name in book_names):
+            raise PackageError("An edition changed the shared book library")
+        result = package(stage, output)
+        result.update(edition=edition, version=rules["version"], date=rules["date"],
+                      refreshed=refresh, shared_book_files_verified=len(book_names),
+                      source_verification=source_verification)
+    if source_snapshot != {p.relative_to(root).as_posix(): digest(p) for p in source_files(root)}:
+        raise PackageError("Maintained source changed during edition build")
+    return result
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1] / ZIP_ROOT)
     parser.add_argument("--output", type=Path, required=True, help="Explicit ZIP destination outside the skill directory")
     parser.add_argument("--refresh", action="store_true", help="Refresh EPUB locations and hash inventories before packaging")
+    parser.add_argument("--edition", choices=("local", "feishu"), default="feishu",
+                        help="Release edition; both use the same skill name and full library")
     args = parser.parse_args()
     try:
-        result = package(args.root, args.output, args.refresh)
+        result = package_edition(args.root, args.output, args.edition, args.refresh)
     except (PackageError, OSError, ValueError, KeyError, TypeError, subprocess.SubprocessError, zipfile.BadZipFile, zipfile.LargeZipFile) as exc:
         print(json.dumps({"ok": False, "error": str(exc)}, ensure_ascii=False), file=sys.stderr)
         return 1

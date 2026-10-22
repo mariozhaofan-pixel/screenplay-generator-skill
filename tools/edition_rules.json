@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "source_edition": "feishu",
+  "version": "v12",
+  "date": "2026-10-22",
+  "local_exclude": [
+    "assets/feishu-base-blueprint.json",
+    "references/FEISHU_BASE_LAYOUT.md",
+    "references/FEISHU_SCREENPLAY_SYNC.md",
+    "references/FEISHU_WORKSPACE_SETUP.md",
+    "references/feishu-workspace.md",
+    "scripts/plan_feishu_sync.py"
+  ],
+  "local_replacements": [
+    {
+      "path": "SKILL.md",
+      "old": "description: 爆款编剧skill（飞书版）。以《The Coffee Break Screenwriter》及书库方法共创人物、因果反转和对白，支持故事开发、直接成稿、续写、定点修改及参考片研究，分批交付标准中文Markdown剧本；可选本地工作或与导演共用飞书多维表，自动同步定稿及采用修订。",
+      "new": "description: 爆款编剧skill（本地版）。以《The Coffee Break Screenwriter》及书库方法共创人物、因果反转和对白，支持故事开发、直接成稿、续写、定点修改及参考片研究，分批交付标准中文Markdown剧本；直接在本地项目工作，按需与导演Skill交接。"
+    },
+    {
+      "path": "SKILL.md",
+      "old": "# 爆款编剧skill（飞书版）",
+      "new": "# 爆款编剧skill（本地版）"
+    },
+    {
+      "path": "SKILL.md",
+      "old": "## 开始时选择工作区\n\n新项目首次开始时询问：**本地工作 / 加入已有飞书多维表资产库 / 创建新的飞书多维表资产库**，可与本次创作所需问题合并。说明飞书首次配置和授权会增加启动时间，之后可跨设备共用剧本与资产。已有会话选择或项目工作区直接沿用；导演交来的同一项目继承同一 Base 链接与项目ID，不另建一份库。\n\n选择本地后直接编剧，不加载飞书协议或安装依赖。选择飞书后读取[飞书剧本工作区](references/feishu-workspace.md)，完成必要接入；该选择包含本项目定稿及后续采用改稿的例行同步，不在每次上传前重复询问。新表默认密码分享、链接可编辑；已有密码沿用，用户明确的权限限制优先。未选模式或尚未完成授权时可先完成本地写作准备，不自行创建云库或报告已同步。\n\n",
+      "new": "## 本地工作区\n\n安装本版即采用 `workspace_mode=local`，直接在当前用户项目创作，不重新询问工作区模式。沿用已确认的项目根目录、当前采用稿与接续文件；尚未确定保存位置时使用当前任务工作区，不先部署外部工作区。\n\n与导演交接时显式传递 `workspace_mode=local`、项目目录、采用稿的真实路径/版本和授权范围。现有项目配置属于另一协作模式时，保留原配置与历史，基于用户已提供或已下载的完整采用稿继续本地工作；不得静默改写旧项目身份或把摘要当正文。只在缺少正确源稿时补取该文件，独立可做的写作继续进行。\n\n"
+    },
+    {
+      "path": "SKILL.md",
+      "old": "- 飞书模式下，已授权的定稿或采用改稿保存并检查完成后，按[飞书剧本工作区](references/feishu-workspace.md)自动同步同一 Base；本地交付与云端读回分别记录。试稿、意见、格式整理稿和孤立替换段按其实际状态交付，不自动替换云端当前采用稿。\n",
+      "new": ""
+    },
+    {
+      "path": "SKILL.md",
+      "old": "| 选择飞书、接续云端项目、发布定稿或同步采用改稿 | [飞书剧本工作区](references/feishu-workspace.md)；只在此模式读取部署与同步细则，复用同项目的导演资产库 |\n",
+      "new": ""
+    },
+    {
+      "path": "agents/openai.yaml",
+      "old": "display_name: \"爆款编剧skill（飞书版）\"",
+      "new": "display_name: \"爆款编剧skill（本地版）\""
+    },
+    {
+      "path": "agents/openai.yaml",
+      "old": "default_prompt: \"使用 $viral-screenwriter 根据我的故事种子或参考作品，用书库方法发展人物、因果反转与对白，按标准格式交付Markdown剧本，关键分岔才让我选择。\"",
+      "new": "default_prompt: \"使用 $viral-screenwriter 根据我的故事种子或参考作品，用书库方法发展人物、因果反转与对白，直接在本地按标准格式交付Markdown剧本，关键分岔才让我选择。\""
+    },
+    {
+      "path": "references/director-handoff.md",
+      "old": "工作区选择也随交接继承：本地模式保持本地；飞书模式传递同一 Base 链接、项目ID、当前剧本ID/修订ID与实际云端记录ID，复用当前项目的 `.production/workspace.json` 和 `.production/sync-state.json`。兼容读取并迁移旧 `.director/` 配置，迁移规则见[飞书剧本工作区](feishu-workspace.md)。交接文件只记资源身份与状态，不包含分享密码、OAuth令牌或应用密钥。对方未安装不影响本Skill独立接入飞书并写剧本。",
+      "new": "交接始终显式携带 `workspace_mode=local`，沿用同一个用户项目目录；本Skill与独立 `director-seedance-prompt` 通过本地文件协作。项目接续/交接记录中保留项目标识、当前采用剧本的路径、版本与SHA256、集场范围及已有资产路径。文件尚未生成或未核哈希时如实留空，不编造。导演收到明确的本地选择后直接沿用，不重开模式选择；实际项目文件留在项目目录，不写进技能或书库。"
+    },
+    {
+      "path": "references/director-handoff.md",
+      "old": "飞书发布以用户的采用范围为准。`notes-only` 不产生替代剧本；`format-only` 默认只交格式稿，用户明确采用后才可发布新修订。只交孤立替换段时，不用片段替换当前完整稿附件；已有明确“更新主稿”授权且取得正确完整基线，才合并获准内容并按定稿合同同步。发布规则统一见[剧本同步合同](FEISHU_SCREENPLAY_SYNC.md)。",
+      "new": "采用稿更新以用户的实际范围为准。`notes-only` 只交意见，不修改源稿；`format-only` 默认另交格式稿，用户明确采用后才更新当前采用版本。孤立替换段不能替代完整主稿；已有“更新主稿”授权且取得正确完整基线时，合并获准内容，备份原版，并在接续中更新采用稿路径/版本。"
+    },
+    {
+      "path": "references/director-handoff.md",
+      "old": "   飞书模式同时交接精确剧本修订记录；段落的 `来源剧本` 指向实际用于编译的修订。新定稿或采用改稿同步成功后，只把依赖旧版的相关段落标为待核；原段落提示词、资产绑定和用户视频保持原版本，是否重编由已有任务授权决定。",
+      "new": "   同时传递 `workspace_mode=local` 和本批源稿路径/版本；已取得SHA256时一并传递。导演产物记录所用源稿，采用稿改变后只标记实际受影响的旧提示词待核，保留原提示词、资产绑定和用户视频；是否重编由已有任务授权决定。"
+    },
+    {
+      "path": "INSTALL.md",
+      "old": "# 爆款编剧skill：飞书版（含视频模块）",
+      "new": "# 爆款编剧skill：本地版（含视频模块）"
+    },
+    {
+      "path": "INSTALL.md",
+      "old": "版本：2026-10-22 v12 飞书版。与本地版共用同一编剧方法和完整书库；本版保留可选飞书协作，B11编码修复及观众体验优化均保留。",
+      "new": "版本：2026-10-22 v12 本地版。直接在当前项目创作，并按需与独立导演Skill通过本地文件协作；完整书库、B11编码修复及观众体验优化均保留。"
+    },
+    {
+      "path": "INSTALL.md",
+      "old": "本地版与飞书版使用相同技能名 `viral-screenwriter`",
+      "new": "两个发行版使用相同技能名 `viral-screenwriter`"
+    },
+    {
+      "path": "INSTALL.md",
+      "old": "## 本地或飞书协作\n\n新项目开始时选择本地工作、加入已有飞书多维表资产库或创建新库。已有项目沿用选择。飞书首次部署和账号授权会增加启动时间；后续在同一 Base 与项目ID下管理剧本、资产、段落提示词和用户视频，编剧与导演不各建一份库。\n\n飞书是可选模式，本地写作不需要安装或登录飞书。选择飞书后先复用宿主已有连接器或独立CLI；缺环境时按[配置指引](references/FEISHU_WORKSPACE_SETUP.md)补齐所需能力并由用户完成授权。本包只提供配置说明、四表蓝图及本地同步规划器，不封装飞书Skill、CLI、Node依赖或账号凭据，也不要求先安装导演Skill。新库默认密码分享、链接可编辑；用户已有权限限制优先，网页密码不代替API授权。\n\n实际写作仍在本地项目完成。已授权的定稿与后续采用改稿检查后自动上传同一个 Base 的 `剧本md文件` 附件字段，并维护各批当前采用版本；完整历史修订保留，不因每次最多2集而丢掉此前批次。草案、意见或孤立替换片段不自动覆盖当前采用稿。云端失败保留本地交付并明确待同步；详情见[飞书剧本工作区](references/feishu-workspace.md)和[剧本同步合同](references/FEISHU_SCREENPLAY_SYNC.md)。\n\n",
+      "new": "## 直接在本地创作\n\n安装后直接写作，采用 `workspace_mode=local`，不需要选择工作区或登录外部协作服务。剧本、接续、研究记录和导演产物保存在用户项目；Skill目录及书库只供读取。\n\n已采用改稿按原批次更新.md并保留备份。与导演交接时传递本地模式、项目目录、采用稿路径/版本、集场范围、授权边界和现有资产；已有接续记录直接沿用。首次创作只补本次真正缺少的故事信息，用户已授权直接成稿时不重复审批。\n\n"
+    },
+    {
+      "path": "INSTALL.md",
+      "old": "- 飞书协作的[四表蓝图](assets/feishu-base-blueprint.json)、[布局合同](references/FEISHU_BASE_LAYOUT.md)、[配置指引](references/FEISHU_WORKSPACE_SETUP.md)、[剧本同步合同](references/FEISHU_SCREENPLAY_SYNC.md)及 `scripts/plan_feishu_sync.py` 本地规划器；只在选择飞书时使用。\n",
+      "new": ""
+    },
+    {
+      "path": "INSTALL.md",
+      "old": "| 飞书增量同步计划与冲突检查 | Python 3.11+，标准库即可；脚本自身不联网 | `scripts/plan_feishu_sync.py`；实际上传使用独立飞书连接器或CLI |\n",
+      "new": ""
+    }
+  ]
+}
