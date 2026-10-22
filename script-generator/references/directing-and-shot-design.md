@@ -9,7 +9,8 @@ Use this reference for the reasoning behind CUTs, camera decisions, actor blocki
 - Primary shots, viewpoint, and reverse coverage
 - Focal length, composition, depth, shot size, and camera height
 - Spatial grammar, blocking, visual focus, and motion flow
-- CUT/edit logic, information control, AI-readable facts, and director checks
+- CUT/edit logic, viewpoint legality, responsibility shots, and transition phase
+- Information control, AI-readable facts, and director checks
 
 ## Research Boundary
 
@@ -49,7 +50,11 @@ Rules:
 
 - Derive both prompts only after screenplay facts are stable. They are a visual translation of the current story, not a reusable mood preset.
 - Treat examples as specificity/format references only. Do not inherit their era, country, genre, directors, films, color palette, lighting, atmosphere, characters, props, or camera prohibitions.
-- Convert named works or filmmakers into high-level visual traits and combine them with original story facts; do not copy signature scenes or protected characters.
+- For `trait-reference`, convert named works or filmmakers into high-level visual
+  mechanisms and combine them with current story facts. For an explicitly
+  requested `exact-dependent` scene, character surface, costume, prop, or frame,
+  keep the requested production dependency and route its Rights-ID/source state
+  through `open-source-research.md`.
 - Do not force constant motion, handheld shake, Dutch angles, backlight, fog, grain, shallow focus, or any other technique unless the current screenplay benefits from it. Static or eye-level framing can be the correct style choice.
 - Keep the two prompts physically and aesthetically compatible. Avoid mutually exclusive capture media, contradictory light directions, impossible camera paths, and adjective piles with no visible consequence.
 - Let the global prompts define the shared grammar. Per-CUT photography must instantiate that grammar and state only scene-specific execution or a motivated deviation; never paste the full global block into every CUT.
@@ -63,11 +68,13 @@ Before writing CUTs, define one compact map per scene:
 
 ```text
 Scene/beat IDs:
+Event ID and event identity:
 Scene task and meaningful change:
 Audience alignment/knowledge:
+Viewpoint mode, owner, presence, and legal entry/exit triggers:
 Key images/drama points:
 Important vs. merely useful information:
-Location map and fixed landmarks:
+SCN-ID, location map, and fixed landmarks:
 Character/prop starting positions:
 Action axis, eyelines, and screen directions:
 Entrances, exits, and offscreen space:
@@ -75,6 +82,8 @@ Base lens / emphasis lens / insert lens palette (35mm equivalent):
 Lighting, time, weather, color, wardrobe, and prop continuity:
 Emotional curve:
 Sound anchors:
+Responsibility image, if the scene contains a consequential choice:
+Transition mechanism and phase handoff:
 ```
 
 Use the map as a continuity lock, not as an excuse to omit per-CUT facts.
@@ -99,7 +108,11 @@ Use the map as a continuity lock, not as an excuse to omit per-CUT facts.
 
 ## Viewpoint and Reverse Coverage
 
-- Distinguish literal POV, character-aligned observation, neutral observation, and temporarily omniscient information. State which mode controls each beat.
+- Distinguish objective observation, character-aligned observation, literal POV, and temporarily omniscient information. State which mode controls each CUT, who owns it, whether that person is present, what the audience currently knows, and what visibly triggers entry or exit.
+- Literal POV is legal only when its owner is physically present or is demonstrably watching/remembering the represented media. A scene the character never witnessed cannot be presented as that character's literal first-person view.
+- Enter a subjective view only after a visible attention, action, eyeline, sound, or media trigger. If the audience must first understand geography, responsibility, or an objective fact, establish that fact in an objective image before aligning subjectively.
+- Do not let viewpoint manufacture knowledge. A character-aligned CUT may restrict or color what the audience perceives, but it cannot reveal information unavailable to that character without declaring a temporary omniscient mode.
+- After a protagonist says something harmful or makes a consequential choice, use an objective `responsibility shot` when omitting the recipient's visible result would hide causation, blur accountability, or let subjective immersion excuse the actor.
 - Reverse coverage does not need to be mechanically symmetrical. Vary clean singles, over-the-shoulders, profile relationships, obstruction, camera distance, and lens when power, intimacy, concealment, or isolation changes.
 - Preserve eyelines and screen side across reverse angles unless a visible reset or deliberate rupture motivates the change.
 - When dialogue continues over another image, state whether the speaker is on-screen, off-screen, or voice-over and whether lip sync is required.
@@ -136,7 +149,7 @@ Working palette, as flexible heuristics:
 | 65-100mm | isolation, compressed relationships, reaction detail, controlled background | reduced spatial context, harder focus, distant camera position |
 | 100mm+ / macro | remote observation or decisive object/detail inserts | over-isolation, unstable continuity, impractical working distance |
 
-Framing is produced by lens plus camera position. If the subject remains the same size, a wider lens normally requires a closer camera and shows more background with stronger apparent depth; a longer lens normally requires a farther camera and shows less background with greater compression. Sensor size changes angle of view. Do not write `wide shot = wide lens` or `close-up = telephoto` as fixed rules.
+Framing is produced by lens plus camera position. For the same sensor and subject size, a wider lens requires a closer camera and shows more background with stronger apparent depth; a longer lens requires a farther camera and shows less background with greater compression. Sensor size changes angle of view. Do not write `wide shot = wide lens` or `close-up = telephoto` as fixed rules.
 
 Perspective is governed by camera position. Lens choice changes angle of view and often causes the camera to be repositioned for the desired framing; do not claim that changing focal length alone changes perspective when camera position stays fixed. In a final CUT, choose one focal length rather than an unresolved range.
 
@@ -173,7 +186,7 @@ Fast movement creates visual inertia. If the viewer's gaze exits toward one edge
 
 - Choose the primary shot size from the content: facial or hand detail usually needs tighter framing; full-body movement, staging, and geography usually need more space.
 - Avoid accidental same-size, same-position cuts between different subjects that make one body appear to transform into another. Change angle, background, scale, focal position, or add a motivated bridge.
-- Gradual tightening can increase pressure and gradual loosening can release or close a beat. Reserve the tightest and loosest images for the primary story moments, then connect them as needed.
+- Gradual tightening can increase pressure and gradual loosening can release or close a beat. Reserve the tightest and loosest images for the primary story moments; add connective coverage only for an unresolved information, viewpoint, geography, continuity, or rhythm gap.
 - Do not treat alternating loose/tight framing as automatically wrong. Character-aligned viewpoint, inserts, reactions, paragraph breaks, and deliberate emphasis can justify it.
 - Shot size is one rhythm variable alongside movement, angle, sound, performance, and edit order; do not optimize it in isolation.
 
@@ -193,10 +206,10 @@ For each CUT, write:
 - trigger for movement
 - route, speed, and interaction with people or props
 - end position and body orientation
-- hand/action continuity when relevant
+- hand/action continuity when a hand, prop, contact, or unfinished action crosses the CUT boundary
 - visible performance change
 
-Replace abstract emotion with playable evidence. Use `start state -> trigger -> visible behavior -> end state`, such as a hand stopping over a key, a gaze refusing the signature, breath catching before a reply, or posture reclaiming space.
+Use `dialogue-performance-and-sync.md` for the authoritative performance chain and dialogue doctor. This file only translates the approved performance into camera-readable blocking. Do not invent a second emotion vocabulary or independently rewrite dialogue here.
 
 Do not overload a CUT with several independent actions. If a video model would have to invent which action matters, split the CUT.
 
@@ -209,11 +222,31 @@ One `CUT` is one uninterrupted camera segment between edits. A continuous pan, d
 - dominant subject/action
 - information task
 - independent insert or reaction
-- visual state that requires a separate generation prompt
 
 Every cut needs a reason. Common motivations include action match, eyeline answer, reaction, reveal, concealment, rhythm change, dialogue power shift, sound cue, graphic match, or deliberate contrast.
 
 Cut on story and perception changes rather than punctuation. Expand a key beat into multiple CUTs only when added detail, viewpoint, action, or reaction increases meaning. Merge or delete coverage that merely repeats known information.
+
+A separate model prompt does not create a CUT. Use `timing-and-generation-units.md` to package one or more editorial CUTs into a `GEN` production unit. CUT boundaries express edits; GEN boundaries express model cold starts, production limits, asset/state compatibility, and review handoffs.
+
+## Transition Phase
+
+Design transitions only after event, performance, viewpoint, and continuity facts are stable. Use one primary mechanism per transition; one supporting sound bridge is acceptable.
+
+Record:
+
+`story function -> source image/action phase -> cut point -> destination image/action phase -> continuity variable`
+
+- Both sides of an action match must have independently valid start and end states.
+- The cut point must occur after every action and audible word assigned to the
+  current CUT. If sound intentionally crosses the edit, label the split or
+  overlap and map the remaining audio to the destination CUT. A transition
+  field may not cut before the CUT's final listed line or action and then leave
+  that content unmapped.
+- Do not suspend an incomplete action across a long story gap merely to create a graphic match.
+- Do not invent a prop, passerby, foreground wipe, or camera flourish solely to hide the edit.
+- A cross-time or cross-space transition must clarify the new state on arrival. Use a separate transition GEN only when the transition itself is the production unit's main task.
+- Memory, recognition, and association need a mechanism that matches the character's awareness; a random foreground wipe is not a substitute for causality.
 
 ## Information Control
 
@@ -233,9 +266,9 @@ For each CUT, include a compact visual-facts paragraph that can seed an image/vi
 - state visual-focus start/end positions and dominant motion vector
 - state lighting/time/weather and continuity anchors
 - describe the visible emotional performance
-- state the start frame and end frame when motion is important
+- state the start image/state, chronological action, and end image/state when motion is important
 
-For dialogue, include only the words audible during that CUT. If one screenplay line spans several CUTs, the ordered CUT fragments must concatenate to the unchanged screenplay line. Identify speaker, on-screen/off-screen/voice-over status, and lip-sync subject.
+For dialogue, use the exact derived fragment format in `dialogue-performance-and-sync.md`. Include only words audible during the CUT and never rewrite a locked line from the storyboard surface.
 
 Do not mix alternative options in a final CUT. Do not write `同上`, `按剧情`, `自由发挥`, or hidden psychology. Resolve the decision.
 
@@ -264,6 +297,9 @@ Strong: `先让观众停在她迟迟不落笔的手上，再切对方回避的�
 - Can the scene task be named in one sentence?
 - Are the key images more prominent than routine information?
 - Does every CUT change story, emotion, knowledge, rhythm, or continuity state?
+- Is every literal POV legal, visibly triggered, and free of unavailable knowledge?
+- Does any consequential harmful choice receive an objective result image when accountability would otherwise be obscured?
+- Does every transition state one mechanism and a valid source/cut/destination phase handoff?
 - Are lens, position, framing, and focus physically coherent?
 - Can actors execute the blocking without guessing?
 - Can an AI video model identify one dominant action and stable subject per CUT?

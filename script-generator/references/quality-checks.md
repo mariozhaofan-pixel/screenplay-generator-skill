@@ -1,148 +1,213 @@
 # Quality Checks
 
-Run this internally before final output. Show diagnostic reasoning only when the user explicitly asks for a self-check or doctor report.
+Run this internally before delivery. This file owns acceptance only. It does not redefine the methods or schemas owned by the other references. Show diagnostic reasoning only when the user requests a doctor report; otherwise keep the detailed report in a sidecar.
 
-## Contents
+## 1. Active Modes and Authorities
 
-- Story, character, opponent, pressure, and payoff
-- Visual writing, global style prompts, and screenplay-storyboard synchronization
-- Camera, space, blocking, and AI-video executability
-- Dialogue, short-form behavior, contamination, continuity, and research
-- Production feasibility and silent-runtime validation
+- The current brief's mandatory premise, character objectives, relationships, events, exclusions, and deliverables are preserved; a polished substitute premise is a hard failure.
+- Deterministic brief anchors in the delivery contract are present, and semantic review confirms that synonyms or surface mentions did not conceal a premise-level substitution.
+- New output contains exactly one canonical `timing_mode` declaration and one
+  `active_modules` declaration; both exactly match the current delivery contract
+  and trigger table. `当前模式` and `时长模式` are legacy input labels, not new
+  output fields.
+- Revision, production dialogue lock, GEN mapping, Asset/SCN locking, short-series behavior, and research modules are active only when triggered.
+- The complete screenplay is the story and dialogue authority.
+- `storyboard-output.md` is the only output-schema authority.
+- The source canon path, parent version, source hash, locked invariants, explicit deletions, and explicit additions are recorded when revision mode is active.
 
-## Story Engine
+## 2. Event Authenticity
 
-- The protagonist has a visible goal.
-- The obstacle actively blocks that goal.
-- The episode has escalation, not repetition.
-- The ending changes the situation or reveals a sharper truth.
-- The decisive result follows from this protagonist's choice, value, expertise, relationship, or flaw; a generic replacement would not reach it automatically.
-- Major choices have a visible cost or consequence appropriate to the genre.
+- Every key event passed the gate in `event-authenticity-and-callbacks.md` before dialogue polishing.
+- The relationship or plot change follows from a visible choice and response rather than an arbitrary accident, forced misunderstanding, humiliating malfunction, proxy rescue, or third-party explanation.
+- Removing the coincidence does not collapse the relationship logic.
+- Props carrying plot weight are necessary, action-changing, and cannot be
+  replaced by a character choice with equal causal clarity and fewer arbitrary
+  assumptions.
+- Every decisive clue has an origin, insertion/availability, custody/access,
+  first visible setup, reveal trigger, permitted inference, changed choice, and
+  payoff. No character speaks author-only knowledge.
+- Hidden or sealed objects have a credible physical insertion, identification,
+  and access chain; the target is selected by a visible rule before opening.
+- Repeated events have distinct identities, later meaning changes through action, and callbacks are not mere repeated wording or object display.
+- The ending remains understandable in a silent/no-title pass before any theme card appears.
 
-## Character and Advantage
+## 3. Story, Character, and Strategy
 
-- A stated trait is proven by behavior under pressure.
-- A mask, contrast, scar, prop, or habit changes action or relationship rather than serving as decoration.
-- Important allies retain their own objective, competence, boundary, and ability to disagree.
-- When an advantage/power/system is present, its applicable access, limit, cost/debt, counterplay, and visible consequence are clear enough for the story; at least one structural constraint and one consequence are meaningful.
-- Randomness changes risk or available options but does not provide the decisive unearned solution.
-- A hidden motive or sympathetic wound reframes conduct without erasing harm or accountability.
+- The protagonist has a visible objective, an active obstacle, escalation, a costly choice, and an altered ending state.
+- The decisive result depends on this character's values, history, expertise, relationship, or flaw rather than a generic replacement.
+- Important allies retain objectives, competence, boundaries, and the ability to disagree.
+- Any power, access, system, or strategic advantage has applicable limits, counterplay, and consequences.
+- Capable opposing sides act from available knowledge and update after new information.
+- Payoff answers the story's central pressure and shows an aftermath.
 
-## Opponent and Strategy
+## 4. Dialogue and Performance
 
-- Use this section only when the brief contains a meaningful opposing force or competing plans; do not add either by default.
-- The opposing force has one clear primary function rather than every antagonist archetype at once.
-- A goal-driven opponent chooses credible actions from available information, resources, constraints, and values.
-- The opponent does not rely on gratuitous provocation, serial weak attacks, forgotten resources, impossible knowledge, or repeated failed tactics without adaptation.
-- A disaster/pressure force follows stable signals, behavior, and limits even when its motive is unknowable.
-- Strategic reversals use clues, expertise, props, relationships, or resources established before the reveal.
-- Each capable side updates its plan after receiving new information.
-- A worldview defeat is demonstrated by events and consequences, not won by an unsupported speech.
+- Every key line has a playable language action and changes the other person's action, knowledge, leverage, or relationship state.
+- Shared information is not unnaturally recited; high-context speech may use omission, interruption, self-correction, short clauses, and unfinished syntax without becoming unclear.
+- A cold read does not force an actor to rewrite the line to say it naturally.
+- Directives, conditions, questions, and bargains occur before and visibly trigger their results; no line arrives after compliance merely to explain what just happened.
+- Key speech and silent reactions contain a readable start state, trigger, vocal/breath behavior for audible speech or breathing, one primary physical or eyeline action, and an end state.
+- Emotion labels are not used as a substitute for playable behavior; crying and recovery are written as a process.
+- In production-lock mode, screenplay authority, ordered CUT fragments, and the complete dialogue-lock table match exactly in category, role, text, punctuation, order, source mode, lip-sync subject, and CUT/fragment mapping.
+- `D-*`, `LYR-*`, `CARD-*`, and `TXT-*` are classified separately; lyrics or screen cards are never counted as plot dialogue.
 
-## Pressure and Payoff
+## 5. Global Visual Grammar
 
-- Pressure comes from causal restrictions rather than repeated arbitrary humiliation.
-- The decisive countermove attacks the mechanism supporting the pressure, not only its visible symptom.
-- The release is proportional to the genre, accumulated cost, and audience promise; spectacle, cruelty, domination, or moral judgment are not defaults.
-- The aftermath shows the new order, debt, wound, relationship, or future pressure created by the win.
+- Every screenplay delivery contains one screenplay-specific `整体影像风格` prompt and one `统一运镜风格` prompt.
+- The two prompts are compatible, visibly actionable, and derived from the current screenplay rather than an old example.
+- Per-CUT photography instantiates the global grammar without pasting it repeatedly.
+- Timing contracts, media timecodes, and frame data do not leak into the global style prompts.
 
-## Visual Writing
+## 6. Screenplay, CUT, and Schema Closure
 
-- No hidden psychological narration.
-- No dialogue that only explains backstory.
-- Actions, props, framing, and sound carry subtext.
-- The first shot is not generic exposition.
-- Each scene has one stated dramatic task, meaningful change, audience alignment, and information hierarchy before camera coverage is chosen.
-- Key images receive more visual weight than routine entrances, exits, or connective movement.
-- The sequence separately verifies what happened, what was selected for the viewer, and what a first-time viewer is likely to notice and retain.
+- The complete screenplay precedes the storyboard unless the user requested another artifact order.
+- Every Scene/Beat maps to at least one CUT; every CUT cites existing Scene/Beat IDs.
+- New output uses the exact canonical 14-field sequence in `storyboard-output.md`.
+- A historical 12-field input is accepted only in declared compatibility mode and is reported as legacy; it is never emitted as the default.
+- A historical 13-field input is upgraded by adding the viewpoint field without merging another field.
+- CUT IDs are unique, consecutive, and reference-closed.
+- No required action, line, reveal, setup/payoff, or emotional turn disappears during shot conversion.
+- No CUT invents a story fact absent from the screenplay, approved event ledger, or registered continuity state.
+- Every scene represented by CUTs has one literal `【SNN 场景导演图】` whose 13
+  fields match the output owner exactly and are nonempty.
+- Each CUT transition occurs after its final listed action and audible text, or
+  explicitly maps continuing audio/action into the destination CUT.
 
-## Global Visual Grammar
+## 7. Timing and GEN
 
-- Every delivered screenplay is immediately followed by exactly one `整体影像风格` prompt and one `统一运镜风格` prompt, including screenplay-only requests.
-- Both prompts are specific to the current script's era, genre, locations, characters, emotional design, key images, platform, and production limits.
-- The image prompt resolves medium/texture, palette/exposure, lighting, atmosphere/materials, face/skin treatment, and only necessary recurring visual locks into one compatible system.
-- The camera prompt resolves viewpoint, camera-character relationship, movement families, stillness/movement balance, composition, height/angle and lens tendencies, focus, blocking coordination, visual-focus handoff, and project-specific avoidances.
-- The prompts contain visible decisions rather than generic praise words, mutually incompatible aesthetics, or every camera technique at once.
-- No era, filmmaker, named work, palette, lighting motif, atmosphere, character, prop, or camera ban has leaked from an unrelated example or prior task.
-- Per-CUT camera facts follow the global grammar; any deviation is motivated, and the global paragraphs are not repeated inside each CUT.
-- The style block contains no runtime, duration, timecode, or timing budget.
+### `silent-default`
 
-## Screenplay-Storyboard Sync
+- The delivery contains no runtime, seconds, timecodes, frame numbers, timing budgets, or duration arithmetic.
+- CUT/GEN structure follows story and production logic, not a duration formula.
 
-- The complete screenplay appears before the detailed storyboard unless the user requested a different artifact.
-- Every screenplay scene and beat maps to one or more CUTs; every CUT cites one scene/beat ID.
-- Dialogue and visible outcomes are identical across screenplay and CUT versions.
-- If a line spans CUTs, the ordered audible fragments concatenate to the screenplay line without duplication, omission, or paraphrase; speaker, on/off-screen status, and lip-sync subject are explicit.
-- No screenplay scene, beat, CUT, synchronization row, or self-check exposes a duration, timestamp, timecode, or duration sum.
-- No required action, line, reveal, prop setup/payoff, or emotional turn disappears during shot conversion.
-- No CUT invents a new plot fact that is absent from the screenplay or approved scene plan.
+### `contract-budget`
 
-## Camera and Spatial Logic
+- The user's explicit total, upper/lower bounds, and GEN limit are restated as production-plan constraints.
+- Only the requested total and scene/sequence/GEN budget surfaces contain numeric timing; CUT fields do not gain mechanical seconds.
+- Decimal arithmetic closes to the declared total or permitted range, and every explicit GEN ceiling is satisfied.
+- Every budget row includes the D-ID load, natural table-read or conservative read/act estimate, non-overlappable actions, permitted overlaps, cold-start/reaction reserve, and PASS/FAIL result.
+- Dialogue and action load is feasible within each planned unit; arithmetic-only compliance fails.
+- Planned values are not described as measured final runtime.
 
-- Every CUT specifies shot size, 35mm-equivalent focal length, camera distance/height/angle, composition, movement, and focus plan.
-- Every final CUT selects one focal length rather than leaving a range or alternative.
-- Lens choices are tied to sensor convention, camera position, angle of view, perspective, background, and story intent; focal length is not used as a substitute for framing.
-- The scene map fixes geography, axis, eyelines, screen direction, entrances/exits, and offscreen space.
-- Multi-character beats identify the active pair/group and bridge any axis change; composition does not imply an unintended alliance.
-- Axis crossings or direction reversals have a visible reset or a deliberate disorientation/reversal purpose.
-- Camera movement reveals, follows, reframes, or changes pressure; it is not decorative drift.
-- The target image and relationship justify camera position rather than the other way around.
-- Primary shots are indispensable target images derived from scene purpose; they are not automatically the widest safety master, and added coverage has a stated function.
-- Horizon/eye-height, vanishing direction, relative scale, and character height remain spatially coherent across connected images unless a motivated viewpoint change explains the shift.
-- Each CUT has one primary visual focus, and the viewer's focus is preserved or deliberately redirected across the edit.
-- Each CUT records visual-focus start/end positions and dominant subject/camera motion vectors; fast-motion handoffs account for gaze inertia.
-- Priority information remains visually legible, and any hold, acceleration, interruption, or release is described qualitatively rather than with duration values.
-- Shot-size progression supports content and rhythm; same-size identity pops and unmotivated loose/tight oscillation are repaired without banning motivated POV, inserts, or emphasis.
-- Composition builds depth from story-relevant planes, surfaces, overlap, scale, focus, and parallax rather than unrelated decorative clutter.
+### `media-frame-lock`
 
-## Blocking, Emotion, and Director Intent
+- Source media exists or is otherwise verifiable, and duration/frame/timebase values are measured rather than guessed.
+- Timecode, frame, waveform, and phase data appear only on affected edit surfaces.
+- Planned and measured values are clearly distinguished.
 
-- Each CUT names characters, starting positions, facing/eyelines, movement trigger, route, prop interaction, and end positions.
-- Emotion is expressed as playable visible behavior with a start state, trigger, and end state.
-- Director intent states what the viewer should notice, know, anticipate, or feel and why this camera/edit decision delivers it.
-- Reactions, inserts, and additional coverage change interpretation or emphasis rather than padding the shot count.
+### GEN closure
 
-## AI-Video Executability
+- CUT and GEN IDs are distinct; `SEG` appears only as a normalized input alias.
+- Every required CUT belongs to the intended GEN map without accidental gaps or duplicate assignment.
+- Each narrative GEN has trigger, choice/action, visible response, and a new end state.
+- Each GEN's opening CUT contains its own visible trigger, and its IN state fully declares positions, hands/props, story/UI state, Asset/SCN facts, and causal context without pixel inheritance.
+- Supporting and transition GENs state an indispensable purpose and valid IN/OUT handoff.
+- GEN boundaries reflect cold starts, explicit limits, incompatible state/assets, causality, or review needs, not one prompt per CUT.
+- Exact screen text, UI animation, signature order, warning/permission sequence, and other causal display states resolve to controlled Asset/post layers rather than untrusted organic generation.
 
-- Each CUT contains one dominant visual action and one coherent camera segment.
-- Character names replace ambiguous pronouns; left/right and foreground/midground/background relations are explicit.
-- Important props, wardrobe, lighting, weather, and screen direction have start/end continuity states.
-- Motion-heavy CUTs state start frame, action chronology, and end frame.
-- Final CUTs contain resolved choices, not alternatives, `同上`, `按剧情`, `自由发挥`, or hidden psychology.
+## 8. Viewpoint, Responsibility, and Transitions
 
-## Short-Video Performance
+- Every CUT declares `模式 / 主人 / 人物在场 / 观众当前可知 / 进入触发 / 退出触发` as explicit key-value entries.
+- Literal POV owners are present or demonstrably viewing/remembering the represented media.
+- Subjective views reveal no unavailable facts and begin only after a visible trigger.
+- Objective geography or responsibility is established before subjective immersion when clarity or accountability requires it.
+- A consequential harmful line or choice receives an objective result image when otherwise the edit would hide responsibility.
+- Every designed transition names one primary mechanism and valid source phase, cut point, destination phase, and continuity variable.
+- Action matches have independently valid states on both sides; no decorative prop, wipe, or incomplete long-gap action was invented to force the transition.
 
-- The opening image or action establishes an immediate watchable disturbance before exposition.
-- No dead air before the first conflict.
-- At least three gold lines if the user requested high quote density.
-- Subtitles are short enough to read.
-- BGM and SFX have event-relative triggers tied to actions, lines, reveals, or edits, not timestamps.
+## 9. Camera, Blocking, and AI Executability
 
-## Style Contamination
+- Every CUT specifies one focal length, shot size, camera position/distance/height/angle, composition, movement, and focus plan.
+- Axis, eyelines, screen direction, geography, foreground/background relations, and character scale remain coherent or have a visible motivated reset.
+- Each CUT has one dominant visual action, one primary focus, a readable start state, chronological action, and end state.
+- Actor blocking states positions, trigger, route, interaction, eyeline, and end orientation without an action menu.
+- Director intent explains the viewer effect and information handoff rather than repeating the action.
+- No final CUT contains alternatives, `同上`, `按剧情`, `自由发挥`, ambiguous pronouns, or hidden psychology.
 
-- The output does not inherit unrelated prior examples, tests, character families, dialects, nickname rules, songs, or catchphrase density.
-- Single-character nicknames are used only when the user explicitly requests them.
-- Dialect or regional slang appears only when requested and is not the joke by itself.
-- Catchphrase density is strengthened only when requested; otherwise dialogue remains genre-appropriate.
+## 10. Canon Revision and Residue
 
-## Continuity
+- Preflight passed before writing; source and output are different, the source hash is unchanged, and the output version was unused.
+- The impact matrix covers every direct and transitive surface named in `revision-canon-and-impact.md`.
+- ID remaps, if any, are declared and propagated globally.
+- Exact/regex residue scans report zero forbidden old dialogue, actions, props, scenes, transitions, terminology, continuity facts, and deprecated paths.
+- An independent semantic review finds no renamed or paraphrased version of a deleted event.
+- Deleted terms are not reintroduced into the final canon by a self-check note.
+- Affected downstream production is paused until the new canon passes and is explicitly re-baselined.
 
-- Character names, nicknames, relationships, and status are consistent.
-- Recurring jokes do not contradict established behavior.
-- Seeds/callbacks are registered when the current brief establishes them.
-- A next-episode hook appears only for a series/episodic brief or explicit request and follows naturally from this episode.
+## 11. Asset and Scene-Master Closure
 
-## Research Integrity
+- Every active Asset-ID resolves to one authority for its character period or object state.
+- Pending `AUTHORIZED-ASSET` entries lock no unsupported geometry or function;
+  a visual recognition asset is separated from a controlled functional prop
+  when the story requires precise physical behavior.
+- No asset is simultaneously declared fixed/unchanged and moved, removed,
+  opened, or relocated without an explicit state transition.
+- Local paths marked as locally verifiable exist; deprecated paths have zero active-document hits.
+- Every CUT and GEN resolves to approved Asset/SCN IDs.
+- Each continuous event resolves to one SCN-ID unless the screenplay visibly moves to another registered space.
+- A scene master locks geography without being confused with a photographic master shot.
+- No undeclared second studio, backstage area, monitoring area, or substitute location was invented.
 
-- Current or niche claims were checked when needed.
-- Open-source project logic is summarized and attributed.
-- Named works are abstracted into traits, not copied.
-- Any source links used in the response are included.
-- Named songs include licensing/non-commercial/original-alternative handling when relevant.
-- Lyric excerpts, if any, are very short and directly relevant; no full lyrics or substitute lyrics are output.
+## 12. Format, Style, Research, and Music
 
-## Production Feasibility
+- Short-form hooks, catchphrase density, dialect, subtitles, and series tags appear only when the current brief triggers them.
+- No old test's plot, names, family pattern, nickname rule, dialect, catchphrases, song, image style, or camera ban leaked into this delivery.
+- Every active section label, table column, CUT/GEN field label, mode line, and
+  registry header matches the literal output schema; no spacing, slash, Markdown
+  decoration, translation, or synonym changed a machine token.
+- Current, niche, factual, dialect, meme, named-work, music-rights, and open-source claims were researched when they could change the creative or production result.
+- A style-only named-work request uses `trait-reference`; an explicit recreation uses `exact-dependent`. Neither path silently replaces the user's requested reference level.
+- Every named third-party clip, character/likeness, costume, prop, artwork, logo, dialogue, lyric, song, recording, or protected asset declares exactly one `rights_status`.
+- `trait-reference` and `exact-dependent` are not conflated. Every `exact-dependent` item has a `RIGHTS-ID`, source-state token, affected Scene/CUT/GEN/Asset range, and authorization fill/replace action.
+- Missing exact media uses `AUTHORIZED-ASSET`; current user materials use `USER-SUPPLIED-ASSET`; neither is mislabeled as a rights-verified source.
+- Rights status did not reject, truncate, or replace a requested screenplay/CUT/GEN/asset dependency. The complete creative and production delivery appears first.
+- `版权出处与使用声明` is the final section, identifies known sources without guessing, and gives the user retain/authorize/replace choices.
+- Planned named third-party use defaults to `rights-asserted`; it is never reported as independently verified. `rights-unverified` is used when the current brief does not assert a clearance plan; `rights-verified` names the inspected evidence and production-relevant scope.
+- Public-source research records version, section/scene, speaker or lip-sync
+  owner, line/turn/phrase/bar counts, capacity, entry/exit events, and dramatic
+  function without treating public accessibility as permission.
+- Missing lyrics, dialogue, subtitles, or screenplay text were not retrieved,
+  reconstructed, or completed from model memory, snippets, search results, or
+  an unverified public page.
+- Missing lyrics use a full `AUTHORIZED-LYRIC` slot with section/phrase length
+  basis, entry/exit event, lip-sync owner, and downstream fill map. Missing
+  protected dialogue uses a full `AUTHORIZED-DIALOGUE` slot with speaker turns,
+  line/character capacity, action or lip-sync mapping, entry/exit event, and
+  downstream fill location. Both serialize through the active
+  `【受保护文本填入表】`; the screenplay is not shortened around either slot.
+- Direct-fill text slots use stable line/phrase/bar IDs and bind each structural
+  unit to action, sound, lip-sync, and downstream placement. A
+  `structure-pending` slot is honest but does not pass zero-rearrangement
+  readiness.
+- `AUTHORIZED-DIALOGUE` is not introduced for an original story fact unless the
+  brief or inspected source establishes an external protected dependency.
+- Exact protected text appears only as `USER-SUPPLIED-TEXT` or
+  `RIGHTS-VERIFIED-SOURCE`; no fixed character cap is imposed on those sources,
+  but use remains within the current task and recorded scope.
+- Non-commercial use is not treated as automatic clearance; commercial released-recording plans address composition/sync and master rights or record the unresolved gap.
+- Every named song includes a licensing path and an original or appropriately licensed alternative.
+- Music, lyrics, source paths, and theme cards marked as post-production layers do not leak into downstream video-generation prompts.
 
-- Locations, props, cast size, and effects are achievable for the implied production level.
-- Every CUT has focal length, blocking, camera execution, edit motivation, and director intent, with no duration or timecode field.
-- Any runtime suggestion remains a hidden internal density check and is never exposed as an exact prediction or arithmetic contract.
+## Release Gate
+
+For production-lock or revision deliveries, run:
+
+1. `scripts/preflight_revision.py` before writing when revision mode applies.
+2. `scripts/validate_delivery.py` after writing with the delivery contract; revision contracts point `revision.impact_report_path` to the sidecar impact/residue report.
+3. A semantic blind review for event naturalness, spoken dialogue, performance, viewpoint, and independent GEN usability.
+
+Hard errors block release. Warnings require review but may pass when documented. Validators report only; they never rewrite canon.
+When a named third-party dependency is present, the optional `rights` contract
+checks that the final notice exists, is last, uses the declared state, and
+contains required dependency/source tokens. Semantic review still decides
+whether every actual clip, image, costume, prop, text, song, and recording was
+covered.
+
+The post-delivery command is:
+
+```text
+python scripts/validate_delivery.py --document DELIVERY.md \
+  --contract CONTRACT.json --json-out VALIDATION.json
+```
+
+The portable contract shape is documented by `scripts/schemas/delivery-contract.schema.json`. Exit `0` passes, `1` reports constraint failures, and `2` reports parse failures.

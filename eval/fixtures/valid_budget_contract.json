@@ -1,0 +1,57 @@
+{
+  "assets": {
+    "allow_multi_master_scenes": [],
+    "required": true,
+    "scene_master_required": true,
+    "verify_local_paths": false
+  },
+  "dialogue": {
+    "mode": "production-lock"
+  },
+  "directing": {
+    "require_literal_labels": true,
+    "scene_maps_required": true
+  },
+  "events": {
+    "callbacks_required": true
+  },
+  "gen": {
+    "require_full_cut_coverage": true,
+    "required": true
+  },
+  "revision": {
+    "deprecated_paths": [
+      "X:\\deprecated\\old.png"
+    ],
+    "enabled": false,
+    "forbidden_exact": [
+      "旧桥段残留标记"
+    ],
+    "forbidden_regex": []
+  },
+  "schema": {
+    "allow_legacy_12": false,
+    "legacy_input": false
+  },
+  "schema_version": 1,
+  "style": {
+    "forbidden_exact": [
+      "旧测试风格标记"
+    ]
+  },
+  "timing": {
+    "gen_limit": "8",
+    "mode": "contract-budget",
+    "total": "12",
+    "total_kind": "exact"
+  },
+  "viewpoint": {
+    "responsibility_requirements": [
+      {
+        "after": "D-002",
+        "cut": "CUT-003",
+        "mode": "客观"
+      }
+    ]
+  }
+}
