@@ -1,0 +1,65 @@
+name: Release
+
+# Pushing a tag like viral-screenwriter-v13-2026-10-28 checks the book line numbers,
+# builds and verifies the local and Feishu editions, and publishes a GitHub Release
+# with both ZIPs and SHA256 files. The tag must match tools/edition_rules.json.
+
+on:
+  push:
+    tags:
+      - "viral-screenwriter-v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check tag against edition rules
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          python - <<'PY'
+          import json, os
+          rules = json.load(open("tools/edition_rules.json", encoding="utf-8"))
+          expected = f"viral-screenwriter-{rules['version']}-{rules['date']}"
+          if os.environ["TAG"] != expected:
+              raise SystemExit(f"tag {os.environ['TAG']} does not match edition rules {expected}")
+          PY
+
+      - name: Check book line numbers
+        run: python -X utf8 -B tools/test_book_line_numbers.py
+
+      - name: Build and verify both editions
+        run: python -X utf8 -B tools/test_editions.py --output-dir "$RUNNER_TEMP/dist"
+
+      - name: Checksums
+        working-directory: ${{ runner.temp }}/dist
+        run: for f in *.zip; do sha256sum "$f" > "$f.sha256"; done
+
+      - name: Release notes from changelog
+        run: |
+          awk 'BEGIN{n=0} /^## /{n++} n==1{print}' docs/CHANGELOG.md > "$RUNNER_TEMP/notes.md"
+          {
+            echo ""
+            echo "安装：本地版与飞书版二选一，解压后把 viral-screenwriter/ 放进技能目录。"
+          } >> "$RUNNER_TEMP/notes.md"
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "$RUNNER_TEMP"/dist/*.zip "$RUNNER_TEMP"/dist/*.sha256 --clobber
+          else
+            gh release create "$TAG" "$RUNNER_TEMP"/dist/*.zip "$RUNNER_TEMP"/dist/*.sha256 \
+              --title "viral-screenwriter $TAG" --notes-file "$RUNNER_TEMP/notes.md"
+          fi

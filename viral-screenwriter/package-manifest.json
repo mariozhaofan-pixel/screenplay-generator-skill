@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "package": "viral-screenwriter",
-  "edition": "2026-10-22-v12-feishu",
+  "edition": "2026-10-28-v13-feishu",
   "path_base": "package-root",
   "files": [
     {
       "path": "INSTALL.md",
-      "bytes": 9256,
-      "sha256": "95dea405d3acc0492c20b8039ccb4612d52fce5f762d893fbd5636707280ae71"
+      "bytes": 9322,
+      "sha256": "e0372c242d75ba8252e3b68d27e6d29d288848ecb385c0e2ea3b990a78227c9f"
     },
     {
       "path": "SKILL.md",
@@ -351,8 +351,8 @@
     },
     {
       "path": "references/character-theme.md",
-      "bytes": 6034,
-      "sha256": "27676e0067ac5b7b692cc9273c52dbe236084cf4482594d0780d7be3f20caaaf"
+      "bytes": 6966,
+      "sha256": "9bada22f12d4810a9a1b2fa8b3b1a8bd68084032a8736b2c4ee5805abca18c59"
     },
     {
       "path": "references/coffee-break-method.md",
@@ -536,8 +536,8 @@
     },
     {
       "path": "references/story-scene-structure.md",
-      "bytes": 7964,
-      "sha256": "f0bca5bd91c38db5b3fb5b6d59cb95c53ba0dd02a8390ccd226f9da4ac914403"
+      "bytes": 9474,
+      "sha256": "96b695ac687d9e74c9375a29aee853367c9926b2eedaee043d784860b53ad634"
     },
     {
       "path": "references/storyboard-contract.md",
@@ -593,7 +593,7 @@
   ],
   "entrypoint": "SKILL.md",
   "layout": "compact-full-text-v1",
-  "packaging_revision": "2026-10-22-v12-dual-editions",
+  "packaging_revision": "2026-10-28-v13-dual-editions",
   "compact_source": {
     "archive": "viral-screenwriter_v11_2026-10-22_claude-upload.zip",
     "sha256": "bf77087d140de66e76895b05dabc15d4164b127395657fefaac57801a0793d59"
@@ -602,7 +602,7 @@
     "archive": "viral-screenwriter_v11_2026-10-22_b11-fix_claude-upload.zip",
     "sha256": "ccb3b1dc372ba9e0dba49269bd3962e9f0fd8af89c9988b998853cfb247e2323"
   },
-  "release_version": "v12",
-  "release_date": "2026-10-22",
+  "release_version": "v13",
+  "release_date": "2026-10-28",
   "workspace_edition": "feishu"
 }
