@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "package": "viral-screenwriter",
-  "edition": "2026-10-28-v13-feishu",
+  "edition": "2026-11-02-v14-feishu",
   "path_base": "package-root",
   "files": [
     {
       "path": "INSTALL.md",
-      "bytes": 9322,
-      "sha256": "e0372c242d75ba8252e3b68d27e6d29d288848ecb385c0e2ea3b990a78227c9f"
+      "bytes": 9397,
+      "sha256": "7068d171fcd8b2cbf664d4a27a38d7f9b591c26d8d4ab92df19a0edf49bb4e5d"
     },
     {
       "path": "SKILL.md",
@@ -351,8 +351,8 @@
     },
     {
       "path": "references/character-theme.md",
-      "bytes": 6966,
-      "sha256": "9bada22f12d4810a9a1b2fa8b3b1a8bd68084032a8736b2c4ee5805abca18c59"
+      "bytes": 7638,
+      "sha256": "e3e970389dbceaff2763c477a160d61ede6bbcd38f29181c330fbdb94430024e"
     },
     {
       "path": "references/coffee-break-method.md",
@@ -526,13 +526,13 @@
     },
     {
       "path": "references/shortform-craft.md",
-      "bytes": 9637,
-      "sha256": "33e71e99fe9cb022d355ecb44173cc746376f03ae7af0ce658fdc354033eb1db"
+      "bytes": 10156,
+      "sha256": "b1e2eee9c986c4393f57f2243e078f08d479573df64a8f0bdf58ca4c42159819"
     },
     {
       "path": "references/soul-questioning.md",
-      "bytes": 3606,
-      "sha256": "f24f82ebca28140dccf1ecb5615b785cf645800506b0515b339f8bd1341ed7b7"
+      "bytes": 3930,
+      "sha256": "76a597960d7ed34004bb459d4295ae15bb2b2e8ea44fbc0bac2555438da5e414"
     },
     {
       "path": "references/story-scene-structure.md",
@@ -593,7 +593,7 @@
   ],
   "entrypoint": "SKILL.md",
   "layout": "compact-full-text-v1",
-  "packaging_revision": "2026-10-28-v13-dual-editions",
+  "packaging_revision": "2026-11-02-v14-dual-editions",
   "compact_source": {
     "archive": "viral-screenwriter_v11_2026-10-22_claude-upload.zip",
     "sha256": "bf77087d140de66e76895b05dabc15d4164b127395657fefaac57801a0793d59"
@@ -602,7 +602,7 @@
     "archive": "viral-screenwriter_v11_2026-10-22_b11-fix_claude-upload.zip",
     "sha256": "ccb3b1dc372ba9e0dba49269bd3962e9f0fd8af89c9988b998853cfb247e2323"
   },
-  "release_version": "v13",
-  "release_date": "2026-10-28",
+  "release_version": "v14",
+  "release_date": "2026-11-02",
   "workspace_edition": "feishu"
 }
