@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "package": "viral-screenwriter",
-  "edition": "2026-11-02-v14-feishu",
+  "edition": "2026-11-03-v15-feishu",
   "path_base": "package-root",
   "files": [
     {
       "path": "INSTALL.md",
-      "bytes": 9397,
-      "sha256": "7068d171fcd8b2cbf664d4a27a38d7f9b591c26d8d4ab92df19a0edf49bb4e5d"
+      "bytes": 9439,
+      "sha256": "69476af098355a1aec2a2b4ef41de18d75187ff6252e6ab98e369275d192fa98"
     },
     {
       "path": "SKILL.md",
@@ -351,8 +351,8 @@
     },
     {
       "path": "references/character-theme.md",
-      "bytes": 7638,
-      "sha256": "e3e970389dbceaff2763c477a160d61ede6bbcd38f29181c330fbdb94430024e"
+      "bytes": 7957,
+      "sha256": "4b71665fa1ab1edb0e4483871d413b3ce3cfc640679180cec364d288f5c64ba4"
     },
     {
       "path": "references/coffee-break-method.md",
@@ -526,8 +526,8 @@
     },
     {
       "path": "references/shortform-craft.md",
-      "bytes": 10156,
-      "sha256": "b1e2eee9c986c4393f57f2243e078f08d479573df64a8f0bdf58ca4c42159819"
+      "bytes": 10712,
+      "sha256": "71f142404fa762fab6d46e1d44eea6a18cc0f0108947bfa0e26447f1dc8d30be"
     },
     {
       "path": "references/soul-questioning.md",
@@ -593,7 +593,7 @@
   ],
   "entrypoint": "SKILL.md",
   "layout": "compact-full-text-v1",
-  "packaging_revision": "2026-11-02-v14-dual-editions",
+  "packaging_revision": "2026-11-03-v15-dual-editions",
   "compact_source": {
     "archive": "viral-screenwriter_v11_2026-10-22_claude-upload.zip",
     "sha256": "bf77087d140de66e76895b05dabc15d4164b127395657fefaac57801a0793d59"
@@ -602,7 +602,7 @@
     "archive": "viral-screenwriter_v11_2026-10-22_b11-fix_claude-upload.zip",
     "sha256": "ccb3b1dc372ba9e0dba49269bd3962e9f0fd8af89c9988b998853cfb247e2323"
   },
-  "release_version": "v14",
-  "release_date": "2026-11-02",
+  "release_version": "v15",
+  "release_date": "2026-11-03",
   "workspace_edition": "feishu"
 }
