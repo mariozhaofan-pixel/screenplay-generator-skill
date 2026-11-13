@@ -3,6 +3,7 @@ name: Release
 # Pushing a tag like viral-screenwriter-v13-2026-10-28 checks the book line numbers,
 # builds and verifies the local and Feishu editions, and publishes a GitHub Release
 # with both ZIPs and SHA256 files. The tag must match tools/edition_rules.json.
+# Release notes are a fixed short line; the detailed record stays in docs/CHANGELOG.md.
 
 on:
   push:
@@ -44,13 +45,12 @@ jobs:
         working-directory: ${{ runner.temp }}/dist
         run: for f in *.zip; do sha256sum "$f" > "$f.sha256"; done
 
-      - name: Release notes from changelog
+      - name: Release notes
         run: |
-          awk 'BEGIN{n=0} /^## /{n++} n==1{print}' docs/CHANGELOG.md > "$RUNNER_TEMP/notes.md"
           {
-            echo ""
-            echo "安装：本地版与飞书版二选一，解压后把 viral-screenwriter/ 放进技能目录。"
-          } >> "$RUNNER_TEMP/notes.md"
+            echo "本次更新："
+            echo "- 解决了一些已知问题。"
+          } > "$RUNNER_TEMP/notes.md"
 
       - name: Publish release
         env:
