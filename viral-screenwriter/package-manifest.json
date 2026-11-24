@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
   "package": "viral-screenwriter",
-  "edition": "2026-11-03-v15-feishu",
+  "edition": "2026-11-24-v16-feishu",
   "path_base": "package-root",
   "files": [
     {
       "path": "INSTALL.md",
-      "bytes": 9439,
-      "sha256": "69476af098355a1aec2a2b4ef41de18d75187ff6252e6ab98e369275d192fa98"
+      "bytes": 9535,
+      "sha256": "096bbb1e4fe34ea3db45791094806e2057ff46514a571e760a8cedbea32583d2"
     },
     {
       "path": "SKILL.md",
-      "bytes": 13373,
-      "sha256": "69524885c9b6a8305f6bdd900423c685a295a3a3e6f18688cb02111ac9ef1cb1"
+      "bytes": 13702,
+      "sha256": "501e79fb5054cb68f99896fe0f62fcb06bd07031fec8758dd46fbfdb0f84c865"
     },
     {
       "path": "agents/openai.yaml",
@@ -341,8 +341,8 @@
     },
     {
       "path": "references/book-library.md",
-      "bytes": 11523,
-      "sha256": "483b4bdb2dba7bd30feff71f4bc005918ba8c6e7a7de3b500b2ceb502bc1af86"
+      "bytes": 11592,
+      "sha256": "5b480bab0843fa4a0f5e3cb4f15e27c191697feb1100f2a7c27675cc00d5f920"
     },
     {
       "path": "references/challenge-variety.md",
@@ -435,9 +435,14 @@
       "sha256": "65755ae37ab79afcdf2e7f42be06ce9e2e7ea8a03996d8d40c7d49dd9499e9bf"
     },
     {
+      "path": "references/dialogue-naturalness.md",
+      "bytes": 8506,
+      "sha256": "9d53a8552cf2b30e93b33bb2f619c570de53fbfcb937360aac5ba54d9ec77ac9"
+    },
+    {
       "path": "references/dialogue-performance.md",
-      "bytes": 7553,
-      "sha256": "2319a3d05455587f1d3113556a49b9d28e8d13d07f97bebedf2fb3474bc63040"
+      "bytes": 7806,
+      "sha256": "81083a8b6646876ccb836cfac10491eadb76d1d19586dce1d83774cefaf87811"
     },
     {
       "path": "references/director-handoff.md",
@@ -593,7 +598,7 @@
   ],
   "entrypoint": "SKILL.md",
   "layout": "compact-full-text-v1",
-  "packaging_revision": "2026-11-03-v15-dual-editions",
+  "packaging_revision": "2026-11-24-v16-dual-editions",
   "compact_source": {
     "archive": "viral-screenwriter_v11_2026-10-22_claude-upload.zip",
     "sha256": "bf77087d140de66e76895b05dabc15d4164b127395657fefaac57801a0793d59"
@@ -602,7 +607,7 @@
     "archive": "viral-screenwriter_v11_2026-10-22_b11-fix_claude-upload.zip",
     "sha256": "ccb3b1dc372ba9e0dba49269bd3962e9f0fd8af89c9988b998853cfb247e2323"
   },
-  "release_version": "v15",
-  "release_date": "2026-11-03",
+  "release_version": "v16",
+  "release_date": "2026-11-24",
   "workspace_edition": "feishu"
 }

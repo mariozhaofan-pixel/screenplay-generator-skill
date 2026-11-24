@@ -46,6 +46,7 @@ description: 爆款编剧skill（飞书版）。以《The Coffee Break Screenwri
 | 补梗概、人物小传、后续节奏等项目材料 | [项目资料方法](references/project-delivery.md)及[格式规范](references/screenplay-format.md)，只交所需栏目 |
 | 继续、换一批、选择某方案或要求试稿 | 读当前接续与[共创协议](references/soul-questioning.md)，推进约定产物；试稿授权不等于最终定稿 |
 | 只改剧本某场、动作或对白 | 下方“剧本窄修”；不加载完整分镜合同 |
+| 台词有“AI味”、太书面、不像人话，或要让对白更自然 | [台词自然化](references/dialogue-naturalness.md)；先定情境，只改命中的句子，已有稿按“剧本窄修”的范围 |
 | 修改已有分镜 | [分镜窄修](references/storyboard-revision.md)，按原稿字段与证据类型操作 |
 | 剧本/小说保真转分镜，或明确原创分镜 | [原创与文本转换分镜规范](references/storyboard-contract.md)、[视觉编排](references/visual-storyboarding.md)；原文事实、顺序和逐字对白保持 |
 | 视频、链接、片名或公开剧本的分析/借鉴/改编 | [对标研究](references/reference-to-original.md)；根据真实可得资料分析或迁移机制，不自动逐帧反推 |
@@ -69,7 +70,7 @@ description: 爆款编剧skill（飞书版）。以《The Coffee Break Screenwri
 2. **实际做题。** 根据当前缺口读取Coffee Break卡片与必要原文，留下动作链、关系、场景或对白等具体产物；标记已做、沿用、待选择、返修、延后或不适用。可并行练习交子智能体，主代理负责合并。替代工具择用，不强迫短片跑完全书，不凭目录编题或声称“已按方法构思”就算完成。
 3. **只在关键分岔共创。** [共创协议](references/soul-questioning.md)统一管理可选的“灵魂拷问”：先检查方案的行动与后果，再给推荐和有实质差异的备选。用户说“帮我写/给一版/你来定”则在限制内合理暂定并写稿；若明确正在等待某项选择，不能以沉默代选。已选结果直接推进，不重复确认。
 4. **编译人物、场景与对白。** 主方法不足时，从[书库总索引](references/book-library.md)取一项对应补充。短片按[短片创作](references/shortform-craft.md)强化可理解的反差、行动压力与有效密度；安静关系、稳定价值或长镜头按自身形式处理，不强塞牺牲、打脸或连续反转。把练习产物写成完整场景，项目材料同步本稿。
-5. **从实际稿逆向检查。** 按[练习编排](references/exercise-orchestration.md)还原实际节拍，核因果、知情、情绪衔接、伏笔、对白、用户选择及项目材料一致性；不以原计划充当成稿证据。检查可自己或交独立子智能体完成，结果内部使用；只修具体缺口，达到本次目标后保存接续并交付。
+5. **从实际稿逆向检查。** 按[练习编排](references/exercise-orchestration.md)还原实际节拍，核因果、知情、情绪衔接、伏笔、对白、用户选择及项目材料一致性；不以原计划充当成稿证据。对白场按[台词自然化](references/dialogue-naturalness.md)扫一遍并念出来，只改命中的句子。检查可自己或交独立子智能体完成，结果内部使用；只修具体缺口，达到本次目标后保存接续并交付。
 
 ## 事实、来源与工具
 
