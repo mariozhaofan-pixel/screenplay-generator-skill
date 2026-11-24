@@ -43,6 +43,14 @@ def main() -> None:
                 assert hashlib.sha256(archive.read(prefix + name)).hexdigest() == expected
             manifest = json.loads(archive.read(prefix + "package-manifest.json"))
             assert manifest["workspace_edition"] == edition
+            # Release metadata comes from the rules, not from hand edits.
+            assert builder.release_mismatch(manifest, rules, edition) == {}
+            assert manifest["packaging_revision"] == f"{rules['date']}-{rules['version']}-dual-editions"
+            install = archive.read(prefix + "INSTALL.md").decode("utf-8-sig")
+            assert f"版本：{rules['date']} {rules['version']}" in install
+            assert f"版本：{rules['date']} {rules['version']} {builder.EDITION_LABELS[edition]}" in install.splitlines()
+            assert not [name for name in names if builder.is_stray(Path(name).name)
+                        or any(builder.is_stray(part, True) for part in Path(name).parts[:-1])]
         reports[edition] = report
     with tempfile.TemporaryDirectory(prefix="screenwriter-edition-tests-") as temporary:
         temporary_root = Path(temporary).resolve()
@@ -85,6 +93,49 @@ def main() -> None:
             reports["unclassified_cloud_prose_rejected"] = True
         else:
             raise AssertionError("Cloud prose leaked into local edition")
+        # Caches, OS and editor junk must stop the build before --refresh can
+        # write them into the manifest or a ZIP.
+        stage = temporary_root / "stray-files"
+        shutil.copytree(root, stage)
+        manifest_before = (stage / "package-manifest.json").read_bytes()
+        (stage / ".DS_Store").write_bytes(b"junk")
+        (stage / "scripts/__pycache__").mkdir()
+        (stage / "scripts/__pycache__/check_environment.cpython-312.pyc").write_bytes(b"junk")
+        (stage / "references/.book-library.md.swp").write_bytes(b"junk")
+        (stage / "references/book-library.md~").write_bytes(b"junk")
+        for action in (builder.source_files, builder.refresh_metadata):
+            try:
+                action(stage)
+            except builder.PackageError as exc:
+                for name in (".DS_Store", "scripts/__pycache__", "references/.book-library.md.swp",
+                             "references/book-library.md~"):
+                    assert name in str(exc), (name, str(exc))
+            else:
+                raise AssertionError("Stray files were accepted")
+        assert (stage / "package-manifest.json").read_bytes() == manifest_before
+        reports["stray_files_rejected"] = True
+        # A version bump that forgets the INSTALL version line must not build.
+        stage = temporary_root / "stale-version-line"
+        shutil.copytree(root, stage)
+        install = stage / "INSTALL.md"
+        install.write_bytes(install.read_bytes().replace(
+            f"版本：{rules['date']} {rules['version']} ".encode("utf-8"), "版本：2000-01-01 v0 ".encode("utf-8"), 1))
+        for edition in ("local", "feishu"):
+            try:
+                builder.check_install_version(stage, rules, edition)
+            except builder.PackageError as exc:
+                assert "version line" in str(exc)
+            else:
+                raise AssertionError("Stale INSTALL version line was accepted")
+        reports["stale_install_version_rejected"] = True
+        # A stale manifest revision is reported, and --refresh stamps it from the rules.
+        manifest = builder.read_object(stage / "package-manifest.json")
+        manifest["packaging_revision"] = "2000-01-01-v0-dual-editions"
+        assert set(builder.release_mismatch(manifest, rules, "feishu")) == {"packaging_revision"}
+        builder.write_object(stage / "package-manifest.json", manifest)
+        builder.stamp_release(stage, rules, "feishu")
+        assert builder.release_mismatch(builder.read_object(stage / "package-manifest.json"), rules, "feishu") == {}
+        reports["stale_packaging_revision_restamped"] = True
     assert book_hashes == {p.relative_to(root).as_posix(): builder.digest(p)
                           for p in builder.source_files(root) if p.is_relative_to(root / "assets/books")}
     reports.update(ok=True, book_library_unchanged=True)

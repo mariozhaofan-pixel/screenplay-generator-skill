@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "package": "viral-screenwriter",
-  "edition": "2026-11-25-v17-feishu",
+  "edition": "2026-11-25-v18-feishu",
   "path_base": "package-root",
   "files": [
     {
       "path": "INSTALL.md",
-      "bytes": 9763,
-      "sha256": "09ccbc04992ef5f8cbee1ecb17ab812cddcd2ee97b80b21ecefa5a5cb6adac7f"
+      "bytes": 9083,
+      "sha256": "103ed5dbb5eabd19ec4dcda002b75be15d60d33852f88589c9194ea20bf06453"
     },
     {
       "path": "SKILL.md",
@@ -266,8 +266,8 @@
     },
     {
       "path": "assets/feishu-base-blueprint.json",
-      "bytes": 11894,
-      "sha256": "b5bde6986bfdf53e12f04980bb454a5c5bff8b4f5ebe8ff0c9a94b9930620a69"
+      "bytes": 11966,
+      "sha256": "dfe8127aecedade4adb0022229b27a77dd10abebdf25a8ac93c8a2420dc6d805"
     },
     {
       "path": "assets/templates/delivery-reference-text.md",
@@ -281,53 +281,53 @@
     },
     {
       "path": "modules/video-reverse-storyboard/MODULE.md",
-      "bytes": 9765,
-      "sha256": "b536648c7a7d5e92df0065ba65e36daa879415361144dedf7010301ae3c2e997"
+      "bytes": 9945,
+      "sha256": "d94fc0c3913f481bf99bbc4e9cfd97ed09136faac2343ce833ae41705e77f799"
     },
     {
       "path": "modules/video-reverse-storyboard/RUNTIME.md",
-      "bytes": 3470,
-      "sha256": "cf5788bbb2f21ef6724422f338489d86e38e19945158a45c41164252e6acad8d"
+      "bytes": 4621,
+      "sha256": "f33bc4f260f35eb02c012da6ed47ba551b16ef612d87c42e691d1db775920843"
     },
     {
       "path": "modules/video-reverse-storyboard/references/analysis-protocol.md",
-      "bytes": 9861,
-      "sha256": "2570225ed15ad6c56970d52171359fad06b91124559ea182a085f3989e743dff"
+      "bytes": 10661,
+      "sha256": "767d5dc455fe6c05c2ebe51a29ee31e1d9bd0454b9e73c1a8b1db7d921f35c89"
     },
     {
       "path": "modules/video-reverse-storyboard/references/gag-context-research.md",
-      "bytes": 9438,
-      "sha256": "c6c169b9782ed28e4632c7155c8b922c49f621f572dd3eac64937610295ea940"
+      "bytes": 9459,
+      "sha256": "6c34d2d06f31053d9c785ca040b9e14d55c43f3521dbe14bda6a5f43758f0da9"
     },
     {
       "path": "modules/video-reverse-storyboard/references/storyboard-contract.md",
-      "bytes": 7882,
-      "sha256": "4b958af87521ab6185c3c3f5bd17a3274da01cfc1912bd6f0eee892e03614a04"
+      "bytes": 6928,
+      "sha256": "760718a68b4bf993ef8930d4718bfb965d9d28e301961ec25f1655aef2899247"
     },
     {
       "path": "modules/video-reverse-storyboard/scripts/extract_subtitles_ocr.py",
-      "bytes": 26280,
-      "sha256": "9553f3d2908d7e75c62952ea37d4011be1e26c12abdad8dd4d1c1e1b589b335d"
+      "bytes": 29962,
+      "sha256": "6d15ae4d54e0aeff15a3db96343c619140ca25059ab88ca12a5a8fe5d57f1f1b"
     },
     {
       "path": "modules/video-reverse-storyboard/scripts/prepare_video_evidence.py",
-      "bytes": 66014,
-      "sha256": "08dc58c7ecd52c2bfca14de850539593cd3204fe21b317b2d5508af48b278648"
+      "bytes": 92411,
+      "sha256": "25f2c0c686e40e9e370470a262934a9bf4b00f27d2f35a6885b252dd06e4efed"
     },
     {
       "path": "modules/video-reverse-storyboard/scripts/transcribe_audio.py",
-      "bytes": 11180,
-      "sha256": "e2856c0f7083909864fb0bb255dcdcd411cfdc7d8e85278433e806c8be87ed05"
+      "bytes": 12295,
+      "sha256": "2204a42bae6fade151aa20f05077a781f763ef23e963fec8c3318b6d23b2662c"
     },
     {
       "path": "modules/video-reverse-storyboard/scripts/validate_storyboard.py",
-      "bytes": 28236,
-      "sha256": "dcaced960bcd9e56921410537eb3ee4069039c790cc045c7ec146123894f34d7"
+      "bytes": 31827,
+      "sha256": "455959dc27d210f4d3fdd557aa059284eb80e496435882fd3bf940be9f645ff7"
     },
     {
       "path": "references/FEISHU_BASE_LAYOUT.md",
-      "bytes": 12358,
-      "sha256": "16d887723e89c213f30d15f652b6a14cb6cc1b6207536361e4a79256f79f68fc"
+      "bytes": 12513,
+      "sha256": "47783be741b8831180f8c4ad253a425fbe379b326b9dd15c85911466942f217a"
     },
     {
       "path": "references/FEISHU_SCREENPLAY_SYNC.md",
@@ -336,18 +336,18 @@
     },
     {
       "path": "references/FEISHU_WORKSPACE_SETUP.md",
-      "bytes": 13303,
-      "sha256": "dea7b4c1f4af23a7a9860f3fb6cc1b9380ec302e45e259a0a0bd4001784f8ca6"
+      "bytes": 13491,
+      "sha256": "0119406a0712c18a203b5fd0764455d0d1ae67e739fdc19c05eaa5c8c7afacd7"
     },
     {
       "path": "references/book-library.md",
-      "bytes": 11592,
-      "sha256": "5b480bab0843fa4a0f5e3cb4f15e27c191697feb1100f2a7c27675cc00d5f920"
+      "bytes": 11834,
+      "sha256": "63ad0e62e66b4163deac7e105239b48a1dd80268301f7a5c30520aac0150c487"
     },
     {
       "path": "references/challenge-variety.md",
-      "bytes": 8549,
-      "sha256": "e2c335777196341356d6d71ac6f895e0c91451dd44ae6177127029a965abe1c0"
+      "bytes": 7969,
+      "sha256": "52fe5e66422308c0a6f9776fa90421d0b63347f353e27d53aae80049ac9b1978"
     },
     {
       "path": "references/character-theme.md",
@@ -356,8 +356,8 @@
     },
     {
       "path": "references/coffee-break-method.md",
-      "bytes": 6085,
-      "sha256": "02ae53dd7a0a03fe8de16c917c3c266a37eafd8d1c5003c0e83e1b5fe2bf26db"
+      "bytes": 4932,
+      "sha256": "128b7620f687aecfd08b9c566da858606ef7ed7391eb24f6d3776c91441ebae3"
     },
     {
       "path": "references/coffee-break/appendix-notes.md",
@@ -376,8 +376,8 @@
     },
     {
       "path": "references/coffee-break/ch03-outline.md",
-      "bytes": 11833,
-      "sha256": "e11baa782e5fd25073c5ae7d70525edf047297847a8391e23640ad339153b8a4"
+      "bytes": 11779,
+      "sha256": "51ae7e232b6001f2dedf5552a0dd1ecf1c6d258ea594e9c5e46a9905cab161db"
     },
     {
       "path": "references/coffee-break/ch04-character.md",
@@ -386,8 +386,8 @@
     },
     {
       "path": "references/coffee-break/ch05-draft.md",
-      "bytes": 7763,
-      "sha256": "b05945eff33e04185e040f8011826f215ff6e51c94f325d91ff9e6be1f4b0165"
+      "bytes": 7736,
+      "sha256": "3c40cadbd18be796000527675352d54f3e62baf4590521def646ff8a4d606840"
     },
     {
       "path": "references/coffee-break/ch06-dialogue.md",
@@ -411,13 +411,13 @@
     },
     {
       "path": "references/coffee-break/ch10-pitch.md",
-      "bytes": 8225,
-      "sha256": "43831cb185a8f48c32848bad821522dece689d4801e13af258ae17873f6110dd"
+      "bytes": 8278,
+      "sha256": "bd8ef2cdfcf989053423ce5a02d60ac6355dddfb3ffe892bc5b4167cefa7706f"
     },
     {
       "path": "references/coffee-break/ch11-opportunities.md",
-      "bytes": 3178,
-      "sha256": "ff71bec1bca20597232eb0ed647cb9b8b0e930eb8a7cf5e4114fb79e22c8b516"
+      "bytes": 3228,
+      "sha256": "aeb5f84085af78fbb317a65db6aa78728fe90ed7aff829c5dfc918ecf4facfe0"
     },
     {
       "path": "references/coffee-break/coverage.json",
@@ -426,23 +426,23 @@
     },
     {
       "path": "references/coffee-break/index.md",
-      "bytes": 3583,
-      "sha256": "09c5782271e6e540977418e99c9c5beed63bbca3a0c56f3d4f9f211e63574476"
+      "bytes": 3076,
+      "sha256": "343b2d07ff6226562319c600cd33f90d4bdbc45507eea148b7c2fcce90d7a0e8"
     },
     {
       "path": "references/daily-evolution.md",
-      "bytes": 5567,
-      "sha256": "65755ae37ab79afcdf2e7f42be06ce9e2e7ea8a03996d8d40c7d49dd9499e9bf"
+      "bytes": 5225,
+      "sha256": "a0a5995d3ce908ba55ab77e7c7f2765865eee0321ba9d2020144cf8ae0562094"
     },
     {
       "path": "references/dialogue-naturalness.md",
-      "bytes": 9244,
-      "sha256": "83b6e1c6825224b30a5bc2a402938bfba644b93b8cc46ba59c90f7aaeb64bc47"
+      "bytes": 9251,
+      "sha256": "a85db02606d02f72bc24fe157df6077a51cd866bba2919fbb509720cab9f4d7b"
     },
     {
       "path": "references/dialogue-performance.md",
-      "bytes": 7806,
-      "sha256": "81083a8b6646876ccb836cfac10491eadb76d1d19586dce1d83774cefaf87811"
+      "bytes": 7768,
+      "sha256": "a8c5d48ecd3c1d7e1283cb565d9033397f17cb10bddc2312a63d6b280ab6f39d"
     },
     {
       "path": "references/director-handoff.md",
@@ -451,8 +451,8 @@
     },
     {
       "path": "references/dynamic-viral-rules.md",
-      "bytes": 7619,
-      "sha256": "56fe5ed6b38d068bbcdf5bcda0a6bc3b6b7cee6e1425af56212013753efa9c11"
+      "bytes": 7219,
+      "sha256": "399a7d83d526f89e5457de01e07c747c0cbfdf47a3b5695f2fd1e5fe1292b782"
     },
     {
       "path": "references/evolution/history/20260907T011043p0800-v0000-to-v0001.json",
@@ -476,13 +476,13 @@
     },
     {
       "path": "references/exercise-orchestration.md",
-      "bytes": 10071,
-      "sha256": "91a7a362ef4511a005567eff522c8576165d55846a8f2334bedd0a6038fd7063"
+      "bytes": 10050,
+      "sha256": "f439eac7dd37b62a17ae50610bd0da8ae6c07df90e5bcc6d309b4dc9b3f2244d"
     },
     {
       "path": "references/feishu-workspace.md",
-      "bytes": 5140,
-      "sha256": "08e3fdbcda31a77372aa3a88ed3fe2001af886ff7f891406d3ac0780e258eb24"
+      "bytes": 5211,
+      "sha256": "1f7655bded40e0a61e5646fcac7a4910ae13b5deb8e359e91e8582699a84d5b0"
     },
     {
       "path": "references/library/index.md",
@@ -501,8 +501,8 @@
     },
     {
       "path": "references/library/supplement-walter.md",
-      "bytes": 10589,
-      "sha256": "ea5eccdd2456da5e05ab40d8739c2aec8b5e93916c001361c05b38e0160d3631"
+      "bytes": 10652,
+      "sha256": "0667800050aded9b76b82fca657a9b29944e86f82946b18a8a90ae462d8978c9"
     },
     {
       "path": "references/media-tools.md",
@@ -511,43 +511,43 @@
     },
     {
       "path": "references/project-delivery.md",
-      "bytes": 8483,
-      "sha256": "21feea21d1e7753a0a7a1c243db5532ca8fe153d7c3a3c20e100d51d01acb4e5"
+      "bytes": 8481,
+      "sha256": "462394c34b403ccd77a3f526e4bd318bb45e09bf53800eb4c0070ad687f0f84e"
     },
     {
       "path": "references/reference-to-original.md",
-      "bytes": 12350,
-      "sha256": "b3e441bd4de2d1b7a93e3531aa9655efc1c257a7bddd99cf40c6e3dd0cda96c5"
+      "bytes": 12448,
+      "sha256": "9eacc7cf0fed088cec7362ffa09e679120ccf14f6a7dc443857dc0ae18b8cb1f"
     },
     {
       "path": "references/research-protocol.md",
-      "bytes": 12619,
-      "sha256": "2e6bbaeceed36f5e8538d16db887c6626fa71430bfb60ef1fdee1f538a5dd3c2"
+      "bytes": 12539,
+      "sha256": "c35e3cc5be699526b1adfffc6bdcefe1bdca5b25b517b481504b0bd918c370fc"
     },
     {
       "path": "references/screenplay-format.md",
-      "bytes": 10924,
-      "sha256": "a2e5d3d72b511a5a554f85f855b165496c17be4b4740233ddfcd07a4e9fe0b9f"
+      "bytes": 10777,
+      "sha256": "24bb4577973148e211ba4bedd48c94e17aa0f160cea6420c4cf515fb2483dc74"
     },
     {
       "path": "references/shortform-craft.md",
-      "bytes": 10712,
-      "sha256": "71f142404fa762fab6d46e1d44eea6a18cc0f0108947bfa0e26447f1dc8d30be"
+      "bytes": 10697,
+      "sha256": "769ebe0d16cb051c262d3d188a0a9b1aef3173c16d1501fabfa80683172df3c7"
     },
     {
       "path": "references/soul-questioning.md",
-      "bytes": 3930,
-      "sha256": "76a597960d7ed34004bb459d4295ae15bb2b2e8ea44fbc0bac2555438da5e414"
+      "bytes": 3960,
+      "sha256": "c2654040d92d05344fd45b856a43382cf7cd08db286cd708dc48537bd7b78f30"
     },
     {
       "path": "references/story-scene-structure.md",
-      "bytes": 9474,
-      "sha256": "96b695ac687d9e74c9375a29aee853367c9926b2eedaee043d784860b53ad634"
+      "bytes": 9371,
+      "sha256": "05836882e4f8afc984509cb8c07d494896846140047685c9fb2835e6d51a193c"
     },
     {
       "path": "references/storyboard-contract.md",
-      "bytes": 14475,
-      "sha256": "dfeaf4da575a33bc96a79e1dcc3a99ec2cd02e8ff387769a2a37b2d7396e3b7e"
+      "bytes": 14654,
+      "sha256": "4e6d1b9ad81dfbef42a522bec0c55c89e7ef1a2cf9447171214aa2325230dc88"
     },
     {
       "path": "references/storyboard-revision.md",
@@ -556,28 +556,28 @@
     },
     {
       "path": "references/viral-rules.md",
-      "bytes": 18144,
-      "sha256": "ea2c9097ab38f46f2b1b715e3eb2f15fa30f0d9cb6af805863791fb685f99736"
+      "bytes": 17389,
+      "sha256": "5e5c3d46df3698257ecfbd610af860871b8297fb2502d2773fed46058f54b461"
     },
     {
       "path": "references/visual-storyboarding.md",
-      "bytes": 14309,
-      "sha256": "ba7bce0f29ad3d4f711e429724e5389867ac58edb4c5aa74d2b5bcd553d101fa"
+      "bytes": 14113,
+      "sha256": "86495569aac1119a6f9836860b7ef637a7b07b72e2493051d0b65dd8b0caac3e"
     },
     {
       "path": "scripts/check_environment.py",
-      "bytes": 1802,
-      "sha256": "5eda08211141a59b7ff292308e8fc77485cc0e6740fecc4875b685469b5338b7"
+      "bytes": 2284,
+      "sha256": "b6825c2dabcedfed88bec2547de25b0b5c7bcc69922f93955f4d3e32639bfd66"
     },
     {
       "path": "scripts/plan_feishu_sync.py",
-      "bytes": 16469,
-      "sha256": "9de01cb51b457d83f26d1dc1a61e44a1e01dfa62bb7ec70a7e0b5a99d4a7515e"
+      "bytes": 17084,
+      "sha256": "0ac0954624b6f8ebcf8be51da5b88ef9deb058c00d578e8f23dee133f6f62288"
     },
     {
       "path": "scripts/validate_output.py",
-      "bytes": 30898,
-      "sha256": "bdc7eff6bb2df311ac4d5293a3963409bdcb2a336ea19e2dbf62e2e4fde0e1ff"
+      "bytes": 24627,
+      "sha256": "2632a44b827bd6277163022b03db426d0d08105c4756d14f2f59ceb69f2b0a42"
     },
     {
       "path": "scripts/verify_portable.py",
@@ -598,7 +598,7 @@
   ],
   "entrypoint": "SKILL.md",
   "layout": "compact-full-text-v1",
-  "packaging_revision": "2026-11-25-v17-dual-editions",
+  "packaging_revision": "2026-11-25-v18-dual-editions",
   "compact_source": {
     "archive": "viral-screenwriter_v11_2026-10-22_claude-upload.zip",
     "sha256": "bf77087d140de66e76895b05dabc15d4164b127395657fefaac57801a0793d59"
@@ -607,7 +607,7 @@
     "archive": "viral-screenwriter_v11_2026-10-22_b11-fix_claude-upload.zip",
     "sha256": "ccb3b1dc372ba9e0dba49269bd3962e9f0fd8af89c9988b998853cfb247e2323"
   },
-  "release_version": "v17",
+  "release_version": "v18",
   "release_date": "2026-11-25",
   "workspace_edition": "feishu"
 }

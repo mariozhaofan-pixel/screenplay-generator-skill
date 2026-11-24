@@ -1,3 +1,10 @@
+"""Validate an explicitly requested 11-field storyboard (final) or a field delta (revision).
+
+final needs --expected-duration (alias --expected-end): the batch's real total
+seconds. There is no default duration. Exit codes follow the module validator
+validate_storyboard.py: 0 PASS, 1 FAIL (including an unreadable input file),
+2 usage error or an unwritable report.
+"""
 from __future__ import annotations
 
 import argparse
@@ -10,7 +17,6 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-DEFAULT_DURATION = 300.0
 ID_PATTERN = r"(?:CUT|S)\d{3,}[A-Z]*"
 TIME_RE = re.compile(r"^(?P<h>\d{2}):(?P<m>[0-5]\d):(?P<s>[0-5]\d)\.(?P<ms>\d{3})$")
 SHOT_RE = re.compile(
@@ -53,27 +59,6 @@ GENERIC_SHOT_ROLES = {"推进剧情", "过渡", "转场", "镜头", "冲突", "�
 PLACEHOLDER_RE = re.compile(r"(?:TBD|TODO|待补|待生成|待完善|按需填写|<[^>\n]{1,40}>)", re.I)
 CHALLENGE_FIELDS = ("观看焦点与目标", "挑战契约", "升级与最终兑现")
 CHALLENGE_CONTRACT_LABELS = ("参赛", "机制", "限制", "出局", "胜负奖励", "失败后果")
-OPTION_RE = re.compile(
-    r"^[ \t]*(?:-[ \t]*)?(?:"
-    r"\*\*选项[ \t]*[A-Z0-9一二三四①②③④][^\r\n]*?\*\*[ \t]*(?:[：:][ \t]*)?"
-    r"|选项[ \t]*[A-Z0-9一二三四①②③④][^\r\n：:]*[：:][ \t]*"
-    r")(?P<body>[^\r\n]*)\r?$",
-    re.MULTILINE,
-)
-DECISION_STATES = ("明确锁定", "当前采用", "探索候选", "尚未决定")
-DECISION_PERMISSION_FIELDS = ("允许改动范围", "用户授权代定")
-STAGE_CONFIRMATION_FIELDS = (
-    "当前阶段",
-    "本次审阅产物",
-    "沿用与锁定",
-    "新增待确认",
-    "本次确认范围",
-    "下一交付",
-    "允许改动范围",
-)
-FULL_STORYBOARD_HEADING_RE = re.compile(
-    r"^##[ \t]+(?:逐镜分镜|完整分镜(?:主稿)?)[ \t]*\r?$", re.MULTILINE
-)
 # Chinese prose may touch an ID; only ASCII identifier characters delimit it.
 HOOK_ID_RE = re.compile(r"(?<![A-Za-z0-9_])H\d{2,3}(?![A-Za-z0-9_])")
 GENERIC_CRITICAL_VALUES = {
@@ -212,47 +197,6 @@ def challenge_direction_section(text: str, heading: str) -> str:
     return section
 
 
-def has_full_storyboard(text: str) -> bool:
-    """Return whether a recognized complete-storyboard heading is present."""
-    return bool(FULL_STORYBOARD_HEADING_RE.search(visible_markdown(text)))
-
-
-def decision_ledger_errors(text: str) -> list[str]:
-    """Validate the current four-state ledger without breaking legacy ledgers."""
-    errors: list[str] = []
-    state_matches = {
-        state: re.search(
-            rf"^-[ \t]*{re.escape(state)}：[ \t]*(?P<value>[^\r\n]+)\r?$",
-            text,
-            re.MULTILINE,
-        )
-        for state in DECISION_STATES
-    }
-    present_states = [state for state, match in state_matches.items() if match]
-    if present_states:
-        for state, match in state_matches.items():
-            if match is None or not match.group("value").strip():
-                errors.append(f"decision ledger missing concrete state: {state}")
-        permission_present = False
-        for field in DECISION_PERMISSION_FIELDS:
-            match = re.search(
-                rf"^-[ \t]*{re.escape(field)}：[ \t]*(?P<value>[^\r\n]+)\r?$",
-                text,
-                re.MULTILINE,
-            )
-            if match and match.group("value").strip():
-                permission_present = True
-        if not permission_present:
-            errors.append("decision ledger missing independent permission line: 允许改动范围/用户授权代定")
-        return errors
-
-    # Older accepted transcripts use 已锁/待定. Keep them readable and valid.
-    for state in ("已锁", "待定"):
-        if not re.search(rf"^-[ \t]*{state}：[ \t]*\S.+$", text, re.MULTILINE):
-            errors.append(f"decision ledger missing state: {state}")
-    return errors
-
-
 def validate_challenge_fields(section: str) -> list[str]:
     errors: list[str] = []
     values: dict[str, str] = {}
@@ -277,98 +221,6 @@ def validate_challenge_fields(section: str) -> list[str]:
     return errors
 
 
-def validate_question(text: str) -> tuple[list[str], list[str], dict[str, object]]:
-    """Check choice-question structure, not source use or creative maturity."""
-    errors: list[str] = []
-    warnings: list[str] = []
-    visible = visible_markdown(text)
-    option_lines = [match.group("body") for match in OPTION_RE.finditer(visible)]
-    option_count = len(option_lines)
-    if option_count < 2:
-        errors.append(f"need at least 2 answer options; found {option_count}")
-    if has_full_storyboard(text):
-        errors.append("question mode must not contain a full storyboard")
-    unresolved_re = re.compile(
-        r"^[ \t]*(?:-[ \t]*)?(?:\*\*)?(?:还没想清楚的一个问题|还需决定|当前未决问题|先选一个关键方向)"
-        r"[：:](?:\*\*)?[ \t]*(?P<body>[^\r\n]*)\r?$",
-        re.MULTILINE,
-    )
-    unresolved = list(unresolved_re.finditer(visible))
-    if len(unresolved) != 1:
-        errors.append("each turn must isolate exactly one unresolved question")
-
-    def unfinished(value: str) -> bool:
-        normalized = normalized_value(value).strip("*`_ ")
-        return (
-            not re.search(r"\w", normalized)
-            or normalized in GENERIC_CRITICAL_VALUES
-            or bool(PLACEHOLDER_RE.search(value))
-        )
-
-    if any(unfinished(match.group("body")) for match in unresolved):
-        errors.append("current unresolved question is empty or unfinished")
-    for index, body in enumerate(option_lines, 1):
-        if unfinished(body):
-            errors.append(f"option {index} is empty or unfinished")
-    normalized_options = [normalized_value(body).strip("*`_ ") for body in option_lines]
-    if len(normalized_options) != len(set(normalized_options)):
-        errors.append("two or more direction options are textually identical")
-    if "换一批" not in visible:
-        errors.append("missing way to request another batch of answers: 换一批")
-    if "自定义" not in visible and "组合" not in visible:
-        errors.append("missing way to customize or combine answers: 自定义/组合")
-    metrics: dict[str, object] = {
-        "option_count": option_count,
-        "unresolved_question_count": len(unresolved),
-        "validation_scope": "question/options structure only; not source use, beat checks, or creative maturity",
-    }
-    return errors, warnings, metrics
-
-
-def validate_confirmation(text: str) -> tuple[list[str], list[str], dict[str, object]]:
-    errors: list[str] = []
-    warnings: list[str] = []
-    has_stage_card = bool(re.search(r"^##[ \t]+阶段确认卡[ \t]*\r?$", text, re.MULTILINE))
-    has_direction_card = bool(re.search(r"^##[ \t]+方向确认卡[ \t]*\r?$", text, re.MULTILINE))
-    if not has_stage_card and not has_direction_card:
-        errors.append("missing heading: ## 阶段确认卡 or ## 方向确认卡")
-    actions = ("确认本阶段", "修改一项", "换一批") if has_stage_card else ("确认方向", "修改一项", "换一批")
-    for value in actions:
-        if value not in text:
-            errors.append(f"missing confirmation action: {value}")
-    if has_full_storyboard(text):
-        errors.append("full storyboard appeared before explicit confirmation")
-    if has_stage_card:
-        required = STAGE_CONFIRMATION_FIELDS
-        challenge = challenge_direction_section(text, "阶段确认卡")
-    else:
-        required = (
-            "一句话故事",
-            "开头承诺",
-            "世界规则",
-            "主角欲望",
-            "核心冲突",
-            "不可逆代价",
-            "高潮选择",
-            "结局与评论分歧",
-            "平台/时长/形式",
-            "热点/IP使用边界",
-            "仍由模型代定的次要项",
-        )
-        challenge = challenge_direction_section(text, "方向确认卡")
-        if challenge:
-            required = tuple(value for value in required if value not in ("主角欲望", "不可逆代价", "高潮选择"))
-    if challenge:
-        errors.extend(validate_challenge_fields(challenge))
-    for value in required:
-        match = re.search(rf"^-[ \t]*{re.escape(value)}：[ \t]*(?P<body>\S+.*)$", text, re.MULTILINE)
-        if not match:
-            errors.append(f"confirmation card missing concrete field: {value}")
-        elif PLACEHOLDER_RE.search(match.group("body")):
-            errors.append(f"confirmation card field contains a placeholder: {value}")
-    return errors, warnings, {"card_type": "stage"} if has_stage_card else {}
-
-
 def validate_final(
     text: str,
     expected_duration: float | None,
@@ -377,7 +229,8 @@ def validate_final(
 ) -> tuple[list[str], list[str], dict[str, object]]:
     errors: list[str] = []
     warnings: list[str] = []
-    expected_duration = DEFAULT_DURATION if expected_duration is None else expected_duration
+    if expected_duration is None:
+        return ["expected duration is required: pass the batch's real total seconds"], [], {}
     if not math.isfinite(expected_duration) or expected_duration <= 0:
         return ["expected duration must be finite and positive"], [], {}
     if not math.isfinite(tolerance) or tolerance < 0:
@@ -436,8 +289,6 @@ def validate_final(
                 value = extract_field(shot.body, field)
                 if not value:
                     errors.append(f"{shot.identifier} has empty field: {field}")
-        if "IN=" not in shot.body or "CHANGE=" not in shot.body or "OUT=" not in shot.body:
-            errors.append(f"{shot.identifier} blocking must contain IN/CHANGE/OUT")
         if not shot.role:
             errors.append(f"{shot.identifier} missing hook/beat role")
         elif shot.role in GENERIC_SHOT_ROLES:
@@ -495,7 +346,7 @@ def validate_final(
                 errors.append(
                     f"{kind} between {left.identifier} and {right.identifier}: {gap:+.3f}s"
                 )
-        if expected_duration is not None and abs(shots[-1].end - expected_duration) > tolerance:
+        if abs(shots[-1].end - expected_duration) > tolerance:
             errors.append(
                 f"coverage must end at {expected_duration:.3f}s; found {shots[-1].end:.3f}s"
             )
@@ -661,31 +512,36 @@ def validate_revision(
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Validate a co-creation question, an explicit confirmation card, or an explicitly requested full storyboard/revision.")
+    parser = argparse.ArgumentParser(
+        description="Validate an explicitly requested 11-field storyboard (final) or an authorized field delta (revision).")
     parser.add_argument("input", type=Path)
-    parser.add_argument("--mode", choices=("question", "confirmation", "final", "revision"), required=True)
-    parser.add_argument("--expected-duration", type=float, default=DEFAULT_DURATION)
-    parser.add_argument("--tolerance", type=float, default=0.05)
+    parser.add_argument("--mode", choices=("final", "revision"), required=True)
+    parser.add_argument("--expected-duration", "--expected-end", dest="expected_duration", type=float, default=None,
+                        help="final: the batch's real total seconds; required, no default")
+    parser.add_argument("--tolerance", "--time-tolerance", dest="tolerance", type=float, default=0.05)
     parser.add_argument("--min-shots", type=int, default=None, help="check a visible shot minimum only when explicitly requested; no default density floor")
     parser.add_argument("--baseline", type=Path)
     parser.add_argument("--cuts", nargs="+")
     parser.add_argument("--fields", nargs="+")
-    parser.add_argument("--output", type=Path)
+    parser.add_argument("-o", "--output", type=Path, help="also write the JSON report here; - means standard output only")
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
-    args = build_parser().parse_args(argv)
-    if not args.input.is_file():
-        print(json.dumps({"ok": False, "errors": [f"file not found: {args.input}"]}, ensure_ascii=False))
-        return 2
-    text = args.input.read_text(encoding="utf-8-sig")
-    if args.mode == "question":
-        errors, warnings, metrics = validate_question(text)
-    elif args.mode == "confirmation":
-        errors, warnings, metrics = validate_confirmation(text)
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    if args.mode == "final" and args.expected_duration is None:
+        parser.error("--mode final requires --expected-duration SECONDS (the batch's real total duration)")
+    try:
+        text = args.input.read_text(encoding="utf-8-sig")
+    except (OSError, UnicodeError) as exc:
+        # Like validate_storyboard.py: an unreadable input is a FAIL report (exit 1).
+        text = None
+        errors, warnings, metrics = [f"cannot read input file: {exc}"], [], {}
+    if text is None:
+        pass
     elif args.mode == "revision":
         if args.baseline is None or not args.baseline.is_file():
             errors, warnings, metrics = ["revision requires an existing --baseline file"], [], {}
@@ -709,9 +565,13 @@ def main(argv: list[str] | None = None) -> int:
         "metrics": metrics,
     }
     rendered = json.dumps(report, ensure_ascii=False, indent=2)
-    if args.output:
-        args.output.parent.mkdir(parents=True, exist_ok=True)
-        args.output.write_text(rendered + "\n", encoding="utf-8")
+    if args.output and str(args.output) != "-":
+        try:
+            args.output.parent.mkdir(parents=True, exist_ok=True)
+            args.output.write_text(rendered + "\n", encoding="utf-8", newline="\n")
+        except OSError as exc:
+            print(f"error: cannot write JSON report: {exc}", file=sys.stderr)
+            return 2
     print(rendered)
     return 0 if not errors else 1
 

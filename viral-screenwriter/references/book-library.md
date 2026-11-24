@@ -13,7 +13,8 @@
 
 | 当前需要 | 首选执行卡 | 文字核对与应产出的内容 |
 |---|---|---|
-| 人物设定、小传、出场 | [CB04-01/03/04/05/06/09/12](coffee-break/ch04-character.md) | [第4章](../assets/books/coffee-break/chapters/ch04.md)：能力/缺点、行为原则、细节回馈、首次行动；持续重复标签再选W02/04。 |
+| 一句种子发展成故事 | [CB01-01/02/06/08/09](coffee-break/ch01-story.md) | [第1章](../assets/books/coffee-break/chapters/ch01.md)：主人公、问题、行动与风险，前提、难题、结尾方向与因果走向。 |
+| 人物设定、小传、出场 | [CB04-01/03/04/05/06/09/12](coffee-break/ch04-character.md) | [第4章](../assets/books/coffee-break/chapters/ch04.md)：能力/缺点、行为原则、细节回馈、首次行动；喜剧情境可加CB04-07；持续重复标签再选W02/04。 |
 | 动机、人物关系 | [CB04-02/08/11](coffee-break/ch04-character.md)、[CB05-05/06](coffee-break/ch05-draft.md) | [第4章](../assets/books/coffee-break/chapters/ch04.md)、[第5章](../assets/books/coffee-break/chapters/ch05.md)：合作、冲突及情感后果；“为何在意”不清再选B05-02。 |
 | 因果、反转、揭示与伏笔 | [CB03-02/04/05/12–14](coffee-break/ch03-outline.md)、[CB07-05/07/08](coffee-break/ch07-rewrite.md) | [第3章](../assets/books/coffee-break/chapters/ch03.md)、[第7章](../assets/books/coffee-break/chapters/ch07.md)：前因—选择—后果；12为物件、13为事件、14为台词回馈。硬拐再选B05-06。 |
 | 结构、节奏与收束 | [第2章卡](coffee-break/ch02-structure.md)、[CB03-01/06/07/08](coffee-break/ch03-outline.md) | [第2章](../assets/books/coffee-break/chapters/ch02.md)、[第3章](../assets/books/coffee-break/chapters/ch03.md)：阶段目标、行动、难题与情绪；按规模适配，不强制场数或反转数。 |
@@ -23,7 +24,7 @@
 | 项目五项材料 | [项目资料方法](project-delivery.md)；[CB10-01/02/12](coffee-break/ch10-pitch.md)与人物卡 | [第10章](../assets/books/coffee-break/chapters/ch10.md)：类型、一句话介绍、梗概、小传、后续故事情节节奏；五项组合为Skill编译，与正文共用故事状态。 |
 | 后续故事、分集与阶段节奏 | [CB10-03/04](coffee-break/ch10-pitch.md)、[CB03-01/02/08/12–14](coffee-break/ch03-outline.md) | [第10章](../assets/books/coffee-break/chapters/ch10.md)、[第3章](../assets/books/coffee-break/chapters/ch03.md)：从本批实际终态推下一目标、行动、后果与回馈；未来拟定部分标明，不强造续集或预设总集数。 |
 
-一句种子先用[第1章卡](coffee-break/ch01-story.md)CB01-01/02/06/08/09，核对[第1章文字](../assets/books/coffee-break/chapters/ch01.md)。额外提案/职业事项才开[第10/11章索引](coffee-break/index.md)；联络练习不构成外发授权。
+短片成稿按第5章意图与速写→第6章对白→第8/9章针对性打磨取卡，结合[短片创作](shortform-craft.md)。额外提案/职业事项才开[第10/11章索引](coffee-break/index.md)；联络练习不构成外发授权。
 
 ## 观众体验与项目反馈入口
 

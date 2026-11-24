@@ -25,6 +25,11 @@ Unknown remote scalar/attachment columns (including user videos) are ignored.
 Each local target field and optional role must be unique. Only supplied local
 files are compared. Actual bytes are hashed; a supplied hash is not accepted.
 Baseline fields/files may be partial; omitted entries are not a common baseline.
+A remote cell omitted from the snapshot (empty cells are often not returned)
+equals an empty value: null, "" or []; 0 and false are values. So filling a
+field that is empty in both baseline and remote plans an update, while an
+identity/link field below still needs a new revision row. Pass remote fields
+as returned; do not invent keys for omitted cells.
 
 Output: {kind, sync_key, operations: [{op, record_id?, reason?, fields?,
   missing_fields?, field?, files?, uploads?, attachment_mode?, preserve_local?}]}.
@@ -53,7 +58,7 @@ project field; it does not infer ranges or merge links automatically. Drafts,
 unaccepted feedback and conflicted revisions must not enter this collection.
 Publish confirmed script attachments/manifests before changing this pointer.
 
-Example request (empty local_files is valid):
+Example request (empty local_files is valid; 名称 is 类型_主体_状态_形式或方向_v版本):
 {"kind":"asset","sync_key":"project/P1/asset/A1/revision/v001","snapshot_complete":true,
  "owned_fields":["同步键","名称","图片资产"],
  "desired_fields":{"名称":"角色_林岚_基础_角色板_v001"},
@@ -85,6 +90,7 @@ ATTACHMENTS = {"project": {"总索引md文件"},
                "segment": {"对应段落提示词md文件"},
                "script": {"剧本md文件"}}
 MISSING = object()
+EMPTY_CELL_VALUES = (None, "", [])
 
 
 def require(condition, message):
@@ -93,8 +99,10 @@ def require(condition, message):
 
 
 def same(left, right):
+    """Compare cell values; a cell omitted from a snapshot equals an empty value."""
     if left is MISSING or right is MISSING:
-        return left is right
+        other = right if left is MISSING else left
+        return other is MISSING or other in EMPTY_CELL_VALUES
     return json.dumps(left, sort_keys=True, ensure_ascii=False) == json.dumps(
         right, sort_keys=True, ensure_ascii=False)
 

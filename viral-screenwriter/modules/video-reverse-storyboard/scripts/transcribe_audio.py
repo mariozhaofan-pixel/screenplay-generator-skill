@@ -4,6 +4,10 @@
 The generated transcript is machine evidence for a reverse-storyboard workflow.
 It is deliberately labelled provisional and must not be treated as a verified
 quotation without listening to the source audio.
+
+Existing transcripts are not overwritten unless --overwrite is given.
+Exit codes: 0 transcribed; 2 not run or failed (usage, input, missing package
+or model, existing outputs, transcription error). There is no partial result.
 """
 
 from __future__ import annotations
@@ -23,6 +27,8 @@ PROVISIONAL_NOTICE = (
     "ASR PROVISIONAL：机器转写仅用于定位与初筛；人名、专有名词、同音词、"
     "说话人归属和逐字台词必须回听源音频核验。"
 )
+OUTPUT_FILES = ("transcript_raw.json", "transcript_timed.txt")
+EXIT_OK, EXIT_FATAL = 0, 2
 
 
 def configure_console_utf8() -> None:
@@ -51,7 +57,8 @@ def build_parser() -> argparse.ArgumentParser:
         description=(
             "使用 faster-whisper 转写音频，输出带分段与词级时间戳/置信度的 "
             "transcript_raw.json 和 transcript_timed.txt。"
-        )
+        ),
+        epilog="默认不覆盖已有转写；退出码：0 完成；2 未运行或失败。",
     )
     parser.add_argument("audio", type=Path, help="输入音频或含音轨的媒体文件")
     parser.add_argument("output", type=Path, help="输出目录")
@@ -91,7 +98,17 @@ def build_parser() -> argparse.ArgumentParser:
         default=250,
         help="VAD 判定分段的最短静音时长，毫秒（默认：250）",
     )
+    parser.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="允许替换输出目录中已有的 transcript_raw.json / transcript_timed.txt（默认拒绝）",
+    )
     return parser
+
+
+def existing_outputs(output_dir: Path, names: tuple[str, ...]) -> list[Path]:
+    """Outputs that already exist; they are replaced only with --overwrite."""
+    return [output_dir / name for name in names if (output_dir / name).exists()]
 
 
 def _as_float(value: Any) -> float | None:
@@ -214,6 +231,12 @@ def run(args: argparse.Namespace) -> tuple[Path, Path, int]:
     audio = args.audio.expanduser().resolve()
     if not audio.is_file():
         raise FileNotFoundError(f"输入音频不存在或不是文件：{audio}")
+    output_dir = args.output.expanduser().resolve()
+    existing = existing_outputs(output_dir, OUTPUT_FILES)
+    if existing and not args.overwrite:
+        raise FileExistsError(
+            f"转写输出已存在：{existing[0]}；换新的输出目录，或明确加 --overwrite 替换"
+        )
 
     # Optional dependency is intentionally imported only after CLI parsing so
     # that `--help` remains usable in a lightweight environment.
@@ -224,7 +247,6 @@ def run(args: argparse.Namespace) -> tuple[Path, Path, int]:
             "缺少可选依赖 faster-whisper；请先安装 `pip install faster-whisper`。"
         ) from exc
 
-    output_dir = args.output.expanduser().resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
     model = WhisperModel(
@@ -301,13 +323,13 @@ def main(argv: list[str] | None = None) -> int:
         json_path, text_path, segment_count = run(args)
     except Exception as exc:  # CLI boundary: concise error without hiding --help.
         print(f"error: {exc}", file=sys.stderr)
-        return 1
+        return EXIT_FATAL
 
     print(
         f"{PROVISIONAL_STATUS}: wrote {segment_count} segments to "
         f"{json_path} and {text_path}"
     )
-    return 0
+    return EXIT_OK
 
 
 if __name__ == "__main__":

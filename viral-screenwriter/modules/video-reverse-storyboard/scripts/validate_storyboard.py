@@ -24,6 +24,13 @@ SHOT_HEADING_RE = re.compile(
 FENCE_RE = re.compile(r"^\s{0,3}(?P<marker>`{3,}|~{3,})")
 FIELD_HEADING_RE = re.compile(r"^\s{0,3}#{4,6}\s+(?P<label>.+?)\s*$")
 LABELED_LINE_RE = re.compile(r"^(?P<label>[^:：\n]{1,60})[:：]\s*(?P<value>.*)$")
+LIST_MARKER = r"(?:[-*+]\s+|\d+[.)]\s+)?"
+# `- **声音：** …` or `- **声音**：…`
+BOLD_LABEL_RE = re.compile(
+    rf"^{LIST_MARKER}(?:\*\*|__)(?P<label>[^*_:：\n]{{1,60}}?)\s*"
+    r"(?:[:：]\s*(?:\*\*|__)|(?:\*\*|__)\s*[:：])\s*(?P<value>.*)$"
+)
+PLAIN_LABEL_RE = re.compile(rf"^{LIST_MARKER}(?P<label>[^:：=`*\n]{{1,60}})[:：]\s*(?P<value>.*)$")
 
 TIME_TOKEN = (
     r"(?:\d{1,3}:\d{2}(?::\d{2})?(?:[.,]\d{1,3})?"
@@ -51,10 +58,12 @@ REQUIRED_FIELDS = {
     "editing": "剪辑与节奏",
 }
 
+# V.O. / O.S. only as standalone Latin tokens ("Bossa Nova" is music, not a voice category).
+VOICE_ABBREVIATION = r"(?<![A-Za-z])(?:V\.?\s*O\.?|O\.?\s*S\.?)(?![A-Za-z])"
 DIALOGUE_CATEGORY_RE = re.compile(
     r"(?:回忆现场对白|画内对白|画外对白|同期对白|现场对白|人物对白|"
     r"旁白|画外音|内心独白|电话声|广播声|设备声|媒介声|声桥|无对白|无台词|无语音|无人声|静默|"
-    r"V\.?\s*O\.?|O\.?\s*S\.?)",
+    rf"{VOICE_ABBREVIATION})",
     re.IGNORECASE,
 )
 FULL_SILENCE_RE = re.compile(
@@ -64,7 +73,7 @@ ENVIRONMENT_SOUND_RE = re.compile(r"环境(?:声|音)|拟音|音效|声效|SFX",
 MUSIC_RE = re.compile(r"音乐|配乐|BGM", re.IGNORECASE)
 SPEECH_RE = re.compile(
     r"回忆现场对白|画内对白|画外对白|同期对白|现场对白|人物对白|"
-    r"旁白|画外音|内心独白|电话声|广播声|设备声|媒介声|V\.?\s*O\.?|O\.?\s*S\.?",
+    rf"旁白|画外音|内心独白|电话声|广播声|设备声|媒介声|{VOICE_ABBREVIATION}",
     re.IGNORECASE,
 )
 PROHIBITED_SECTION_RE = re.compile(
@@ -123,7 +132,12 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description=(
             "校验纯分镜 Markdown 的镜号、九项字段、声音层和可选时码，并输出 JSON。"
-        )
+        ),
+        epilog=(
+            "带时码的完整稿按合同校验：--require-timecodes --strict-coverage "
+            "--expected-start <起点秒> --expected-end <终点秒>；用户要求无时码时省略这些参数。"
+            "退出码：0 PASS；1 FAIL；2 报告无法写出。"
+        ),
     )
     parser.add_argument("storyboard", type=Path, help="输入 Markdown 文件")
     parser.add_argument(
@@ -256,6 +270,36 @@ def _normalise_label(label: str) -> str:
     return re.sub(r"[\s*/／|｜&和及与、（）()【】\[\]_-]+", "", label.casefold())
 
 
+# Unbolded, unindented labels switch fields only when they are exactly a field name.
+PLAIN_FIELD_LABELS = frozenset(_normalise_label(name) for name in (
+    *REQUIRED_FIELDS.values(), "场景", "画面", "构图", "景别", "运镜", "镜头运动", "机位", "调度",
+    "表演", "微表情", "特效", "画面处理", "声音设计", "音频", "剪辑", "前后景", "遮挡",
+    "证据", "不确定项", "导演意图", "叙事意图",
+))
+
+
+def _parse_field_label(line: str) -> ParsedLabel | None:
+    """Parse a parent field label: a #### heading, a bold label, or an exact field name.
+
+    Indented sub-lines, `X=` lines and speaker or description lines such as
+    "画面左侧女人：……" or "分析师：……" never open or close a field.
+    """
+    heading_match = FIELD_HEADING_RE.match(line)
+    if heading_match:
+        return ParsedLabel(label=heading_match.group("label").strip(" *_`#"), value="", kind="heading")
+    stripped = line.lstrip(" \t")
+    indent = line[: len(line) - len(stripped)]
+    if "\t" in indent or len(indent) > 1:
+        return None
+    bold = BOLD_LABEL_RE.match(stripped)
+    if bold:
+        return ParsedLabel(label=bold.group("label").strip(" `"), value=bold.group("value").strip(), kind="bold")
+    plain = PLAIN_LABEL_RE.match(stripped)
+    if plain and _normalise_label(plain.group("label")) in PLAIN_FIELD_LABELS:
+        return ParsedLabel(label=plain.group("label").strip(), value=plain.group("value").strip(), kind="plain")
+    return None
+
+
 def _field_category(label: str) -> str | None:
     normalised = _normalise_label(label)
     if "证据" in normalised or "不确定" in normalised:
@@ -301,7 +345,7 @@ def _has_following_content(
     for _, line in lines[start_index + 1 :]:
         if not line.strip():
             continue
-        parsed = _parse_label(line)
+        parsed = _parse_field_label(line)
         if parsed is not None and _field_category(parsed.label) is not None:
             return False
         if re.match(r"^\s{0,3}#{1,6}\s+", line):
@@ -315,7 +359,7 @@ def _field_presence(
 ) -> dict[str, list[tuple[int, bool]]]:
     found: dict[str, list[tuple[int, bool]]] = {key: [] for key in REQUIRED_FIELDS}
     for index, (line_number, line) in enumerate(lines):
-        parsed = _parse_label(line)
+        parsed = _parse_field_label(line)
         if parsed is None:
             continue
         category = _field_category(parsed.label)
@@ -331,7 +375,7 @@ def _field_text(lines: list[tuple[int, str]], field: str) -> str:
     parts: list[str] = []
     active = False
     for _, line in lines:
-        parsed = _parse_label(line)
+        parsed = _parse_field_label(line)
         category = _field_category(parsed.label) if parsed else None
         if category is not None:
             active = category == field
@@ -343,8 +387,8 @@ def _field_text(lines: list[tuple[int, str]], field: str) -> str:
 
 
 def _has_speech_content(sound: str) -> bool:
-    # Accept literal dialogue, a separate script line, or a local inaudible span.
-    if re.search(r"[\[【]听不清[\]】]|[\"“「『][^\"”」』\n]+[\"”」』]", sound):
+    # Accept literal dialogue, a separate script line, or an inaudible/unheard placeholder.
+    if re.search(r"[\[【](?:听不清|未听音)[\]】]|[\"“「『][^\"”」』\n]+[\"”」』]", sound):
         return True
     if re.search(r"台词\s*[:：]\s*\S", sound):
         return True
@@ -355,6 +399,27 @@ def _has_speech_content(sound: str) -> bool:
     return False
 
 
+def _prohibited_label(line: str) -> str | None:
+    """Section label that names analysis/source/evidence content, if any.
+
+    Headings and bold labels are searched; a plain unindented label must be
+    exactly such a section name, so a speaker named "分析师：" stays valid.
+    """
+    heading = re.match(r"^\s{0,3}#{2,6}\s+(.+?)\s*#*\s*$", line)
+    if heading:
+        return heading.group(1) if PROHIBITED_SECTION_RE.search(heading.group(1)) else None
+    stripped = line.lstrip(" \t")
+    bold = BOLD_LABEL_RE.match(stripped)
+    if bold:
+        label = bold.group("label").strip(" `")
+        return label if PROHIBITED_SECTION_RE.search(label) else None
+    if len(line) - len(stripped) <= 1:
+        plain = PLAIN_LABEL_RE.match(stripped)
+        if plain and PROHIBITED_SECTION_RE.fullmatch(plain.group("label").strip()):
+            return plain.group("label").strip()
+    return None
+
+
 def _prohibited_sections(markdown: str) -> list[dict[str, Any]]:
     """Check section/field labels only; words spoken by a character remain valid."""
     issues: list[dict[str, Any]] = []
@@ -362,10 +427,8 @@ def _prohibited_sections(markdown: str) -> list[dict[str, Any]]:
     for line_number, line in enumerate(markdown.splitlines(), 1):
         next_fence = _fence_transition(line, active_fence)
         if active_fence is None and next_fence is None and not SHOT_HEADING_RE.match(line):
-            heading = re.match(r"^\s{0,3}#{2,6}\s+(.+?)\s*#*\s*$", line)
-            parsed = _parse_label(line)
-            label = heading.group(1) if heading else (parsed.label if parsed else "")
-            if PROHIBITED_SECTION_RE.search(label):
+            label = _prohibited_label(line)
+            if label:
                 issues.append(
                     _issue(
                         "prohibited_delivery_section",
@@ -428,7 +491,11 @@ def _extract_timecode(shot: ShotBlock) -> Timecode | None:
         if marked_range is not None:
             return Timecode(*marked_range, line=line_number)
 
+    # An unlabelled range counts only between the heading and the first field;
+    # beat durations such as "0.5秒–1.5秒" inside fields are not shot timecodes.
     for line_number, line in visible_lines:
+        if _parse_field_label(line) is not None:
+            break
         fallback_range = _range_from_text(line, allow_bare=False)
         if fallback_range is not None:
             return Timecode(*fallback_range, line=line_number)
@@ -563,6 +630,9 @@ def validate_markdown(
                 )
             )
         speech_text = re.sub(rf"(?:没有|无)(?:{SPEECH_RE.pattern})", "", sound, flags=re.IGNORECASE)
+        # "`画内对白=` 无对白及其他语音" is the template's way of saying there is no speech.
+        speech_text = re.sub(rf"(?:{SPEECH_RE.pattern})\s*[=:：]\s*`?\s*(?:没有|无)", "", speech_text,
+                             flags=re.IGNORECASE)
         if not full_silence and SPEECH_RE.search(speech_text) and not _has_speech_content(speech_text):
             errors.append(
                 _issue(

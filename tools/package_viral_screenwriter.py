@@ -3,7 +3,9 @@
 
 Usage: python tools/package_viral_screenwriter.py --edition local --output release.zip [--refresh]
 Without --refresh the source tree is read-only. Refresh updates EPUB section
-locations and both hash inventories; it never rewrites a book's full.md.
+locations, both hash inventories and the manifest release fields derived from
+tools/edition_rules.json; it never rewrites a book's full.md.
+Stray files (caches, OS/editor junk, anything git ignores) stop the build.
 The maintained source is the Feishu-capable edition. Both release editions are
 built in an isolated temporary tree using guarded prose differences, one library.
 """
@@ -30,10 +32,37 @@ EPUB_BOOKS = ("B01", "B02", "B04", "B05", "B06", "B07", "B09", "B10", "B11")
 HEADING = re.compile(r"^## 正文文件 ([1-9][0-9]*) · .+$")
 HEADING_REFERENCE = re.compile(r"^## 正文文件 ([1-9][0-9]*)(?: · .+)?$")
 EDITION_RULES = Path(__file__).with_name("edition_rules.json")
+EDITION_LABELS = {"local": "本地版", "feishu": "飞书版"}
+# Caches and OS/editor junk that must never reach a manifest or ZIP.
+STRAY_DIRS = frozenset({"__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache",
+                        ".ipynb_checkpoints", ".git", ".idea", ".vscode"})
+STRAY_NAMES = frozenset({".ds_store", "thumbs.db", "ehthumbs.db", "desktop.ini"})
+STRAY_SUFFIXES = (".pyc", ".pyo", ".swp", ".swo", ".swn", ".tmp", ".log", ".bak", ".orig", ".rej", "~")
+STRAY_PREFIXES = ("._", ".#", "~$", ".~lock.")
 
 
 class PackageError(Exception):
     """A failed precondition or package validation."""
+
+
+def is_stray(name: str, directory: bool = False) -> bool:
+    folded = name.casefold()
+    if directory:
+        return folded in STRAY_DIRS
+    return folded in STRAY_NAMES or folded.endswith(STRAY_SUFFIXES) or folded.startswith(STRAY_PREFIXES)
+
+
+def git_ignored(root: Path) -> set[str]:
+    """Untracked files under root that git ignores; empty outside a work tree or without git."""
+    try:
+        completed = subprocess.run(["git", "-C", str(root), "ls-files", "--others", "--ignored",
+                                    "--exclude-standard", "-z", "--", "."],
+                                   capture_output=True, timeout=60, check=False)
+    except (OSError, subprocess.SubprocessError):
+        return set()
+    if completed.returncode != 0:
+        return set()
+    return {name for name in completed.stdout.decode("utf-8", errors="replace").split("\0") if name}
 
 
 def digest(path: Path) -> str:
@@ -56,6 +85,7 @@ def source_files(root: Path) -> list[Path]:
     """Walk without following links; every included item must stay inside root."""
     reject_link(root)
     files = []
+    stray = []
     pending = [root]
     while pending:
         directory = pending.pop()
@@ -63,7 +93,9 @@ def source_files(root: Path) -> list[Path]:
             info = reject_link(path)
             if not path.resolve().is_relative_to(root):
                 raise PackageError(f"Path leaves the package: {path}")
-            if stat.S_ISDIR(info.st_mode):
+            if is_stray(path.name, stat.S_ISDIR(info.st_mode)):
+                stray.append(path.relative_to(root).as_posix())
+            elif stat.S_ISDIR(info.st_mode):
                 pending.append(path)
             elif stat.S_ISREG(info.st_mode):
                 relative = path.relative_to(root).as_posix()
@@ -73,6 +105,11 @@ def source_files(root: Path) -> list[Path]:
                 files.append(path)
             else:
                 raise PackageError(f"Non-regular file is forbidden: {path}")
+    ignored = git_ignored(root)
+    stray.extend(path.relative_to(root).as_posix() for path in files
+                 if path.relative_to(root).as_posix() in ignored)
+    if stray:
+        raise PackageError("Stray files are never packaged; delete them and rerun: " + ", ".join(sorted(stray)))
     files.sort(key=lambda item: item.relative_to(root).as_posix())
     names = [path.relative_to(root).as_posix() for path in files]
     if len(names) != len({name.casefold() for name in names}):
@@ -276,6 +313,32 @@ def relative_file(root: Path, name: str) -> Path:
     return path
 
 
+def release_fields(rules: dict, edition: str) -> dict:
+    """Manifest release metadata, derived from the edition rules instead of typed by hand."""
+    return {"edition": f"{rules['date']}-{rules['version']}-{edition}",
+            "workspace_edition": edition, "release_version": rules["version"],
+            "release_date": rules["date"],
+            "packaging_revision": f"{rules['date']}-{rules['version']}-dual-editions"}
+
+
+def release_mismatch(manifest: dict, rules: dict, edition: str) -> dict:
+    return {key: [manifest.get(key), expected] for key, expected in release_fields(rules, edition).items()
+            if manifest.get(key) != expected}
+
+
+def stamp_release(root: Path, rules: dict, edition: str) -> None:
+    manifest = read_object(root / "package-manifest.json")
+    manifest.update(release_fields(rules, edition))
+    write_object(root / "package-manifest.json", manifest)
+
+
+def check_install_version(root: Path, rules: dict, edition: str) -> None:
+    """INSTALL.md carries one version line: date, version and edition only."""
+    line = f"版本：{rules['date']} {rules['version']} {EDITION_LABELS[edition]}"
+    if line not in relative_file(root, "INSTALL.md").read_text(encoding="utf-8-sig").splitlines():
+        raise PackageError(f"INSTALL.md must contain the version line exactly: {line}")
+
+
 def apply_edition(root: Path, edition: str, rules: dict) -> None:
     """Apply an explicit edition delta; changed source anchors fail closed."""
     if edition not in ("local", "feishu") or rules.get("source_edition") != "feishu":
@@ -303,11 +366,8 @@ def apply_edition(root: Path, edition: str, rules: dict) -> None:
                 text = path.read_text(encoding="utf-8-sig")
                 if re.search(r"飞书|feishu|lark-cli|OAuth", text, flags=re.IGNORECASE):
                     raise PackageError(f"Unclassified cloud workflow in local edition: {name}")
-    manifest = read_object(root / "package-manifest.json")
-    manifest.update(edition=f"{rules['date']}-{rules['version']}-{edition}",
-                    workspace_edition=edition, release_version=rules["version"],
-                    release_date=rules["date"])
-    write_object(root / "package-manifest.json", manifest)
+    stamp_release(root, rules, edition)
+    check_install_version(root, rules, edition)
 
 
 def package_edition(root_argument: Path, output_argument: Path, edition: str,
@@ -318,15 +378,18 @@ def package_edition(root_argument: Path, output_argument: Path, edition: str,
     if output.resolve().is_relative_to(root):
         raise PackageError("--output must be outside the maintained skill directory")
     source_files(root)
+    rules = read_object(EDITION_RULES)
+    source_edition = rules.get("source_edition")
+    if source_edition != "feishu" or read_object(root / "package-manifest.json").get("workspace_edition") != source_edition:
+        raise PackageError("The maintained source must be the Feishu-capable edition")
     if refresh:
+        stamp_release(root, rules, source_edition)
         refresh_metadata(root)
     source_verification = verify_portable(root)
-    rules = read_object(EDITION_RULES)
-    source_manifest = read_object(root / "package-manifest.json")
-    if source_manifest.get("workspace_edition") != "feishu":
-        raise PackageError("The maintained source must be the Feishu-capable edition")
-    if (source_manifest.get("release_version"), source_manifest.get("release_date")) != (rules.get("version"), rules.get("date")):
-        raise PackageError("Release version/date differ between source manifest and edition rules")
+    mismatch = release_mismatch(read_object(root / "package-manifest.json"), rules, source_edition)
+    if mismatch:
+        raise PackageError("Source manifest release fields differ from tools/edition_rules.json; "
+                           "rerun with --refresh: " + json.dumps(mismatch, ensure_ascii=False))
     source_snapshot = {p.relative_to(root).as_posix(): digest(p) for p in source_files(root)}
     with tempfile.TemporaryDirectory(prefix="viral-screenwriter-edition-") as temporary:
         temporary_root = Path(temporary).resolve()

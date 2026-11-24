@@ -1,6 +1,8 @@
 # 爆款编剧skill：飞书版（含视频模块）
 
-版本：2026-11-25 v17 飞书版。与本地版共用同一编剧方法和完整书库；本版保留可选飞书协作，B11编码修复及观众体验优化均保留，并补充人物不降智、规则当场演、前因后果写法，以及人物替换、广告拿掉产品、换名重投、反转改判断和失败带回新信息五项审稿检查。新增台词自然化：先定情境再写话，按清单排查作者腔，并念出来检验。这个目录可以整体复制到自己的另一台电脑；包内文字资料、模板、执行卡与视频反推代码不依赖原电脑的盘符、用户名或微信目录。普通编剧功能独立可用，视频模型提示词按需联动另行安装的director-seedance-prompt。
+版本：2026-11-25 v18 飞书版
+
+与本地版共用同一编剧方法和完整书库，飞书协作为可选模式。这个目录可以整体复制到另一台电脑；包内文字资料、模板、执行卡与视频反推代码不依赖原电脑的盘符或用户名。普通编剧功能独立可用，视频模型提示词按需联动另行安装的director-seedance-prompt。
 
 ## 安装
 
@@ -22,19 +24,17 @@
 
 按[交接接口](references/director-handoff.md)接收导演发来的格式整理、修改意见和已授权修稿；用户需要视频模型提示词时，定位并实际读取独立director-seedance-prompt技能。两者安装在同级skills目录即可按名称发现，导演技能不复制进本包；未安装导演时仍可完成普通编剧工作。
 
-本版沿用v11功能，采用经正文等价核验的精简布局，保留书籍文字、方法卡、模板、导演交接和视频反推能力。整个ZIP仅有主目录一个`SKILL.md`；内置视频说明为`modules/video-reverse-storyboard/MODULE.md`，由主入口按需读取，不注册第二个技能。视频脚本仍在原模块目录；不重新加入本机原PDF、EPUB、扫描页图、原Word或原始OCR文件。
-
 ## 随包内容
 
 - Coffee Break 全部127张方法卡、人物/结构/对白方法、项目交付与对标研究流程。
 - 主书与11份补充书的全部已有Markdown转写、分章/分节文字及来源索引，保留原文件名、版本与来源哈希。先从[书库总索引](references/book-library.md)按创作问题定位，再进入[主书方法与书源](references/coffee-break-method.md)、[补充书库](references/library/index.md)及[书库文字保真检查](assets/books/VALIDATION.md)。这些资料随包用于你的多设备查阅，不用回原电脑寻找。
 - [格式附件的完整段落文字](assets/templates/delivery-reference-text.md)、[可填写Markdown模板](assets/templates/screenplay-template.md)及包含已测字体、字号、页边距的[格式规范](references/screenplay-format.md)。
-- [完整视频反推模块](modules/video-reverse-storyboard/MODULE.md)，包括参考协议与4个配套脚本，不需要另装同名技能。
+- [完整视频反推模块](modules/video-reverse-storyboard/MODULE.md)，包括参考协议与4个配套脚本，由主入口按需读取；整个ZIP只有主目录一个`SKILL.md`，不需要另装同名技能。
 - [样本规则](references/viral-rules.md)、[动态规则快照](references/dynamic-viral-rules.md)及现有历史记录。部分旧样本证据在源电脑已缺失，见[证据状态与缺失清单](assets/evidence/README.md)；包不会把缺图/缺原表的历史记录冒充可复核证据，也不会要求连接原来的数据库。
 - 飞书协作的[四表蓝图](assets/feishu-base-blueprint.json)、[布局合同](references/FEISHU_BASE_LAYOUT.md)、[配置指引](references/FEISHU_WORKSPACE_SETUP.md)、[剧本同步合同](references/FEISHU_SCREENPLAY_SYNC.md)及 `scripts/plan_feishu_sync.py` 本地规划器；只在选择飞书时使用。
 - 本目录的 `package-manifest.json` 逐文件记录大小与SHA256，用于完整性检查。
 
-本版不附原PDF/EPUB、扫描页图、原Word、逐页TXT或原始OCR坐标JSON；已有转写正文没有因瘦身删节。保留的JSON是来源、导航及核验索引。正文保真是相对现有转写的比较，不表示OCR从无识别错误；需要核对原图、插图或版式时，须取得对应原件，不能声称包内仍有原件可看。
+本版不附原PDF/EPUB、扫描页图、原Word、逐页TXT或原始OCR坐标JSON；已有转写正文未删节。保留的JSON是来源、导航及核验索引。正文保真是相对现有转写的比较，不表示OCR从无识别错误；需要核对原图、插图或版式时，须取得对应原件，不能声称包内仍有原件可看。
 
 书籍和参考资料默认只在相关任务中读取。主书保留分章；9本EPUB的407个逻辑分节集中在各自全文，通过索引中的完整标题与精确行范围读取；PDF转写按页锚点读取。全文随包不表示每次把全库放入上下文。包内验证器同时检查EPUB标题与行范围，正文修改后须在维护仓库用 `tools/package_viral_screenwriter.py --refresh` 重建索引再校验；安装包内只能校验。
 
@@ -49,7 +49,7 @@
 | 功能 | 通用依赖 | 随包入口 |
 |---|---|---|
 | 包完整性、逐镜稿结构检查 | Python 3.10+，标准库即可 | `scripts/verify_portable.py`、`scripts/validate_output.py` |
-| 飞书增量同步计划与冲突检查 | Python 3.11+，标准库即可；脚本自身不联网 | `scripts/plan_feishu_sync.py`；实际上传使用独立飞书连接器或CLI |
+| 飞书增量同步计划与冲突检查 | Python 3.11+，标准库即可（`check_environment.py --mode sync` 可查）；脚本自身不联网 | `scripts/plan_feishu_sync.py`；实际上传使用独立飞书连接器或CLI |
 | 视频全帧与音轨准备 | Python、numpy、Pillow、FFmpeg/FFprobe | `modules/video-reverse-storyboard/scripts/prepare_video_evidence.py` |
 | 画面字幕OCR | Python、OpenCV、RapidOCR及其模型资源、FFprobe | `modules/video-reverse-storyboard/scripts/extract_subtitles_ocr.py` |
 | 语音转写 | Python、faster-whisper及所选模型资源 | `modules/video-reverse-storyboard/scripts/transcribe_audio.py` |

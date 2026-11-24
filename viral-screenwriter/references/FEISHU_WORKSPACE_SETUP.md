@@ -2,26 +2,26 @@
 
 仅在已选择飞书协作或明确要求飞书部署时读取。复用当前会话已授权的目标、测试范围与身份，不重新询问已回答事项。本文件不授予其他项目的写权限。由当前技能的飞书工作区入口调用；共享表结构、附件与修订约定见 [FEISHU_BASE_LAYOUT](FEISHU_BASE_LAYOUT.md)，剧本发布见 [FEISHU_SCREENPLAY_SYNC](FEISHU_SCREENPLAY_SYNC.md)。
 
-以下接口于 **2026-10-14** 核对官方文档与 CLI 源码，维护基线为 CLI **1.0.98**；执行前以当前版本帮助/schema 再核准。不能用本文件中的旧示例覆盖新版接口事实。
+本机已有哪个 lark CLI 就用哪个，不限制版本；执行前用该版本的帮助/schema 核准接口，不能用本文件中的示例覆盖当前接口事实。
 
 ## 1. 发现与独立部署
 
 先检查宿主已有飞书连接器及其实际暴露的工具、登录身份和 Base 能力。已连接且满足读写需求就复用；连接器缺少密码接口时，可补用官方 CLI/API，不因此重建整个环境。
 
-没有适用连接器时，在 Windows 检查 `Get-Command lark-cli` 及项目部署记录中已有的独立CLI路径；未加入PATH不等于未安装。找到后运行该可执行文件的 `--version`、`--help`、`auth status --json --verify`。仅记录版本、身份、有效状态与缺失权限，不打印配置文件、App Secret、访问令牌或完整环境变量。需要保持用户归属时，后续命令显式 `--as user`；不要因默认落到 bot 就创建一份用户看不到的资产库。
+没有适用连接器时，在 Windows 依次检查 `Get-Command lark-cli`、项目部署记录中的CLI路径和下方共用运行时位置；编剧或导演技能早先装在 `%LOCALAPPDATA%\DirectorTools\feishu-runtime` 或 `%LOCALAPPDATA%\CodexTools\feishu-runtime` 的安装同样直接复用。未加入PATH不等于未安装。找到后运行该可执行文件的 `--version`、`--help`、`auth status --json --verify`。仅记录版本、身份、有效状态与缺失权限，不打印配置文件、App Secret、访问令牌或完整环境变量。需要保持用户归属时，后续命令显式 `--as user`；不要因默认落到 bot 就创建一份用户看不到的资产库。
 
-CLI、飞书 Skills、凭据是独立环境，不随当前 Skill 打包。CLI 确实缺失且部署在用户授权范围内时，先检查 Node/npm，再把官方包安装到 Skill 目录之外的独立 prefix。以下为通用示例路径；已有部署路径优先复用：
+CLI、飞书 Skills、凭据是独立环境，不随任何技能打包。只有本机找不到可用 CLI、且部署在用户授权范围内时才安装：先检查 Node/npm，再把官方包装到 Skill 目录之外、编剧与导演共用的运行时位置，之后两个技能都调用这一份，不各装一份：
 
 ```powershell
 node --version
 npm --version
-$feishuRuntimeRoot = Join-Path $env:LOCALAPPDATA 'CodexTools\feishu-runtime'
+$feishuRuntimeRoot = Join-Path $env:LOCALAPPDATA 'SkillTools\feishu-runtime'
 npm install --global --prefix "$feishuRuntimeRoot" @larksuite/cli
 $feishuCli = Join-Path $feishuRuntimeRoot 'lark-cli.cmd'
 & $feishuCli --version
 ```
 
-后文用 `lark-cli` 简写已解析的CLI；专用prefix未加入PATH时实际用 `& $feishuCli` 调用，不为照抄命令再次全局安装。不要在任何编剧或导演Skill内产生node_modules、运行时依赖或登录配置。
+后文用 `lark-cli` 简写已解析的CLI；共用运行时未加入PATH时实际用 `& $feishuCli` 调用，不为照抄命令再次全局安装。不要在任何编剧或导演Skill内产生node_modules、运行时依赖或登录配置。
 
 已有 CLI 能完成任务就不升级。官方推荐的一体向导 `npx @larksuite/cli@latest install` 会进入 Skills 安装及配置流程；不要把它当作只安装 CLI 的无副作用替代。不要自动覆盖用户已有飞书 Skills、应用配置或身份。若确需补装官方 Skills，先检查已有目录并只处理所需内容；不要用全量覆盖命令修复单个能力缺口。
 

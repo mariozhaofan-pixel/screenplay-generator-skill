@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""OCR every decoded video frame and retain a complete provisional frame ledger."""
+"""OCR every decoded video frame and retain a complete provisional frame ledger.
+
+Frames are read in display orientation (OpenCV autorotate), from the first
+moving-video stream (cover art excluded), timed by FFprobe best-effort PTS.
+Existing outputs are never overwritten. Exit codes: 0 every frame OCRed;
+1 finished, but coverage incomplete (ledger and manifest saved); 2 not run
+(usage, input, missing tools or packages, existing outputs, probe failure).
+"""
 
 from __future__ import annotations
 
@@ -24,6 +31,19 @@ PROVISIONAL_NOTICE = (
     "说话人归属及画面内非字幕文字必须回看证据帧和源视频确认。"
 )
 CLUSTER_SIMILARITY_THRESHOLD = 0.88
+EXIT_OK, EXIT_INCOMPLETE, EXIT_FATAL = 0, 1, 2
+
+
+OUTPUT_FILES = ("ocr_frames.jsonl", "ocr_observations.json", "ocr_observations.csv", "ocr_manifest.json")
+
+
+class CoverageIncomplete(RuntimeError):
+    """OCR ran to the end but did not cover every probed frame."""
+
+
+def existing_outputs(output_dir: Path, names: tuple[str, ...]) -> list[Path]:
+    """Outputs that already exist; the tools never overwrite them."""
+    return [output_dir / name for name in names if (output_dir / name).exists()]
 
 
 def configure_console_utf8() -> None:
@@ -52,7 +72,8 @@ def build_parser() -> argparse.ArgumentParser:
         description=(
             "用 RapidOCR 对视频每一帧执行 OCR（不抽帧、不跳过重复画面），"
             "输出 ocr_frames.jsonl 全帧记录、字幕聚合表和 ocr_manifest.json。"
-        )
+        ),
+        epilog="不覆盖已有输出。退出码：0 全帧完成；1 已运行但覆盖不完整；2 未运行（参数、输入、依赖或已有输出）。",
     )
     parser.add_argument("video", type=Path, help="输入视频")
     parser.add_argument("output", type=Path, help="输出目录")
@@ -378,43 +399,86 @@ def _write_csv(path: Path, observations: list[dict[str, Any]]) -> None:
             writer.writerow(row)
 
 
-def _probe_frame_timeline(video: Path, executable: str) -> list[dict[str, float]]:
-    """Decode the selected stream with FFprobe and retain every presentation time."""
-    result = subprocess.run(
-        [
-            executable, "-v", "error", "-select_streams", "v:0", "-show_frames",
-            "-show_entries", "frame=best_effort_timestamp_time,pkt_duration_time",
-            "-of", "json", str(video),
-        ],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        check=False,
-    )
+def _run_ffprobe(executable: str, arguments: list[str]) -> dict[str, Any]:
+    try:
+        result = subprocess.run(
+            [executable, "-v", "error", *arguments, "-of", "json"],
+            capture_output=True, text=True, encoding="utf-8", errors="replace", check=False,
+        )
+    except OSError as exc:
+        raise RuntimeError(f"无法启动 FFprobe：{exc}") from exc
     if result.returncode or result.stderr.strip():
         raise RuntimeError(
             "FFprobe 全帧核验失败，不能声明覆盖完整："
             + (result.stderr.strip() or f"exit {result.returncode}")
         )
-    frames = json.loads(result.stdout).get("frames", [])
+    return json.loads(result.stdout)
+
+
+def _select_video_stream(streams: list[Any]) -> tuple[dict[str, Any], bool]:
+    """First moving-video stream (cover art excluded) and whether cover art precedes it."""
+    videos = [s for s in streams if isinstance(s, dict) and s.get("codec_type") == "video"]
+    moving = [s for s in videos if not (s.get("disposition") or {}).get("attached_pic")]
+    if not moving:
+        raise FileNotFoundError("没有可解码的活动视频流；封面图不能代替视频")
+    return moving[0], moving[0] is not videos[0]
+
+
+def _display_rotation(stream: dict[str, Any]) -> float:
+    for item in stream.get("side_data_list") or []:
+        if isinstance(item, dict) and _float_or_none(item.get("rotation")) is not None:
+            return float(item["rotation"])
+    rotate = _float_or_none((stream.get("tags") or {}).get("rotate"))
+    return rotate if rotate is not None else 0.0
+
+
+def _frame_seconds(frame: dict[str, Any]) -> float | None:
+    """Best-effort PTS (what decoders deliver), else the raw PTS."""
+    for key in ("best_effort_timestamp_time", "pts_time"):
+        value = _float_or_none(frame.get(key))
+        if value is not None and math.isfinite(value):
+            return value
+    return None
+
+
+def _frame_duration(frame: dict[str, Any]) -> float:
+    """`duration_time` (FFmpeg 5+) or `pkt_duration_time` (older); 0.0 when absent."""
+    for key in ("duration_time", "pkt_duration_time"):
+        value = _float_or_none(frame.get(key))
+        if value is not None and math.isfinite(value) and value > 0:
+            return value
+    return 0.0
+
+
+def _timeline_from_frames(frames: list[dict[str, Any]]) -> list[dict[str, float]]:
+    """Keep every frame; a repeated PTS is allowed, only going backwards is rejected."""
     if not frames:
         raise RuntimeError("FFprobe 没有返回可核验的视频帧")
     timeline: list[dict[str, float]] = []
     for index, frame in enumerate(frames):
-        pts = _float_or_none(frame.get("best_effort_timestamp_time"))
-        if pts is None or not math.isfinite(pts):
+        pts = _frame_seconds(frame)
+        if pts is None:
             raise RuntimeError(f"第 {index} 帧缺少有效 PTS，无法建立连续映射")
-        if timeline and pts <= timeline[-1]["pts_seconds"]:
-            raise RuntimeError(f"第 {index} 帧 PTS 不递增，须先核验时间轴")
-        duration = _float_or_none(frame.get("pkt_duration_time"))
-        timeline.append(
-            {
-                "pts_seconds": pts,
-                "duration": duration if duration and math.isfinite(duration) and duration > 0 else 0.0,
-            }
-        )
+        if timeline and pts < timeline[-1]["pts_seconds"]:
+            raise RuntimeError(f"第 {index} 帧 PTS 倒退，须先核验时间轴")
+        timeline.append({"pts_seconds": pts, "duration": _frame_duration(frame)})
     return timeline
+
+
+def _probe_frame_timeline(video: Path, executable: str) -> tuple[list[dict[str, float]], dict[str, Any]]:
+    """Decode the selected stream with FFprobe and retain every presentation time."""
+    streams = _run_ffprobe(executable, ["-show_streams", str(video)]).get("streams", [])
+    stream, cover_first = _select_video_stream(streams)
+    frames = _run_ffprobe(executable, [
+        "-select_streams", str(stream["index"]), "-show_frames", "-show_entries",
+        "frame=best_effort_timestamp_time,pts_time,duration_time,pkt_duration_time", str(video),
+    ]).get("frames", [])
+    info = {
+        "stream_index": stream.get("index"),
+        "attached_picture_precedes_video": cover_first,
+        "display_rotation_degrees": _display_rotation(stream),
+    }
+    return _timeline_from_frames(frames), info
 
 
 def run(args: argparse.Namespace) -> tuple[Path, Path, Path, int]:
@@ -425,24 +489,27 @@ def run(args: argparse.Namespace) -> tuple[Path, Path, Path, int]:
         raise ValueError("--crop-top 必须小于 --crop-bottom")
     if args.crop_left >= args.crop_right:
         raise ValueError("--crop-left 必须小于 --crop-right")
+    output_dir = args.output.expanduser().resolve()
+    existing = existing_outputs(output_dir, OUTPUT_FILES)
+    if existing:
+        raise FileExistsError(f"OCR 输出已存在，请使用新的输出目录：{existing[0]}")
 
-    timeline = _probe_frame_timeline(video, args.ffprobe)
+    timeline, stream_info = _probe_frame_timeline(video, args.ffprobe)
     source_start_pts = timeline[0]["pts_seconds"]
     expected_frame_count = len(timeline)
 
     # Optional packages are loaded only after argparse has handled --help.
     cv2, ocr_engine, engine_name, engine_version = _load_optional_dependencies()
 
-    output_dir = args.output.expanduser().resolve()
-    for filename in ("ocr_frames.jsonl", "ocr_observations.json", "ocr_observations.csv", "ocr_manifest.json"):
-        if (output_dir / filename).exists():
-            raise FileExistsError(f"OCR 输出已存在，请使用新的输出目录：{output_dir / filename}")
     observations_dir = output_dir / "subtitle_evidence"
     observations_dir.mkdir(parents=True, exist_ok=True)
 
     capture = cv2.VideoCapture(str(video))
     if not capture.isOpened():
         raise RuntimeError(f"OpenCV 无法打开视频：{video}")
+    # Read frames in display orientation, as the evidence sheets are.
+    if hasattr(cv2, "CAP_PROP_ORIENTATION_AUTO"):
+        capture.set(cv2.CAP_PROP_ORIENTATION_AUTO, 1)
 
     source_fps = float(capture.get(cv2.CAP_PROP_FPS))
     if not math.isfinite(source_fps) or source_fps <= 0:
@@ -456,7 +523,7 @@ def run(args: argparse.Namespace) -> tuple[Path, Path, Path, int]:
     )
     final_frame_duration = timeline[-1]["duration"] or 1.0 / source_fps
     final_duration_source = (
-        "ffprobe pkt_duration_time" if timeline[-1]["duration"] else "estimated 1 / source_fps"
+        "ffprobe frame duration" if timeline[-1]["duration"] else "estimated 1 / source_fps"
     )
     timeline_end = timeline[-1]["pts_seconds"] - source_start_pts + final_frame_duration
     decoded_frames = 0
@@ -593,6 +660,8 @@ def run(args: argparse.Namespace) -> tuple[Path, Path, Path, int]:
         "full_frame_coverage": {
             "method": "OCR on every sequentially decoded frame; no frame or duplicate skipping",
             "timestamp_source": "FFprobe best_effort_timestamp_time matched by sequential frame index",
+            "ffprobe_video_stream_index": stream_info["stream_index"],
+            "attached_picture_precedes_video": stream_info["attached_picture_precedes_video"],
             "source_start_pts_seconds": source_start_pts,
             "source_fps": source_fps,
             "decoded_frame_count": decoded_frames,
@@ -606,6 +675,8 @@ def run(args: argparse.Namespace) -> tuple[Path, Path, Path, int]:
         "video": {
             "width": metadata_width,
             "height": metadata_height,
+            "display_rotation_degrees": stream_info["display_rotation_degrees"],
+            "orientation": "display (OpenCV autorotate)",
             "metadata_duration": metadata_duration,
             "timeline_duration": timeline_end,
             "final_frame_duration_source": final_duration_source,
@@ -645,7 +716,7 @@ def run(args: argparse.Namespace) -> tuple[Path, Path, Path, int]:
         encoding="utf-8",
     )
     if not full_frame_ocr_complete:
-        raise RuntimeError(
+        raise CoverageIncomplete(
             f"全帧 OCR 未完成：FFprobe {expected_frame_count} 帧，解码 {decoded_frames} 帧，"
             f"OCR 成功 {successful_ocr_calls} 帧，失败 {ocr_error_count} 帧；"
             f"已保存逐帧记录及未完成状态：{manifest_path}"
@@ -659,16 +730,19 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         json_path, csv_path, manifest_path, count = run(args)
+    except CoverageIncomplete as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return EXIT_INCOMPLETE
     except Exception as exc:  # Keep command-line failures concise and actionable.
         print(f"error: {exc}", file=sys.stderr)
-        return 1
+        return EXIT_FATAL
 
     print(
         f"{PROVISIONAL_STATUS}: OCR covered every verified frame; wrote ocr_frames.jsonl "
         f"and {count} clustered observations to "
         f"{json_path}, {csv_path}, and {manifest_path}"
     )
-    return 0
+    return EXIT_OK
 
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@
 | 定稿/采用改稿发布、拉取云端剧本、跨设备冲突或失败恢复 | [剧本同步合同](FEISHU_SCREENPLAY_SYNC.md) |
 | 导演送来的格式整理/意见/改稿或继续视频编译 | [编剧与导演交接](director-handoff.md) |
 
-`scripts/plan_feishu_sync.py` 只生成本地增量计划，不联网、不替用户授权，也不证明云端写入完成。先查其当前 `--help` 与共享合同，以真实本地文件、云端快照和上次同步状态生成计划；实际读写使用宿主已连接工具或独立部署的官方CLI。本Skill内不安装飞书Skill、CLI、node_modules或凭据。
+`scripts/plan_feishu_sync.py` 只生成本地增量计划，不联网、不替用户授权，也不证明云端写入完成。先查其当前 `--help` 与共享合同，以真实本地文件、云端快照和上次同步状态生成计划；实际读写使用宿主已连接工具，或本机已有的官方CLI（缺失时按[配置与授权](FEISHU_WORKSPACE_SETUP.md)部署）。本Skill内不安装飞书Skill、CLI、node_modules或凭据。
 
 ## 开始与接续
 

@@ -56,7 +56,7 @@ lark-cli base +field-create --base-token '<base_token>' --table-id '<table_id>' 
 
 剧本/资产/段落修订发布后，其图片、提示词和精确资产关联不可换版覆写。段落提示词、所绑定资产修订或来源剧本修订变化时，新建段落修订行，旧视频留在旧行，新行用户视频仍省略。预留修订行可补入尚不存在、且与该修订提示词一致的首次产物；已有图片或提示词发生替换则新建修订。状态、负责人和任务ID可随实际进展更新，人工备注不动。
 
-场景 A/B 是不同资产ID、不同修订行，使用同一 `空间组ID`。B 的 `来源A` 指向实际参与生成 B 的 A 修订记录；A 不虚构来源。A 后来改版不自动改绑既有 B。只有 A 时保留 A 并补 B，不能为凑成对重生 A；只有文本规划时保留方向和提示词，图片字段为空。
+表结构只登记实际需要的场景方向，出图范围由导演工程路线决定；只有A不构成缺项，编剧与导演都不因空的B记录补建B或安排生成。实际需要A/B时使用不同资产ID、不同修订行和同一 `空间组ID`；B的`来源A`指向实际参与生成B的A修订，A不虚构来源，A改版不自动改绑既有B。已需图但仅备提示词的方向，保留真实MD并令图片字段为空；直接文生的场景/反打无需额外创建图片资产行。
 
 `当前文件清单` 是 `text` 单元格，值为 JSON 字符串。结构见蓝图 `manifest_json_text_shape`：包含清单版本、当前修订，以及各文件的角色、实际字段ID、修订、file_token、basename、字节大小和 SHA256。项目只允许 `project_index_md`；资产允许 `asset_image/image_prompt_md`；段落只允许 `segment_prompt_md`；剧本只允许 `screenplay_md`。用户视频不进入这个由程序维护的清单。
 
@@ -73,7 +73,7 @@ lark-cli base +field-create --base-token '<base_token>' --table-id '<table_id>' 
 ```powershell
 lark-cli base +view-create --base-token '<base_token>' --table-id '<assets_table_id>' --json '{"name":"资产画廊","type":"gallery"}' --as user
 lark-cli base +view-set-card --base-token '<base_token>' --table-id '<assets_table_id>' --view-id '<view_id>' --json '{"cover_field":"图片资产"}' --as user
-lark-cli base +view-set-visible-fields --base-token '<base_token>' --table-id '<segments_table_id>' --view-id '<view_id>' --json '{"visible_fields":["名称","段号","对应段落提示词md文件","对应提示词的视频上传","关联资产","来源剧本","所属项目","状态","生产负责人","任务ID","备注"]}' --as user
+lark-cli base +view-set-visible-fields --base-token '<base_token>' --table-id '<segments_table_id>' --view-id '<view_id>' --json '{"visible_fields":["名称","段号","对应段落提示词md文件","对应提示词的视频上传","来源剧本","关联资产","所属项目","状态","生产负责人","任务ID","备注"]}' --as user
 ```
 
 `+view-create` 使用 `--json`，不猜测 `--name/--view-type` 参数。画廊封面是实际 `图片资产`附件字段；文字锁定和待生图记录允许无封面。主工作台都是 grid，资产另有 gallery，技术键和当前文件清单默认隐藏，不删除字段。
@@ -85,7 +85,7 @@ lark-cli base +record-download-attachment --base-token '<base_token>' --table-id
 
 上传为追加，名字取本地 basename，重复 `--file` 可上传多件。上传前核对哈希与已确认 token；结果未知先重读，不盲目重传。下载精确 token，避免省略 token 后意外拉取整行用户视频；单 token 可输出文件路径，多 token 要输出已有目录。文件路径相对 cwd，绝对本机路径不写入蓝图或记录。
 
-协议依据：宿主 lark-base 的 field-schema / field-create reference；补充核验了官方 CLI [附件上传](https://github.com/larksuite/cli/blob/v1.0.97/shortcuts/base/record_upload_attachment.go)、[附件下载及可见字段](https://pkg.go.dev/github.com/larksuite/cli/shortcuts/base)、[视图创建](https://github.com/larksuite/cli/blob/v1.0.97/shortcuts/base/view_create.go)和[卡片配置](https://github.com/larksuite/cli/blob/v1.0.97/shortcuts/base/view_set_card.go)的 v1.0.97 定义。模板核验不等于云端建成；部署时以真实返回和当批附件/关联验收确认完成。
+协议依据：宿主 lark-base 的 field-schema / field-create reference；补充核验了官方 CLI [附件上传](https://github.com/larksuite/cli/blob/main/shortcuts/base/record_upload_attachment.go)、[附件下载及可见字段](https://pkg.go.dev/github.com/larksuite/cli/shortcuts/base)、[视图创建](https://github.com/larksuite/cli/blob/main/shortcuts/base/view_create.go)和[卡片配置](https://github.com/larksuite/cli/blob/main/shortcuts/base/view_set_card.go)的定义。模板核验不等于云端建成；部署时以真实返回和当批附件/关联验收确认完成。
 
 ## 从三表布局增补到四表
 

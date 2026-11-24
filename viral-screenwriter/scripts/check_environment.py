@@ -2,6 +2,7 @@
 """Report target-computer media tools without installation or network access."""
 from __future__ import annotations
 import argparse
+import hashlib
 import importlib.util
 import json
 import shutil
@@ -10,7 +11,9 @@ import sys
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--mode', choices=['writing', 'video', 'ocr', 'asr', 'all'], default='writing')
+    parser.add_argument('--mode', choices=['writing', 'video', 'ocr', 'asr', 'all', 'sync'], default='writing',
+                        help='all = writing, video, ocr and asr; sync checks the Python 3.11+ '
+                             'that the optional sync planner needs (hashlib.file_digest)')
     args = parser.parse_args()
     requirements = {
         'writing': ([], []),
@@ -21,6 +24,11 @@ def main() -> int:
     modes = list(requirements) if args.mode == 'all' else [args.mode]
     report = {}
     for mode in modes:
+        if mode == 'sync':
+            items = {'python>=3.11': sys.version_info >= (3, 11),
+                     'hashlib.file_digest': hasattr(hashlib, 'file_digest')}
+            report[mode] = {'dependencies': items, 'ready': all(items.values())}
+            continue
         modules, executables = requirements[mode]
         items = {name: importlib.util.find_spec(name) is not None for name in modules}
         items.update({name: shutil.which(name) is not None for name in executables})

@@ -38,6 +38,9 @@ jobs:
       - name: Check book line numbers
         run: python -X utf8 -B tools/test_book_line_numbers.py
 
+      - name: Check helper scripts
+        run: python -X utf8 -B tools/test_skill_scripts.py
+
       - name: Build and verify both editions
         run: python -X utf8 -B tools/test_editions.py --output-dir "$RUNNER_TEMP/dist"
 
