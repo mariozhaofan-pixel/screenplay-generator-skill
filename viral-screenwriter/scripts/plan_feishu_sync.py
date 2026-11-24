@@ -54,7 +54,7 @@ unaccepted feedback and conflicted revisions must not enter this collection.
 Publish confirmed script attachments/manifests before changing this pointer.
 
 Example request (empty local_files is valid):
-{"kind":"asset","sync_key":"P1:A1:v001","snapshot_complete":true,
+{"kind":"asset","sync_key":"project/P1/asset/A1/revision/v001","snapshot_complete":true,
  "owned_fields":["同步键","名称","图片资产"],
  "desired_fields":{"名称":"角色_林岚_基础_角色板_v001"},
  "remote_records":[],"local_files":[{"field":"图片资产","path":"a.png"}]}

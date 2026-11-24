@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
   "package": "viral-screenwriter",
-  "edition": "2026-11-24-v16-feishu",
+  "edition": "2026-11-25-v17-feishu",
   "path_base": "package-root",
   "files": [
     {
       "path": "INSTALL.md",
-      "bytes": 9535,
-      "sha256": "096bbb1e4fe34ea3db45791094806e2057ff46514a571e760a8cedbea32583d2"
+      "bytes": 9763,
+      "sha256": "09ccbc04992ef5f8cbee1ecb17ab812cddcd2ee97b80b21ecefa5a5cb6adac7f"
     },
     {
       "path": "SKILL.md",
-      "bytes": 13702,
-      "sha256": "501e79fb5054cb68f99896fe0f62fcb06bd07031fec8758dd46fbfdb0f84c865"
+      "bytes": 14028,
+      "sha256": "c0fe32aa68d310268dc51d49a865c88286eeff6014e214778b1507fb7fde33ed"
     },
     {
       "path": "agents/openai.yaml",
@@ -276,8 +276,8 @@
     },
     {
       "path": "assets/templates/screenplay-template.md",
-      "bytes": 823,
-      "sha256": "02c5b3d2621e3ceb2b8c55bccd1c4424c71c04eedd58400304f7e5dd574417f9"
+      "bytes": 822,
+      "sha256": "53a6097e420eddbfac12a12f5bdf70dc763466126deaa72e99a0fb8f71727e7a"
     },
     {
       "path": "modules/video-reverse-storyboard/MODULE.md",
@@ -346,8 +346,8 @@
     },
     {
       "path": "references/challenge-variety.md",
-      "bytes": 8544,
-      "sha256": "32b2143f72fd3fc9134085ab589a9be3231844bd299f0fb418a25f19df16925c"
+      "bytes": 8549,
+      "sha256": "e2c335777196341356d6d71ac6f895e0c91451dd44ae6177127029a965abe1c0"
     },
     {
       "path": "references/character-theme.md",
@@ -436,8 +436,8 @@
     },
     {
       "path": "references/dialogue-naturalness.md",
-      "bytes": 8506,
-      "sha256": "9d53a8552cf2b30e93b33bb2f619c570de53fbfcb937360aac5ba54d9ec77ac9"
+      "bytes": 9244,
+      "sha256": "83b6e1c6825224b30a5bc2a402938bfba644b93b8cc46ba59c90f7aaeb64bc47"
     },
     {
       "path": "references/dialogue-performance.md",
@@ -446,8 +446,8 @@
     },
     {
       "path": "references/director-handoff.md",
-      "bytes": 6296,
-      "sha256": "e1d6c5234b25aab4e7171bc943fa2bc81d2556168e82f83e6c50bfc24c261984"
+      "bytes": 6278,
+      "sha256": "2a1244fd280e8b2a541d02f8c85eb46ddcec195254267b7efbed711dec9dbad7"
     },
     {
       "path": "references/dynamic-viral-rules.md",
@@ -476,8 +476,8 @@
     },
     {
       "path": "references/exercise-orchestration.md",
-      "bytes": 9996,
-      "sha256": "9a1681b60214ee825de79936bbc7186b4ee71895997d6c223160d7722cee50dd"
+      "bytes": 10071,
+      "sha256": "91a7a362ef4511a005567eff522c8576165d55846a8f2334bedd0a6038fd7063"
     },
     {
       "path": "references/feishu-workspace.md",
@@ -547,7 +547,7 @@
     {
       "path": "references/storyboard-contract.md",
       "bytes": 14475,
-      "sha256": "dc7a15e8df04e670662d3b906e85441524a2b914ed992fa7b25eadcfdd6b0e21"
+      "sha256": "dfeaf4da575a33bc96a79e1dcc3a99ec2cd02e8ff387769a2a37b2d7396e3b7e"
     },
     {
       "path": "references/storyboard-revision.md",
@@ -571,13 +571,13 @@
     },
     {
       "path": "scripts/plan_feishu_sync.py",
-      "bytes": 16446,
-      "sha256": "0d7988e7d2c413cbe948a1f75b4ab25ee99e971338e05715189cb635c75445f2"
+      "bytes": 16469,
+      "sha256": "9de01cb51b457d83f26d1dc1a61e44a1e01dfa62bb7ec70a7e0b5a99d4a7515e"
     },
     {
       "path": "scripts/validate_output.py",
-      "bytes": 30806,
-      "sha256": "17bcaa09630314a5f297aa4a541ee3ff1c1d697a0424e19736b78aec17e528e7"
+      "bytes": 30898,
+      "sha256": "bdc7eff6bb2df311ac4d5293a3963409bdcb2a336ea19e2dbf62e2e4fde0e1ff"
     },
     {
       "path": "scripts/verify_portable.py",
@@ -598,7 +598,7 @@
   ],
   "entrypoint": "SKILL.md",
   "layout": "compact-full-text-v1",
-  "packaging_revision": "2026-11-24-v16-dual-editions",
+  "packaging_revision": "2026-11-25-v17-dual-editions",
   "compact_source": {
     "archive": "viral-screenwriter_v11_2026-10-22_claude-upload.zip",
     "sha256": "bf77087d140de66e76895b05dabc15d4164b127395657fefaac57801a0793d59"
@@ -607,7 +607,7 @@
     "archive": "viral-screenwriter_v11_2026-10-22_b11-fix_claude-upload.zip",
     "sha256": "ccb3b1dc372ba9e0dba49269bd3962e9f0fd8af89c9988b998853cfb247e2323"
   },
-  "release_version": "v16",
-  "release_date": "2026-11-24",
+  "release_version": "v17",
+  "release_date": "2026-11-25",
   "workspace_edition": "feishu"
 }

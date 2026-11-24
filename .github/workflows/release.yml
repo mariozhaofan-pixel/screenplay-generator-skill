@@ -61,5 +61,5 @@ jobs:
             gh release upload "$TAG" "$RUNNER_TEMP"/dist/*.zip "$RUNNER_TEMP"/dist/*.sha256 --clobber
           else
             gh release create "$TAG" "$RUNNER_TEMP"/dist/*.zip "$RUNNER_TEMP"/dist/*.sha256 \
-              --title "viral-screenwriter $TAG" --notes-file "$RUNNER_TEMP/notes.md"
+              --title "$TAG" --notes-file "$RUNNER_TEMP/notes.md"
           fi
