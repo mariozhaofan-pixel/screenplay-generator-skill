@@ -1,4 +1,4 @@
 interface:
   display_name: "剧本生成器"
-  short_description: "完整剧本、影像运镜提示词和逐CUT导演级分镜"
-  default_prompt: "Use $script-generator to write the complete screenplay, derive one script-specific image-style prompt and one camera-movement prompt, then produce the synchronized per-CUT storyboard. If the user explicitly asks for screenplay only, omit CUTs but keep both prompts. Keep runtime judgment internal and output no durations or timecodes."
+  short_description: "事件真实性、对白同步、14字段CUT、GEN与版权规划"
+  default_prompt: "Use $script-generator to lock the current brief and canonical terms, verify each decisive event and clue provenance before dialogue polish, write the authoritative complete screenplay with its visual and camera prompts, then derive exact 13-field scene director maps, synchronized 14-field CUTs, and only the GEN, dialogue, timing, and asset modules triggered by the task. Preserve named canon versions. Treat named third-party dependencies as rights-asserted by default, complete the requested creative plan, map pending exact text into full authorized slots, and append the final rights source/use notice without claiming verified clearance."

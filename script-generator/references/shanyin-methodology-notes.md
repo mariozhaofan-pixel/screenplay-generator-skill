@@ -12,7 +12,7 @@ Source studied: `https://github.com/Shanyin-ai/shanyin-screenwriting-master`, co
 - Dramatic action: a story beat needs a concrete goal and a direct obstacle.
 - Opening hook: the first image or action must carry a watchable disturbance, not just exposition.
 - Dual-track pacing: track external event intensity separately from emotional intensity; use contrast and breathing room.
-- Silent scale calibration: internally estimate only a broad overall density when useful; never expose runtime, scene/CUT durations, timecodes, or duration budgets.
+- Scale calibration: internally estimate broad density by default; when the current brief activates `contract-budget` or `media-frame-lock`, follow `timing-and-generation-units.md` instead of applying an absolute silence rule.
 - Series continuity: plan season/episode structure before full scripts; maintain character states, hidden lines, seeds/callbacks, and known-information ledgers.
 - Memory checkpoints: for long works, compress the state after major units so later writing does not contradict earlier decisions.
 
@@ -22,6 +22,7 @@ Source studied: `https://github.com/Shanyin-ai/shanyin-screenwriting-master`, co
 
 - Route the requested format before writing rather than treating every premise as a short video.
 - Begin from a pressured cross-section of an already existing world and relationships.
+- Validate each key event as a choice-and-response chain before polishing its dialogue.
 - Track external event intensity separately from emotional intensity.
 - Use memory checkpoints and continuity ledgers for long or recurring work.
 - Apply cold-open, subtitle, BGM, catchphrase, and next-episode devices only when the current format and user brief call for them.
@@ -32,4 +33,4 @@ Source studied: `https://github.com/Shanyin-ai/shanyin-screenwriting-master`, co
 - Do not make characters explain theme, setting, or relationships in unnatural dialogue.
 - Do not add scenes that only repeat information.
 - Do not let a style reference become imitation of protected characters, plots, or signature scenes.
-- Do not turn a silent scale estimate into screenplay or storyboard timing output.
+- Do not turn an internal estimate into a measured claim. Output numeric timing only on the surfaces authorized by the active timing mode.

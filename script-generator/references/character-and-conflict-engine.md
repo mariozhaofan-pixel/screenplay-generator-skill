@@ -7,7 +7,7 @@ Use this reference selectively. It is a set of modules, not a mandatory formula.
 - Route before building
 - Character kernel and advantage contract
 - Opposing-force selector and fair strategy ledger
-- Dialogue as action
+- Strategy-specific dialogue leverage
 - Pressure, payoff, and research boundary
 
 ## Route Before Building
@@ -90,15 +90,17 @@ Then track every strategic turn:
 - After each result, let capable actors update. Repeating a failed tactic without new reasons is lowered intelligence.
 - Defeat can be physical, material, informational, relational, institutional, or ideological. Choose the dimension that answers the story's central conflict.
 
-## Dialogue as Action
+## Strategy-Specific Dialogue Leverage
+
+Use `dialogue-performance-and-sync.md` for natural speech, subtext, performance chains, D-IDs, CUT fragments, and dialogue locks. This section adds only the strategy ledger needed when dialogue is an active contest.
 
 For high-stakes dialogue, note:
 
 `surface line | hidden intent | withheld information | leverage | physical action | status before/after`
 
-- Let answers, evasions, counterquestions, silence, and prop handling change who controls the exchange.
-- Cut lines that only transfer facts both characters already know.
-- Keep the subtext readable through context and behavior; obscurity by itself is not depth.
+- Record how an answer, evasion, counterquestion, silence, or prop action changes leverage or available information.
+- Keep the status change consistent with each side's current knowledge and objective.
+- Send the approved strategy action to the dialogue owner for wording and playable performance; do not independently polish or lock the line here.
 
 ## Pressure and Payoff
 

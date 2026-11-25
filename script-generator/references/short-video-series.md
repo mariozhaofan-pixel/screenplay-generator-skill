@@ -5,7 +5,8 @@ Use this for short-form video drama, recurring comedy units, meme-heavy scripts,
 ## Conditional Short-Form Heuristics
 
 - Structure: cold open, setup, escalation, reversal, payoff, and a resolved ending state. Add a tag or next-episode hook only for a series/episodic brief or when requested.
-- Runtime: assess scale and density silently; never print a runtime, scene/CUT duration, timecode, or per-beat time budget.
+- Event gate: run key relationship and reversal beats through `event-authenticity-and-callbacks.md` before sharpening punchlines or catchphrases.
+- Timing: select the mode in `timing-and-generation-units.md`. Default work stays silent; explicit hard contracts and measured media locks retain only their authorized timing surfaces.
 - CUTs: derive the count from beats, emphasis, viewpoint, continuity, and production limits. Do not use a duration formula or fixed range.
 - Cast and locations: keep them as compact as the user's production limits require; do not impose a fixed ensemble size or location count on an unconstrained brief.
 
@@ -58,7 +59,7 @@ Possible gold-line functions:
 
 Only add a dialect or regional flavor when the user explicitly requests it. For any requested regional language flavor:
 
-- Research a small set of current, context-appropriate vocabulary, particles, cadence, and code-switching patterns for this task; do not reuse markers remembered from an old example.
+- Research vocabulary, particles, cadence, and code-switching patterns for the exact region, age, relationship, platform, and tone stated in the current brief; do not reuse markers remembered from an old example.
 - Keep syntax readable for a broad Chinese-speaking audience.
 - Assign dialect intensity by character: one character can be high-flavor, another more neutral for contrast.
 - Do not overfill every line with particles; the joke should still work in plain Mandarin.
@@ -66,7 +67,13 @@ Only add a dialect or regional flavor when the user explicitly requests it. For 
 
 ## BGM and Sound Application
 
-Use `open-source-research.md` as the single source for music research, licensing, non-commercial reference, original alternatives, and lyric limits. In this file, only map approved music and sound choices to story events: dialogue duck, reveal sting, action accent, transition, release, and loop reset. Never use timestamps, and do not add stock comic effects unless the current tone and visible action justify them.
+Use `open-source-research.md` as the single source for music research, rights
+states, full lyric-slot planning, source boundaries, and alternatives. In this
+file, only map selected music and sound choices to story events: dialogue duck,
+reveal sting, action accent, transition, release, and loop reset. Use
+event-relative anchors by default; precise time/frame anchors are allowed only
+in `media-frame-lock`. Do not add stock comic effects unless the current tone
+and visible action justify them.
 
 ## Production Feasibility
 
