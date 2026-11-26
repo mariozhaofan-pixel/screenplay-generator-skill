@@ -2,12 +2,12 @@
 """Maintain and package the compact viral-screenwriter skill using the stdlib.
 
 Usage: python tools/package_viral_screenwriter.py --edition local --output release.zip [--refresh]
-Without --refresh the source tree is read-only. Refresh updates EPUB section
-locations, both hash inventories and the manifest release fields derived from
-tools/edition_rules.json; it never rewrites a book's full.md.
+Without --refresh the source tree is read-only. Refresh updates the hash
+inventory and the manifest release fields derived from tools/edition_rules.json.
+Book texts are never packaged: a source tree that holds assets/books stops the build.
 Stray files (caches, OS/editor junk, anything git ignores) stop the build.
 The maintained source is the Feishu-capable edition. Both release editions are
-built in an isolated temporary tree using guarded prose differences, one library.
+built in an isolated temporary tree using guarded prose differences, one source.
 """
 from __future__ import annotations
 
@@ -28,9 +28,6 @@ import zipfile
 MAX_FILES = 200
 MAX_ZIP_BYTES = 5_000_000  # The archive must be strictly smaller.
 ZIP_ROOT = "viral-screenwriter"
-EPUB_BOOKS = ("B01", "B02", "B04", "B05", "B06", "B07", "B09", "B10", "B11")
-HEADING = re.compile(r"^## 正文文件 ([1-9][0-9]*) · .+$")
-HEADING_REFERENCE = re.compile(r"^## 正文文件 ([1-9][0-9]*)(?: · .+)?$")
 EDITION_RULES = Path(__file__).with_name("edition_rules.json")
 EDITION_LABELS = {"local": "本地版", "feishu": "飞书版"}
 # Caches and OS/editor junk that must never reach a manifest or ZIP.
@@ -112,6 +109,8 @@ def source_files(root: Path) -> list[Path]:
         raise PackageError("Stray files are never packaged; delete them and rerun: " + ", ".join(sorted(stray)))
     files.sort(key=lambda item: item.relative_to(root).as_posix())
     names = [path.relative_to(root).as_posix() for path in files]
+    if any(name.startswith("assets/books/") for name in names):
+        raise PackageError("Book texts are not packaged; move assets/books out of the skill directory")
     if len(names) != len({name.casefold() for name in names}):
         raise PackageError("Case-insensitive archive filename collision")
     if len(files) > MAX_FILES:
@@ -144,46 +143,6 @@ def write_object(path: Path, value: dict) -> None:
             temporary.unlink(missing_ok=True)
 
 
-def refreshed_epub_index(directory: Path) -> dict:
-    value = read_object(directory / "index.json")
-    # Match editor/CLI LF line numbers; U+0085/U+2028 are not file newlines.
-    lines = (directory / "full.md").read_text(encoding="utf-8-sig").split("\n")
-    if lines[-1] == "":
-        lines.pop()
-    headings = [(line_no, line, int(match[1]))
-                for line_no, line in enumerate(lines, 1)
-                if (match := HEADING.fullmatch(line))]
-    numbers = [entry[2] for entry in headings]
-    if not numbers or numbers != list(range(1, len(numbers) + 1)):
-        raise PackageError(f"Missing, duplicate or unordered EPUB headings: {directory.name}")
-    locations = {}
-    for index, (start, heading, number) in enumerate(headings):
-        end = headings[index + 1][0] - 1 if index + 1 < len(headings) else len(lines)
-        locations[number] = (heading, start, end)
-    indexed_numbers = []
-    for field in ("sections", "toc"):
-        entries = value.get(field)
-        if not isinstance(entries, list):
-            raise PackageError(f"Missing {field} array: {directory.name}")
-        for entry in entries:
-            if not isinstance(entry, dict):
-                raise PackageError(f"Invalid {field} entry: {directory.name}")
-            reference = entry.get("full_md_heading", "")
-            match = HEADING_REFERENCE.fullmatch(reference) if isinstance(reference, str) else None
-            if not match or int(match[1]) not in locations:
-                raise PackageError(f"Unresolvable full_md_heading in {directory.name}/{field}: {reference!r}")
-            number = int(match[1])
-            if field == "sections":
-                if entry.get("number") != number:
-                    raise PackageError(f"Section number disagrees with heading in {directory.name}: {number}")
-                indexed_numbers.append(number)
-            heading, start, end = locations[number]
-            entry.update(full_md_heading=heading, full_md_start_line=start, full_md_end_line=end)
-    if indexed_numbers != numbers:
-        raise PackageError(f"Section index does not cover every real heading: {directory.name}")
-    return value
-
-
 def refresh_inventory(root: Path, inventory: Path, files: list[Path]) -> None:
     value = read_object(inventory)
     previous = {entry["path"]: entry for entry in value.get("files", [])}
@@ -200,24 +159,8 @@ def refresh_inventory(root: Path, inventory: Path, files: list[Path]) -> None:
 
 
 def refresh_metadata(root: Path) -> None:
-    files = source_files(root)
-    full_hashes = {path: digest(path) for path in files
-                   if path.name == "full.md" and path.is_relative_to(root / "assets/books")}
-    # Resolve every section before modifying any metadata. PDF indexes are untouched.
-    replacements = [(root / "assets/books/library" / book / "index.json",
-                     refreshed_epub_index(root / "assets/books/library" / book))
-                    for book in EPUB_BOOKS]
-    books = root / "assets/books"
-    read_object(books / "inventory.json")
     read_object(root / "package-manifest.json")
-    for path, value in replacements:
-        write_object(path, value)
-    files = source_files(root)
-    refresh_inventory(books, books / "inventory.json",
-                      [path for path in files if path.is_relative_to(books)])
     refresh_inventory(root, root / "package-manifest.json", source_files(root))
-    if any(digest(path) != expected for path, expected in full_hashes.items()):
-        raise PackageError("A book full.md changed during metadata refresh")
 
 
 def verify_portable(root: Path) -> dict:
@@ -355,12 +298,12 @@ def apply_edition(root: Path, edition: str, rules: dict) -> None:
             # These exact files are removed only from our newly created build tree.
             relative_file(root, name).unlink()
         # Block future cloud integration files or prose from silently leaking into
-        # local builds. Book text and historical provenance are not workflow rules.
+        # local builds. Historical evidence records are not workflow rules.
         for path in source_files(root):
             name = path.relative_to(root).as_posix()
             if "feishu" in name.casefold():
                 raise PackageError(f"Unclassified cloud integration file in local edition: {name}")
-            if name == "package-manifest.json" or name.startswith(("assets/books/", "assets/evidence/")):
+            if name == "package-manifest.json" or name.startswith("assets/evidence/"):
                 continue
             if path.suffix.casefold() in (".md", ".yaml", ".py", ".json"):
                 text = path.read_text(encoding="utf-8-sig")
@@ -399,14 +342,9 @@ def package_edition(root_argument: Path, output_argument: Path, edition: str,
         shutil.copytree(root, stage)
         apply_edition(stage, edition, rules)
         refresh_metadata(stage)
-        # Every book file, including indexes, must be identical in both editions.
-        book_names = [name for name in source_snapshot if name.startswith("assets/books/")]
-        if any(digest(stage / name) != source_snapshot[name] for name in book_names):
-            raise PackageError("An edition changed the shared book library")
         result = package(stage, output)
         result.update(edition=edition, version=rules["version"], date=rules["date"],
-                      refreshed=refresh, shared_book_files_verified=len(book_names),
-                      source_verification=source_verification)
+                      refreshed=refresh, source_verification=source_verification)
     if source_snapshot != {p.relative_to(root).as_posix(): digest(p) for p in source_files(root)}:
         raise PackageError("Maintained source changed during edition build")
     return result
@@ -416,9 +354,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1] / ZIP_ROOT)
     parser.add_argument("--output", type=Path, required=True, help="Explicit ZIP destination outside the skill directory")
-    parser.add_argument("--refresh", action="store_true", help="Refresh EPUB locations and hash inventories before packaging")
+    parser.add_argument("--refresh", action="store_true", help="Refresh the hash inventory and release fields before packaging")
     parser.add_argument("--edition", choices=("local", "feishu"), default="feishu",
-                        help="Release edition; both use the same skill name and full library")
+                        help="Release edition; both use the same skill name and method cards")
     args = parser.parse_args()
     try:
         result = package_edition(args.root, args.output, args.edition, args.refresh)

@@ -1,6 +1,6 @@
 # 对白、身体层与局部改稿
 
-先按[原书方法索引](coffee-break-method.md)读取当前相关练习；本页仅作辅助执行工具，不冒称书中原法。模型完成具体练习和检查后按[共创协议](soul-questioning.md)决定是否给成熟选项：只问会改变人物、关系、结局或风格的实质分岔，其余在当前授权范围内完成。结果落入行动和对白，不把空白练习交回用户。已有决定继承，窄修只取实际缺口。
+先从[方法卡总索引](method-cards.md)取当前相关的卡，本页在该层仍薄弱时补充，只读有关小节。实质分岔按[共创协议](soul-questioning.md)处理，其余在授权范围内完成；结果落入行动和对白，已有决定继承。
 
 ## 台词是一种当场做法
 
@@ -77,4 +77,4 @@
 
 ## 方法来源
 
-身体习惯与人物辨识参考 [Scriptnotes 298](https://johnaugust.com/2017/scriptnotes-ep-298-how-characters-move-transcript)；静止与被困参考[Peele 注释剧本节选](https://www.filmcomment.com/excerpt-get-out-the-complete-annotated-screenplay-jordan-peele/)；搭档输入与行动参考[Bruce Miller 表演教学](https://schooltheatre.org/characterisactionpart3/)；局部建议与筛选取舍参考 [Wordcraft 作者研究](https://arxiv.org/pdf/2211.05030)。以上为辅助来源，不冒充 Coffee Break 原文，不声称已经测得流媒体传播增益。
+身体习惯与人物辨识参考 [Scriptnotes 298](https://johnaugust.com/2017/scriptnotes-ep-298-how-characters-move-transcript)；静止与被困参考[Peele 注释剧本节选](https://www.filmcomment.com/excerpt-get-out-the-complete-annotated-screenplay-jordan-peele/)；搭档输入与行动参考[Bruce Miller 表演教学](https://schooltheatre.org/characterisactionpart3/)；局部建议与筛选取舍参考 [Wordcraft 作者研究](https://arxiv.org/pdf/2211.05030)。

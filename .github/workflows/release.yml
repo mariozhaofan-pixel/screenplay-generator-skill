@@ -1,6 +1,6 @@
 name: Release
 
-# Pushing a tag like viral-screenwriter-v13-2026-10-28 checks the book line numbers,
+# Pushing a tag like viral-screenwriter-v20-2026-11-27 checks the default-path budget,
 # builds and verifies the local and Feishu editions, and publishes a GitHub Release
 # with both ZIPs and SHA256 files. The tag must match tools/edition_rules.json.
 # Release notes are a fixed short line; the detailed record stays in docs/CHANGELOG.md.
@@ -35,8 +35,8 @@ jobs:
               raise SystemExit(f"tag {os.environ['TAG']} does not match edition rules {expected}")
           PY
 
-      - name: Check book line numbers
-        run: python -X utf8 -B tools/test_book_line_numbers.py
+      - name: Check default path budget
+        run: python -X utf8 -B tools/measure_default_path.py
 
       - name: Check helper scripts
         run: python -X utf8 -B tools/test_skill_scripts.py

@@ -25,8 +25,6 @@ def main() -> None:
     root = here.parent / "viral-screenwriter"
     rules = builder.read_object(here / "edition_rules.json")
     reports = {}
-    book_hashes = {p.relative_to(root).as_posix(): builder.digest(p)
-                   for p in builder.source_files(root) if p.is_relative_to(root / "assets/books")}
     for edition in ("local", "feishu"):
         output = args.output_dir / f"viral-screenwriter_{rules['version']}_{edition}_{rules['date']}.zip"
         report = builder.package_edition(root, output, edition)
@@ -38,9 +36,8 @@ def main() -> None:
             assert report["bytes"] < 5_000_000
             for relative in rules["local_exclude"]:
                 assert ((prefix + relative) in names) == (edition == "feishu")
-            for name, expected in book_hashes.items():
-                import hashlib
-                assert hashlib.sha256(archive.read(prefix + name)).hexdigest() == expected
+            # Book texts stay out of every release package.
+            assert not [name for name in names if name.startswith(prefix + "assets/books/")]
             manifest = json.loads(archive.read(prefix + "package-manifest.json"))
             assert manifest["workspace_edition"] == edition
             # Release metadata comes from the rules, not from hand edits.
@@ -101,14 +98,14 @@ def main() -> None:
         (stage / ".DS_Store").write_bytes(b"junk")
         (stage / "scripts/__pycache__").mkdir()
         (stage / "scripts/__pycache__/check_environment.cpython-312.pyc").write_bytes(b"junk")
-        (stage / "references/.book-library.md.swp").write_bytes(b"junk")
-        (stage / "references/book-library.md~").write_bytes(b"junk")
+        (stage / "references/.method-cards.md.swp").write_bytes(b"junk")
+        (stage / "references/method-cards.md~").write_bytes(b"junk")
         for action in (builder.source_files, builder.refresh_metadata):
             try:
                 action(stage)
             except builder.PackageError as exc:
-                for name in (".DS_Store", "scripts/__pycache__", "references/.book-library.md.swp",
-                             "references/book-library.md~"):
+                for name in (".DS_Store", "scripts/__pycache__", "references/.method-cards.md.swp",
+                             "references/method-cards.md~"):
                     assert name in str(exc), (name, str(exc))
             else:
                 raise AssertionError("Stray files were accepted")
@@ -136,9 +133,19 @@ def main() -> None:
         builder.stamp_release(stage, rules, "feishu")
         assert builder.release_mismatch(builder.read_object(stage / "package-manifest.json"), rules, "feishu") == {}
         reports["stale_packaging_revision_restamped"] = True
-    assert book_hashes == {p.relative_to(root).as_posix(): builder.digest(p)
-                          for p in builder.source_files(root) if p.is_relative_to(root / "assets/books")}
-    reports.update(ok=True, book_library_unchanged=True)
+    # A book text dropped back into the source tree must stop the build.
+    with tempfile.TemporaryDirectory(prefix="screenwriter-book-guard-") as temporary:
+        stage = Path(temporary).resolve() / "viral-screenwriter"
+        shutil.copytree(root, stage)
+        (stage / "assets/books").mkdir()
+        (stage / "assets/books/full.md").write_text("text", encoding="utf-8")
+        try:
+            builder.source_files(stage)
+        except builder.PackageError as exc:
+            assert "Book texts are not packaged" in str(exc)
+        else:
+            raise AssertionError("Book text was accepted into the package")
+    reports.update(ok=True, book_texts_rejected=True)
     args.output_dir.mkdir(parents=True, exist_ok=True)
     (args.output_dir / "edition-validation.json").write_text(json.dumps(reports, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(reports, ensure_ascii=False, indent=2))

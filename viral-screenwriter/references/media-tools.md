@@ -1,6 +1,6 @@
 # 使用当前电脑的视频能力
 
-本Skill携带编剧方法、书库文字及轻量的[视频反推说明与脚本](../modules/video-reverse-storyboard/MODULE.md)，不打包解码器、第三方OCR/ASR运行库或模型权重。普通写作、剧本资料研究和窄修改不触发媒体安装。
+本Skill携带编剧方法卡及轻量的[视频反推说明与脚本](../modules/video-reverse-storyboard/MODULE.md)，不打包解码器、第三方OCR/ASR运行库或模型权重。普通写作、剧本资料研究和窄修改不触发媒体安装。
 
 ## 实际遇到视频任务时
 

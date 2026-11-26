@@ -1,23 +1,23 @@
-# 爆款编剧 Skill v19
+# 爆款编剧 Skill v20
 
-当前版本：2026-11-26 v19，提供**本地版**和**飞书版**。两版共用一套编剧方法、完整文字书库和视频反推模块。剧本始终交付 Markdown，每批最多2集；开场带剧情介绍、钩子与记忆锚点，视频模型提示词按需交接独立的 `director-seedance-prompt`。
+当前版本：2026-11-27 v20，提供**本地版**和**飞书版**。两版共用一套自写编剧方法卡和视频反推模块，不含任何书的全文。剧本始终交付 Markdown，每批最多2集；开场带剧情介绍、钩子与记忆锚点，视频模型提示词按需交给使用者已安装的导演skill。
 
 | 安装版本 | 工作方式 | ZIP文件名 |
 |---|---|---|
-| 本地版 | 直接在用户项目工作，不询问飞书模式、不登录或部署飞书；通过本地采用稿与导演协作 | `viral-screenwriter_v19_local_2026-11-26.zip` |
-| 飞书版 | 保留本地、加入已有多维表或创建新库的选择；飞书模式按需接入，定稿与采用修订同步同一项目 | `viral-screenwriter_v19_feishu_2026-11-26.zip` |
+| 本地版 | 直接在用户项目工作，不询问飞书模式、不登录或部署飞书；通过本地采用稿与导演协作 | `viral-screenwriter_v20_local_2026-11-27.zip` |
+| 飞书版 | 保留本地、加入已有多维表或创建新库的选择；飞书模式按需接入，定稿与采用修订同步同一项目 | `viral-screenwriter_v20_feishu_2026-11-27.zip` |
 
-两包都以 `viral-screenwriter/` 为唯一技能根目录，调用名均为 `$viral-screenwriter`；每台宿主只安装一版。相同名称保持导演的技能发现兼容，切换版本只替换技能目录，不删除或重建用户项目。普通写作不要求安装导演技能，只有实际交接视频提示词时读取对方当前入口。
+两包都以 `viral-screenwriter/` 为唯一技能根目录，技能名均为 `viral-screenwriter`；每台宿主只安装一版。相同名称保持导演的技能发现兼容，切换版本只替换技能目录，不删除或重建用户项目。普通写作不要求安装导演技能，只有实际交接视频提示词时读取对方当前入口。
 
 更新记录见 [docs/CHANGELOG.md](docs/CHANGELOG.md)。
 
 ## 安装
 
-从 [Releases](https://github.com/mariozhaofan-pixel/screenplay-generator-skill/releases) 选择对应版的技能ZIP，解压后把 `viral-screenwriter/` 放到宿主技能目录，例如 `~/.codex/skills/viral-screenwriter/`。旧版先完整备份到技能目录之外，避免旧文件残留或双入口重复触发，再刷新技能或重新打开会话。
+从 [Releases](https://github.com/mariozhaofan-pixel/screenplay-generator-skill/releases) 选择对应版的技能ZIP，解压后把 `viral-screenwriter/` 放到所用宿主的技能目录，支持上传的宿主可直接上传ZIP。旧版先完整备份到技能目录之外，避免旧文件残留或双入口重复触发，再刷新技能或重新打开会话。
 
 直接复制本仓库的 [`viral-screenwriter/`](viral-screenwriter/SKILL.md) 得到的是**飞书版完整维护源**。本地版须使用对应发行ZIP，或按下方命令从同一源构建，不能只复制入口而遗漏其本地交接规则。
 
-两版包含全部书库转写、方法卡、模板、来源索引和内置视频反推模块；媒体依赖仅在实际视频任务缺少能力时准备。完整使用说明随各包的 `INSTALL.md` 一起生成。[仓库内安装说明](viral-screenwriter/INSTALL.md)对应飞书版。
+两版包含全部方法卡、模板和内置视频反推模块；媒体依赖仅在实际视频任务缺少能力时准备。完整使用说明随各包的 `INSTALL.md` 一起生成。[仓库内安装说明](viral-screenwriter/INSTALL.md)对应飞书版。
 
 安装后在 `viral-screenwriter/` 中可检查：
 
@@ -26,7 +26,7 @@ python -X utf8 scripts/verify_portable.py
 python -X utf8 scripts/check_environment.py --mode writing
 ```
 
-本仓库保持公开可见，沿用 [LICENSE](LICENSE) 的使用及再发布限制。书籍及参考资料保留各自著作权与来源标识，不因公开仓库赋予下游再发布或商业授权。联系方式：MARIOZHAOFAN（微信）。
+本仓库保持公开可见，沿用 [LICENSE](LICENSE) 的使用及再发布限制。方法卡引用的书籍著作权归原作者和出版方，包内不含书的全文。联系方式：MARIOZHAOFAN（微信）。
 
 ## 两版与导演协作
 
@@ -36,30 +36,30 @@ python -X utf8 scripts/check_environment.py --mode writing
 
 ## 单一维护源与双版本构建
 
-后续只在 `viral-screenwriter/` 维护共同编剧能力与书库，不复制出第二份可编辑书库。`tools/edition_rules.json` 仅保存本地版必须替换的工作区/UI/交接文字和6个飞书专用文件的排除清单；打包器从同一维护源生成两个独立完整安装包，产物不作为第二维护源。
+后续只在 `viral-screenwriter/` 维护共同编剧能力，不复制出第二份可编辑源。`tools/edition_rules.json` 仅保存本地版必须替换的工作区/UI/交接文字和6个飞书专用文件的排除清单；打包器从同一维护源生成两个独立完整安装包，产物不作为第二维护源。
 
-12份书源与已有正文保留；407个EPUB逻辑分节集中在9本全文，通过精确标题和行范围定位，Coffee Break的14份分章/前后附录保持。打包器逐字节核对两版全部46个书库文件，正文不会因版本转换而改写。[精简布局验收](docs/compact-v11-validation.md) · [B11编码修复](docs/b11-encoding-fix.md) · [双版本验收](docs/dual-editions-v12.md)。
+自 v20 起包内只有自写方法卡，书的全文不进仓库当前版本和安装包；源目录出现 `assets/books` 时打包器直接停止。默认成稿路径（入口加五页必读）不超过2万字，由 `tools/measure_default_path.py` 检查。早期验收记录：[精简布局验收](docs/compact-v11-validation.md) · [B11编码修复](docs/b11-encoding-fix.md) · [双版本验收](docs/dual-editions-v12.md)，其中关于书库全文的内容只适用于 v19 及以前。
 
 使用 Python 3.11+ 标准库构建：
 
 ```text
-python -X utf8 tools/package_viral_screenwriter.py --refresh --edition local --output ../viral-screenwriter_v19_local_2026-11-26.zip
-python -X utf8 tools/package_viral_screenwriter.py --edition feishu --output ../viral-screenwriter_v19_feishu_2026-11-26.zip
+python -X utf8 tools/package_viral_screenwriter.py --refresh --edition local --output ../viral-screenwriter_v20_local_2026-11-27.zip
+python -X utf8 tools/package_viral_screenwriter.py --edition feishu --output ../viral-screenwriter_v20_feishu_2026-11-27.zip
 ```
 
-`--refresh` 只更新维护源的章节行范围、完整性清单，以及按规则文件写入的源manifest版本字段与 `packaging_revision`；不加时源目录只读，版本字段与规则不一致即停止。源目录里有缓存、系统或编辑器临时文件（`__pycache__`、`.DS_Store`、`*.pyc`、`*.swp` 等，及git忽略的文件）时构建直接报错并列出路径，删除后重跑。构建在临时目录应用版本差异、重建派生包清单，验证CRC与逐文件SHA256后才替换目标ZIP。两版各自严格小于5,000,000字节、最多200文件、仅一个 `SKILL.md`。发布时同时上传两包，GitHub自动生成的整个仓库源码ZIP含历史技能，不是单技能安装包。
+`--refresh` 只更新维护源的完整性清单，以及按规则文件写入的源manifest版本字段与 `packaging_revision`；不加时源目录只读，版本字段与规则不一致即停止。源目录里有缓存、系统或编辑器临时文件（`__pycache__`、`.DS_Store`、`*.pyc`、`*.swp` 等，及git忽略的文件）时构建直接报错并列出路径，删除后重跑。构建在临时目录应用版本差异、重建派生包清单，验证CRC与逐文件SHA256后才替换目标ZIP。两版各自严格小于5,000,000字节、最多200文件、仅一个 `SKILL.md`。发布时同时上传两包，GitHub自动生成的整个仓库源码ZIP含历史技能，不是单技能安装包。
 
-修改共同工作区文字后必须同步检查 `edition_rules.json`：原文锚点不匹配会停止构建，本地包出现未分类的飞书文件或流程文字也会失败。升版只改规则文件的版本/日期、`INSTALL.md` 的版本行（`版本：日期 版本 飞书版`，只写这三项）和更新记录，再用 `--refresh` 刷新；构建会核对两包的版本行和清单版本字段，不改书库内容。运行双版回归检查会重新生成两包和验证报告：
+修改共同工作区文字后必须同步检查 `edition_rules.json`：原文锚点不匹配会停止构建，本地包出现未分类的飞书文件或流程文字也会失败。升版只改规则文件的版本/日期、`INSTALL.md` 的版本行（`版本：日期 版本 飞书版`，只写这三项）和更新记录，再用 `--refresh` 刷新；构建会核对两包的版本行和清单版本字段。运行双版回归检查会重新生成两包和验证报告：
 
 ```text
 python -X utf8 tools/test_editions.py --output-dir ../screenwriter-release-check
-python -X utf8 tools/test_book_line_numbers.py
+python -X utf8 tools/measure_default_path.py
 python -X utf8 tools/test_skill_scripts.py
 ```
 
 ## 自动发版
 
-推送形如 `viral-screenwriter-v19-2026-11-26` 的标签（版本与日期须与 `tools/edition_rules.json` 一致），GitHub Actions 自动运行书库行号检查和双版回归，构建本地版、飞书版两个ZIP及SHA256，并以固定的简短说明创建 Release（详细记录留在 `docs/CHANGELOG.md`）。升版步骤见上节。
+推送形如 `viral-screenwriter-v20-2026-11-27` 的标签（版本与日期须与 `tools/edition_rules.json` 一致），GitHub Actions 自动运行默认路径字数检查和双版回归，构建本地版、飞书版两个ZIP及SHA256，并以固定的简短说明创建 Release（详细记录留在 `docs/CHANGELOG.md`）。升版步骤见上节。
 
 ## 历史 Script Generator
 
