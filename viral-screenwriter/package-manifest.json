@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
   "package": "viral-screenwriter",
-  "edition": "2026-11-25-v18-feishu",
+  "edition": "2026-11-26-v19-feishu",
   "path_base": "package-root",
   "files": [
     {
       "path": "INSTALL.md",
       "bytes": 9083,
-      "sha256": "103ed5dbb5eabd19ec4dcda002b75be15d60d33852f88589c9194ea20bf06453"
+      "sha256": "284314e5f10e9cffda8b7abc06745de1e0cf776caa071bc92fab91759ffdcf65"
     },
     {
       "path": "SKILL.md",
-      "bytes": 14028,
-      "sha256": "c0fe32aa68d310268dc51d49a865c88286eeff6014e214778b1507fb7fde33ed"
+      "bytes": 14550,
+      "sha256": "5d43096f9dcbfcc6a3395c74d7b61dba7cfe99a6a3fc35a0fa04dd798aa7bfda"
     },
     {
       "path": "agents/openai.yaml",
@@ -476,8 +476,8 @@
     },
     {
       "path": "references/exercise-orchestration.md",
-      "bytes": 10050,
-      "sha256": "f439eac7dd37b62a17ae50610bd0da8ae6c07df90e5bcc6d309b4dc9b3f2244d"
+      "bytes": 10272,
+      "sha256": "c69879861cb630d5f4248beedb019de2d052a2a9021b24816e547e93b83c1877"
     },
     {
       "path": "references/feishu-workspace.md",
@@ -510,9 +510,14 @@
       "sha256": "0fc9c9e51e9cdba3b34dfa4fe709f9e641ead792c41c5c78f3f927f84d1f7d3a"
     },
     {
+      "path": "references/microdrama-compliance.md",
+      "bytes": 3979,
+      "sha256": "099b1f873de2ef4b62d1698fa71c5506ab1d3676cf22ff4f57a33f737a465f42"
+    },
+    {
       "path": "references/project-delivery.md",
-      "bytes": 8481,
-      "sha256": "462394c34b403ccd77a3f526e4bd318bb45e09bf53800eb4c0070ad687f0f84e"
+      "bytes": 8627,
+      "sha256": "73b0a5ba3d78059826c4e44bf992a20d6c990a981046800c902ef3ea8a5709c9"
     },
     {
       "path": "references/reference-to-original.md",
@@ -531,8 +536,8 @@
     },
     {
       "path": "references/shortform-craft.md",
-      "bytes": 10697,
-      "sha256": "769ebe0d16cb051c262d3d188a0a9b1aef3173c16d1501fabfa80683172df3c7"
+      "bytes": 11171,
+      "sha256": "40f17d4e6b0110a84d2b1f167b7992c0a74eaa703b2ac4c5a1d2d89ac40da2f7"
     },
     {
       "path": "references/soul-questioning.md",
@@ -541,8 +546,8 @@
     },
     {
       "path": "references/story-scene-structure.md",
-      "bytes": 9371,
-      "sha256": "05836882e4f8afc984509cb8c07d494896846140047685c9fb2835e6d51a193c"
+      "bytes": 12790,
+      "sha256": "8d5eb36f202f82a42d4f212107e46c74d5f347c43b3132307b29848ad80588b4"
     },
     {
       "path": "references/storyboard-contract.md",
@@ -598,7 +603,7 @@
   ],
   "entrypoint": "SKILL.md",
   "layout": "compact-full-text-v1",
-  "packaging_revision": "2026-11-25-v18-dual-editions",
+  "packaging_revision": "2026-11-26-v19-dual-editions",
   "compact_source": {
     "archive": "viral-screenwriter_v11_2026-10-22_claude-upload.zip",
     "sha256": "bf77087d140de66e76895b05dabc15d4164b127395657fefaac57801a0793d59"
@@ -607,7 +612,7 @@
     "archive": "viral-screenwriter_v11_2026-10-22_b11-fix_claude-upload.zip",
     "sha256": "ccb3b1dc372ba9e0dba49269bd3962e9f0fd8af89c9988b998853cfb247e2323"
   },
-  "release_version": "v18",
-  "release_date": "2026-11-25",
+  "release_version": "v19",
+  "release_date": "2026-11-26",
   "workspace_edition": "feishu"
 }

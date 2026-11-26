@@ -1,11 +1,11 @@
-# 爆款编剧 Skill v18
+# 爆款编剧 Skill v19
 
-当前版本：2026-11-25 v18，提供**本地版**和**飞书版**。两版共用一套编剧方法、完整文字书库和视频反推模块。剧本始终交付 Markdown，每批最多2集；开场带剧情介绍、钩子与记忆锚点，视频模型提示词按需交接独立的 `director-seedance-prompt`。
+当前版本：2026-11-26 v19，提供**本地版**和**飞书版**。两版共用一套编剧方法、完整文字书库和视频反推模块。剧本始终交付 Markdown，每批最多2集；开场带剧情介绍、钩子与记忆锚点，视频模型提示词按需交接独立的 `director-seedance-prompt`。
 
 | 安装版本 | 工作方式 | ZIP文件名 |
 |---|---|---|
-| 本地版 | 直接在用户项目工作，不询问飞书模式、不登录或部署飞书；通过本地采用稿与导演协作 | `viral-screenwriter_v18_local_2026-11-25.zip` |
-| 飞书版 | 保留本地、加入已有多维表或创建新库的选择；飞书模式按需接入，定稿与采用修订同步同一项目 | `viral-screenwriter_v18_feishu_2026-11-25.zip` |
+| 本地版 | 直接在用户项目工作，不询问飞书模式、不登录或部署飞书；通过本地采用稿与导演协作 | `viral-screenwriter_v19_local_2026-11-26.zip` |
+| 飞书版 | 保留本地、加入已有多维表或创建新库的选择；飞书模式按需接入，定稿与采用修订同步同一项目 | `viral-screenwriter_v19_feishu_2026-11-26.zip` |
 
 两包都以 `viral-screenwriter/` 为唯一技能根目录，调用名均为 `$viral-screenwriter`；每台宿主只安装一版。相同名称保持导演的技能发现兼容，切换版本只替换技能目录，不删除或重建用户项目。普通写作不要求安装导演技能，只有实际交接视频提示词时读取对方当前入口。
 
@@ -43,8 +43,8 @@ python -X utf8 scripts/check_environment.py --mode writing
 使用 Python 3.11+ 标准库构建：
 
 ```text
-python -X utf8 tools/package_viral_screenwriter.py --refresh --edition local --output ../viral-screenwriter_v18_local_2026-11-25.zip
-python -X utf8 tools/package_viral_screenwriter.py --edition feishu --output ../viral-screenwriter_v18_feishu_2026-11-25.zip
+python -X utf8 tools/package_viral_screenwriter.py --refresh --edition local --output ../viral-screenwriter_v19_local_2026-11-26.zip
+python -X utf8 tools/package_viral_screenwriter.py --edition feishu --output ../viral-screenwriter_v19_feishu_2026-11-26.zip
 ```
 
 `--refresh` 只更新维护源的章节行范围、完整性清单，以及按规则文件写入的源manifest版本字段与 `packaging_revision`；不加时源目录只读，版本字段与规则不一致即停止。源目录里有缓存、系统或编辑器临时文件（`__pycache__`、`.DS_Store`、`*.pyc`、`*.swp` 等，及git忽略的文件）时构建直接报错并列出路径，删除后重跑。构建在临时目录应用版本差异、重建派生包清单，验证CRC与逐文件SHA256后才替换目标ZIP。两版各自严格小于5,000,000字节、最多200文件、仅一个 `SKILL.md`。发布时同时上传两包，GitHub自动生成的整个仓库源码ZIP含历史技能，不是单技能安装包。
@@ -59,7 +59,7 @@ python -X utf8 tools/test_skill_scripts.py
 
 ## 自动发版
 
-推送形如 `viral-screenwriter-v18-2026-11-25` 的标签（版本与日期须与 `tools/edition_rules.json` 一致），GitHub Actions 自动运行书库行号检查和双版回归，构建本地版、飞书版两个ZIP及SHA256，并以固定的简短说明创建 Release（详细记录留在 `docs/CHANGELOG.md`）。升版步骤见上节。
+推送形如 `viral-screenwriter-v19-2026-11-26` 的标签（版本与日期须与 `tools/edition_rules.json` 一致），GitHub Actions 自动运行书库行号检查和双版回归，构建本地版、飞书版两个ZIP及SHA256，并以固定的简短说明创建 Release（详细记录留在 `docs/CHANGELOG.md`）。升版步骤见上节。
 
 ## 历史 Script Generator
 

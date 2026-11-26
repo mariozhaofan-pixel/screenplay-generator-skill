@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "source_edition": "feishu",
-  "version": "v18",
-  "date": "2026-11-25",
+  "version": "v19",
+  "date": "2026-11-26",
   "local_exclude": [
     "assets/feishu-base-blueprint.json",
     "references/FEISHU_BASE_LAYOUT.md",
